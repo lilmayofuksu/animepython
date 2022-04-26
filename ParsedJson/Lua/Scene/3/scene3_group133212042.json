@@ -1,0 +1,183 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_42007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_42009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_42008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_42007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_42008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 13,
+            "config_id": 42001,
+            "gadget_id": 70310012,
+            "level": 19,
+            "persistent": true,
+            "pos": {
+                "x": -3986.185,
+                "y": 199.167,
+                "z": -2275.765
+            },
+            "rot": {
+                "x": 0,
+                "y": 303.369,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 13,
+            "config_id": 42002,
+            "gadget_id": 70900008,
+            "level": 19,
+            "persistent": true,
+            "pos": {
+                "x": -3967.276,
+                "y": 201.374,
+                "z": -2250.662
+            },
+            "rot": {
+                "x": 0,
+                "y": 276.1,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 13,
+            "config_id": 42003,
+            "gadget_id": 70900008,
+            "level": 19,
+            "persistent": true,
+            "pos": {
+                "x": -4000.26,
+                "y": 215.313,
+                "z": -2258.574
+            },
+            "rot": {
+                "x": 0,
+                "y": 317.5,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 13,
+            "config_id": 42004,
+            "gadget_id": 70900008,
+            "level": 19,
+            "persistent": true,
+            "pos": {
+                "x": -3975.548,
+                "y": 208.256,
+                "z": -2296.287
+            },
+            "rot": {
+                "x": 0,
+                "y": 257.6,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 13,
+            "config_id": 42005,
+            "gadget_id": 70900008,
+            "level": 19,
+            "persistent": true,
+            "pos": {
+                "x": -4000.658,
+                "y": 203.815,
+                "z": -2297.14
+            },
+            "rot": {
+                "x": 0,
+                "y": 14.1,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 13,
+            "config_id": 42006,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211112,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -3986.154,
+                "y": 199.616,
+                "z": -2275.764
+            },
+            "rot": {
+                "x": 0,
+                "y": 217.286,
+                "z": 0
+            },
+            "state": 101
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                42001,
+                42002,
+                42003,
+                42004,
+                42005,
+                42006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_42007",
+                "VARIABLE_CHANGE_42008",
+                "GROUP_LOAD_42009"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_42007",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_42007",
+            "config_id": 1042007,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_42007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_42008",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_42008",
+            "config_id": 1042008,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_42008",
+            "source": "State_Flag",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_42009",
+            "condition": "",
+            "config_id": 1042009,
+            "event": 29,
+            "name": "GROUP_LOAD_42009",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "State_Flag",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

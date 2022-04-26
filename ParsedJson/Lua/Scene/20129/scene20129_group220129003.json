@@ -1,0 +1,157 @@
+{
+    "action_EVENT_ENTER_REGION_3001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_3002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_3005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_3006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_3001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_3002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_3005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_3006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 3003,
+            "gadget_id": 70710742,
+            "is_enable_interact": false,
+            "level": 1,
+            "pos": {
+                "x": -452.084,
+                "y": -1.989,
+                "z": -38.701
+            },
+            "rot": {
+                "x": 90,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 3004,
+            "gadget_id": 70360001,
+            "level": 1,
+            "pos": {
+                "x": -452,
+                "y": -1.741,
+                "z": -37.721
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 3007,
+            "gadget_id": 70900201,
+            "level": 1,
+            "pos": {
+                "x": -452.06,
+                "y": 1.029,
+                "z": -37.655
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 3001,
+            "pos": {
+                "x": -37.237,
+                "y": 222.072,
+                "z": 694.297
+            },
+            "radius": 10,
+            "shape": 1
+        },
+        {
+            "config_id": 3002,
+            "pos": {
+                "x": -32.262,
+                "y": 223.757,
+                "z": 692.633
+            },
+            "radius": 5,
+            "shape": 1
+        },
+        {
+            "config_id": 3005,
+            "pos": {
+                "x": -451.987,
+                "y": -1.741,
+                "z": -37.606
+            },
+            "radius": 10,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                3003,
+                3004,
+                3007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                3005
+            ],
+            "triggers": [
+                "ENTER_REGION_3005",
+                "SELECT_OPTION_3006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_3001",
+            "condition": "condition_EVENT_ENTER_REGION_3001",
+            "config_id": 1003001,
+            "event": 4,
+            "name": "ENTER_REGION_3001",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_3002",
+            "condition": "condition_EVENT_ENTER_REGION_3002",
+            "config_id": 1003002,
+            "event": 4,
+            "name": "ENTER_REGION_3002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_3005",
+            "condition": "condition_EVENT_ENTER_REGION_3005",
+            "config_id": 1003005,
+            "event": 4,
+            "name": "ENTER_REGION_3005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_3006",
+            "condition": "condition_EVENT_SELECT_OPTION_3006",
+            "config_id": 1003006,
+            "event": 9,
+            "name": "SELECT_OPTION_3006",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

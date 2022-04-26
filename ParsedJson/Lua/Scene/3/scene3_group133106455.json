@@ -1,0 +1,245 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_455004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_455008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_455009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_455005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_455008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_455009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_455005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 19,
+            "config_id": 455001,
+            "gadget_id": 70360179,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": -943.969,
+                "y": 207.92,
+                "z": 1680.006
+            },
+            "rot": {
+                "x": 0,
+                "y": 224.31,
+                "z": 5.522
+            }
+        },
+        {
+            "area_id": 19,
+            "config_id": 455002,
+            "gadget_id": 70220025,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": -943.237,
+                "y": 207.974,
+                "z": 1678.487
+            },
+            "rot": {
+                "x": 84.071,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 19,
+            "config_id": 455003,
+            "gadget_id": 70220025,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": -943.989,
+                "y": 208.041,
+                "z": 1679.675
+            },
+            "rot": {
+                "x": 84.405,
+                "y": 306.191,
+                "z": 196.582
+            }
+        },
+        {
+            "area_id": 19,
+            "config_id": 455006,
+            "gadget_id": 70360001,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": -943.558,
+                "y": 207.912,
+                "z": 1679.317
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "worktop_config": {
+                "init_options": [
+                    751
+                ],
+                "is_persistent": true
+            }
+        },
+        {
+            "area_id": 19,
+            "config_id": 455007,
+            "gadget_id": 70220025,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": -942.416,
+                "y": 208.02,
+                "z": 1679.925
+            },
+            "rot": {
+                "x": 85.82,
+                "y": 324.776,
+                "z": 214.249
+            }
+        },
+        {
+            "area_id": 19,
+            "config_id": 455010,
+            "gadget_id": 70220005,
+            "isOneoff": true,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": -938.419,
+                "y": 207.551,
+                "z": 1679.15
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 19,
+            "config_id": 455011,
+            "gadget_id": 70220005,
+            "isOneoff": true,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": -937.661,
+                "y": 207.754,
+                "z": 1678.377
+            },
+            "rot": {
+                "x": 80.703,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 3,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 19,
+            "config_id": 455008,
+            "pos": {
+                "x": -940.124,
+                "y": 206.087,
+                "z": 1675.859
+            },
+            "radius": 30,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                455008
+            ],
+            "triggers": [
+                "ENTER_REGION_455008",
+                "GROUP_LOAD_455009"
+            ]
+        },
+        {
+            "gadgets": [
+                455002,
+                455003,
+                455007,
+                455010,
+                455011
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_GADGET_DIE_455004"
+            ]
+        },
+        {
+            "gadgets": [
+                455001,
+                455006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "SELECT_OPTION_455005"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_455004",
+            "condition": "",
+            "config_id": 1455004,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_455004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_455005",
+            "condition": "condition_EVENT_SELECT_OPTION_455005",
+            "config_id": 1455005,
+            "event": 9,
+            "name": "SELECT_OPTION_455005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_455008",
+            "condition": "condition_EVENT_ENTER_REGION_455008",
+            "config_id": 1455008,
+            "event": 4,
+            "name": "ENTER_REGION_455008",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_455009",
+            "condition": "condition_EVENT_GROUP_LOAD_455009",
+            "config_id": 1455009,
+            "event": 29,
+            "name": "GROUP_LOAD_455009",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "questfinish",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

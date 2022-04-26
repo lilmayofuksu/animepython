@@ -1,0 +1,192 @@
+{
+    "action_EVENT_CHALLENGE_FAIL_186006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_186005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_186010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_186011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_186010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_186011": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 6,
+            "config_id": 186002,
+            "gadget_id": 70350082,
+            "level": 24,
+            "persistent": true,
+            "pos": {
+                "x": 1058.316,
+                "y": 230.868,
+                "z": 1644.061
+            },
+            "rot": {
+                "x": 0.894,
+                "y": 359.972,
+                "z": 356.424
+            }
+        },
+        {
+            "area_id": 6,
+            "config_id": 186003,
+            "gadget_id": 70360001,
+            "level": 32,
+            "pos": {
+                "x": 1058.198,
+                "y": 230.87,
+                "z": 1644.276
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 6,
+            "config_id": 186004,
+            "drop_tag": "\u6218\u6597\u4e2d\u7ea7\u7483\u6708",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211011,
+            "isOneoff": true,
+            "level": 21,
+            "persistent": true,
+            "pos": {
+                "x": 1058.343,
+                "y": 230.751,
+                "z": 1647.138
+            },
+            "rot": {
+                "x": 358.918,
+                "y": 182.402,
+                "z": 4.425
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 6,
+            "config_id": 186001,
+            "drop_id": 1000100,
+            "level": 24,
+            "monster_id": 20010901,
+            "pos": {
+                "x": 1061.01,
+                "y": 230.744,
+                "z": 1645.316
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 6,
+            "config_id": 186008,
+            "drop_id": 1000100,
+            "level": 24,
+            "monster_id": 20011301,
+            "pos": {
+                "x": 1055.236,
+                "y": 230.943,
+                "z": 1645.293
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 6,
+            "config_id": 186009,
+            "drop_id": 1000100,
+            "level": 24,
+            "monster_id": 20010601,
+            "pos": {
+                "x": 1058.262,
+                "y": 231.262,
+                "z": 1640.489
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                186002,
+                186003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "CHALLENGE_SUCCESS_186005",
+                "CHALLENGE_FAIL_186006",
+                "GADGET_CREATE_186010",
+                "SELECT_OPTION_186011"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                186001,
+                186008,
+                186009
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_186005",
+            "condition": "",
+            "config_id": 1186005,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_186005",
+            "source": "180"
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_186006",
+            "condition": "",
+            "config_id": 1186006,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_186006",
+            "source": "180",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_186010",
+            "condition": "condition_EVENT_GADGET_CREATE_186010",
+            "config_id": 1186010,
+            "event": 6,
+            "name": "GADGET_CREATE_186010",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_186011",
+            "condition": "condition_EVENT_SELECT_OPTION_186011",
+            "config_id": 1186011,
+            "event": 9,
+            "name": "SELECT_OPTION_186011",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,105 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_520": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_429001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_527": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_520": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_429001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_TIMER_EVENT_527": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 2
+    },
+    "monsters": [
+        {
+            "area_id": 1,
+            "config_id": 1430,
+            "drop_id": 1000100,
+            "level": 2,
+            "monster_id": 20011001,
+            "pos": {
+                "x": 2701.025,
+                "y": 194.5,
+                "z": -1663.234
+            },
+            "rot": {
+                "x": 0,
+                "y": 163.116,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 1,
+            "config_id": 429001,
+            "pos": {
+                "x": 2680.631,
+                "y": 197.245,
+                "z": -1637.909
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [
+                1430
+            ],
+            "rand_weight": 100,
+            "regions": [
+                429001
+            ],
+            "triggers": [
+                "ANY_MONSTER_DIE_520",
+                "TIMER_EVENT_527",
+                "ENTER_REGION_429001"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_520",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_520",
+            "config_id": 1000520,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_520",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_527",
+            "condition": "condition_EVENT_TIMER_EVENT_527",
+            "config_id": 1000527,
+            "event": 15,
+            "name": "TIMER_EVENT_527",
+            "source": "camera"
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_429001",
+            "condition": "condition_EVENT_ENTER_REGION_429001",
+            "config_id": 1429001,
+            "event": 4,
+            "name": "ENTER_REGION_429001",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "isoff",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "action_EVENT_ENTER_REGION_185004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_LEAVE_REGION_185005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_185004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_LEAVE_REGION_185005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 185003,
+            "gadget_id": 70310001,
+            "level": 1,
+            "pos": {
+                "x": 2927.275,
+                "y": 288.208,
+                "z": -1439.493
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 185004,
+            "pos": {
+                "x": 2927.337,
+                "y": 288.205,
+                "z": -1439.541
+            },
+            "radius": 3,
+            "shape": 1
+        },
+        {
+            "config_id": 185005,
+            "pos": {
+                "x": 2927.271,
+                "y": 288.148,
+                "z": -1439.504
+            },
+            "radius": 3,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                185003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                185004,
+                185005
+            ],
+            "triggers": [
+                "ENTER_REGION_185004",
+                "LEAVE_REGION_185005"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_185004",
+            "condition": "condition_EVENT_ENTER_REGION_185004",
+            "config_id": 1185004,
+            "event": 4,
+            "name": "ENTER_REGION_185004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_LEAVE_REGION_185005",
+            "condition": "condition_EVENT_LEAVE_REGION_185005",
+            "config_id": 1185005,
+            "event": 5,
+            "name": "LEAVE_REGION_185005",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,133 @@
+{
+    "action_EVENT_ENTER_REGION_33": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_34": "WARN: Lua function omitted from the dump",
+    "action_EVENT_PLATFORM_REACH_POINT_35": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_36": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_37": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_33": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_34": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_PLATFORM_REACH_POINT_35": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 51,
+            "gadget_id": 70380011,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": -8.4,
+                "y": 20.007,
+                "z": -5
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "route_id": 20007015
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 33,
+            "pos": {
+                "x": -7.514,
+                "y": -0.014,
+                "z": -8.964
+            },
+            "radius": 3,
+            "shape": 1
+        },
+        {
+            "config_id": 34,
+            "pos": {
+                "x": -3.705,
+                "y": 20.967,
+                "z": -4.917
+            },
+            "radius": 3,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                51
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                33,
+                34
+            ],
+            "triggers": [
+                "ENTER_REGION_33",
+                "ENTER_REGION_34",
+                "PLATFORM_REACH_POINT_35",
+                "TIMER_EVENT_36",
+                "TIMER_EVENT_37"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_33",
+            "condition": "condition_EVENT_ENTER_REGION_33",
+            "config_id": 1000033,
+            "event": 4,
+            "name": "ENTER_REGION_33",
+            "source": "1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_34",
+            "condition": "condition_EVENT_ENTER_REGION_34",
+            "config_id": 1000034,
+            "event": 4,
+            "name": "ENTER_REGION_34",
+            "source": "1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_PLATFORM_REACH_POINT_35",
+            "condition": "condition_EVENT_PLATFORM_REACH_POINT_35",
+            "config_id": 1000035,
+            "event": 26,
+            "name": "PLATFORM_REACH_POINT_35",
+            "source": "51",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_36",
+            "condition": "",
+            "config_id": 1000036,
+            "event": 15,
+            "name": "TIMER_EVENT_36",
+            "source": "wait_down",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_37",
+            "condition": "",
+            "config_id": 1000037,
+            "event": 15,
+            "name": "TIMER_EVENT_37",
+            "source": "wait_up",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "route_flag",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
+L0_1 = {}
+L0_1.MainID = 20000
+L0_1.ActorAlias = "20000"
+L1_1 = {}
+L1_1.q2000001 = 2000001
+L1_1.q2000002 = 2000002
+L1_1.q2000003 = 2000003
+L1_1.q2000004 = 2000004
+L1_1.q2000005 = 2000005
+L1_1.q2000006 = 2000006
+L1_1.q2000007 = 2000007
+L1_1.q2000008 = 2000008
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L2_1 = sceneData
+L3_1 = L2_1
+L2_1 = L2_1.GetDummyPoint
+L4_1 = 3
+L5_1 = "DUMMY_POS 3102001"
+L2_1 = L2_1(L3_1, L4_1, L5_1)
+L2_1 = L2_1.pos
+L1_1.BornPos = L2_1
+L2_1 = sceneData
+L3_1 = L2_1
+L2_1 = L2_1.GetDummyPoint
+L4_1 = 3
+L5_1 = "DUMMY_POS 3102001"
+L2_1 = L2_1(L3_1, L4_1, L5_1)
+L2_1 = L2_1.rot
+L1_1.BornDir = L2_1
+L0_1.PosData = L1_1
+return L0_1

@@ -1,0 +1,140 @@
+{
+    "MovePlatform": "WARN: Lua function omitted from the dump",
+    "UpdateGamePlayState": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_3006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_3001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_3005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_3007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_3006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_3007": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 3002,
+            "gadget_id": 70360309,
+            "level": 36,
+            "pos": {
+                "x": 1347.964,
+                "y": 192.589,
+                "z": 846.768
+            },
+            "rot": {
+                "x": 0,
+                "y": 90.248,
+                "z": 2.152
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 3003,
+            "gadget_id": 70290170,
+            "is_use_point_array": true,
+            "level": 36,
+            "pos": {
+                "x": 1323.973,
+                "y": 192.537,
+                "z": 845.956
+            },
+            "rot": {
+                "x": 0,
+                "y": 90,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 3004,
+            "gadget_id": 70360314,
+            "level": 36,
+            "pos": {
+                "x": 1349.261,
+                "y": 191.999,
+                "z": 846.102
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_3001",
+                "VARIABLE_CHANGE_3007"
+            ]
+        },
+        {
+            "gadgets": [
+                3002,
+                3003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "TIME_AXIS_PASS_3005",
+                "GADGET_STATE_CHANGE_3006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_LOAD_3001",
+            "condition": "",
+            "config_id": 1003001,
+            "event": 29,
+            "name": "GROUP_LOAD_3001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_3005",
+            "condition": "",
+            "config_id": 1003005,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_3005",
+            "source": "initialSuite",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_3006",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_3006",
+            "config_id": 1003006,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_3006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_3007",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_3007",
+            "config_id": 1003007,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_3007",
+            "source": "gameplayState",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "gameplayState",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

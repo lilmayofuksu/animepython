@@ -1,0 +1,170 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_2007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_2009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_2008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_2007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_2008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 2001,
+            "gadget_id": 70310012,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2585.3,
+                "y": 218.5,
+                "z": -1266.8
+            },
+            "rot": {
+                "x": 351,
+                "y": 190.7,
+                "z": 351.3
+            }
+        },
+        {
+            "config_id": 2002,
+            "gadget_id": 70310011,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2587.2,
+                "y": 219.6,
+                "z": -1269.6
+            },
+            "rot": {
+                "x": 16.4,
+                "y": 274.8,
+                "z": 350.7
+            }
+        },
+        {
+            "config_id": 2003,
+            "gadget_id": 70310011,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2568.8,
+                "y": 215.4,
+                "z": -1261
+            },
+            "rot": {
+                "x": 13.8,
+                "y": 317.7,
+                "z": 6
+            }
+        },
+        {
+            "config_id": 2004,
+            "gadget_id": 70310011,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2581.6,
+                "y": 211.8,
+                "z": -1250.8
+            },
+            "rot": {
+                "x": 356.3,
+                "y": 258.6,
+                "z": 342.2
+            }
+        },
+        {
+            "config_id": 2005,
+            "gadget_id": 70310011,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2605.3,
+                "y": 216.4,
+                "z": -1267.5
+            },
+            "rot": {
+                "x": 350.2,
+                "y": 15.3,
+                "z": 345.7
+            }
+        },
+        {
+            "config_id": 2006,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u8499\u5fb7",
+            "gadget_id": 70211112,
+            "isOneoff": true,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2585.3,
+                "y": 219,
+                "z": -1266.8
+            },
+            "rot": {
+                "x": 0,
+                "y": 270.4,
+                "z": 0
+            },
+            "state": 101,
+            "type": 1
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "npcs": [],
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                2001,
+                2002,
+                2003,
+                2004,
+                2005,
+                2006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_2007",
+                "VARIABLE_CHANGE_2008",
+                "GROUP_LOAD_2009"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_2007",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_2007",
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_2007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_2008",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_2008",
+            "event": 3,
+            "name": "VARIABLE_CHANGE_2008",
+            "source": "State_Flag",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_2009",
+            "condition": "",
+            "event": 29,
+            "name": "GROUP_LOAD_2009",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "name": "State_Flag",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

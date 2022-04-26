@@ -1,0 +1,116 @@
+{
+    "action_EVENT_VARIABLE_CHANGE_110002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_110002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 17,
+            "config_id": 110001,
+            "gadget_id": 70350292,
+            "level": 30,
+            "pos": {
+                "x": -4072.279,
+                "y": 218.283,
+                "z": -870.288
+            },
+            "rot": {
+                "x": 0,
+                "y": 160.431,
+                "z": 0
+            },
+            "route_id": 321000060
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "io_type": 1,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suite_disk": [
+        {
+            "gadgets": [
+                {
+                    "config_id": 110001,
+                    "platform_info": {
+                        "is_started": true,
+                        "move_type": 1,
+                        "point_id": 0,
+                        "route_id": 321000060,
+                        "route_index": 0
+                    },
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_110002"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "Success",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "Success",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                110001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_110002"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_110002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_110002",
+            "config_id": 1110002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_110002",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Success",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

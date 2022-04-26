@@ -1,0 +1,148 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_132006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_GADGET_DIE_132008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_132004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_132005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_132006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_132008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_132004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_132005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 132001,
+            "gadget_id": 70350263,
+            "level": 1,
+            "pos": {
+                "x": 2579.558,
+                "y": 255.046,
+                "z": -1645.929
+            },
+            "rot": {
+                "x": 0,
+                "y": 39.91,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 132002,
+            "gadget_id": 70350220,
+            "level": 1,
+            "pos": {
+                "x": 2584.611,
+                "y": 253.114,
+                "z": -1639.766
+            },
+            "rot": {
+                "x": 0,
+                "y": 216.797,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 132003,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u8499\u5fb7",
+            "gadget_id": 70211112,
+            "isOneoff": true,
+            "level": 6,
+            "persistent": true,
+            "pos": {
+                "x": 2584.793,
+                "y": 254.849,
+                "z": -1648.186
+            },
+            "rot": {
+                "x": 0,
+                "y": 192.642,
+                "z": 0
+            },
+            "state": 101
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "ability_group_list": [
+                "ActivityAbility_LudiHarpastum_Racket",
+                "ActivityAbility_LudiHarpastum_Hit_02"
+            ],
+            "config_id": 132007,
+            "pos": {
+                "x": 2584.611,
+                "y": 253.114,
+                "z": -1639.766
+            },
+            "radius": 3,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                132001,
+                132002,
+                132003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                132007
+            ],
+            "triggers": [
+                "GADGET_STATE_CHANGE_132004",
+                "GADGET_STATE_CHANGE_132005",
+                "ANY_GADGET_DIE_132006",
+                "ANY_GADGET_DIE_132008"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_132004",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_132004",
+            "config_id": 1132004,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_132004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_132005",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_132005",
+            "config_id": 1132005,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_132005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_132006",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_132006",
+            "config_id": 1132006,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_132006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_132008",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_132008",
+            "config_id": 1132008,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_132008",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

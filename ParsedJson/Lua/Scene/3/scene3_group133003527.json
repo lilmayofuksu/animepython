@@ -1,0 +1,153 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_527006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_527005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_527006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_527005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 1,
+            "config_id": 527004,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u8499\u5fb7",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211112,
+            "isOneoff": true,
+            "level": 6,
+            "persistent": true,
+            "pos": {
+                "x": 2551.254,
+                "y": 322.941,
+                "z": -1658.493
+            },
+            "rot": {
+                "x": 0,
+                "y": 301.928,
+                "z": 0
+            },
+            "state": 103
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 1,
+            "config_id": 527007,
+            "drop_tag": "\u8fdc\u7a0b\u4e18\u4e18\u4eba",
+            "level": 11,
+            "monster_id": 21010501,
+            "pos": {
+                "x": 2518.267,
+                "y": 311.457,
+                "z": -1631.961
+            },
+            "rot": {
+                "x": 0,
+                "y": 78.862,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 1,
+            "config_id": 527008,
+            "drop_tag": "\u8fdc\u7a0b\u4e18\u4e18\u4eba",
+            "level": 11,
+            "monster_id": 21010501,
+            "pos": {
+                "x": 2523.261,
+                "y": 311.874,
+                "z": -1626.618
+            },
+            "rot": {
+                "x": 0,
+                "y": 75.05,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 1,
+            "config_id": 527009,
+            "disableWander": true,
+            "drop_tag": "\u4e18\u4e18\u4eba",
+            "level": 11,
+            "monster_id": 21010701,
+            "pos": {
+                "x": 2522.841,
+                "y": 312.319,
+                "z": -1630.661
+            },
+            "rot": {
+                "x": 0,
+                "y": 98.421,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 1,
+            "config_id": 527005,
+            "pos": {
+                "x": 2546.526,
+                "y": 321.181,
+                "z": -1655.384
+            },
+            "radius": 8.8,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                527004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                527005
+            ],
+            "triggers": [
+                "ENTER_REGION_527005",
+                "ANY_MONSTER_DIE_527006"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                527007,
+                527008,
+                527009
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_527006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_527005",
+            "condition": "condition_EVENT_ENTER_REGION_527005",
+            "config_id": 1527005,
+            "event": 4,
+            "name": "ENTER_REGION_527005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_527006",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_527006",
+            "config_id": 1527006,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_527006",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

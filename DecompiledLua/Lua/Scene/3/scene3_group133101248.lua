@@ -1,0 +1,924 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1
+L0_1 = {}
+L0_1.group_id = 133101248
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 248009
+L2_1.monster_id = 21010701
+L3_1 = {}
+L3_1.x = 1233.409
+L3_1.y = 263.849
+L3_1.z = 1318.336
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 4.956
+L3_1.y = 169.161
+L3_1.z = 3.011
+L2_1.rot = L3_1
+L2_1.level = 24
+L2_1.drop_id = 1000100
+L2_1.area_id = 6
+L3_1 = {}
+L3_1.config_id = 248021
+L3_1.monster_id = 20010201
+L4_1 = {}
+L4_1.x = 1212.208
+L4_1.y = 261.282
+L4_1.z = 1300.63
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 355.877
+L4_1.y = 60.221
+L4_1.z = 354.376
+L3_1.rot = L4_1
+L3_1.level = 24
+L3_1.drop_id = 1000100
+L3_1.pose_id = 201
+L3_1.area_id = 6
+L4_1 = {}
+L4_1.config_id = 248023
+L4_1.monster_id = 20011501
+L5_1 = {}
+L5_1.x = 1214.677
+L5_1.y = 268.526
+L5_1.z = 1299.889
+L4_1.pos = L5_1
+L5_1 = {}
+L5_1.x = 0.0
+L5_1.y = 0.0
+L5_1.z = 0.0
+L4_1.rot = L5_1
+L4_1.level = 24
+L4_1.drop_id = 1000100
+L4_1.area_id = 6
+L5_1 = {}
+L5_1.config_id = 248024
+L5_1.monster_id = 20011501
+L6_1 = {}
+L6_1.x = 1209.578
+L6_1.y = 265.899
+L6_1.z = 1299.193
+L5_1.pos = L6_1
+L6_1 = {}
+L6_1.x = 0.0
+L6_1.y = 0.0
+L6_1.z = 0.0
+L5_1.rot = L6_1
+L5_1.level = 24
+L5_1.drop_id = 1000100
+L5_1.area_id = 6
+L6_1 = {}
+L6_1.config_id = 248025
+L6_1.monster_id = 20011501
+L7_1 = {}
+L7_1.x = 1212.692
+L7_1.y = 266.463
+L7_1.z = 1303.916
+L6_1.pos = L7_1
+L7_1 = {}
+L7_1.x = 0.0
+L7_1.y = 0.0
+L7_1.z = 0.0
+L6_1.rot = L7_1
+L6_1.level = 24
+L6_1.drop_id = 1000100
+L6_1.area_id = 6
+L7_1 = {}
+L7_1.config_id = 248026
+L7_1.monster_id = 21010101
+L8_1 = {}
+L8_1.x = 1211.819
+L8_1.y = 261.281
+L8_1.z = 1301.256
+L7_1.pos = L8_1
+L8_1 = {}
+L8_1.x = 0.0
+L8_1.y = 136.285
+L8_1.z = 0.0
+L7_1.rot = L8_1
+L7_1.level = 24
+L7_1.drop_id = 1000100
+L7_1.pose_id = 9016
+L7_1.area_id = 6
+L8_1 = {}
+L8_1.config_id = 248027
+L8_1.monster_id = 21010701
+L9_1 = {}
+L9_1.x = 1188.999
+L9_1.y = 259.906
+L9_1.z = 1274.05
+L8_1.pos = L9_1
+L9_1 = {}
+L9_1.x = 1.812
+L9_1.y = 63.191
+L9_1.z = 0.923
+L8_1.rot = L9_1
+L8_1.level = 24
+L8_1.drop_id = 1000100
+L8_1.area_id = 6
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+L1_1[6] = L7_1
+L1_1[7] = L8_1
+monsters = L1_1
+L1_1 = {}
+npcs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 248001
+L2_1.gadget_id = 70211123
+L3_1 = {}
+L3_1.x = 1214.378
+L3_1.y = 269.776
+L3_1.z = 1292.633
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 1.799
+L3_1.y = 358.792
+L3_1.z = 359.077
+L2_1.rot = L3_1
+L2_1.level = 21
+L2_1.drop_tag = "\232\167\163\232\176\156\233\171\152\231\186\167\231\146\131\230\156\136"
+L2_1.isOneoff = true
+L2_1.persistent = true
+L2_1.area_id = 6
+L3_1 = {}
+L3_1.config_id = 248002
+L3_1.gadget_id = 70220061
+L4_1 = {}
+L4_1.x = 1212.98
+L4_1.y = 264.535
+L4_1.z = 1308.569
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 4.436
+L4_1.y = 132.916
+L4_1.z = 354.927
+L3_1.rot = L4_1
+L3_1.level = 24
+L3_1.area_id = 6
+L4_1 = {}
+L4_1.config_id = 248003
+L4_1.gadget_id = 70500000
+L5_1 = {}
+L5_1.x = 1210.698
+L5_1.y = 263.408
+L5_1.z = 1308.938
+L4_1.pos = L5_1
+L5_1 = {}
+L5_1.x = 0.0
+L5_1.y = 0.0
+L5_1.z = 0.0
+L4_1.rot = L5_1
+L4_1.level = 1
+L4_1.point_type = 2002
+L4_1.area_id = 6
+L5_1 = {}
+L5_1.config_id = 248004
+L5_1.gadget_id = 70500000
+L6_1 = {}
+L6_1.x = 1201.001
+L6_1.y = 262.017
+L6_1.z = 1300.936
+L5_1.pos = L6_1
+L6_1 = {}
+L6_1.x = 0.0
+L6_1.y = 329.688
+L6_1.z = 0.0
+L5_1.rot = L6_1
+L5_1.level = 1
+L5_1.point_type = 2002
+L5_1.area_id = 6
+L6_1 = {}
+L6_1.config_id = 248005
+L6_1.gadget_id = 70500000
+L7_1 = {}
+L7_1.x = 1201.39
+L7_1.y = 261.972
+L7_1.z = 1300.746
+L6_1.pos = L7_1
+L7_1 = {}
+L7_1.x = 0.0
+L7_1.y = 250.189
+L7_1.z = 0.0
+L6_1.rot = L7_1
+L6_1.level = 1
+L6_1.point_type = 2002
+L6_1.area_id = 6
+L7_1 = {}
+L7_1.config_id = 248006
+L7_1.gadget_id = 70500000
+L8_1 = {}
+L8_1.x = 1210.863
+L8_1.y = 262.517
+L8_1.z = 1310.378
+L7_1.pos = L8_1
+L8_1 = {}
+L8_1.x = 0.0
+L8_1.y = 250.189
+L8_1.z = 0.0
+L7_1.rot = L8_1
+L7_1.level = 1
+L7_1.point_type = 2002
+L7_1.area_id = 6
+L8_1 = {}
+L8_1.config_id = 248007
+L8_1.gadget_id = 70500000
+L9_1 = {}
+L9_1.x = 1219.045
+L9_1.y = 261.751
+L9_1.z = 1296.035
+L8_1.pos = L9_1
+L9_1 = {}
+L9_1.x = 10.01
+L9_1.y = 276.524
+L9_1.z = 340.65
+L8_1.rot = L9_1
+L8_1.level = 1
+L8_1.point_type = 2002
+L8_1.area_id = 6
+L9_1 = {}
+L9_1.config_id = 248008
+L9_1.gadget_id = 70220061
+L10_1 = {}
+L10_1.x = 1202.778
+L10_1.y = 285.271
+L10_1.z = 1303.644
+L9_1.pos = L10_1
+L10_1 = {}
+L10_1.x = 345.813
+L10_1.y = 55.729
+L10_1.z = 4.22
+L9_1.rot = L10_1
+L9_1.level = 24
+L9_1.area_id = 6
+L10_1 = {}
+L10_1.config_id = 248010
+L10_1.gadget_id = 70220061
+L11_1 = {}
+L11_1.x = 1217.746
+L11_1.y = 264.161
+L11_1.z = 1312.837
+L10_1.pos = L11_1
+L11_1 = {}
+L11_1.x = 28.8
+L11_1.y = 28.71
+L11_1.z = 22.988
+L10_1.rot = L11_1
+L10_1.level = 24
+L10_1.area_id = 6
+L11_1 = {}
+L11_1.config_id = 248011
+L11_1.gadget_id = 70220061
+L12_1 = {}
+L12_1.x = 1195.819
+L12_1.y = 264.44
+L12_1.z = 1270.06
+L11_1.pos = L12_1
+L12_1 = {}
+L12_1.x = 353.783
+L12_1.y = 253.14
+L12_1.z = 332.181
+L11_1.rot = L12_1
+L11_1.level = 24
+L11_1.area_id = 6
+L12_1 = {}
+L12_1.config_id = 248012
+L12_1.gadget_id = 70220061
+L13_1 = {}
+L13_1.x = 1216.787
+L13_1.y = 278.174
+L13_1.z = 1312.125
+L12_1.pos = L13_1
+L13_1 = {}
+L13_1.x = 45.4
+L13_1.y = 281.871
+L13_1.z = 177.955
+L12_1.rot = L13_1
+L12_1.level = 24
+L12_1.area_id = 6
+L13_1 = {}
+L13_1.config_id = 248013
+L13_1.gadget_id = 70220061
+L14_1 = {}
+L14_1.x = 1219.545
+L14_1.y = 266.857
+L14_1.z = 1311.141
+L13_1.pos = L14_1
+L14_1 = {}
+L14_1.x = 15.257
+L14_1.y = 239.169
+L14_1.z = 43.104
+L13_1.rot = L14_1
+L13_1.level = 24
+L13_1.area_id = 6
+L14_1 = {}
+L14_1.config_id = 248014
+L14_1.gadget_id = 70220061
+L15_1 = {}
+L15_1.x = 1197.722
+L15_1.y = 262.982
+L15_1.z = 1288.426
+L14_1.pos = L15_1
+L15_1 = {}
+L15_1.x = 37.72
+L15_1.y = 211.531
+L15_1.z = 341.37
+L14_1.rot = L15_1
+L14_1.level = 24
+L14_1.area_id = 6
+L15_1 = {}
+L15_1.config_id = 248015
+L15_1.gadget_id = 70500000
+L16_1 = {}
+L16_1.x = 1219.374
+L16_1.y = 261.788
+L16_1.z = 1295.58
+L15_1.pos = L16_1
+L16_1 = {}
+L16_1.x = 338.333
+L16_1.y = 157.023
+L16_1.z = 1.17
+L15_1.rot = L16_1
+L15_1.level = 1
+L15_1.point_type = 2002
+L15_1.area_id = 6
+L16_1 = {}
+L16_1.config_id = 248016
+L16_1.gadget_id = 70220061
+L17_1 = {}
+L17_1.x = 1219.522
+L17_1.y = 264.488
+L17_1.z = 1299.526
+L16_1.pos = L17_1
+L17_1 = {}
+L17_1.x = 351.725
+L17_1.y = 328.031
+L17_1.z = 1.858
+L16_1.rot = L17_1
+L16_1.level = 24
+L16_1.area_id = 6
+L17_1 = {}
+L17_1.config_id = 248018
+L17_1.gadget_id = 70220061
+L18_1 = {}
+L18_1.x = 1233.26
+L18_1.y = 267.895
+L18_1.z = 1315.457
+L17_1.pos = L18_1
+L18_1 = {}
+L18_1.x = 2.646
+L18_1.y = 352.792
+L18_1.z = 328.905
+L17_1.rot = L18_1
+L17_1.level = 24
+L17_1.area_id = 6
+L18_1 = {}
+L18_1.config_id = 248019
+L18_1.gadget_id = 70220061
+L19_1 = {}
+L19_1.x = 1217.828
+L19_1.y = 270.18
+L19_1.z = 1297.388
+L18_1.pos = L19_1
+L19_1 = {}
+L19_1.x = 14.006
+L19_1.y = 353.193
+L19_1.z = 341.696
+L18_1.rot = L19_1
+L18_1.level = 24
+L18_1.area_id = 6
+L19_1 = {}
+L19_1.config_id = 248020
+L19_1.gadget_id = 70220061
+L20_1 = {}
+L20_1.x = 1203.998
+L20_1.y = 264.333
+L20_1.z = 1300.768
+L19_1.pos = L20_1
+L20_1 = {}
+L20_1.x = 17.528
+L20_1.y = 127.2
+L20_1.z = 354.313
+L19_1.rot = L20_1
+L19_1.level = 24
+L19_1.area_id = 6
+L20_1 = {}
+L20_1.config_id = 248028
+L20_1.gadget_id = 70220061
+L21_1 = {}
+L21_1.x = 1198.445
+L21_1.y = 264.848
+L21_1.z = 1288.179
+L20_1.pos = L21_1
+L21_1 = {}
+L21_1.x = 12.7
+L21_1.y = 237.491
+L21_1.z = 28.614
+L20_1.rot = L21_1
+L20_1.level = 24
+L20_1.area_id = 6
+L21_1 = {}
+L21_1.config_id = 248031
+L21_1.gadget_id = 70220061
+L22_1 = {}
+L22_1.x = 1211.893
+L22_1.y = 270.384
+L22_1.z = 1294.931
+L21_1.pos = L22_1
+L22_1 = {}
+L22_1.x = 17.024
+L22_1.y = 341.761
+L22_1.z = 358.489
+L21_1.rot = L22_1
+L21_1.level = 24
+L21_1.area_id = 6
+L22_1 = {}
+L22_1.config_id = 248034
+L22_1.gadget_id = 70310002
+L23_1 = {}
+L23_1.x = 1212.293
+L23_1.y = 270.144
+L23_1.z = 1291.081
+L22_1.pos = L23_1
+L23_1 = {}
+L23_1.x = 0.0
+L23_1.y = 17.967
+L23_1.z = 0.0
+L22_1.rot = L23_1
+L22_1.level = 1
+L23_1 = GadgetState
+L23_1 = L23_1.GearStart
+L22_1.state = L23_1
+L22_1.area_id = 6
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+L1_1[6] = L7_1
+L1_1[7] = L8_1
+L1_1[8] = L9_1
+L1_1[9] = L10_1
+L1_1[10] = L11_1
+L1_1[11] = L12_1
+L1_1[12] = L13_1
+L1_1[13] = L14_1
+L1_1[14] = L15_1
+L1_1[15] = L16_1
+L1_1[16] = L17_1
+L1_1[17] = L18_1
+L1_1[18] = L19_1
+L1_1[19] = L20_1
+L1_1[20] = L21_1
+L1_1[21] = L22_1
+gadgets = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 248030
+L3_1 = RegionShape
+L3_1 = L3_1.SPHERE
+L2_1.shape = L3_1
+L2_1.radius = 20
+L3_1 = {}
+L3_1.x = 1208.973
+L3_1.y = 268.123
+L3_1.z = 1297.197
+L2_1.pos = L3_1
+L2_1.area_id = 6
+L3_1 = {}
+L3_1.config_id = 248033
+L4_1 = RegionShape
+L4_1 = L4_1.SPHERE
+L3_1.shape = L4_1
+L3_1.radius = 20
+L4_1 = {}
+L4_1.x = 1208.973
+L4_1.y = 268.123
+L4_1.z = 1297.197
+L3_1.pos = L4_1
+L3_1.area_id = 6
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+regions = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 1248017
+L2_1.name = "GROUP_LOAD_248017"
+L3_1 = EventType
+L3_1 = L3_1.EVENT_GROUP_LOAD
+L2_1.event = L3_1
+L2_1.source = ""
+L2_1.condition = "condition_EVENT_GROUP_LOAD_248017"
+L2_1.action = "action_EVENT_GROUP_LOAD_248017"
+L2_1.trigger_count = 0
+L3_1 = {}
+L3_1.config_id = 1248029
+L3_1.name = "SPECIFIC_MONSTER_HP_CHANGE_248029"
+L4_1 = EventType
+L4_1 = L4_1.EVENT_SPECIFIC_MONSTER_HP_CHANGE
+L3_1.event = L4_1
+L3_1.source = "248021"
+L3_1.condition = "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_248029"
+L3_1.action = "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_248029"
+L4_1 = {}
+L4_1.config_id = 1248030
+L4_1.name = "ENTER_REGION_248030"
+L5_1 = EventType
+L5_1 = L5_1.EVENT_ENTER_REGION
+L4_1.event = L5_1
+L4_1.source = ""
+L4_1.condition = "condition_EVENT_ENTER_REGION_248030"
+L4_1.action = "action_EVENT_ENTER_REGION_248030"
+L4_1.trigger_count = 0
+L5_1 = {}
+L5_1.config_id = 1248032
+L5_1.name = "GADGET_STATE_CHANGE_248032"
+L6_1 = EventType
+L6_1 = L6_1.EVENT_GADGET_STATE_CHANGE
+L5_1.event = L6_1
+L5_1.source = ""
+L6_1 = "condition_EVENT_GADGET_STATE_CHANGE_248032"
+L5_1.condition = L6_1
+L6_1 = "action_EVENT_GADGET_STATE_CHANGE_248032"
+L5_1.action = L6_1
+L5_1.trigger_count = 0
+L6_1 = {}
+L7_1 = 1248033
+L6_1.config_id = L7_1
+L7_1 = "ENTER_REGION_248033"
+L6_1.name = L7_1
+L7_1 = EventType
+L7_1 = L7_1.EVENT_ENTER_REGION
+L6_1.event = L7_1
+L6_1.source = ""
+L7_1 = "condition_EVENT_ENTER_REGION_248033"
+L6_1.condition = L7_1
+L7_1 = "action_EVENT_ENTER_REGION_248033"
+L6_1.action = L7_1
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+triggers = L1_1
+L1_1 = "variables"
+L2_1 = {}
+L3_1 = {}
+L4_1 = "configId"
+L3_1[L4_1] = 1
+L4_1 = "fin"
+L3_1.name = L4_1
+L4_1 = "value"
+L3_1[L4_1] = 0
+L4_1 = "no_refresh"
+L3_1[L4_1] = true
+L2_1[1] = L3_1
+_ENV[L1_1] = L2_1
+L1_1 = "init_config"
+L2_1 = {}
+L3_1 = "suite"
+L2_1[L3_1] = 1
+L3_1 = "end_suite"
+L2_1[L3_1] = 0
+L3_1 = "rand_suite"
+L4_1 = false
+L2_1[L3_1] = L4_1
+_ENV[L1_1] = L2_1
+L1_1 = "suites"
+L2_1 = {}
+L3_1 = {}
+L4_1 = {}
+L5_1 = 248009
+L6_1 = 248021
+L7_1 = 248026
+L8_1 = 248027
+L4_1[1] = L5_1
+L4_1[2] = L6_1
+L4_1[3] = L7_1
+L4_1[4] = L8_1
+L3_1.monsters = L4_1
+L4_1 = {}
+L5_1 = 248001
+L6_1 = 248002
+L7_1 = 248003
+L8_1 = 248004
+L9_1 = 248005
+L10_1 = 248006
+L11_1 = 248007
+L12_1 = 248008
+L13_1 = 248010
+L14_1 = 248011
+L15_1 = 248012
+L16_1 = 248013
+L17_1 = 248014
+L18_1 = 248015
+L19_1 = 248016
+L20_1 = 248018
+L21_1 = 248019
+L22_1 = 248020
+L23_1 = 248028
+L24_1 = 248031
+L25_1 = 248034
+L4_1[1] = L5_1
+L4_1[2] = L6_1
+L4_1[3] = L7_1
+L4_1[4] = L8_1
+L4_1[5] = L9_1
+L4_1[6] = L10_1
+L4_1[7] = L11_1
+L4_1[8] = L12_1
+L4_1[9] = L13_1
+L4_1[10] = L14_1
+L4_1[11] = L15_1
+L4_1[12] = L16_1
+L4_1[13] = L17_1
+L4_1[14] = L18_1
+L4_1[15] = L19_1
+L4_1[16] = L20_1
+L4_1[17] = L21_1
+L4_1[18] = L22_1
+L4_1[19] = L23_1
+L4_1[20] = L24_1
+L4_1[21] = L25_1
+L3_1.gadgets = L4_1
+L4_1 = {}
+L5_1 = 248030
+L6_1 = 248033
+L4_1[1] = L5_1
+L4_1[2] = L6_1
+L3_1.regions = L4_1
+L4_1 = {}
+L5_1 = "GROUP_LOAD_248017"
+L6_1 = "SPECIFIC_MONSTER_HP_CHANGE_248029"
+L7_1 = "ENTER_REGION_248030"
+L8_1 = "GADGET_STATE_CHANGE_248032"
+L9_1 = "ENTER_REGION_248033"
+L4_1[1] = L5_1
+L4_1[2] = L6_1
+L4_1[3] = L7_1
+L4_1[4] = L8_1
+L4_1[5] = L9_1
+L3_1.triggers = L4_1
+L4_1 = "rand_weight"
+L5_1 = 100
+L3_1[L4_1] = L5_1
+L2_1[1] = L3_1
+_ENV[L1_1] = L2_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetGroupVariableValue
+  L3_2 = A0_2
+  L4_2 = "fin"
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 ~= 1 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_GROUP_LOAD_248017 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.AddQuestProgress
+  L3_2 = A0_2
+  L4_2 = "finish_133101248"
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : add_quest_progress"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_GROUP_LOAD_248017 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = A1_2.type
+  L3_2 = EventType
+  L3_2 = L3_2.EVENT_SPECIFIC_MONSTER_HP_CHANGE
+  if L2_2 == L3_2 then
+    L2_2 = A1_2.param3
+    if not (50 < L2_2) then
+      goto lbl_11
+    end
+  end
+  L2_2 = false
+  do return L2_2 end
+  ::lbl_11::
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_248029 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.CreateMonster
+  L3_2 = A0_2
+  L4_2 = {}
+  L4_2.config_id = 248023
+  L4_2.delay_time = 0
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : create_monster"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.CreateMonster
+  L3_2 = A0_2
+  L4_2 = {}
+  L4_2.config_id = 248024
+  L4_2.delay_time = 0
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : create_monster"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.CreateMonster
+  L3_2 = A0_2
+  L4_2 = {}
+  L4_2.config_id = 248025
+  L4_2.delay_time = 0
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : create_monster"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_248029 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = A1_2.param1
+  if L2_2 ~= 248030 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetRegionEntityCount
+  L3_2 = A0_2
+  L4_2 = {}
+  L5_2 = A1_2.source_eid
+  L4_2.region_eid = L5_2
+  L5_2 = EntityType
+  L5_2 = L5_2.AVATAR
+  L4_2.entity_type = L5_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 < 1 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_ENTER_REGION_248030 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.AddQuestProgress
+  L3_2 = A0_2
+  L4_2 = "finish_133101248_zhiyin"
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : add_quest_progress"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_ENTER_REGION_248030 = L1_1
+L1_1 = "condition_EVENT_GADGET_STATE_CHANGE_248032"
+function L2_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = A1_2.param2
+  if 248001 == L2_2 then
+    L2_2 = GadgetState
+    L2_2 = L2_2.ChestOpened
+    L3_2 = A1_2.param1
+    if L2_2 == L3_2 then
+      goto lbl_11
+    end
+  end
+  L2_2 = false
+  do return L2_2 end
+  ::lbl_11::
+  L2_2 = true
+  return L2_2
+end
+_ENV[L1_1] = L2_1
+L1_1 = "action_EVENT_GADGET_STATE_CHANGE_248032"
+function L2_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.AddQuestProgress
+  L3_2 = A0_2
+  L4_2 = "finish_133101248"
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : add_quest_progress"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.SetGroupVariableValue
+  L3_2 = A0_2
+  L4_2 = "fin"
+  L5_2 = 1
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : set_groupVariable"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+_ENV[L1_1] = L2_1
+L1_1 = "condition_EVENT_ENTER_REGION_248033"
+function L2_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = A1_2.param1
+  if L2_2 ~= 248033 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetRegionEntityCount
+  L3_2 = A0_2
+  L4_2 = {}
+  L5_2 = A1_2.source_eid
+  L4_2.region_eid = L5_2
+  L5_2 = EntityType
+  L5_2 = L5_2.AVATAR
+  L4_2.entity_type = L5_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 < 1 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = true
+  return L2_2
+end
+_ENV[L1_1] = L2_1
+L1_1 = "action_EVENT_ENTER_REGION_248033"
+function L2_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.ShowReminder
+  L3_2 = A0_2
+  L4_2 = 1110188
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+_ENV[L1_1] = L2_1

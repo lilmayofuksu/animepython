@@ -1,0 +1,155 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_92006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_92002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_92003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_92006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_92002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_92003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 92001,
+            "gadget_id": 70360002,
+            "level": 1,
+            "pos": {
+                "x": 2659.859,
+                "y": 266.031,
+                "z": -1345.368
+            },
+            "rot": {
+                "x": 0,
+                "y": 76.724,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 92004,
+            "gadget_id": 70310017,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2666.774,
+                "y": 265.354,
+                "z": -1345.739
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 201
+        },
+        {
+            "config_id": 92005,
+            "gadget_id": 70310021,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2666.774,
+                "y": 265.354,
+                "z": -1345.739
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 201
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 92007,
+            "drop_tag": "\u4e18\u4e18\u4eba",
+            "level": 1,
+            "monster_id": 21010201,
+            "pos": {
+                "x": 2668.073,
+                "y": 265.26,
+                "z": -1349.254
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 92008,
+            "drop_tag": "\u4e18\u4e18\u4eba",
+            "level": 1,
+            "monster_id": 21010201,
+            "pos": {
+                "x": 2664.678,
+                "y": 265.604,
+                "z": -1348.111
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                92001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_92002",
+                "SELECT_OPTION_92003",
+                "ANY_GADGET_DIE_92006"
+            ]
+        },
+        {
+            "gadgets": [
+                92004,
+                92005
+            ],
+            "monsters": [
+                92007,
+                92008
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_CREATE_92002",
+            "condition": "condition_EVENT_GADGET_CREATE_92002",
+            "config_id": 1092002,
+            "event": 6,
+            "name": "GADGET_CREATE_92002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_92003",
+            "condition": "condition_EVENT_SELECT_OPTION_92003",
+            "config_id": 1092003,
+            "event": 9,
+            "name": "SELECT_OPTION_92003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_92006",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_92006",
+            "config_id": 1092006,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_92006",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

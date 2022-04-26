@@ -1,0 +1,178 @@
+{
+    "action_EVENT_GROUP_LOAD_327": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_28": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_29": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_30": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_337": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_91": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_89": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_89": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 4,
+            "config_id": 192,
+            "gadget_id": 70800007,
+            "level": 23,
+            "persistent": true,
+            "pos": {
+                "x": 2652.379,
+                "y": 300.676,
+                "z": 132.439
+            },
+            "rot": {
+                "x": 0,
+                "y": 289.112,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 4,
+            "config_id": 193,
+            "gadget_id": 70800007,
+            "level": 23,
+            "persistent": true,
+            "pos": {
+                "x": 2652.547,
+                "y": 282.325,
+                "z": 132.39
+            },
+            "rot": {
+                "x": 0,
+                "y": 278.552,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 4,
+            "config_id": 194,
+            "gadget_id": 70800007,
+            "level": 23,
+            "persistent": true,
+            "pos": {
+                "x": 2652.395,
+                "y": 264.362,
+                "z": 132.331
+            },
+            "rot": {
+                "x": 0,
+                "y": 154.891,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 4,
+            "config_id": 599,
+            "gadget_id": 70800011,
+            "level": 23,
+            "persistent": true,
+            "pos": {
+                "x": 2652.357,
+                "y": 261.679,
+                "z": 132.628
+            },
+            "rot": {
+                "x": 0,
+                "y": 191.698,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                192,
+                193,
+                194
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_28",
+                "QUEST_FINISH_29",
+                "QUEST_FINISH_30",
+                "VARIABLE_CHANGE_89",
+                "TIMER_EVENT_91",
+                "GROUP_LOAD_327",
+                "TIMER_EVENT_337"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_28",
+            "condition": "",
+            "config_id": 1000028,
+            "event": 21,
+            "name": "QUEST_FINISH_28",
+            "source": "39005"
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_29",
+            "condition": "",
+            "config_id": 1000029,
+            "event": 21,
+            "name": "QUEST_FINISH_29",
+            "source": "39006"
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_30",
+            "condition": "",
+            "config_id": 1000030,
+            "event": 21,
+            "name": "QUEST_FINISH_30",
+            "source": "39007"
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_89",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_89",
+            "config_id": 1000089,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_89",
+            "source": "dvalin_progress",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_91",
+            "condition": "",
+            "config_id": 1000091,
+            "event": 15,
+            "name": "TIMER_EVENT_91",
+            "source": "delay_7"
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_327",
+            "condition": "",
+            "config_id": 1000327,
+            "event": 29,
+            "name": "GROUP_LOAD_327",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_337",
+            "condition": "",
+            "config_id": 1000337,
+            "event": 15,
+            "name": "TIMER_EVENT_337",
+            "source": "delay_3",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "dvalin_progress",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

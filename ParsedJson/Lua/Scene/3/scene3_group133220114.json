@@ -1,0 +1,198 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_114003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_MONSTER_DIE_114007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_114002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_114001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_114004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_MONSTER_BATTLE_114005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_114008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_114003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_114007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_114002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_114001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_114004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_MONSTER_BATTLE_114005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 11,
+            "config_id": 114006,
+            "drop_tag": "\u6218\u6597\u9ad8\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211022,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -2931.598,
+                "y": 207.882,
+                "z": -4164.721
+            },
+            "rot": {
+                "x": 0,
+                "y": 19.086,
+                "z": 0
+            },
+            "state": 101
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "affix": [
+                5107
+            ],
+            "area_id": 11,
+            "config_id": 114009,
+            "disableWander": true,
+            "drop_tag": "\u6d6a\u4eba\u6b66\u58eb",
+            "isOneoff": true,
+            "level": 27,
+            "monster_id": 25080101,
+            "pos": {
+                "x": -2931.416,
+                "y": 207.472,
+                "z": -4161.328
+            },
+            "pose_id": 1006,
+            "rot": {
+                "x": 0,
+                "y": 171.674,
+                "z": 0
+            },
+            "special_name_id": 10030,
+            "title_id": 10014
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 11,
+            "config_id": 114002,
+            "pos": {
+                "x": -2932.105,
+                "y": 207.81,
+                "z": -4163.164
+            },
+            "radius": 30,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                114006
+            ],
+            "monsters": [
+                114009
+            ],
+            "rand_weight": 100,
+            "regions": [
+                114002
+            ],
+            "triggers": [
+                "GROUP_LOAD_114001",
+                "ENTER_REGION_114002",
+                "ANY_MONSTER_DIE_114003",
+                "GROUP_LOAD_114004",
+                "MONSTER_BATTLE_114005",
+                "ANY_MONSTER_DIE_114007",
+                "QUEST_START_114008"
+            ]
+        },
+        {
+            "gadgets": [
+                114006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_LOAD_114001",
+            "condition": "condition_EVENT_GROUP_LOAD_114001",
+            "config_id": 1114001,
+            "event": 29,
+            "name": "GROUP_LOAD_114001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_114002",
+            "condition": "condition_EVENT_ENTER_REGION_114002",
+            "config_id": 1114002,
+            "event": 4,
+            "forbid_guest": false,
+            "name": "ENTER_REGION_114002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_114003",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_114003",
+            "config_id": 1114003,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_114003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_114004",
+            "condition": "condition_EVENT_GROUP_LOAD_114004",
+            "config_id": 1114004,
+            "event": 29,
+            "name": "GROUP_LOAD_114004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_MONSTER_BATTLE_114005",
+            "condition": "condition_EVENT_MONSTER_BATTLE_114005",
+            "config_id": 1114005,
+            "event": 22,
+            "name": "MONSTER_BATTLE_114005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_114007",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_114007",
+            "config_id": 1114007,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_114007",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_START_114008",
+            "condition": "",
+            "config_id": 1114008,
+            "event": 28,
+            "name": "QUEST_START_114008",
+            "source": "7211014",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "fin",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "rua",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

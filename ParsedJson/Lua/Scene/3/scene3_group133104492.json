@@ -1,0 +1,147 @@
+{
+    "action_EVENT_ENTER_REGION_492004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_492003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_492005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_492006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_492004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_492003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 9,
+            "config_id": 492002,
+            "gadget_id": 70310004,
+            "level": 19,
+            "pos": {
+                "x": 250.376,
+                "y": 238.057,
+                "z": 523.319
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 3,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [
+        {
+            "area_id": 9,
+            "config_id": 492001,
+            "npc_id": 20046,
+            "pos": {
+                "x": 250.558,
+                "y": 238.147,
+                "z": 523.153
+            },
+            "rot": {
+                "x": 0,
+                "y": 173.53,
+                "z": 0
+            }
+        }
+    ],
+    "regions": [
+        {
+            "area_id": 9,
+            "config_id": 492004,
+            "pos": {
+                "x": 250.334,
+                "y": 238.192,
+                "z": 523.159
+            },
+            "radius": 10,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_492006"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                492002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                492004
+            ],
+            "triggers": [
+                "GADGET_STATE_CHANGE_492003",
+                "ENTER_REGION_492004",
+                "QUEST_FINISH_492005"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_492003",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_492003",
+            "config_id": 1492003,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_492003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_492004",
+            "condition": "condition_EVENT_ENTER_REGION_492004",
+            "config_id": 1492004,
+            "event": 4,
+            "name": "ENTER_REGION_492004",
+            "source": "1"
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_492005",
+            "condition": "",
+            "config_id": 1492005,
+            "event": 21,
+            "name": "QUEST_FINISH_492005",
+            "source": "2102010"
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_492006",
+            "condition": "",
+            "config_id": 1492006,
+            "event": 21,
+            "name": "QUEST_FINISH_492006",
+            "source": "2102020"
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "isFinished",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

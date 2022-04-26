@@ -1,0 +1,84 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_166007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_166006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_166007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_166006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 18,
+            "chest_drop_id": 1050152,
+            "config_id": 166005,
+            "drop_count": 1,
+            "gadget_id": 70217010,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -6321.614,
+                "y": 207.929,
+                "z": -2707.229
+            },
+            "rot": {
+                "x": 333.938,
+                "y": 52.305,
+                "z": 353.972
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_166006"
+            ]
+        },
+        {
+            "gadgets": [
+                166005
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_166007"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_166006",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_166006",
+            "config_id": 1166006,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_166006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_166007",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_166007",
+            "config_id": 1166007,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_166007",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "start",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

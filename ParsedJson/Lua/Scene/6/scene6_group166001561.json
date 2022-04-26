@@ -1,0 +1,154 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_561004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_561006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_561007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_561008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_561005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_561004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_561007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_561008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 300,
+            "config_id": 561001,
+            "gadget_id": 70290204,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 151.557,
+                "y": 269.925,
+                "z": 492.536
+            },
+            "rot": {
+                "x": 1.459,
+                "y": 293.048,
+                "z": 335.709
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 561002,
+            "gadget_id": 70290233,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 156.28,
+                "y": 266.317,
+                "z": 510.313
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 561003,
+            "gadget_id": 70290276,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 150.513,
+                "y": 283.51,
+                "z": 496.084
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 300,
+            "config_id": 561006,
+            "pos": {
+                "x": 149.389,
+                "y": 271.472,
+                "z": 490.105
+            },
+            "radius": 20,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                561003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                561006
+            ],
+            "triggers": [
+                "ANY_GADGET_DIE_561004",
+                "VARIABLE_CHANGE_561005",
+                "ENTER_REGION_561006",
+                "GADGET_CREATE_561007",
+                "GROUP_LOAD_561008"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_561004",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_561004",
+            "config_id": 1561004,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_561004",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_561005",
+            "condition": "",
+            "config_id": 1561005,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_561005",
+            "source": "DropRockAbyssBulletTrigger"
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_561006",
+            "condition": "",
+            "config_id": 1561006,
+            "event": 4,
+            "name": "ENTER_REGION_561006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_561007",
+            "condition": "condition_EVENT_GADGET_CREATE_561007",
+            "config_id": 1561007,
+            "event": 6,
+            "name": "GADGET_CREATE_561007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_561008",
+            "condition": "condition_EVENT_GROUP_LOAD_561008",
+            "config_id": 1561008,
+            "event": 29,
+            "name": "GROUP_LOAD_561008",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "drop",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

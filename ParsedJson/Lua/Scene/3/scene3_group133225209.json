@@ -1,0 +1,243 @@
+{
+    "action_EVENT_GROUP_LOAD_209012": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_209007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_209012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_209007": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 209001,
+            "gadget_id": 70330119,
+            "is_use_point_array": true,
+            "level": 2,
+            "pos": {
+                "x": -6310.776,
+                "y": 246.976,
+                "z": -2796.758
+            },
+            "rot": {
+                "x": 7.492,
+                "y": 155.509,
+                "z": 359.192
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 209002,
+            "gadget_id": 70330119,
+            "is_use_point_array": true,
+            "level": 2,
+            "pos": {
+                "x": -6310.708,
+                "y": 248.21,
+                "z": -2796.906
+            },
+            "rot": {
+                "x": 7.492,
+                "y": 155.509,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 209003,
+            "gadget_id": 70330119,
+            "is_use_point_array": true,
+            "level": 2,
+            "pos": {
+                "x": -6313.497,
+                "y": 246.456,
+                "z": -2799.581
+            },
+            "rot": {
+                "x": 0,
+                "y": 152.455,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 209004,
+            "gadget_id": 70330120,
+            "level": 2,
+            "pos": {
+                "x": -6310.776,
+                "y": 246.976,
+                "z": -2796.758
+            },
+            "rot": {
+                "x": 7.492,
+                "y": 155.509,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 209005,
+            "gadget_id": 70330121,
+            "level": 2,
+            "pos": {
+                "x": -6310.618,
+                "y": 249.947,
+                "z": -2797.096
+            },
+            "rot": {
+                "x": 354.305,
+                "y": 333.729,
+                "z": 357.34
+            }
+        },
+        {
+            "area_id": 18,
+            "chest_drop_id": 21900005,
+            "config_id": 209006,
+            "drop_count": 1,
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211150,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -6312.485,
+                "y": 245.503,
+                "z": -2802.616
+            },
+            "rot": {
+                "x": 1.694,
+                "y": 209.209,
+                "z": 5.615
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 209008,
+            "gadget_id": 70330120,
+            "level": 33,
+            "pos": {
+                "x": -6313.47,
+                "y": 246.483,
+                "z": -2799.625
+            },
+            "rot": {
+                "x": 13.603,
+                "y": 155.509,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 7,
+            "config_id": 209009,
+            "gadget_id": 70330121,
+            "level": 33,
+            "pos": {
+                "x": 0.309,
+                "y": 333.406,
+                "z": 357.713
+            },
+            "rot": {
+                "x": 0.309,
+                "y": 333.406,
+                "z": 357.713
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 209010,
+            "gadget_id": 70330118,
+            "level": 33,
+            "pos": {
+                "x": -6307.136,
+                "y": 247.085,
+                "z": -2796.623
+            },
+            "rot": {
+                "x": 6.591,
+                "y": 154.662,
+                "z": 0.607
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 3
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 18,
+            "config_id": 209011,
+            "pos": {
+                "x": -6310.361,
+                "y": 246.94,
+                "z": -2798.557
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                209001,
+                209002,
+                209003,
+                209004,
+                209005,
+                209008,
+                209009,
+                209010
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_209007"
+            ]
+        },
+        {
+            "gadgets": [
+                209006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                209011
+            ],
+            "triggers": [
+                "GROUP_LOAD_209012"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_209007",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_209007",
+            "config_id": 1209007,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_209007",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_209012",
+            "condition": "condition_EVENT_GROUP_LOAD_209012",
+            "config_id": 1209012,
+            "event": 29,
+            "name": "GROUP_LOAD_209012",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

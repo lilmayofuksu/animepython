@@ -1,0 +1,224 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_100": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_180": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_90001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_93": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_199": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_100": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_180": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_90001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_93": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_TIMER_EVENT_199": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 2,
+            "config_id": 1717,
+            "gadget_id": 70900007,
+            "level": 15,
+            "persistent": true,
+            "pos": {
+                "x": 1266.951,
+                "y": 259.361,
+                "z": -1688.478
+            },
+            "rot": {
+                "x": 0,
+                "y": 79.834,
+                "z": 0
+            },
+            "state": 202
+        },
+        {
+            "area_id": 2,
+            "config_id": 1793,
+            "drop_tag": "\u6218\u6597\u4f4e\u7ea7\u8499\u5fb7",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211001,
+            "isOneoff": true,
+            "level": 11,
+            "persistent": true,
+            "pos": {
+                "x": 1252.683,
+                "y": 261.857,
+                "z": -1647.305
+            },
+            "rot": {
+                "x": 0,
+                "y": 175.934,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 2,
+            "config_id": 3038,
+            "drop_tag": "\u6218\u6597\u9ad8\u7ea7\u8499\u5fb7",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211022,
+            "isOneoff": true,
+            "level": 11,
+            "persistent": true,
+            "pos": {
+                "x": 1260.942,
+                "y": 258.602,
+                "z": -1683.167
+            },
+            "rot": {
+                "x": 0,
+                "y": 268.853,
+                "z": 0
+            },
+            "state": 101
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": true,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 2,
+            "config_id": 429,
+            "drop_tag": "\u4e18\u4e18\u66b4\u5f92",
+            "level": 21,
+            "monster_id": 21020101,
+            "pos": {
+                "x": 1257.553,
+                "y": 258.516,
+                "z": -1687.204
+            },
+            "pose_id": 401,
+            "rot": {
+                "x": 0,
+                "y": 80.079,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 2,
+            "config_id": 536,
+            "disableWander": true,
+            "drop_tag": "\u6df1\u6e0a\u6cd5\u5e08",
+            "level": 21,
+            "monster_id": 22010201,
+            "pos": {
+                "x": 1273.998,
+                "y": 258.484,
+                "z": -1692.625
+            },
+            "rot": {
+                "x": 0,
+                "y": 319.549,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 2,
+            "config_id": 537,
+            "disableWander": true,
+            "drop_tag": "\u4e18\u4e18\u8428\u6ee1",
+            "level": 21,
+            "monster_id": 21030301,
+            "pos": {
+                "x": 1271.427,
+                "y": 258.565,
+                "z": -1676
+            },
+            "rot": {
+                "x": 0,
+                "y": 196.594,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 2,
+            "config_id": 180,
+            "pos": {
+                "x": 1269.673,
+                "y": 260.565,
+                "z": -1686.378
+            },
+            "radius": 19.1,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                1717,
+                1793,
+                3038
+            ],
+            "monsters": [
+                429,
+                536,
+                537
+            ],
+            "rand_weight": 100,
+            "regions": [
+                180
+            ],
+            "triggers": [
+                "GADGET_STATE_CHANGE_93",
+                "ANY_MONSTER_DIE_100",
+                "ENTER_REGION_180",
+                "TIMER_EVENT_199",
+                "GADGET_CREATE_90001"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_93",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_93",
+            "config_id": 1000093,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_93",
+            "source": "",
+            "tlog_tag": "\u89e3\u9664\u9ed1\u65e5\u65cf\u5c01\u5370"
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_100",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_100",
+            "config_id": 1000100,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_100",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_180",
+            "condition": "condition_EVENT_ENTER_REGION_180",
+            "config_id": 1000180,
+            "event": 4,
+            "name": "ENTER_REGION_180",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_199",
+            "condition": "condition_EVENT_TIMER_EVENT_199",
+            "config_id": 1000199,
+            "event": 15,
+            "name": "TIMER_EVENT_199",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_90001",
+            "condition": "condition_EVENT_GADGET_CREATE_90001",
+            "config_id": 1090001,
+            "event": 6,
+            "name": "GADGET_CREATE_90001",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

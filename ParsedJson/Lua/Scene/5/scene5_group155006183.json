@@ -1,0 +1,97 @@
+{
+    "action_EVENT_VARIABLE_CHANGE_183002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_183002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 183001,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211111,
+            "isOneoff": true,
+            "level": 16,
+            "persistent": true,
+            "pos": {
+                "x": 249.99,
+                "y": 177.885,
+                "z": -244.064
+            },
+            "rot": {
+                "x": 352.144,
+                "y": 356.683,
+                "z": 346.996
+            }
+        }
+    ],
+    "garbages": {
+        "gadgets": [
+            {
+                "area_id": 200,
+                "config_id": 183003,
+                "gadget_id": 70290281,
+                "level": 36,
+                "persistent": true,
+                "pos": {
+                    "x": 259.141,
+                    "y": 191.249,
+                    "z": -240.557
+                },
+                "rot": {
+                    "x": 342.502,
+                    "y": 263.785,
+                    "z": 184.306
+                }
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_183002"
+            ]
+        },
+        {
+            "gadgets": [
+                183001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_183002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_183002",
+            "config_id": 1183002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_183002",
+            "source": "activecount",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "activecount",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

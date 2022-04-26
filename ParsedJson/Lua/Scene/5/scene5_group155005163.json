@@ -1,0 +1,215 @@
+{
+    "UpdateGamePlayState": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_163006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_163009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_163010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_163004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_PLATFORM_REACH_POINT_163007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_163008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_163005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_163006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_163009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_163010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_PLATFORM_REACH_POINT_163007": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 163001,
+            "gadget_id": 70690028,
+            "level": 36,
+            "pos": {
+                "x": 699.035,
+                "y": 241.73,
+                "z": 548.86
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "route_id": 500500050,
+            "start_route": false
+        },
+        {
+            "area_id": 200,
+            "config_id": 163002,
+            "gadget_id": 70290229,
+            "level": 36,
+            "pos": {
+                "x": 699.035,
+                "y": 243.239,
+                "z": 548.86
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 163003,
+            "gadget_id": 70690030,
+            "level": 36,
+            "pos": {
+                "x": 699.035,
+                "y": 241.73,
+                "z": 548.86
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 200,
+            "config_id": 163006,
+            "pos": {
+                "x": 698.513,
+                "y": 239.769,
+                "z": 548.94
+            },
+            "shape": 2,
+            "size": {
+                "x": 23,
+                "y": 5,
+                "z": 23
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 163009,
+            "pos": {
+                "x": 699.035,
+                "y": 244.73,
+                "z": 548.86
+            },
+            "radius": 3,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_163004",
+                "VARIABLE_CHANGE_163005",
+                "QUEST_START_163008"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                163006,
+                163009
+            ],
+            "triggers": [
+                "ENTER_REGION_163006",
+                "PLATFORM_REACH_POINT_163007",
+                "ENTER_REGION_163009",
+                "GADGET_CREATE_163010"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_LOAD_163004",
+            "condition": "",
+            "config_id": 1163004,
+            "event": 29,
+            "name": "GROUP_LOAD_163004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_163005",
+            "condition": "",
+            "config_id": 1163005,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_163005",
+            "source": "gameplayState",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_163006",
+            "condition": "condition_EVENT_ENTER_REGION_163006",
+            "config_id": 1163006,
+            "event": 4,
+            "name": "ENTER_REGION_163006",
+            "source": "1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_PLATFORM_REACH_POINT_163007",
+            "condition": "condition_EVENT_PLATFORM_REACH_POINT_163007",
+            "config_id": 1163007,
+            "event": 26,
+            "name": "PLATFORM_REACH_POINT_163007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_163008",
+            "condition": "",
+            "config_id": 1163008,
+            "event": 28,
+            "name": "QUEST_START_163008",
+            "source": "7226808",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_163009",
+            "condition": "condition_EVENT_ENTER_REGION_163009",
+            "config_id": 1163009,
+            "event": 4,
+            "name": "ENTER_REGION_163009",
+            "source": "1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_163010",
+            "condition": "condition_EVENT_GADGET_CREATE_163010",
+            "config_id": 1163010,
+            "event": 6,
+            "name": "GADGET_CREATE_163010",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "gameplayState",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "ismoving",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

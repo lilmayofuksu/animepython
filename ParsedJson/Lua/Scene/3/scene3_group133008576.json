@@ -1,0 +1,162 @@
+{
+    "action_EVENT_GADGET_CREATE_576004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_576005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_576003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_576004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_576005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_576003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 576001,
+            "gadget_id": 70350006,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1181.085,
+                "y": 262.464,
+                "z": -572.591
+            },
+            "rot": {
+                "x": 345.809,
+                "y": 345.812,
+                "z": 0.334
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 576002,
+            "gadget_id": 70350006,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1175.345,
+                "y": 262.431,
+                "z": -574.034
+            },
+            "rot": {
+                "x": 345.809,
+                "y": 345.812,
+                "z": 0.334
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 576006,
+            "gadget_id": 70350006,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1181.085,
+                "y": 262.464,
+                "z": -572.591
+            },
+            "rot": {
+                "x": 345.809,
+                "y": 345.812,
+                "z": 0.334
+            },
+            "state": 201
+        },
+        {
+            "area_id": 10,
+            "config_id": 576007,
+            "gadget_id": 70350006,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1175.345,
+                "y": 262.431,
+                "z": -574.034
+            },
+            "rot": {
+                "x": 345.809,
+                "y": 345.812,
+                "z": 0.334
+            },
+            "state": 201
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                576001,
+                576002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_576003"
+            ]
+        },
+        {
+            "gadgets": [
+                576001,
+                576002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_576004",
+                "GADGET_CREATE_576005"
+            ]
+        },
+        {
+            "gadgets": [
+                576006,
+                576007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_576003",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_576003",
+            "config_id": 1576003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_576003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_576004",
+            "condition": "condition_EVENT_GADGET_CREATE_576004",
+            "config_id": 1576004,
+            "event": 6,
+            "name": "GADGET_CREATE_576004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_576005",
+            "condition": "condition_EVENT_GADGET_CREATE_576005",
+            "config_id": 1576005,
+            "event": 6,
+            "name": "GADGET_CREATE_576005",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "is_open",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

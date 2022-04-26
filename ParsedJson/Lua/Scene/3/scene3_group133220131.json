@@ -1,0 +1,213 @@
+{
+    "action_EVENT_GADGET_CREATE_131009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GATHER_131005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_131002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_131003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_131013": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_131010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_131009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GATHER_131005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_131010": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 11,
+            "config_id": 131004,
+            "gadget_id": 70500000,
+            "isOneoff": true,
+            "level": 27,
+            "persistent": true,
+            "point_type": 9140,
+            "pos": {
+                "x": -2712.194,
+                "y": 246.617,
+                "z": -4378.129
+            },
+            "rot": {
+                "x": 0,
+                "y": 71.114,
+                "z": 0
+            },
+            "state": 201
+        },
+        {
+            "area_id": 11,
+            "config_id": 131006,
+            "gadget_id": 70290107,
+            "level": 27,
+            "persistent": true,
+            "pos": {
+                "x": -2712.709,
+                "y": 246.451,
+                "z": -4378.233
+            },
+            "rot": {
+                "x": 0.896,
+                "y": 84.929,
+                "z": 0
+            },
+            "state": 202
+        },
+        {
+            "area_id": 11,
+            "config_id": 131007,
+            "gadget_id": 70360001,
+            "level": 27,
+            "persistent": true,
+            "pos": {
+                "x": -2709.478,
+                "y": 246.223,
+                "z": -4377.476
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 11,
+            "config_id": 131008,
+            "gadget_id": 71700288,
+            "isOneoff": true,
+            "level": 27,
+            "persistent": true,
+            "pos": {
+                "x": -2712.007,
+                "y": 246.616,
+                "z": -4378.143
+            },
+            "rot": {
+                "x": 0,
+                "y": 352.077,
+                "z": 0
+            },
+            "state": 201
+        }
+    ],
+    "init_config": {
+        "end_suite": 3,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [
+        {
+            "area_id": 11,
+            "config_id": 131001,
+            "npc_id": 20251,
+            "pos": {
+                "x": -2711.593,
+                "y": 248.039,
+                "z": -4378.035
+            },
+            "rot": {
+                "x": 0,
+                "y": 82.523,
+                "z": 0
+            }
+        }
+    ],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                131006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_131002",
+                "QUEST_FINISH_131003",
+                "GADGET_CREATE_131009",
+                "SELECT_OPTION_131010",
+                "QUEST_START_131013"
+            ]
+        },
+        {
+            "gadgets": [
+                131006
+            ],
+            "monsters": [],
+            "npcs": [
+                131001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_131003"
+            ]
+        },
+        {
+            "gadgets": [
+                131004,
+                131006,
+                131008
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_131003",
+                "GATHER_131005"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_131002",
+            "condition": "",
+            "config_id": 1131002,
+            "event": 21,
+            "name": "QUEST_FINISH_131002",
+            "source": "7210707",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_131003",
+            "condition": "",
+            "config_id": 1131003,
+            "event": 21,
+            "name": "QUEST_FINISH_131003",
+            "source": "7210714",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GATHER_131005",
+            "condition": "condition_EVENT_GATHER_131005",
+            "config_id": 1131005,
+            "event": 20,
+            "name": "GATHER_131005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_131009",
+            "condition": "condition_EVENT_GADGET_CREATE_131009",
+            "config_id": 1131009,
+            "event": 6,
+            "name": "GADGET_CREATE_131009",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_131010",
+            "condition": "condition_EVENT_SELECT_OPTION_131010",
+            "config_id": 1131010,
+            "event": 9,
+            "name": "SELECT_OPTION_131010",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_131013",
+            "condition": "",
+            "config_id": 1131013,
+            "event": 28,
+            "name": "QUEST_START_131013",
+            "source": "7210708",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

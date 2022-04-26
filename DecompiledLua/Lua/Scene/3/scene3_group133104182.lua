@@ -1,0 +1,280 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
+L0_1 = {}
+L0_1.group_id = 133104182
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 182001
+L2_1.monster_id = 21020301
+L3_1 = {}
+L3_1.x = 813.434
+L3_1.y = 224.604
+L3_1.z = 737.634
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 0.0
+L3_1.y = 176.509
+L3_1.z = 0.0
+L2_1.rot = L3_1
+L2_1.level = 1
+L2_1.drop_tag = "\228\184\152\228\184\152\230\154\180\229\190\146"
+L2_1.disableWander = true
+L2_1.area_id = 6
+L3_1 = {}
+L3_1.config_id = 182002
+L3_1.monster_id = 21020201
+L4_1 = {}
+L4_1.x = 844.782
+L4_1.y = 226.339
+L4_1.z = 730.967
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 0.0
+L4_1.y = 0.0
+L4_1.z = 0.0
+L3_1.rot = L4_1
+L3_1.level = 1
+L3_1.drop_tag = "\228\184\152\228\184\152\230\154\180\229\190\146"
+L3_1.disableWander = true
+L3_1.area_id = 6
+L4_1 = {}
+L4_1.config_id = 182003
+L4_1.monster_id = 21010502
+L5_1 = {}
+L5_1.x = 818.823
+L5_1.y = 224.935
+L5_1.z = 740.728
+L4_1.pos = L5_1
+L5_1 = {}
+L5_1.x = 0.0
+L5_1.y = 284.611
+L5_1.z = 0.0
+L4_1.rot = L5_1
+L4_1.level = 1
+L4_1.drop_tag = "\232\191\156\231\168\139\228\184\152\228\184\152\228\186\186"
+L4_1.disableWander = true
+L4_1.area_id = 6
+L5_1 = {}
+L5_1.config_id = 182004
+L5_1.monster_id = 21011002
+L6_1 = {}
+L6_1.x = 838.05
+L6_1.y = 224.442
+L6_1.z = 722.674
+L5_1.pos = L6_1
+L6_1 = {}
+L6_1.x = 0.0
+L6_1.y = 241.505
+L6_1.z = 0.0
+L5_1.rot = L6_1
+L5_1.level = 1
+L5_1.drop_tag = "\232\191\156\231\168\139\228\184\152\228\184\152\228\186\186"
+L5_1.disableWander = true
+L5_1.area_id = 6
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+monsters = L1_1
+L1_1 = {}
+npcs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 182005
+L2_1.gadget_id = 70350201
+L3_1 = {}
+L3_1.x = 834.02
+L3_1.y = 227.11
+L3_1.z = 756.398
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 0.0
+L3_1.y = 0.0
+L3_1.z = 0.0
+L2_1.rot = L3_1
+L2_1.level = 1
+L2_1.area_id = 6
+L3_1 = {}
+L3_1.config_id = 182007
+L3_1.gadget_id = 70360163
+L4_1 = {}
+L4_1.x = 832.259
+L4_1.y = 227.022
+L4_1.z = 736.638
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 0.0
+L4_1.y = 16.267
+L4_1.z = 0.0
+L3_1.rot = L4_1
+L3_1.level = 19
+L3_1.persistent = true
+L3_1.area_id = 6
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+gadgets = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 182009
+L3_1 = RegionShape
+L3_1 = L3_1.SPHERE
+L2_1.shape = L3_1
+L2_1.radius = 45
+L3_1 = {}
+L3_1.x = 825.427
+L3_1.y = 226.749
+L3_1.z = 736.812
+L2_1.pos = L3_1
+L2_1.area_id = 6
+L1_1[1] = L2_1
+regions = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 1182006
+L2_1.name = "ANY_MONSTER_DIE_182006"
+L3_1 = EventType
+L3_1 = L3_1.EVENT_ANY_MONSTER_DIE
+L2_1.event = L3_1
+L2_1.source = ""
+L2_1.condition = "condition_EVENT_ANY_MONSTER_DIE_182006"
+L2_1.action = "action_EVENT_ANY_MONSTER_DIE_182006"
+L3_1 = {}
+L3_1.config_id = 1182008
+L3_1.name = "GROUP_LOAD_182008"
+L4_1 = EventType
+L4_1 = L4_1.EVENT_GROUP_LOAD
+L3_1.event = L4_1
+L3_1.source = ""
+L3_1.condition = ""
+L3_1.action = "action_EVENT_GROUP_LOAD_182008"
+L4_1 = {}
+L4_1.config_id = 1182009
+L4_1.name = "ENTER_REGION_182009"
+L5_1 = EventType
+L5_1 = L5_1.EVENT_ENTER_REGION
+L4_1.event = L5_1
+L4_1.source = ""
+L4_1.condition = ""
+L4_1.action = "action_EVENT_ENTER_REGION_182009"
+L4_1.trigger_count = 0
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+triggers = L1_1
+L1_1 = {}
+variables = L1_1
+L1_1 = {}
+L1_1.suite = 1
+L1_1.end_suite = 0
+L1_1.rand_suite = false
+init_config = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L4_1 = 182001
+L5_1 = 182002
+L6_1 = 182003
+L7_1 = 182004
+L3_1[1] = L4_1
+L3_1[2] = L5_1
+L3_1[3] = L6_1
+L3_1[4] = L7_1
+L2_1.monsters = L3_1
+L3_1 = {}
+L4_1 = 182005
+L3_1[1] = L4_1
+L2_1.gadgets = L3_1
+L3_1 = {}
+L4_1 = 182009
+L3_1[1] = L4_1
+L2_1.regions = L3_1
+L3_1 = {}
+L4_1 = "ANY_MONSTER_DIE_182006"
+L5_1 = "GROUP_LOAD_182008"
+L6_1 = "ENTER_REGION_182009"
+L3_1[1] = L4_1
+L3_1[2] = L5_1
+L3_1[3] = L6_1
+L2_1.triggers = L3_1
+L2_1.rand_weight = 100
+L1_1[1] = L2_1
+suites = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetGroupMonsterCount
+  L3_2 = A0_2
+  L2_2 = L2_2(L3_2)
+  if L2_2 ~= 0 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_ANY_MONSTER_DIE_182006 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.SetGadgetStateByConfigId
+  L3_2 = A0_2
+  L4_2 = 182007
+  L5_2 = GadgetState
+  L5_2 = L5_2.GearStart
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_ANY_MONSTER_DIE_182006 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.CreateChannellerSlabCampRewardGadget
+  L3_2 = A0_2
+  L4_2 = 182007
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : create_gadget"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_GROUP_LOAD_182008 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.AssignPlayerShowTemplateReminder
+  L3_2 = A0_2
+  L4_2 = 137
+  L5_2 = {}
+  L6_2 = {}
+  L5_2.param_uid_vec = L6_2
+  L6_2 = {}
+  L5_2.param_vec = L6_2
+  L6_2 = {}
+  L7_2 = A0_2.uid
+  L6_2[1] = L7_2
+  L5_2.uid_vec = L6_2
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  if 0 ~= L2_2 then
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_ENTER_REGION_182009 = L1_1

@@ -1,0 +1,100 @@
+{
+    "UpdateGamePlayState": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_20001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_20002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_20002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 20003,
+            "gadget_id": 70290009,
+            "level": 36,
+            "pos": {
+                "x": 1306.006,
+                "y": 181.889,
+                "z": 796.95
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 20004,
+            "gadget_id": 70500000,
+            "level": 36,
+            "owner": 20003,
+            "point_type": 3005,
+            "pos": {
+                "x": 1306.006,
+                "y": 181.889,
+                "z": 796.95
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_20001",
+                "VARIABLE_CHANGE_20002"
+            ]
+        },
+        {
+            "gadgets": [
+                20003,
+                20004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_LOAD_20001",
+            "condition": "",
+            "config_id": 1020001,
+            "event": 29,
+            "name": "GROUP_LOAD_20001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_20002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_20002",
+            "config_id": 1020002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_20002",
+            "source": "gameplayState",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "gameplayState",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

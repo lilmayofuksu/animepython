@@ -1,0 +1,133 @@
+{
+    "action_EVENT_QUEST_FINISH_312003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_312002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_312007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_312005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_312004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_TIME_AXIS_PASS_312005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_312004": "WARN: Lua function omitted from the dump",
+    "defs": {
+        "child_group": [],
+        "group_id": 133223312,
+        "hasChild": true,
+        "isRandom": false,
+        "notifyQuest": true
+    },
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 312001,
+            "gadget_id": 70290160,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -6277.375,
+                "y": 213.436,
+                "z": -2993.29
+            },
+            "rot": {
+                "x": 1.925,
+                "y": 213.127,
+                "z": 357.053
+            }
+        }
+    ],
+    "garbages": {
+        "triggers": [
+            {
+                "action": "action_EVENT_QUEST_START_312006",
+                "condition": "",
+                "config_id": 1312006,
+                "event": 28,
+                "name": "QUEST_START_312006",
+                "source": "",
+                "trigger_count": 0
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                312001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_312002",
+                "QUEST_FINISH_312003",
+                "VARIABLE_CHANGE_312004",
+                "TIME_AXIS_PASS_312005",
+                "QUEST_START_312007"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_START_312002",
+            "condition": "",
+            "config_id": 1312002,
+            "event": 28,
+            "name": "QUEST_START_312002",
+            "source": "7216604",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_312003",
+            "condition": "",
+            "config_id": 1312003,
+            "event": 21,
+            "name": "QUEST_FINISH_312003",
+            "source": "7216604",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_312004",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_312004",
+            "config_id": 1312004,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_312004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_312005",
+            "condition": "condition_EVENT_TIME_AXIS_PASS_312005",
+            "config_id": 1312005,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_312005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_START_312007",
+            "condition": "",
+            "config_id": 1312007,
+            "event": 28,
+            "name": "QUEST_START_312007",
+            "source": "7216637",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Notified",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "Seed",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

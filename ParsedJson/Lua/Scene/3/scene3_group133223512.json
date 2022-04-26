@@ -1,0 +1,80 @@
+{
+    "action_EVENT_GROUP_REFRESH_512003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_512002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_REFRESH_512003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_512002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 512001,
+            "gadget_id": 70290135,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -6240.981,
+                "y": 234.341,
+                "z": -2943.522
+            },
+            "rot": {
+                "x": 0,
+                "y": 194.566,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                512001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_512002",
+                "GROUP_REFRESH_512003"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_512002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_512002",
+            "config_id": 1512002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_512002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_REFRESH_512003",
+            "condition": "condition_EVENT_GROUP_REFRESH_512003",
+            "config_id": 1512003,
+            "event": 32,
+            "name": "GROUP_REFRESH_512003",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "progress",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

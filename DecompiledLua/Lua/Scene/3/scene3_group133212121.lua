@@ -1,0 +1,337 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
+L0_1 = {}
+L0_1.group_id = 133212121
+L1_1 = {}
+monsters = L1_1
+L1_1 = {}
+npcs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 121001
+L2_1.gadget_id = 70900388
+L3_1 = {}
+L3_1.x = -3886.674
+L3_1.y = 247.993
+L3_1.z = -2283.347
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 0.0
+L3_1.y = 0.0
+L3_1.z = 0.0
+L2_1.rot = L3_1
+L2_1.level = 27
+L2_1.area_id = 13
+L3_1 = {}
+L3_1.config_id = 121002
+L3_1.gadget_id = 70900388
+L4_1 = {}
+L4_1.x = -3897.646
+L4_1.y = 248.017
+L4_1.z = -2280.844
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 0.0
+L4_1.y = 0.0
+L4_1.z = 0.0
+L3_1.rot = L4_1
+L3_1.level = 27
+L3_1.area_id = 13
+L4_1 = {}
+L4_1.config_id = 121003
+L4_1.gadget_id = 70900388
+L5_1 = {}
+L5_1.x = -3892.808
+L5_1.y = 255.651
+L5_1.z = -2273.674
+L4_1.pos = L5_1
+L5_1 = {}
+L5_1.x = 275.933
+L5_1.y = 180.0
+L5_1.z = 137.61
+L4_1.rot = L5_1
+L4_1.level = 27
+L4_1.area_id = 13
+L5_1 = {}
+L5_1.config_id = 121004
+L5_1.gadget_id = 70210101
+L6_1 = {}
+L6_1.x = -3894.729
+L6_1.y = 247.993
+L6_1.z = -2286.426
+L5_1.pos = L6_1
+L6_1 = {}
+L6_1.x = 0.0
+L6_1.y = 0.0
+L6_1.z = 0.0
+L5_1.rot = L6_1
+L5_1.level = 26
+L5_1.drop_tag = "\230\144\156\229\136\174\231\130\185\232\167\163\232\176\156\233\128\154\231\148\168\231\168\187\229\166\187"
+L5_1.isOneoff = true
+L5_1.persistent = true
+L5_1.area_id = 13
+L6_1 = {}
+L6_1.config_id = 121005
+L6_1.gadget_id = 70210101
+L7_1 = {}
+L7_1.x = -3896.148
+L7_1.y = 248.694
+L7_1.z = -2279.201
+L6_1.pos = L7_1
+L7_1 = {}
+L7_1.x = 0.0
+L7_1.y = 0.0
+L7_1.z = 0.0
+L6_1.rot = L7_1
+L6_1.level = 26
+L6_1.drop_tag = "\230\144\156\229\136\174\231\130\185\232\167\163\232\176\156\233\128\154\231\148\168\231\168\187\229\166\187"
+L6_1.isOneoff = true
+L6_1.persistent = true
+L6_1.area_id = 13
+L7_1 = {}
+L7_1.config_id = 121006
+L7_1.gadget_id = 70330064
+L8_1 = {}
+L8_1.x = -3897.973
+L8_1.y = 248.171
+L8_1.z = -2282.768
+L7_1.pos = L8_1
+L8_1 = {}
+L8_1.x = 0.0
+L8_1.y = 0.0
+L8_1.z = 0.0
+L7_1.rot = L8_1
+L7_1.level = 27
+L7_1.interact_id = 35
+L7_1.area_id = 13
+L8_1 = {}
+L8_1.config_id = 121008
+L8_1.gadget_id = 70350006
+L9_1 = {}
+L9_1.x = -3893.155
+L9_1.y = 247.234
+L9_1.z = -2274.825
+L8_1.pos = L9_1
+L9_1 = {}
+L9_1.x = 272.957
+L9_1.y = 136.382
+L9_1.z = 178.29
+L8_1.rot = L9_1
+L8_1.level = 27
+L8_1.persistent = true
+L8_1.area_id = 13
+L9_1 = {}
+L9_1.config_id = 121009
+L9_1.gadget_id = 70360170
+L10_1 = {}
+L10_1.x = -3898.972
+L10_1.y = 249.85
+L10_1.z = -2279.757
+L9_1.pos = L10_1
+L10_1 = {}
+L10_1.x = 271.002
+L10_1.y = 123.556
+L10_1.z = 190.607
+L9_1.rot = L10_1
+L9_1.level = 27
+L9_1.area_id = 13
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+L1_1[6] = L7_1
+L1_1[7] = L8_1
+L1_1[8] = L9_1
+gadgets = L1_1
+L1_1 = {}
+regions = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 1121010
+L2_1.name = "GADGET_CREATE_121010"
+L3_1 = EventType
+L3_1 = L3_1.EVENT_GADGET_CREATE
+L2_1.event = L3_1
+L2_1.source = ""
+L2_1.condition = "condition_EVENT_GADGET_CREATE_121010"
+L2_1.action = "action_EVENT_GADGET_CREATE_121010"
+L2_1.trigger_count = 0
+L3_1 = {}
+L3_1.config_id = 1121011
+L3_1.name = "SELECT_OPTION_121011"
+L4_1 = EventType
+L4_1 = L4_1.EVENT_SELECT_OPTION
+L3_1.event = L4_1
+L3_1.source = ""
+L3_1.condition = "condition_EVENT_SELECT_OPTION_121011"
+L3_1.action = "action_EVENT_SELECT_OPTION_121011"
+L3_1.trigger_count = 0
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+triggers = L1_1
+L1_1 = {}
+variables = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L3_1.config_id = 121007
+L3_1.gadget_id = 70290095
+L4_1 = {}
+L4_1.x = -3881.824
+L4_1.y = 248.086
+L4_1.z = -2285.143
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 0.973
+L4_1.y = 314.674
+L4_1.z = 359.743
+L3_1.rot = L4_1
+L3_1.level = 27
+L3_1.area_id = 13
+L4_1 = {}
+L4_1.config_id = 121012
+L4_1.gadget_id = 70330064
+L5_1 = {}
+L5_1.x = -3890.097
+L5_1.y = 200.255
+L5_1.z = -2275.711
+L4_1.pos = L5_1
+L5_1 = {}
+L5_1.x = 0.0
+L5_1.y = 0.0
+L5_1.z = 0.0
+L4_1.rot = L5_1
+L4_1.level = 27
+L4_1.interact_id = 35
+L4_1.area_id = 13
+L2_1[1] = L3_1
+L2_1[2] = L4_1
+L1_1.gadgets = L2_1
+garbages = L1_1
+L1_1 = {}
+L1_1.suite = 1
+L1_1.end_suite = 0
+L1_1.rand_suite = false
+init_config = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L2_1.monsters = L3_1
+L3_1 = {}
+L4_1 = 121001
+L5_1 = 121002
+L6_1 = 121003
+L7_1 = 121004
+L8_1 = 121005
+L9_1 = 121006
+L10_1 = 121008
+L11_1 = 121009
+L3_1[1] = L4_1
+L3_1[2] = L5_1
+L3_1[3] = L6_1
+L3_1[4] = L7_1
+L3_1[5] = L8_1
+L3_1[6] = L9_1
+L3_1[7] = L10_1
+L3_1[8] = L11_1
+L2_1.gadgets = L3_1
+L3_1 = {}
+L2_1.regions = L3_1
+L3_1 = {}
+L4_1 = "GADGET_CREATE_121010"
+L5_1 = "SELECT_OPTION_121011"
+L3_1[1] = L4_1
+L3_1[2] = L5_1
+L2_1.triggers = L3_1
+L2_1.rand_weight = 100
+L1_1[1] = L2_1
+suites = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2
+  L2_2 = A1_2.param1
+  if 121009 ~= L2_2 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_GADGET_CREATE_121010 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.SetWorktopOptionsByGroupId
+  L3_2 = A0_2
+  L4_2 = 133212121
+  L5_2 = 121009
+  L6_2 = {}
+  L7_2 = 1
+  L6_2[1] = L7_2
+  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_GADGET_CREATE_121010 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2
+  L2_2 = A1_2.param1
+  if 121009 ~= L2_2 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = A1_2.param2
+  if 1 ~= L2_2 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_SELECT_OPTION_121011 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.SetGadgetStateByConfigId
+  L3_2 = A0_2
+  L4_2 = 121008
+  L5_2 = GadgetState
+  L5_2 = L5_2.GearStart
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.DelWorktopOptionByGroupId
+  L3_2 = A0_2
+  L4_2 = 133212121
+  L5_2 = 121009
+  L6_2 = 1
+  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_SELECT_OPTION_121011 = L1_1

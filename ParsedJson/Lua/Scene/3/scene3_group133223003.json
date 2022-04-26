@@ -1,0 +1,158 @@
+{
+    "action_EVENT_VARIABLE_CHANGE_3002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_3002": "WARN: Lua function omitted from the dump",
+    "defs": {
+        "chaseLoopPointArray": 322300013,
+        "chaseLoopRoute": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "group_id": 133223003,
+        "region_id": 3003,
+        "seelie_id": 3001,
+        "selfLoopPointArray": 322300062,
+        "selfLoopRoute": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 3001,
+            "gadget_id": 70350292,
+            "is_use_point_array": true,
+            "level": 2,
+            "persistent": true,
+            "pos": {
+                "x": -5870.271,
+                "y": 159.11,
+                "z": -2675.187
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "start_route": false
+        }
+    ],
+    "garbages": {
+        "triggers": [
+            {
+                "action": "action_EVENT_PLATFORM_REACH_POINT_3004",
+                "condition": "condition_EVENT_PLATFORM_REACH_POINT_3004",
+                "config_id": 1003004,
+                "event": 26,
+                "name": "PLATFORM_REACH_POINT_3004",
+                "source": "",
+                "trigger_count": 0
+            },
+            {
+                "action": "action_EVENT_AVATAR_NEAR_PLATFORM_3005",
+                "condition": "condition_EVENT_AVATAR_NEAR_PLATFORM_3005",
+                "config_id": 1003005,
+                "event": 25,
+                "name": "AVATAR_NEAR_PLATFORM_3005",
+                "source": "",
+                "trigger_count": 0
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 18,
+            "config_id": 3003,
+            "pos": {
+                "x": -5871.34,
+                "y": 160.554,
+                "z": -2677.142
+            },
+            "radius": 4,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                3001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                3003
+            ],
+            "triggers": [
+                "VARIABLE_CHANGE_3002"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_3002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_3002",
+            "config_id": 1003002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_3002",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "isMoving",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "currentPathNodeID",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "isstart",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 4,
+            "name": "selfLooping",
+            "no_refresh": false,
+            "value": 1
+        },
+        {
+            "configId": 5,
+            "name": "markFinish",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

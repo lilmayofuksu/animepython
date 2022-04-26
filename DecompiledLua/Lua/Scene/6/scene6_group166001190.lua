@@ -1,0 +1,201 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
+L0_1 = {}
+L0_1.group_id = 166001190
+L1_1 = {}
+monsters = L1_1
+L1_1 = {}
+npcs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 190002
+L2_1.gadget_id = 70360001
+L3_1 = {}
+L3_1.x = 433.643
+L3_1.y = 380.671
+L3_1.z = 530.682
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 0.0
+L3_1.y = 0.0
+L3_1.z = 0.0
+L2_1.rot = L3_1
+L2_1.level = 32
+L2_1.area_id = 300
+L3_1 = {}
+L3_1.config_id = 190003
+L3_1.gadget_id = 70360001
+L4_1 = {}
+L4_1.x = 676.583
+L4_1.y = 420.036
+L4_1.z = 762.082
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 0.0
+L4_1.y = 0.0
+L4_1.z = 0.0
+L3_1.rot = L4_1
+L3_1.level = 32
+L3_1.area_id = 300
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+gadgets = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 190001
+L3_1 = RegionShape
+L3_1 = L3_1.POLYGON
+L2_1.shape = L3_1
+L3_1 = {}
+L3_1.x = 673.323
+L3_1.y = 432.289
+L3_1.z = 760.793
+L2_1.pos = L3_1
+L2_1.height = 24.178
+L3_1 = {}
+L4_1 = {}
+L4_1.x = 683.6
+L4_1.y = 769.081
+L5_1 = {}
+L5_1.x = 673.964
+L5_1.y = 774.612
+L6_1 = {}
+L6_1.x = 662.87
+L6_1.y = 772.04
+L7_1 = {}
+L7_1.x = 660.747
+L7_1.y = 760.25
+L8_1 = {}
+L8_1.x = 664.575
+L8_1.y = 750.482
+L9_1 = {}
+L9_1.x = 670.695
+L9_1.y = 746.975
+L10_1 = {}
+L10_1.x = 678.639
+L10_1.y = 749.596
+L11_1 = {}
+L11_1.x = 685.898
+L11_1.y = 758.95
+L3_1[1] = L4_1
+L3_1[2] = L5_1
+L3_1[3] = L6_1
+L3_1[4] = L7_1
+L3_1[5] = L8_1
+L3_1[6] = L9_1
+L3_1[7] = L10_1
+L3_1[8] = L11_1
+L2_1.point_array = L3_1
+L2_1.area_id = 300
+L1_1[1] = L2_1
+regions = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 1190001
+L2_1.name = "ENTER_REGION_190001"
+L3_1 = EventType
+L3_1 = L3_1.EVENT_ENTER_REGION
+L2_1.event = L3_1
+L2_1.source = ""
+L2_1.condition = "condition_EVENT_ENTER_REGION_190001"
+L2_1.action = "action_EVENT_ENTER_REGION_190001"
+L1_1[1] = L2_1
+triggers = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.configId = 1
+L2_1.name = "bell"
+L2_1.value = 0
+L2_1.no_refresh = true
+L1_1[1] = L2_1
+variables = L1_1
+L1_1 = {}
+L1_1.suite = 1
+L1_1.end_suite = 0
+L1_1.rand_suite = false
+init_config = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L2_1.monsters = L3_1
+L3_1 = {}
+L4_1 = 190002
+L3_1[1] = L4_1
+L2_1.gadgets = L3_1
+L3_1 = {}
+L2_1.regions = L3_1
+L3_1 = {}
+L2_1.triggers = L3_1
+L2_1.rand_weight = 100
+L3_1 = {}
+L4_1 = {}
+L3_1.monsters = L4_1
+L4_1 = {}
+L5_1 = 190003
+L4_1[1] = L5_1
+L3_1.gadgets = L4_1
+L4_1 = {}
+L5_1 = 190001
+L4_1[1] = L5_1
+L3_1.regions = L4_1
+L4_1 = {}
+L5_1 = "ENTER_REGION_190001"
+L4_1[1] = L5_1
+L3_1.triggers = L4_1
+L3_1.rand_weight = 100
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+suites = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = A1_2.param1
+  if L2_2 ~= 190001 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetRegionEntityCount
+  L3_2 = A0_2
+  L4_2 = {}
+  L5_2 = A1_2.source_eid
+  L4_2.region_eid = L5_2
+  L5_2 = EntityType
+  L5_2 = L5_2.AVATAR
+  L4_2.entity_type = L5_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 < 1 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetGroupVariableValue
+  L3_2 = A0_2
+  L4_2 = "bell"
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 ~= 0 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_ENTER_REGION_190001 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.ShowReminder
+  L3_2 = A0_2
+  L4_2 = 60010155
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_ENTER_REGION_190001 = L1_1

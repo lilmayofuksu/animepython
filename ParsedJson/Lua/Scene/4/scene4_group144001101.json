@@ -1,0 +1,112 @@
+{
+    "action_EVENT_ENTER_REGION_101004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_101004": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 102,
+            "config_id": 101001,
+            "drop_tag": "\u53f2\u83b1\u59c6",
+            "level": 20,
+            "monster_id": 20010501,
+            "pos": {
+                "x": 683.695,
+                "y": 123.287,
+                "z": 348.036
+            },
+            "rot": {
+                "x": 0,
+                "y": 248.202,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 102,
+            "config_id": 101002,
+            "drop_tag": "\u5927\u53f2\u83b1\u59c6",
+            "level": 20,
+            "monster_id": 20010701,
+            "pos": {
+                "x": 685.182,
+                "y": 123.287,
+                "z": 346.811
+            },
+            "rot": {
+                "x": 0,
+                "y": 248.202,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 102,
+            "config_id": 101003,
+            "drop_tag": "\u53f2\u83b1\u59c6",
+            "level": 20,
+            "monster_id": 20010501,
+            "pos": {
+                "x": 682.212,
+                "y": 123.287,
+                "z": 346.903
+            },
+            "rot": {
+                "x": 0,
+                "y": 248.202,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 102,
+            "config_id": 101004,
+            "pos": {
+                "x": 683.685,
+                "y": 123.287,
+                "z": 346.834
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                101004
+            ],
+            "triggers": [
+                "ENTER_REGION_101004"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                101001,
+                101002,
+                101003
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_101004",
+            "condition": "condition_EVENT_ENTER_REGION_101004",
+            "config_id": 1101004,
+            "event": 4,
+            "name": "ENTER_REGION_101004",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

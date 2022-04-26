@@ -1,0 +1,181 @@
+{
+    "action_EVENT_ANY_MONSTER_LIVE_382013": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_MONSTER_LIVE_382014": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_MONSTER_LIVE_382017": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_MONSTER_LIVE_382018": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_382010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_LIVE_382013": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_LIVE_382014": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_LIVE_382017": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_LIVE_382018": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 1,
+        "rand_suite": false,
+        "suite": 2
+    },
+    "monsters": [
+        {
+            "affix": [
+                5009
+            ],
+            "area_id": 10,
+            "climate_area_id": 1,
+            "config_id": 382002,
+            "drop_tag": "\u9057\u8ff9\u91cd\u673a",
+            "level": 10,
+            "monster_id": 24010301,
+            "pos": {
+                "x": 1177.985,
+                "y": 267.551,
+                "z": -533.586
+            },
+            "pose_id": 101,
+            "rot": {
+                "x": 0,
+                "y": 212.698,
+                "z": 0
+            }
+        },
+        {
+            "affix": [
+                5009
+            ],
+            "area_id": 10,
+            "climate_area_id": 1,
+            "config_id": 382003,
+            "drop_tag": "\u9057\u8ff9\u91cd\u673a",
+            "level": 10,
+            "monster_id": 24010301,
+            "pos": {
+                "x": 1153.03,
+                "y": 268.35,
+                "z": -540.872
+            },
+            "pose_id": 101,
+            "rot": {
+                "x": 0,
+                "y": 85.791,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "climate_area_id": 1,
+            "config_id": 382006,
+            "drop_tag": "\u9057\u8ff9\u91cd\u673a",
+            "level": 10,
+            "monster_id": 24010301,
+            "pos": {
+                "x": 1177.985,
+                "y": 267.551,
+                "z": -533.586
+            },
+            "pose_id": 100,
+            "rot": {
+                "x": 0,
+                "y": 212.698,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "climate_area_id": 1,
+            "config_id": 382007,
+            "drop_tag": "\u9057\u8ff9\u91cd\u673a",
+            "level": 10,
+            "monster_id": 24010301,
+            "pos": {
+                "x": 1153.03,
+                "y": 268.35,
+                "z": -540.872
+            },
+            "pose_id": 100,
+            "rot": {
+                "x": 0,
+                "y": 85.791,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_LIVE_382013",
+                "ANY_MONSTER_LIVE_382014",
+                "ANY_MONSTER_LIVE_382017",
+                "ANY_MONSTER_LIVE_382018"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                382002,
+                382003
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_382010"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_382010",
+            "condition": "",
+            "config_id": 1382010,
+            "event": 21,
+            "name": "QUEST_FINISH_382010",
+            "source": "7014120"
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_LIVE_382013",
+            "condition": "condition_EVENT_ANY_MONSTER_LIVE_382013",
+            "config_id": 1382013,
+            "event": 11,
+            "name": "ANY_MONSTER_LIVE_382013",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_LIVE_382014",
+            "condition": "condition_EVENT_ANY_MONSTER_LIVE_382014",
+            "config_id": 1382014,
+            "event": 11,
+            "name": "ANY_MONSTER_LIVE_382014",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_LIVE_382017",
+            "condition": "condition_EVENT_ANY_MONSTER_LIVE_382017",
+            "config_id": 1382017,
+            "event": 11,
+            "name": "ANY_MONSTER_LIVE_382017",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_LIVE_382018",
+            "condition": "condition_EVENT_ANY_MONSTER_LIVE_382018",
+            "config_id": 1382018,
+            "event": 11,
+            "name": "ANY_MONSTER_LIVE_382018",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "isFinishPuzzle",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

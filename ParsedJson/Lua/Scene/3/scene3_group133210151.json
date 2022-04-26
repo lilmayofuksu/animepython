@@ -1,0 +1,200 @@
+{
+    "action_EVENT_CHALLENGE_FAIL_151006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_151005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_151009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_151007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_151011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_151010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_151009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_151007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_151008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_151010": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 17,
+            "config_id": 151001,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211111,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -3743.661,
+                "y": 158.753,
+                "z": -605.588
+            },
+            "rot": {
+                "x": 9.3,
+                "y": 228.088,
+                "z": 3.364
+            }
+        },
+        {
+            "area_id": 17,
+            "config_id": 151002,
+            "gadget_id": 70350083,
+            "level": 2,
+            "persistent": true,
+            "pos": {
+                "x": -3624.635,
+                "y": 133.607,
+                "z": -648.347
+            },
+            "rot": {
+                "x": 0,
+                "y": 0.078,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 17,
+            "config_id": 151003,
+            "gadget_id": 70360001,
+            "level": 2,
+            "persistent": true,
+            "pos": {
+                "x": -3624.583,
+                "y": 133.673,
+                "z": -648.391
+            },
+            "rot": {
+                "x": 359.203,
+                "y": 0.471,
+                "z": 355.818
+            }
+        },
+        {
+            "area_id": 17,
+            "config_id": 151004,
+            "gadget_id": 70900201,
+            "level": 30,
+            "pos": {
+                "x": -3746.333,
+                "y": 159.21,
+                "z": -607.703
+            },
+            "rot": {
+                "x": 5.726,
+                "y": 153.23,
+                "z": 351.929
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 3,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                151002,
+                151003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "CHALLENGE_SUCCESS_151005",
+                "CHALLENGE_FAIL_151006",
+                "GADGET_STATE_CHANGE_151007",
+                "GADGET_STATE_CHANGE_151008",
+                "GADGET_CREATE_151009",
+                "SELECT_OPTION_151010",
+                "GROUP_LOAD_151011"
+            ]
+        },
+        {
+            "gadgets": [
+                151001,
+                151004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                151002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_151005",
+            "condition": "",
+            "config_id": 1151005,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_151005",
+            "source": "666",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_151006",
+            "condition": "",
+            "config_id": 1151006,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_151006",
+            "source": "666",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_151007",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_151007",
+            "config_id": 1151007,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_151007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_151008",
+            "config_id": 1151008,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_151008",
+            "source": "",
+            "tag": "202"
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_151009",
+            "condition": "condition_EVENT_GADGET_CREATE_151009",
+            "config_id": 1151009,
+            "event": 6,
+            "name": "GADGET_CREATE_151009",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_151010",
+            "condition": "condition_EVENT_SELECT_OPTION_151010",
+            "config_id": 1151010,
+            "event": 9,
+            "name": "SELECT_OPTION_151010",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_151011",
+            "condition": "",
+            "config_id": 1151011,
+            "event": 29,
+            "name": "GROUP_LOAD_151011",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

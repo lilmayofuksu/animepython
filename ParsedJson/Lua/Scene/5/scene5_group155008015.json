@@ -1,0 +1,107 @@
+{
+    "UpdateGamePlayState": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_15004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_15002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_15003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_15004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 15001,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211111,
+            "isOneoff": true,
+            "level": 16,
+            "persistent": true,
+            "pos": {
+                "x": -145.205,
+                "y": 264.171,
+                "z": 430.276
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_15002",
+                "VARIABLE_CHANGE_15003"
+            ]
+        },
+        {
+            "gadgets": [
+                15001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_15004"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_LOAD_15002",
+            "condition": "",
+            "config_id": 1015002,
+            "event": 29,
+            "name": "GROUP_LOAD_15002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_15003",
+            "condition": "",
+            "config_id": 1015003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_15003",
+            "source": "gameplayState",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_15004",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_15004",
+            "config_id": 1015004,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_15004",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "gameplayState",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

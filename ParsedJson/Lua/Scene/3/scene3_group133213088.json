@@ -1,0 +1,180 @@
+{
+    "action_EVENT_VARIABLE_CHANGE_88007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_88007": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 12,
+            "config_id": 88001,
+            "gadget_id": 70950068,
+            "level": 10,
+            "pos": {
+                "x": -3327.027,
+                "y": 216.423,
+                "z": -3475.449
+            },
+            "rot": {
+                "x": 347.102,
+                "y": 0.725,
+                "z": 353.591
+            },
+            "state": 201
+        },
+        {
+            "area_id": 12,
+            "config_id": 88002,
+            "gadget_id": 70290116,
+            "level": 10,
+            "pos": {
+                "x": -3331.714,
+                "y": 217.641,
+                "z": -3448.843
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 12,
+            "config_id": 88003,
+            "gadget_id": 70950069,
+            "level": 10,
+            "pos": {
+                "x": -3355.502,
+                "y": 224.353,
+                "z": -3459.084
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 12,
+            "config_id": 88004,
+            "gadget_id": 70950069,
+            "level": 10,
+            "pos": {
+                "x": -3321.342,
+                "y": 217.453,
+                "z": -3435.983
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 12,
+            "config_id": 88005,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211111,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -3346.184,
+                "y": 206.365,
+                "z": -3450.841
+            },
+            "rot": {
+                "x": 19.019,
+                "y": 97.629,
+                "z": 347.131
+            }
+        },
+        {
+            "area_id": 12,
+            "config_id": 88008,
+            "gadget_id": 70950068,
+            "level": 27,
+            "pos": {
+                "x": -3358.24,
+                "y": 221.371,
+                "z": -3439.473
+            },
+            "rot": {
+                "x": 9.388,
+                "y": 358.849,
+                "z": 346.052
+            },
+            "state": 201
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 12,
+            "config_id": 88006,
+            "pos": {
+                "x": -3339.919,
+                "y": 217.567,
+                "z": -3449.02
+            },
+            "radius": 30,
+            "shape": 1,
+            "team_ability_group_list": [
+                "Move_Electric_Stake_Play"
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                88001,
+                88002,
+                88003,
+                88004,
+                88008
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_88007"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                88006
+            ],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                88005
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_88007",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_88007",
+            "config_id": 1088007,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_88007",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

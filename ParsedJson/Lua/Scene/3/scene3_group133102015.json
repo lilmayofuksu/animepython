@@ -1,0 +1,80 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_15004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_15027": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_15004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_15027": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "affix": [
+                1008,
+                1018
+            ],
+            "area_id": 5,
+            "config_id": 15003,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "isElite": true,
+            "level": 24,
+            "monster_id": 23010101,
+            "pos": {
+                "x": 1669.575,
+                "y": 212.484,
+                "z": 693.055
+            },
+            "pose_id": 9011,
+            "rot": {
+                "x": 0,
+                "y": 264.293,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                15003
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_15004",
+                "SPECIFIC_MONSTER_HP_CHANGE_15027"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_15004",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_15004",
+            "config_id": 1015004,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_15004",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_15027",
+            "condition": "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_15027",
+            "config_id": 1015027,
+            "event": 12,
+            "name": "SPECIFIC_MONSTER_HP_CHANGE_15027",
+            "source": "15003"
+        }
+    ],
+    "variables": []
+}

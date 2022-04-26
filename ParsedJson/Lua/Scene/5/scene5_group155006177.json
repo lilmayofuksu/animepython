@@ -1,0 +1,149 @@
+{
+    "UpdateGamePlayState": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_177008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_177010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_PLATFORM_REACH_POINT_177005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_177011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_177008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_PLATFORM_REACH_POINT_177005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 177001,
+            "gadget_id": 70290293,
+            "level": 36,
+            "pos": {
+                "x": 410.602,
+                "y": 176.399,
+                "z": -235.055
+            },
+            "rot": {
+                "x": 0,
+                "y": 107.871,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 177002,
+            "gadget_id": 70710010,
+            "level": 36,
+            "pos": {
+                "x": 398.886,
+                "y": 189.065,
+                "z": -279.397
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "route_id": 500600025
+        },
+        {
+            "area_id": 200,
+            "config_id": 177003,
+            "gadget_id": 70710007,
+            "level": 36,
+            "pos": {
+                "x": 410.485,
+                "y": 176.508,
+                "z": -235.407
+            },
+            "rot": {
+                "x": 0,
+                "y": 191.234,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                177001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_177010",
+                "VARIABLE_CHANGE_177011"
+            ]
+        },
+        {
+            "gadgets": [
+                177001,
+                177002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "PLATFORM_REACH_POINT_177005",
+                "GADGET_STATE_CHANGE_177008"
+            ]
+        },
+        {
+            "gadgets": [
+                177001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_PLATFORM_REACH_POINT_177005",
+            "condition": "condition_EVENT_PLATFORM_REACH_POINT_177005",
+            "config_id": 1177005,
+            "event": 26,
+            "name": "PLATFORM_REACH_POINT_177005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_177008",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_177008",
+            "config_id": 1177008,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_177008",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_177010",
+            "condition": "",
+            "config_id": 1177010,
+            "event": 29,
+            "name": "GROUP_LOAD_177010",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_177011",
+            "condition": "",
+            "config_id": 1177011,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_177011",
+            "source": "gameplayState",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "gameplayState",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

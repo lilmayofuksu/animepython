@@ -1,0 +1,141 @@
+{
+    "MovePlatform": "WARN: Lua function omitted from the dump",
+    "action_EVENT_AVATAR_NEAR_PLATFORM_358003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_358004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_PLATFORM_REACH_POINT_358005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_AVATAR_NEAR_PLATFORM_358003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_358004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_PLATFORM_REACH_POINT_358005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 17,
+            "config_id": 358001,
+            "drop_tag": "\u6c34\u4e0a\u641c\u522e\u70b9\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70210105,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -3626.19,
+                "y": 199.999,
+                "z": -516.648
+            },
+            "rot": {
+                "x": 0,
+                "y": 235.625,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 17,
+            "config_id": 358002,
+            "gadget_id": 70950081,
+            "is_use_point_array": true,
+            "level": 1,
+            "pos": {
+                "x": -3732.715,
+                "y": 199.999,
+                "z": -426.344
+            },
+            "rot": {
+                "x": 0,
+                "y": 235.625,
+                "z": 0
+            },
+            "start_route": false
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 17,
+            "config_id": 358004,
+            "pos": {
+                "x": -3732.715,
+                "y": 199.999,
+                "z": -426.344
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                358002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                358004
+            ],
+            "triggers": [
+                "AVATAR_NEAR_PLATFORM_358003",
+                "ENTER_REGION_358004",
+                "PLATFORM_REACH_POINT_358005"
+            ]
+        },
+        {
+            "gadgets": [
+                358001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_AVATAR_NEAR_PLATFORM_358003",
+            "condition": "condition_EVENT_AVATAR_NEAR_PLATFORM_358003",
+            "config_id": 1358003,
+            "event": 25,
+            "name": "AVATAR_NEAR_PLATFORM_358003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_358004",
+            "condition": "condition_EVENT_ENTER_REGION_358004",
+            "config_id": 1358004,
+            "event": 4,
+            "name": "ENTER_REGION_358004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_PLATFORM_REACH_POINT_358005",
+            "condition": "condition_EVENT_PLATFORM_REACH_POINT_358005",
+            "config_id": 1358005,
+            "event": 26,
+            "name": "PLATFORM_REACH_POINT_358005",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "currentPathNode",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "isReachGoal",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "action_EVENT_GROUP_LOAD_442003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_PLATFORM_REACH_POINT_442004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_442002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_442003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_PLATFORM_REACH_POINT_442004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_FINISH_442002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 442001,
+            "gadget_id": 70380024,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 677.868,
+                "y": 200.592,
+                "z": -836.509
+            },
+            "rot": {
+                "x": 0,
+                "y": 10.21,
+                "z": 0
+            },
+            "route_id": 300800110,
+            "start_route": false
+        }
+    ],
+    "garbages": {
+        "gadgets": [
+            {
+                "area_id": 10,
+                "config_id": 442006,
+                "gadget_id": 70300086,
+                "level": 30,
+                "pos": {
+                    "x": 673.5,
+                    "y": 195.9,
+                    "z": -848.517
+                },
+                "rot": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                442001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_442002",
+                "GROUP_LOAD_442003",
+                "PLATFORM_REACH_POINT_442004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_442002",
+            "condition": "condition_EVENT_QUEST_FINISH_442002",
+            "config_id": 1442002,
+            "event": 21,
+            "name": "QUEST_FINISH_442002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_442003",
+            "condition": "condition_EVENT_GROUP_LOAD_442003",
+            "config_id": 1442003,
+            "event": 29,
+            "name": "GROUP_LOAD_442003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_PLATFORM_REACH_POINT_442004",
+            "condition": "condition_EVENT_PLATFORM_REACH_POINT_442004",
+            "config_id": 1442004,
+            "event": 26,
+            "name": "PLATFORM_REACH_POINT_442004",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Finish",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

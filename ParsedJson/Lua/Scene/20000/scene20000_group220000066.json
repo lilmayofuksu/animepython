@@ -1,0 +1,157 @@
+{
+    "action_EVENT_CLIENT_EXECUTE_128": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_132": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_131": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_154": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_132": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 371,
+            "gadget_id": 70900250,
+            "level": 1,
+            "pos": {
+                "x": 99.939,
+                "y": 0.54,
+                "z": 318.102
+            },
+            "rot": {
+                "x": 0,
+                "y": 23.884,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 372,
+            "drop_tag": "\u6218\u6597\u4f4e\u7ea7\u8499\u5fb7",
+            "gadget_id": 70211001,
+            "isOneoff": true,
+            "level": 1,
+            "pos": {
+                "x": 103.095,
+                "y": 0.54,
+                "z": 322.881
+            },
+            "rot": {
+                "x": 0,
+                "y": 192.083,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 377,
+            "gadget_id": 70900202,
+            "level": 1,
+            "pos": {
+                "x": 100.041,
+                "y": 0.54,
+                "z": 318.251
+            },
+            "rot": {
+                "x": 0,
+                "y": 96.869,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": true,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [
+        {
+            "config_id": 1,
+            "npc_id": 20005,
+            "pos": {
+                "x": 101.422,
+                "y": 0.54,
+                "z": 322.092
+            },
+            "rot": {
+                "x": 0,
+                "y": 201.531,
+                "z": 0
+            }
+        }
+    ],
+    "regions": [
+        {
+            "config_id": 132,
+            "pos": {
+                "x": 100.083,
+                "y": 0.671,
+                "z": 317.966
+            },
+            "radius": 1.5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                371
+            ],
+            "monsters": [],
+            "npcs": [
+                1
+            ],
+            "rand_weight": 100,
+            "regions": [
+                132
+            ],
+            "triggers": [
+                "CLIENT_EXECUTE_128",
+                "QUEST_START_131",
+                "ENTER_REGION_132",
+                "QUEST_START_154"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_CLIENT_EXECUTE_128",
+            "condition": "",
+            "config_id": 1000128,
+            "event": 10,
+            "name": "CLIENT_EXECUTE_128",
+            "source": "RopeRule",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_131",
+            "condition": "",
+            "config_id": 1000131,
+            "event": 28,
+            "name": "QUEST_START_131",
+            "source": "2000202",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_132",
+            "condition": "condition_EVENT_ENTER_REGION_132",
+            "config_id": 1000132,
+            "event": 4,
+            "forbid_guest": false,
+            "name": "ENTER_REGION_132",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_154",
+            "condition": "",
+            "config_id": 1000154,
+            "event": 28,
+            "name": "QUEST_START_154",
+            "source": "2000203"
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "SwitchOn",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

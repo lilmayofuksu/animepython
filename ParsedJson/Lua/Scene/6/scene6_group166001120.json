@@ -1,0 +1,215 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_120005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_120010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_120009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_120012": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_120006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_120011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_120007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_120004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_120005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_120010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_120009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_120012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_120006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_120011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_TIME_AXIS_PASS_120007": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 300,
+            "config_id": 120001,
+            "gadget_id": 70290276,
+            "level": 32,
+            "persistent": true,
+            "pos": {
+                "x": 1044.979,
+                "y": 1024.656,
+                "z": 950.458
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 120002,
+            "gadget_id": 70290204,
+            "level": 32,
+            "persistent": true,
+            "pos": {
+                "x": 1045.043,
+                "y": 1012.982,
+                "z": 950.277
+            },
+            "rot": {
+                "x": 17.485,
+                "y": 4.891,
+                "z": -0.001
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 120003,
+            "gadget_id": 70290233,
+            "level": 32,
+            "persistent": true,
+            "pos": {
+                "x": 1044.122,
+                "y": 1012.934,
+                "z": 951.416
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 120008,
+            "gadget_id": 70290266,
+            "level": 32,
+            "persistent": true,
+            "pos": {
+                "x": 1044.762,
+                "y": 1013.076,
+                "z": 950.37
+            },
+            "rot": {
+                "x": 13.554,
+                "y": 19.307,
+                "z": 354.289
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 300,
+            "config_id": 120010,
+            "pos": {
+                "x": 1040.552,
+                "y": 1012.757,
+                "z": 957.529
+            },
+            "radius": 10,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                120001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                120010
+            ],
+            "triggers": [
+                "VARIABLE_CHANGE_120004",
+                "ANY_GADGET_DIE_120005",
+                "GROUP_LOAD_120006",
+                "TIME_AXIS_PASS_120007",
+                "GADGET_CREATE_120009",
+                "ENTER_REGION_120010",
+                "GROUP_LOAD_120011",
+                "GADGET_CREATE_120012"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_120004",
+            "condition": "",
+            "config_id": 1120004,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_120004",
+            "source": "DropRockAbyssBulletTrigger"
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_120005",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_120005",
+            "config_id": 1120005,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_120005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_120006",
+            "condition": "condition_EVENT_GROUP_LOAD_120006",
+            "config_id": 1120006,
+            "event": 29,
+            "name": "GROUP_LOAD_120006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_120007",
+            "condition": "condition_EVENT_TIME_AXIS_PASS_120007",
+            "config_id": 1120007,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_120007",
+            "source": "killed",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_120009",
+            "condition": "condition_EVENT_GADGET_CREATE_120009",
+            "config_id": 1120009,
+            "event": 6,
+            "name": "GADGET_CREATE_120009",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_120010",
+            "condition": "condition_EVENT_ENTER_REGION_120010",
+            "config_id": 1120010,
+            "event": 4,
+            "name": "ENTER_REGION_120010",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_120011",
+            "condition": "condition_EVENT_GROUP_LOAD_120011",
+            "config_id": 1120011,
+            "event": 29,
+            "name": "GROUP_LOAD_120011",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_120012",
+            "condition": "condition_EVENT_GADGET_CREATE_120012",
+            "config_id": 1120012,
+            "event": 6,
+            "name": "GADGET_CREATE_120012",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "done",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "drop",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

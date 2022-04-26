@@ -1,0 +1,74 @@
+{
+    "action_EVENT_GATHER_3002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_3003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_START_3003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 3001,
+            "gadget_id": 70500000,
+            "isOneoff": true,
+            "level": 1,
+            "point_type": 9028,
+            "pos": {
+                "x": -10.638,
+                "y": 1.957,
+                "z": 18.358
+            },
+            "room": 100401,
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                3001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GATHER_3002",
+                "QUEST_START_3003"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GATHER_3002",
+            "condition": "",
+            "config_id": 1003002,
+            "event": 20,
+            "name": "GATHER_3002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_START_3003",
+            "condition": "condition_EVENT_QUEST_START_3003",
+            "config_id": 1003003,
+            "event": 28,
+            "name": "QUEST_START_3003",
+            "source": "1010115"
+        }
+    ],
+    "variables": []
+}

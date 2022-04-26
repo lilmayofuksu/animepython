@@ -1,0 +1,294 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_118006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_118007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_118008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_118006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_TIMER_EVENT_118007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_118008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 118001,
+            "gadget_id": 70900008,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2613.126,
+                "y": 252.559,
+                "z": -1246.144
+            },
+            "rot": {
+                "x": 0,
+                "y": 330.8,
+                "z": 0
+            },
+            "state": 901
+        },
+        {
+            "config_id": 118002,
+            "gadget_id": 70900008,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2623.426,
+                "y": 252.559,
+                "z": -1241.344
+            },
+            "rot": {
+                "x": 0,
+                "y": 329,
+                "z": 0
+            },
+            "state": 901
+        },
+        {
+            "config_id": 118003,
+            "gadget_id": 70900008,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2616.226,
+                "y": 252.559,
+                "z": -1239.144
+            },
+            "rot": {
+                "x": 0,
+                "y": 59.1,
+                "z": 0
+            },
+            "state": 901
+        },
+        {
+            "config_id": 118004,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u8499\u5fb7",
+            "gadget_id": 70211111,
+            "isOneoff": true,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2618.426,
+                "y": 252.559,
+                "z": -1243.444
+            },
+            "rot": {
+                "x": 0,
+                "y": 330.5,
+                "z": 0
+            },
+            "showcutscene": true
+        },
+        {
+            "config_id": 118005,
+            "gadget_id": 70900008,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2620.226,
+                "y": 252.559,
+                "z": -1248.044
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 901
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "io_type": 1,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suite_disk": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "active_count",
+                    "no_refresh": false,
+                    "value": 0
+                },
+                {
+                    "configId": 2,
+                    "name": "isFinish",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 118001,
+                    "state": 901
+                },
+                {
+                    "config_id": 118002,
+                    "state": 901
+                },
+                {
+                    "config_id": 118003,
+                    "state": 901
+                },
+                {
+                    "config_id": 118005,
+                    "state": 901
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_118006",
+                "TIMER_EVENT_118007",
+                "VARIABLE_CHANGE_118008"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "active_count",
+                    "no_refresh": false,
+                    "value": 0
+                },
+                {
+                    "configId": 2,
+                    "name": "isFinish",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 118001,
+                    "state": 201
+                },
+                {
+                    "config_id": 118002,
+                    "state": 201
+                },
+                {
+                    "config_id": 118003,
+                    "state": 201
+                },
+                {
+                    "config_id": 118004,
+                    "state": 0
+                },
+                {
+                    "config_id": 118005,
+                    "state": 201
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "active_count",
+                    "no_refresh": false,
+                    "value": 4
+                },
+                {
+                    "configId": 2,
+                    "name": "isFinish",
+                    "no_refresh": true,
+                    "value": 1
+                }
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                118001,
+                118002,
+                118003,
+                118005
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_118006",
+                "TIMER_EVENT_118007",
+                "VARIABLE_CHANGE_118008"
+            ]
+        },
+        {
+            "gadgets": [
+                118001,
+                118002,
+                118003,
+                118004,
+                118005
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_118006",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_118006",
+            "config_id": 1118006,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_118006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_118007",
+            "condition": "condition_EVENT_TIMER_EVENT_118007",
+            "config_id": 1118007,
+            "event": 15,
+            "name": "TIMER_EVENT_118007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_118008",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_118008",
+            "config_id": 1118008,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_118008",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "active_count",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "isFinish",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

@@ -1,0 +1,161 @@
+{
+    "action_EVENT_ENTER_REGION_199002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_199001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_199004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_199003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_199002": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "io_type": 1,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 200,
+            "config_id": 199002,
+            "pos": {
+                "x": 219.252,
+                "y": 174.406,
+                "z": -415.082
+            },
+            "radius": 10,
+            "shape": 1
+        }
+    ],
+    "suite_disk": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "QUEST_START_199001"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "replayWaiting",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "npcs": [],
+            "regions": [
+                199002
+            ],
+            "triggers": [
+                "ENTER_REGION_199002",
+                "TIME_AXIS_PASS_199003",
+                "QUEST_START_199004"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "replayWaiting",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "replayWaiting",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_199001"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                199002
+            ],
+            "triggers": [
+                "ENTER_REGION_199002",
+                "TIME_AXIS_PASS_199003",
+                "QUEST_START_199004"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_START_199001",
+            "condition": "",
+            "config_id": 1199001,
+            "event": 28,
+            "name": "QUEST_START_199001",
+            "source": "7219001",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_199002",
+            "condition": "condition_EVENT_ENTER_REGION_199002",
+            "config_id": 1199002,
+            "event": 4,
+            "name": "ENTER_REGION_199002",
+            "source": "1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_199003",
+            "condition": "",
+            "config_id": 1199003,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_199003",
+            "source": "resetReminder",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_199004",
+            "condition": "",
+            "config_id": 1199004,
+            "event": 28,
+            "name": "QUEST_START_199004",
+            "source": "7219003",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "replayWaiting",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

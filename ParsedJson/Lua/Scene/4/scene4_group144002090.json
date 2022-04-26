@@ -1,0 +1,238 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_90008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_90004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_90006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_90011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_REFRESH_90010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_LEAVE_REGION_90005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_90008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_90004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_90006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_LEAVE_REGION_90005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 101,
+            "config_id": 90001,
+            "gadget_id": 70350268,
+            "level": 1,
+            "pos": {
+                "x": 490.663,
+                "y": 129.248,
+                "z": -457.366
+            },
+            "rot": {
+                "x": 0,
+                "y": 75.386,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 101,
+            "config_id": 90002,
+            "gadget_id": 70350220,
+            "level": 1,
+            "pos": {
+                "x": 495.913,
+                "y": 127.765,
+                "z": -455.821
+            },
+            "rot": {
+                "x": 0,
+                "y": 76.021,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 101,
+            "config_id": 90003,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u7fa4\u5c9b",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211112,
+            "isOneoff": true,
+            "level": 16,
+            "persistent": true,
+            "pos": {
+                "x": 495.767,
+                "y": 127.917,
+                "z": -450.008
+            },
+            "rot": {
+                "x": 359.982,
+                "y": 350.089,
+                "z": 359.894
+            },
+            "state": 101
+        },
+        {
+            "area_id": 101,
+            "config_id": 90009,
+            "gadget_id": 70350278,
+            "level": 1,
+            "pos": {
+                "x": 492.411,
+                "y": 128.74,
+                "z": -456.772
+            },
+            "rot": {
+                "x": 0,
+                "y": 73.101,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 3,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 101,
+            "config_id": 90004,
+            "pos": {
+                "x": 495.913,
+                "y": 128.13,
+                "z": -455.821
+            },
+            "radius": 3,
+            "shape": 1
+        },
+        {
+            "area_id": 101,
+            "config_id": 90005,
+            "pos": {
+                "x": 495.913,
+                "y": 128.13,
+                "z": -455.821
+            },
+            "radius": 3,
+            "shape": 1
+        },
+        {
+            "ability_group_list": [
+                "ActivityAbility_LudiHarpastum_Racket",
+                "ActivityAbility_LudiHarpastum_Hit_02"
+            ],
+            "area_id": 101,
+            "config_id": 90007,
+            "pos": {
+                "x": 495.913,
+                "y": 128.13,
+                "z": -455.821
+            },
+            "radius": 3,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                90001,
+                90002,
+                90003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                90004,
+                90005,
+                90007
+            ],
+            "triggers": [
+                "ENTER_REGION_90004",
+                "LEAVE_REGION_90005",
+                "GADGET_STATE_CHANGE_90006",
+                "ANY_GADGET_DIE_90008"
+            ]
+        },
+        {
+            "gadgets": [
+                90003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_90006",
+                "GROUP_REFRESH_90010",
+                "GROUP_LOAD_90011"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                90009
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_90004",
+            "condition": "condition_EVENT_ENTER_REGION_90004",
+            "config_id": 1090004,
+            "event": 4,
+            "name": "ENTER_REGION_90004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_LEAVE_REGION_90005",
+            "condition": "condition_EVENT_LEAVE_REGION_90005",
+            "config_id": 1090005,
+            "event": 5,
+            "name": "LEAVE_REGION_90005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_90006",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_90006",
+            "config_id": 1090006,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_90006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_90008",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_90008",
+            "config_id": 1090008,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_90008",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_REFRESH_90010",
+            "condition": "",
+            "config_id": 1090010,
+            "event": 32,
+            "name": "GROUP_REFRESH_90010",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_90011",
+            "condition": "",
+            "config_id": 1090011,
+            "event": 29,
+            "name": "GROUP_LOAD_90011",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,823 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1
+L0_1 = {}
+L0_1.group_id = 133002284
+L1_1 = {}
+monsters = L1_1
+L1_1 = {}
+npcs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 2378
+L2_1.gadget_id = 70300109
+L3_1 = {}
+L3_1.x = 1761.927
+L3_1.y = 216.115
+L3_1.z = -357.148
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 0.0
+L3_1.y = 270.985
+L3_1.z = 0.0
+L2_1.rot = L3_1
+L2_1.level = 10
+L2_1.area_id = 3
+L3_1 = {}
+L3_1.config_id = 2379
+L3_1.gadget_id = 70210102
+L4_1 = {}
+L4_1.x = 1757.08
+L4_1.y = 216.049
+L4_1.z = -357.847
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 0.0
+L4_1.y = 0.0
+L4_1.z = 0.0
+L3_1.rot = L4_1
+L3_1.level = 6
+L3_1.chest_drop_id = 1000100
+L3_1.drop_count = 1
+L3_1.area_id = 3
+L4_1 = {}
+L4_1.config_id = 2380
+L4_1.gadget_id = 70300109
+L5_1 = {}
+L5_1.x = 1783.398
+L5_1.y = 216.274
+L5_1.z = -360.896
+L4_1.pos = L5_1
+L5_1 = {}
+L5_1.x = 0.0
+L5_1.y = 305.504
+L5_1.z = 0.0
+L4_1.rot = L5_1
+L4_1.level = 10
+L4_1.area_id = 3
+L5_1 = {}
+L5_1.config_id = 2381
+L5_1.gadget_id = 70300109
+L6_1 = {}
+L6_1.x = 1790.649
+L6_1.y = 217.019
+L6_1.z = -366.208
+L5_1.pos = L6_1
+L6_1 = {}
+L6_1.x = 0.0
+L6_1.y = 313.882
+L6_1.z = 0.0
+L5_1.rot = L6_1
+L5_1.level = 10
+L5_1.area_id = 3
+L6_1 = {}
+L6_1.config_id = 2382
+L6_1.gadget_id = 70210102
+L7_1 = {}
+L7_1.x = 1788.037
+L7_1.y = 216.412
+L7_1.z = -361.213
+L6_1.pos = L7_1
+L7_1 = {}
+L7_1.x = 0.0
+L7_1.y = 0.0
+L7_1.z = 0.0
+L6_1.rot = L7_1
+L6_1.level = 6
+L6_1.chest_drop_id = 1000100
+L6_1.drop_count = 1
+L6_1.area_id = 3
+L7_1 = {}
+L7_1.config_id = 2383
+L7_1.gadget_id = 70300109
+L8_1 = {}
+L8_1.x = 1815.64
+L8_1.y = 217.44
+L8_1.z = -379.46
+L7_1.pos = L8_1
+L8_1 = {}
+L8_1.x = 0.0
+L8_1.y = 294.385
+L8_1.z = 0.0
+L7_1.rot = L8_1
+L7_1.level = 10
+L7_1.area_id = 3
+L8_1 = {}
+L8_1.config_id = 2384
+L8_1.gadget_id = 70300109
+L9_1 = {}
+L9_1.x = 1822.611
+L9_1.y = 217.659
+L9_1.z = -384.518
+L8_1.pos = L9_1
+L9_1 = {}
+L9_1.x = 0.0
+L9_1.y = 329.535
+L9_1.z = 0.0
+L8_1.rot = L9_1
+L8_1.level = 10
+L8_1.area_id = 3
+L9_1 = {}
+L9_1.config_id = 2385
+L9_1.gadget_id = 70300109
+L10_1 = {}
+L10_1.x = 1833.146
+L10_1.y = 218.593
+L10_1.z = -388.071
+L9_1.pos = L10_1
+L10_1 = {}
+L10_1.x = 0.0
+L10_1.y = 76.666
+L10_1.z = 0.0
+L9_1.rot = L10_1
+L9_1.level = 10
+L9_1.area_id = 3
+L10_1 = {}
+L10_1.config_id = 2386
+L10_1.gadget_id = 70210102
+L11_1 = {}
+L11_1.x = 1788.918
+L11_1.y = 216.885
+L11_1.z = -361.188
+L10_1.pos = L11_1
+L11_1 = {}
+L11_1.x = 0.0
+L11_1.y = 0.0
+L11_1.z = 0.0
+L10_1.rot = L11_1
+L10_1.level = 6
+L10_1.chest_drop_id = 1000000
+L10_1.drop_count = 1
+L10_1.area_id = 3
+L11_1 = {}
+L11_1.config_id = 2387
+L11_1.gadget_id = 70210102
+L12_1 = {}
+L12_1.x = 1835.414
+L12_1.y = 219.625
+L12_1.z = -385.817
+L11_1.pos = L12_1
+L12_1 = {}
+L12_1.x = 0.0
+L12_1.y = 0.0
+L12_1.z = 0.0
+L11_1.rot = L12_1
+L11_1.level = 6
+L11_1.chest_drop_id = 1000100
+L11_1.drop_count = 1
+L11_1.area_id = 3
+L12_1 = {}
+L12_1.config_id = 2388
+L12_1.gadget_id = 70210102
+L13_1 = {}
+L13_1.x = 1835.863
+L13_1.y = 219.627
+L13_1.z = -386.013
+L12_1.pos = L13_1
+L13_1 = {}
+L13_1.x = 0.0
+L13_1.y = 0.0
+L13_1.z = 0.0
+L12_1.rot = L13_1
+L12_1.level = 6
+L12_1.chest_drop_id = 1000000
+L12_1.drop_count = 1
+L12_1.area_id = 3
+L13_1 = {}
+L13_1.config_id = 2389
+L13_1.gadget_id = 70220026
+L14_1 = {}
+L14_1.x = 1799.841
+L14_1.y = 221.104
+L14_1.z = -413.751
+L13_1.pos = L14_1
+L14_1 = {}
+L14_1.x = 0.0
+L14_1.y = 0.0
+L14_1.z = 0.0
+L13_1.rot = L14_1
+L13_1.level = 10
+L13_1.area_id = 3
+L14_1 = {}
+L14_1.config_id = 2390
+L14_1.gadget_id = 70220026
+L15_1 = {}
+L15_1.x = 1772.849
+L15_1.y = 217.51
+L15_1.z = -457.104
+L14_1.pos = L15_1
+L15_1 = {}
+L15_1.x = 0.0
+L15_1.y = 0.0
+L15_1.z = 0.0
+L14_1.rot = L15_1
+L14_1.level = 10
+L14_1.area_id = 3
+L15_1 = {}
+L15_1.config_id = 2443
+L15_1.gadget_id = 70300092
+L16_1 = {}
+L16_1.x = 1851.131
+L16_1.y = 216.8
+L16_1.z = -367.093
+L15_1.pos = L16_1
+L16_1 = {}
+L16_1.x = 0.0
+L16_1.y = 0.0
+L16_1.z = 0.0
+L15_1.rot = L16_1
+L15_1.level = 10
+L15_1.area_id = 3
+L16_1 = {}
+L16_1.config_id = 2444
+L16_1.gadget_id = 70300109
+L17_1 = {}
+L17_1.x = 1768.502
+L17_1.y = 216.192
+L17_1.z = -356.931
+L16_1.pos = L17_1
+L17_1 = {}
+L17_1.x = 0.0
+L17_1.y = 268.34
+L17_1.z = 0.0
+L16_1.rot = L17_1
+L16_1.level = 10
+L16_1.area_id = 3
+L17_1 = {}
+L17_1.config_id = 2445
+L17_1.gadget_id = 70300109
+L18_1 = {}
+L18_1.x = 1797.904
+L18_1.y = 217.363
+L18_1.z = -370.098
+L17_1.pos = L18_1
+L18_1 = {}
+L18_1.x = 0.0
+L18_1.y = 305.775
+L18_1.z = 0.0
+L17_1.rot = L18_1
+L17_1.level = 10
+L17_1.area_id = 3
+L18_1 = {}
+L18_1.config_id = 284001
+L18_1.gadget_id = 70300109
+L19_1 = {}
+L19_1.x = 1820.581
+L19_1.y = 218.313
+L19_1.z = -398.041
+L18_1.pos = L19_1
+L19_1 = {}
+L19_1.x = 0.0
+L19_1.y = 357.886
+L19_1.z = 0.0
+L18_1.rot = L19_1
+L18_1.level = 10
+L18_1.area_id = 3
+L19_1 = {}
+L19_1.config_id = 284002
+L19_1.gadget_id = 70300109
+L20_1 = {}
+L20_1.x = 1818.962
+L20_1.y = 218.205
+L20_1.z = -405.67
+L19_1.pos = L20_1
+L20_1 = {}
+L20_1.x = 0.0
+L20_1.y = 15.119
+L20_1.z = 0.0
+L19_1.rot = L20_1
+L19_1.level = 10
+L19_1.area_id = 3
+L20_1 = {}
+L20_1.config_id = 284003
+L20_1.gadget_id = 70300109
+L21_1 = {}
+L21_1.x = 1814.936
+L21_1.y = 218.113
+L21_1.z = -413.185
+L20_1.pos = L21_1
+L21_1 = {}
+L21_1.x = 0.0
+L21_1.y = 18.321
+L21_1.z = 0.0
+L20_1.rot = L21_1
+L20_1.level = 10
+L20_1.area_id = 3
+L21_1 = {}
+L21_1.config_id = 284004
+L21_1.gadget_id = 70300109
+L22_1 = {}
+L22_1.x = 1810.375
+L22_1.y = 217.579
+L22_1.z = -424.663
+L21_1.pos = L22_1
+L22_1 = {}
+L22_1.x = 0.0
+L22_1.y = 15.757
+L22_1.z = 0.0
+L21_1.rot = L22_1
+L21_1.level = 10
+L21_1.area_id = 3
+L22_1 = {}
+L22_1.config_id = 284005
+L22_1.gadget_id = 70300109
+L23_1 = {}
+L23_1.x = 1807.727
+L23_1.y = 217.029
+L23_1.z = -436.825
+L22_1.pos = L23_1
+L23_1 = {}
+L23_1.x = 0.0
+L23_1.y = 15.757
+L23_1.z = 0.0
+L22_1.rot = L23_1
+L22_1.level = 10
+L22_1.area_id = 3
+L23_1 = {}
+L23_1.config_id = 284006
+L23_1.gadget_id = 70300109
+L24_1 = {}
+L24_1.x = 1800.26
+L24_1.y = 216.59
+L24_1.z = -444.007
+L23_1.pos = L24_1
+L24_1 = {}
+L24_1.x = 0.0
+L24_1.y = 71.005
+L24_1.z = 0.0
+L23_1.rot = L24_1
+L23_1.level = 10
+L23_1.area_id = 3
+L24_1 = {}
+L24_1.config_id = 284007
+L24_1.gadget_id = 70300109
+L25_1 = {}
+L25_1.x = 1777.455
+L25_1.y = 216.199
+L25_1.z = -357.568
+L24_1.pos = L25_1
+L25_1 = {}
+L25_1.x = 0.0
+L25_1.y = 280.673
+L25_1.z = 0.0
+L24_1.rot = L25_1
+L24_1.level = 10
+L24_1.area_id = 3
+L25_1 = {}
+L25_1.config_id = 284008
+L25_1.gadget_id = 70300109
+L26_1 = {}
+L26_1.x = 1807.571
+L26_1.y = 217.385
+L26_1.z = -376.456
+L25_1.pos = L26_1
+L26_1 = {}
+L26_1.x = 0.0
+L26_1.y = 304.827
+L26_1.z = 0.0
+L25_1.rot = L26_1
+L25_1.level = 10
+L25_1.area_id = 3
+L26_1 = {}
+L26_1.config_id = 284009
+L26_1.gadget_id = 70300109
+L27_1 = {}
+L27_1.x = 1825.5
+L27_1.y = 218.265
+L27_1.z = -388.773
+L26_1.pos = L27_1
+L27_1 = {}
+L27_1.x = 0.0
+L27_1.y = 76.666
+L27_1.z = 0.0
+L26_1.rot = L27_1
+L26_1.level = 10
+L26_1.area_id = 3
+L27_1 = {}
+L27_1.config_id = 284010
+L27_1.gadget_id = 70300109
+L28_1 = {}
+L28_1.x = 1821.729
+L28_1.y = 218.255
+L28_1.z = -392.57
+L27_1.pos = L28_1
+L28_1 = {}
+L28_1.x = 0.0
+L28_1.y = 37.629
+L28_1.z = 0.0
+L27_1.rot = L28_1
+L27_1.level = 10
+L27_1.area_id = 3
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+L1_1[6] = L7_1
+L1_1[7] = L8_1
+L1_1[8] = L9_1
+L1_1[9] = L10_1
+L1_1[10] = L11_1
+L1_1[11] = L12_1
+L1_1[12] = L13_1
+L1_1[13] = L14_1
+L1_1[14] = L15_1
+L1_1[15] = L16_1
+L1_1[16] = L17_1
+L1_1[17] = L18_1
+L1_1[18] = L19_1
+L1_1[19] = L20_1
+L1_1[20] = L21_1
+L1_1[21] = L22_1
+L1_1[22] = L23_1
+L1_1[23] = L24_1
+L1_1[24] = L25_1
+L1_1[25] = L26_1
+L1_1[26] = L27_1
+gadgets = L1_1
+L1_1 = {}
+regions = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 1000383
+L2_1.name = "GADGET_STATE_CHANGE_383"
+L3_1 = EventType
+L3_1 = L3_1.EVENT_GADGET_STATE_CHANGE
+L2_1.event = L3_1
+L2_1.source = ""
+L2_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_383"
+L2_1.action = "action_EVENT_GADGET_STATE_CHANGE_383"
+L2_1.trigger_count = 0
+L3_1 = {}
+L3_1.config_id = 1000384
+L3_1.name = "GADGET_STATE_CHANGE_384"
+L4_1 = EventType
+L4_1 = L4_1.EVENT_GADGET_STATE_CHANGE
+L3_1.event = L4_1
+L3_1.source = ""
+L3_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_384"
+L3_1.action = "action_EVENT_GADGET_STATE_CHANGE_384"
+L4_1 = {}
+L4_1.config_id = 1000385
+L4_1.name = "GADGET_STATE_CHANGE_385"
+L5_1 = EventType
+L5_1 = L5_1.EVENT_GADGET_STATE_CHANGE
+L4_1.event = L5_1
+L4_1.source = ""
+L4_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_385"
+L4_1.action = "action_EVENT_GADGET_STATE_CHANGE_385"
+L5_1 = {}
+L5_1.config_id = 1000386
+L5_1.name = "GADGET_STATE_CHANGE_386"
+L6_1 = EventType
+L6_1 = L6_1.EVENT_GADGET_STATE_CHANGE
+L5_1.event = L6_1
+L5_1.source = ""
+L5_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_386"
+L5_1.action = "action_EVENT_GADGET_STATE_CHANGE_386"
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+triggers = L1_1
+L1_1 = {}
+variables = L1_1
+L1_1 = {}
+L1_1.suite = 1
+L1_1.end_suite = 0
+L1_1.rand_suite = false
+init_config = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L2_1.monsters = L3_1
+L3_1 = {}
+L2_1.gadgets = L3_1
+L3_1 = {}
+L2_1.regions = L3_1
+L3_1 = {}
+L2_1.triggers = L3_1
+L2_1.rand_weight = 100
+L3_1 = {}
+L4_1 = {}
+L3_1.monsters = L4_1
+L4_1 = {}
+L5_1 = 2378
+L6_1 = 2379
+L7_1 = 2380
+L8_1 = 2381
+L9_1 = 2383
+L10_1 = 2384
+L11_1 = 2385
+L12_1 = 2386
+L13_1 = 2387
+L14_1 = 2389
+L15_1 = 2390
+L16_1 = 2444
+L17_1 = 2445
+L18_1 = 284001
+L19_1 = 284002
+L20_1 = 284003
+L21_1 = 284004
+L22_1 = 284005
+L23_1 = 284006
+L24_1 = 284007
+L25_1 = 284008
+L26_1 = 284009
+L27_1 = 284010
+L4_1[1] = L5_1
+L4_1[2] = L6_1
+L4_1[3] = L7_1
+L4_1[4] = L8_1
+L4_1[5] = L9_1
+L4_1[6] = L10_1
+L4_1[7] = L11_1
+L4_1[8] = L12_1
+L4_1[9] = L13_1
+L4_1[10] = L14_1
+L4_1[11] = L15_1
+L4_1[12] = L16_1
+L4_1[13] = L17_1
+L4_1[14] = L18_1
+L4_1[15] = L19_1
+L4_1[16] = L20_1
+L4_1[17] = L21_1
+L4_1[18] = L22_1
+L4_1[19] = L23_1
+L4_1[20] = L24_1
+L4_1[21] = L25_1
+L4_1[22] = L26_1
+L4_1[23] = L27_1
+L3_1.gadgets = L4_1
+L4_1 = {}
+L3_1.regions = L4_1
+L4_1 = {}
+L5_1 = "GADGET_STATE_CHANGE_383"
+L6_1 = "GADGET_STATE_CHANGE_384"
+L7_1 = "GADGET_STATE_CHANGE_385"
+L8_1 = "GADGET_STATE_CHANGE_386"
+L4_1[1] = L5_1
+L4_1[2] = L6_1
+L4_1[3] = L7_1
+L4_1[4] = L8_1
+L3_1.triggers = L4_1
+L3_1.rand_weight = 100
+L4_1 = {}
+L5_1 = {}
+L4_1.monsters = L5_1
+L5_1 = {}
+L6_1 = 2378
+L7_1 = 2379
+L8_1 = 2380
+L9_1 = 2381
+L10_1 = 2382
+L11_1 = 2383
+L12_1 = 2384
+L13_1 = 2385
+L14_1 = 2388
+L15_1 = 2389
+L16_1 = 2390
+L17_1 = 2444
+L18_1 = 2445
+L19_1 = 284001
+L20_1 = 284002
+L21_1 = 284003
+L22_1 = 284004
+L23_1 = 284005
+L24_1 = 284006
+L25_1 = 284007
+L26_1 = 284008
+L27_1 = 284009
+L28_1 = 284010
+L5_1[1] = L6_1
+L5_1[2] = L7_1
+L5_1[3] = L8_1
+L5_1[4] = L9_1
+L5_1[5] = L10_1
+L5_1[6] = L11_1
+L5_1[7] = L12_1
+L5_1[8] = L13_1
+L5_1[9] = L14_1
+L5_1[10] = L15_1
+L5_1[11] = L16_1
+L5_1[12] = L17_1
+L5_1[13] = L18_1
+L5_1[14] = L19_1
+L5_1[15] = L20_1
+L5_1[16] = L21_1
+L5_1[17] = L22_1
+L5_1[18] = L23_1
+L5_1[19] = L24_1
+L5_1[20] = L25_1
+L5_1[21] = L26_1
+L5_1[22] = L27_1
+L5_1[23] = L28_1
+L4_1.gadgets = L5_1
+L5_1 = {}
+L4_1.regions = L5_1
+L5_1 = {}
+L6_1 = "GADGET_STATE_CHANGE_383"
+L7_1 = "GADGET_STATE_CHANGE_384"
+L8_1 = "GADGET_STATE_CHANGE_385"
+L9_1 = "GADGET_STATE_CHANGE_386"
+L5_1[1] = L6_1
+L5_1[2] = L7_1
+L5_1[3] = L8_1
+L5_1[4] = L9_1
+L4_1.triggers = L5_1
+L4_1.rand_weight = 100
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+suites = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = A1_2.param2
+  if 2379 == L2_2 then
+    L2_2 = GadgetState
+    L2_2 = L2_2.ChestOpened
+    L3_2 = A1_2.param1
+    if L2_2 == L3_2 then
+      L2_2 = true
+      return L2_2
+    end
+  end
+  L2_2 = A1_2.param2
+  if 2382 == L2_2 then
+    L2_2 = GadgetState
+    L2_2 = L2_2.ChestOpened
+    L3_2 = A1_2.param1
+    if L2_2 == L3_2 then
+      L2_2 = true
+      return L2_2
+    end
+  end
+  L2_2 = A1_2.param2
+  if 2387 == L2_2 then
+    L2_2 = GadgetState
+    L2_2 = L2_2.ChestOpened
+    L3_2 = A1_2.param1
+    if L2_2 == L3_2 then
+      L2_2 = true
+      return L2_2
+    end
+  end
+  L2_2 = false
+  return L2_2
+end
+condition_EVENT_GADGET_STATE_CHANGE_383 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.ShowReminder
+  L3_2 = A0_2
+  L4_2 = 1110004
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_GADGET_STATE_CHANGE_383 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = A1_2.param2
+  if 2379 == L2_2 then
+    L2_2 = GadgetState
+    L2_2 = L2_2.ChestOpened
+    L3_2 = A1_2.param1
+    if L2_2 == L3_2 then
+      goto lbl_11
+    end
+  end
+  L2_2 = false
+  do return L2_2 end
+  ::lbl_11::
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_GADGET_STATE_CHANGE_384 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.KillGroupEntity
+  L3_2 = A0_2
+  L4_2 = {}
+  L4_2.group_id = 133002284
+  L5_2 = {}
+  L4_2.monsters = L5_2
+  L5_2 = {}
+  L6_2 = 2378
+  L7_2 = 2444
+  L5_2[1] = L6_2
+  L5_2[2] = L7_2
+  L4_2.gadgets = L5_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : kill_monsters_and_gadgets_by_group"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_GADGET_STATE_CHANGE_384 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = A1_2.param2
+  if 2387 == L2_2 then
+    L2_2 = GadgetState
+    L2_2 = L2_2.ChestOpened
+    L3_2 = A1_2.param1
+    if L2_2 == L3_2 then
+      goto lbl_11
+    end
+  end
+  L2_2 = false
+  do return L2_2 end
+  ::lbl_11::
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_GADGET_STATE_CHANGE_385 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.KillGroupEntity
+  L3_2 = A0_2
+  L4_2 = {}
+  L4_2.group_id = 133002284
+  L5_2 = {}
+  L4_2.monsters = L5_2
+  L5_2 = {}
+  L6_2 = 2385
+  L5_2[1] = L6_2
+  L4_2.gadgets = L5_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : kill_monsters_and_gadgets_by_group"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_GADGET_STATE_CHANGE_385 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = A1_2.param2
+  if 2382 == L2_2 then
+    L2_2 = GadgetState
+    L2_2 = L2_2.ChestOpened
+    L3_2 = A1_2.param1
+    if L2_2 == L3_2 then
+      goto lbl_11
+    end
+  end
+  L2_2 = false
+  do return L2_2 end
+  ::lbl_11::
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_GADGET_STATE_CHANGE_386 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.KillGroupEntity
+  L3_2 = A0_2
+  L4_2 = {}
+  L4_2.group_id = 133002284
+  L5_2 = {}
+  L4_2.monsters = L5_2
+  L5_2 = {}
+  L6_2 = 2381
+  L5_2[1] = L6_2
+  L4_2.gadgets = L5_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : kill_monsters_and_gadgets_by_group"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_GADGET_STATE_CHANGE_386 = L1_1

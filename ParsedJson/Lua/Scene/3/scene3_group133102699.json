@@ -1,0 +1,167 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_699003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_699011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_699008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_699007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_699005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_699009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_699010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_699003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_699011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_699008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 5,
+            "config_id": 699001,
+            "gadget_id": 70360028,
+            "level": 18,
+            "persistent": true,
+            "pos": {
+                "x": 1496.744,
+                "y": 219.367,
+                "z": 579.332
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 201
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 5,
+            "config_id": 699002,
+            "disableWander": true,
+            "drop_tag": "\u9057\u8ff9\u5b88\u536b",
+            "level": 18,
+            "monster_id": 24010201,
+            "pos": {
+                "x": 1499.954,
+                "y": 219.559,
+                "z": 581.132
+            },
+            "pose_id": 101,
+            "rot": {
+                "x": 0,
+                "y": 46.397,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [
+        {
+            "area_id": 5,
+            "config_id": 699004,
+            "npc_id": 20047,
+            "pos": {
+                "x": 1496.814,
+                "y": 220.078,
+                "z": 579.348
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "regions": [
+        {
+            "area_id": 5,
+            "config_id": 699011,
+            "pos": {
+                "x": 1496.803,
+                "y": 220.17,
+                "z": 579.337
+            },
+            "radius": 22,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                699001
+            ],
+            "monsters": [
+                699002
+            ],
+            "npcs": [
+                699004
+            ],
+            "rand_weight": 100,
+            "regions": [
+                699011
+            ],
+            "triggers": [
+                "ENTER_REGION_699011"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_699003",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_699003",
+            "config_id": 1699003,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_699003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_START_699005",
+            "condition": "",
+            "config_id": 1699005,
+            "event": 28,
+            "name": "QUEST_START_699005",
+            "source": "2101903"
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_699007",
+            "condition": "",
+            "config_id": 1699007,
+            "event": 21,
+            "name": "QUEST_FINISH_699007",
+            "source": "2101903"
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_699008",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_699008",
+            "config_id": 1699008,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_699008",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_699009",
+            "condition": "",
+            "config_id": 1699009,
+            "event": 15,
+            "name": "TIMER_EVENT_699009",
+            "source": "start"
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_699010",
+            "condition": "",
+            "config_id": 1699010,
+            "event": 15,
+            "name": "TIMER_EVENT_699010",
+            "source": "finish"
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_699011",
+            "condition": "condition_EVENT_ENTER_REGION_699011",
+            "config_id": 1699011,
+            "event": 4,
+            "name": "ENTER_REGION_699011",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

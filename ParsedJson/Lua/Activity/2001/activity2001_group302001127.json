@@ -1,0 +1,128 @@
+{
+    "action_EVENT_GENERAL_REWARD_DIE_127006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SEAL_BATTLE_END_127004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SEAL_BATTLE_PROGRESS_DECREASE_127003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_DIFFICULTY_127005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GENERAL_REWARD_DIE_127006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SEAL_BATTLE_END_127004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SEAL_BATTLE_PROGRESS_DECREASE_127003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_DIFFICULTY_127005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 3,
+            "config_id": 127001,
+            "gadget_id": 70950019,
+            "level": 15,
+            "persistent": true,
+            "pos": {
+                "x": 2245.491,
+                "y": 279.576,
+                "z": -176.91
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 3,
+            "autopick": true,
+            "config_id": 127002,
+            "gadget_id": 70950021,
+            "level": 15,
+            "persistent": true,
+            "pos": {
+                "x": 2245.491,
+                "y": 279.576,
+                "z": -176.91
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                127001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "SEAL_BATTLE_PROGRESS_DECREASE_127003",
+                "SEAL_BATTLE_END_127004",
+                "SELECT_DIFFICULTY_127005",
+                "GENERAL_REWARD_DIE_127006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_SEAL_BATTLE_PROGRESS_DECREASE_127003",
+            "condition": "condition_EVENT_SEAL_BATTLE_PROGRESS_DECREASE_127003",
+            "config_id": 1127003,
+            "event": 52,
+            "name": "SEAL_BATTLE_PROGRESS_DECREASE_127003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SEAL_BATTLE_END_127004",
+            "condition": "condition_EVENT_SEAL_BATTLE_END_127004",
+            "config_id": 1127004,
+            "event": 19,
+            "name": "SEAL_BATTLE_END_127004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_DIFFICULTY_127005",
+            "condition": "condition_EVENT_SELECT_DIFFICULTY_127005",
+            "config_id": 1127005,
+            "event": 48,
+            "name": "SELECT_DIFFICULTY_127005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GENERAL_REWARD_DIE_127006",
+            "condition": "condition_EVENT_GENERAL_REWARD_DIE_127006",
+            "config_id": 1127006,
+            "event": 53,
+            "name": "GENERAL_REWARD_DIE_127006",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "isDone",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "difficulty",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "isShow",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_13001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_34": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_34": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 70,
+            "gadget_id": 70220034,
+            "level": 5,
+            "pos": {
+                "x": 3.403,
+                "y": 53.016,
+                "z": 24.792
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 71,
+            "gadget_id": 70220034,
+            "level": 5,
+            "pos": {
+                "x": 2.669,
+                "y": 52.928,
+                "z": 26.125
+            },
+            "rot": {
+                "x": 0,
+                "y": 300.218,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 34,
+            "pos": {
+                "x": -0.3,
+                "y": 53.016,
+                "z": 24.426
+            },
+            "shape": 2,
+            "size": {
+                "x": 7.38,
+                "y": 20.19,
+                "z": 6.48
+            }
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                70,
+                71
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                34
+            ],
+            "triggers": [
+                "ENTER_REGION_34",
+                "ANY_GADGET_DIE_13001"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_34",
+            "condition": "condition_EVENT_ENTER_REGION_34",
+            "config_id": 1000034,
+            "event": 4,
+            "forbid_guest": false,
+            "name": "ENTER_REGION_34",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_13001",
+            "condition": "",
+            "config_id": 1013001,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_13001",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

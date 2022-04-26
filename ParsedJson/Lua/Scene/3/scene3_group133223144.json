@@ -1,0 +1,88 @@
+{
+    "action_EVENT_VARIABLE_CHANGE_144008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_144008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 144001,
+            "gadget_id": 70310012,
+            "level": 19,
+            "persistent": true,
+            "pos": {
+                "x": -6184.12,
+                "y": 200.033,
+                "z": -3002.649
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 144006,
+            "drop_tag": "\u89e3\u8c1c\u9ad8\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211122,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -6184.048,
+                "y": 200.482,
+                "z": -3002.701
+            },
+            "rot": {
+                "x": 0,
+                "y": 270.4,
+                "z": 0
+            },
+            "state": 101
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                144001,
+                144006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_144008"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_144008",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_144008",
+            "config_id": 1144008,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_144008",
+            "source": "State_Flag",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "State_Flag",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

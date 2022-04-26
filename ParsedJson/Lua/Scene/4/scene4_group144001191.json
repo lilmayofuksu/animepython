@@ -1,0 +1,80 @@
+{
+    "action_EVENT_ENTER_REGION_191001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_191002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_191003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_191001": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 102,
+            "config_id": 191001,
+            "pos": {
+                "x": 311.329,
+                "y": 120,
+                "z": 312.001
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_191002",
+                "QUEST_START_191003"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                191001
+            ],
+            "triggers": [
+                "ENTER_REGION_191001"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_191001",
+            "condition": "condition_EVENT_ENTER_REGION_191001",
+            "config_id": 1191001,
+            "event": 4,
+            "name": "ENTER_REGION_191001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_191002",
+            "condition": "",
+            "config_id": 1191002,
+            "event": 28,
+            "name": "QUEST_START_191002",
+            "source": "7901401",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_191003",
+            "condition": "",
+            "config_id": 1191003,
+            "event": 28,
+            "name": "QUEST_START_191003",
+            "source": "7901501",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

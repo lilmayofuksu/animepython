@@ -1,0 +1,94 @@
+{
+    "action_EVENT_GROUP_LOAD_249001": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 2,
+            "chest_drop_id": 1010600,
+            "config_id": 2883,
+            "drop_count": 1,
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211121,
+            "isOneoff": true,
+            "level": 11,
+            "persistent": true,
+            "pos": {
+                "x": 1211.726,
+                "y": 274.1,
+                "z": -1696.124
+            },
+            "rot": {
+                "x": 0,
+                "y": 76.199,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 2,
+            "config_id": 2884,
+            "drop_tag": "\u89e3\u8c1c\u9ad8\u7ea7\u8499\u5fb7",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211121,
+            "isOneoff": true,
+            "level": 11,
+            "persistent": true,
+            "pos": {
+                "x": 1211.63,
+                "y": 274.102,
+                "z": -1696.168
+            },
+            "rot": {
+                "x": 0,
+                "y": 78.42,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                2884
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                2883
+            ],
+            "monsters": [],
+            "rand_weight": 0,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_249001"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_LOAD_249001",
+            "condition": "",
+            "config_id": 1249001,
+            "event": 29,
+            "name": "GROUP_LOAD_249001",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

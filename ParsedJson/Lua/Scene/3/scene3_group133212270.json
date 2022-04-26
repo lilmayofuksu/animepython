@@ -1,0 +1,80 @@
+{
+    "action_EVENT_VARIABLE_CHANGE_270003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_270003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 13,
+            "config_id": 270001,
+            "gadget_id": 70350004,
+            "level": 27,
+            "persistent": true,
+            "pos": {
+                "x": -3819.689,
+                "y": 249.508,
+                "z": -2380.731
+            },
+            "rot": {
+                "x": 270,
+                "y": 247.893,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 13,
+            "config_id": 270002,
+            "gadget_id": 70350006,
+            "level": 27,
+            "persistent": true,
+            "pos": {
+                "x": -3824.365,
+                "y": 265.824,
+                "z": -2344.251
+            },
+            "rot": {
+                "x": 270,
+                "y": 251.884,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                270001,
+                270002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_270003"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_270003",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_270003",
+            "config_id": 1270003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_270003",
+            "source": "num"
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "num",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

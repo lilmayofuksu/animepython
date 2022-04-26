@@ -1,0 +1,148 @@
+{
+    "CheckSuccess": "WARN: Lua function omitted from the dump",
+    "FinishProcess": "WARN: Lua function omitted from the dump",
+    "UpdateGamePlayState": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_70006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_70004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_LEVEL_TAG_CHANGE_70002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_70003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_70005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_70006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "chest_drop_id": 2004200,
+            "config_id": 70001,
+            "drop_count": 1,
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211132,
+            "isOneoff": true,
+            "level": 16,
+            "persistent": true,
+            "pos": {
+                "x": -173.184,
+                "y": 209.331,
+                "z": 184.697
+            },
+            "rot": {
+                "x": 0,
+                "y": 90.426,
+                "z": 0
+            },
+            "state": 101
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_70004",
+                "VARIABLE_CHANGE_70005"
+            ]
+        },
+        {
+            "gadgets": [
+                70001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "LEVEL_TAG_CHANGE_70002",
+                "VARIABLE_CHANGE_70003"
+            ]
+        },
+        {
+            "gadgets": [
+                70001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_70006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_LEVEL_TAG_CHANGE_70002",
+            "condition": "",
+            "config_id": 1070002,
+            "event": 96,
+            "name": "LEVEL_TAG_CHANGE_70002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_70003",
+            "condition": "",
+            "config_id": 1070003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_70003",
+            "source": "iswallmatch",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_70004",
+            "condition": "",
+            "config_id": 1070004,
+            "event": 29,
+            "name": "GROUP_LOAD_70004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_70005",
+            "condition": "",
+            "config_id": 1070005,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_70005",
+            "source": "gameplayState",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_70006",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_70006",
+            "config_id": 1070006,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_70006",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "gameplayState",
+            "no_refresh": true,
+            "value": 1
+        },
+        {
+            "configId": 2,
+            "name": "iswallmatch",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "isNight",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

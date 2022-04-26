@@ -1,0 +1,294 @@
+{
+    "action_EVENT_ENTER_REGION_65006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_65004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_65010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_65015": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_65003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_65011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_65006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_65004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_65010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_65015": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_65003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_65011": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 65001,
+            "gadget_id": 70360079,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -5930.495,
+                "y": 175.3,
+                "z": -2672.809
+            },
+            "rot": {
+                "x": 0,
+                "y": 30,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 65002,
+            "gadget_id": 70350081,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -5931.455,
+                "y": 165.622,
+                "z": -2660.285
+            },
+            "rot": {
+                "x": 0,
+                "y": 348.74,
+                "z": 0
+            },
+            "state": 202
+        },
+        {
+            "area_id": 18,
+            "config_id": 65008,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211111,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -5922.426,
+                "y": 165.833,
+                "z": -2659.702
+            },
+            "rot": {
+                "x": 0,
+                "y": 32.825,
+                "z": 0
+            }
+        }
+    ],
+    "garbages": {
+        "monsters": [
+            {
+                "area_id": 18,
+                "climate_area_id": 7,
+                "config_id": 65007,
+                "drop_tag": "\u62df\u751f\u673a\u5173",
+                "level": 33,
+                "monster_id": 24020301,
+                "pos": {
+                    "x": -5923.932,
+                    "y": 165.635,
+                    "z": -2654.506
+                },
+                "pose_id": 100,
+                "rot": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            {
+                "area_id": 18,
+                "climate_area_id": 7,
+                "config_id": 65012,
+                "drop_tag": "\u62df\u751f\u673a\u5173",
+                "level": 33,
+                "monster_id": 24020301,
+                "pos": {
+                    "x": -5915.577,
+                    "y": 165.597,
+                    "z": -2659.134
+                },
+                "pose_id": 100,
+                "rot": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        ],
+        "triggers": [
+            {
+                "action": "action_EVENT_ANY_MONSTER_DIE_65009",
+                "condition": "condition_EVENT_ANY_MONSTER_DIE_65009",
+                "config_id": 1065009,
+                "event": 1,
+                "name": "ANY_MONSTER_DIE_65009",
+                "source": ""
+            },
+            {
+                "action": "action_EVENT_GADGET_STATE_CHANGE_65013",
+                "condition": "condition_EVENT_GADGET_STATE_CHANGE_65013",
+                "config_id": 1065013,
+                "event": 7,
+                "name": "GADGET_STATE_CHANGE_65013",
+                "source": ""
+            },
+            {
+                "action": "action_EVENT_VARIABLE_CHANGE_65014",
+                "condition": "condition_EVENT_VARIABLE_CHANGE_65014",
+                "config_id": 1065014,
+                "event": 3,
+                "name": "VARIABLE_CHANGE_65014",
+                "source": ""
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 18,
+            "climate_area_id": 7,
+            "config_id": 65005,
+            "drop_id": 1000100,
+            "level": 33,
+            "monster_id": 24010101,
+            "pos": {
+                "x": -5937.125,
+                "y": 169.694,
+                "z": -2684.56
+            },
+            "pose_id": 100,
+            "rot": {
+                "x": 0,
+                "y": 18.258,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 18,
+            "config_id": 65006,
+            "pos": {
+                "x": -5927.195,
+                "y": 168.258,
+                "z": -2670.585
+            },
+            "radius": 9,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                65001,
+                65002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "SELECT_OPTION_65003",
+                "GADGET_CREATE_65004",
+                "GADGET_CREATE_65010",
+                "VARIABLE_CHANGE_65011",
+                "GROUP_LOAD_65015"
+            ]
+        },
+        {
+            "gadgets": [
+                65008
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                65006
+            ],
+            "triggers": [
+                "ENTER_REGION_65006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_SELECT_OPTION_65003",
+            "condition": "condition_EVENT_SELECT_OPTION_65003",
+            "config_id": 1065003,
+            "event": 9,
+            "name": "SELECT_OPTION_65003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_65004",
+            "condition": "condition_EVENT_GADGET_CREATE_65004",
+            "config_id": 1065004,
+            "event": 6,
+            "name": "GADGET_CREATE_65004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_65006",
+            "condition": "condition_EVENT_ENTER_REGION_65006",
+            "config_id": 1065006,
+            "event": 4,
+            "name": "ENTER_REGION_65006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_65010",
+            "condition": "condition_EVENT_GADGET_CREATE_65010",
+            "config_id": 1065010,
+            "event": 6,
+            "name": "GADGET_CREATE_65010",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_65011",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_65011",
+            "config_id": 1065011,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_65011",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_65015",
+            "condition": "condition_EVENT_GROUP_LOAD_65015",
+            "config_id": 1065015,
+            "event": 29,
+            "name": "GROUP_LOAD_65015",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "start",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "finish",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

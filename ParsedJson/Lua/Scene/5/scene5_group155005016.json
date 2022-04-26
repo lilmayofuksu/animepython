@@ -1,0 +1,174 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_16003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_16004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_16005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_16001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_16003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 16002,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211112,
+            "isOneoff": true,
+            "level": 16,
+            "persistent": true,
+            "pos": {
+                "x": 521.861,
+                "y": 183.292,
+                "z": 646.323
+            },
+            "rot": {
+                "x": 358.547,
+                "y": 221.804,
+                "z": 1.869
+            },
+            "state": 101
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "io_type": 1,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suite_disk": [
+        {
+            "gadgets": [
+                {
+                    "config_id": 16002,
+                    "state": 101
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "QUEST_START_16001"
+            ],
+            "variables": []
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 16002,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_16003",
+                "QUEST_FINISH_16005"
+            ],
+            "variables": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_16004",
+                "QUEST_FINISH_16005"
+            ],
+            "variables": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [],
+            "variables": []
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                16002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_16001"
+            ]
+        },
+        {
+            "gadgets": [
+                16002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_16003",
+                "QUEST_FINISH_16005"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_16004",
+                "QUEST_FINISH_16005"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_START_16001",
+            "condition": "",
+            "config_id": 1016001,
+            "event": 28,
+            "name": "QUEST_START_16001",
+            "source": "7219205",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_16003",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_16003",
+            "config_id": 1016003,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_16003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_16004",
+            "condition": "",
+            "config_id": 1016004,
+            "event": 29,
+            "name": "GROUP_LOAD_16004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_16005",
+            "condition": "",
+            "config_id": 1016005,
+            "event": 21,
+            "name": "QUEST_FINISH_16005",
+            "source": "7219205",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,168 @@
+{
+    "action_EVENT_GROUP_LOAD_28006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_28001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_28004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_28003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 28002,
+            "gadget_id": 70290261,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 87.734,
+                "y": 245.629,
+                "z": 330.692
+            },
+            "rot": {
+                "x": 0,
+                "y": 68.612,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 28005,
+            "gadget_id": 70290260,
+            "level": 36,
+            "pos": {
+                "x": 246.417,
+                "y": 302.213,
+                "z": 294.517
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "io_type": 1,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suite_disk": [
+        {
+            "gadgets": [
+                {
+                    "config_id": 28002,
+                    "state": 0
+                },
+                {
+                    "config_id": 28005,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "QUEST_START_28001",
+                "TIME_AXIS_PASS_28003",
+                "QUEST_START_28004"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "unlockteleport",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_28006"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "unlockteleport",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                28002,
+                28005
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_28001",
+                "TIME_AXIS_PASS_28003",
+                "QUEST_START_28004"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_28006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_START_28001",
+            "condition": "",
+            "config_id": 1028001,
+            "event": 28,
+            "name": "QUEST_START_28001",
+            "source": "7217712",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_28003",
+            "condition": "",
+            "config_id": 1028003,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_28003",
+            "source": "brokenSeal",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_28004",
+            "condition": "",
+            "config_id": 1028004,
+            "event": 28,
+            "name": "QUEST_START_28004",
+            "source": "7217713",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_28006",
+            "condition": "",
+            "config_id": 1028006,
+            "event": 29,
+            "name": "GROUP_LOAD_28006",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "unlockteleport",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

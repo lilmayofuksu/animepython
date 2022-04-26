@@ -1,0 +1,193 @@
+{
+    "action_EVENT_GADGET_CREATE_426005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_426007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_426006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_426003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_426008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_426005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_426007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_426006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_426003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_426008": "WARN: Lua function omitted from the dump",
+    "defs": {
+        "child_group": [],
+        "group_id": 133223426,
+        "hasChild": false,
+        "hasMultiStatues": false,
+        "isRandom": false,
+        "notifyQuest": false,
+        "selfSuiteId": 2,
+        "statuesMap": {
+            "10001": 2
+        }
+    },
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 426001,
+            "gadget_id": 70290160,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -5995.313,
+                "y": 164.493,
+                "z": -2742.35
+            },
+            "rot": {
+                "x": 12.955,
+                "y": 252.792,
+                "z": 358.421
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 426002,
+            "gadget_id": 70350318,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -6000.783,
+                "y": 164.259,
+                "z": -2748.828
+            },
+            "rot": {
+                "x": 0,
+                "y": 80.36,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 426004,
+            "gadget_id": 70380284,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -6011.293,
+                "y": 163.468,
+                "z": -2748.404
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "route_id": 322300083,
+            "start_route": false
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                426001,
+                426004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_426003",
+                "GROUP_LOAD_426007",
+                "VARIABLE_CHANGE_426008"
+            ]
+        },
+        {
+            "gadgets": [
+                426002,
+                426004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_426005",
+                "SELECT_OPTION_426006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_426003",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_426003",
+            "config_id": 1426003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_426003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_426005",
+            "condition": "condition_EVENT_GADGET_CREATE_426005",
+            "config_id": 1426005,
+            "event": 6,
+            "name": "GADGET_CREATE_426005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_426006",
+            "condition": "condition_EVENT_SELECT_OPTION_426006",
+            "config_id": 1426006,
+            "event": 9,
+            "name": "SELECT_OPTION_426006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_426007",
+            "condition": "condition_EVENT_GROUP_LOAD_426007",
+            "config_id": 1426007,
+            "event": 29,
+            "name": "GROUP_LOAD_426007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_426008",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_426008",
+            "config_id": 1426008,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_426008",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Seed",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "Notified",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "Bird_Start",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 4,
+            "name": "water_finish",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 5,
+            "name": "Finish",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

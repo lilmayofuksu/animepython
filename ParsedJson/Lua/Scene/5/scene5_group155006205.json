@@ -1,0 +1,88 @@
+{
+    "action_EVENT_GROUP_LOAD_205002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_205003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_205002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_205003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 205001,
+            "drop_tag": "\u89e3\u8c1c\u8d85\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211132,
+            "isOneoff": true,
+            "level": 16,
+            "persistent": true,
+            "pos": {
+                "x": 413.171,
+                "y": 175.999,
+                "z": -229.08
+            },
+            "rot": {
+                "x": 12.425,
+                "y": 358.814,
+                "z": 8.37
+            },
+            "state": 101
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                205001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_205002",
+                "VARIABLE_CHANGE_205003"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_LOAD_205002",
+            "condition": "condition_EVENT_GROUP_LOAD_205002",
+            "config_id": 1205002,
+            "event": 29,
+            "name": "GROUP_LOAD_205002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_205003",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_205003",
+            "config_id": 1205003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_205003",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "activecount",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

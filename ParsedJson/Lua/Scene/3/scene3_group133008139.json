@@ -1,0 +1,164 @@
+{
+    "action_EVENT_ENTER_REGION_139004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_139002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_139007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_139008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_139004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_139002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_139007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_139008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 139001,
+            "gadget_id": 70350081,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1010.302,
+                "y": 407.611,
+                "z": -1023.266
+            },
+            "rot": {
+                "x": 4.536,
+                "y": 310.286,
+                "z": 5.055
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 139003,
+            "gadget_id": 70360123,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1004.81,
+                "y": 413.32,
+                "z": -1023.305
+            },
+            "rot": {
+                "x": 0,
+                "y": 52.201,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 139005,
+            "gadget_id": 70350098,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 985.832,
+                "y": 402.716,
+                "z": -1027.502
+            },
+            "rot": {
+                "x": 0,
+                "y": 29.584,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 139006,
+            "gadget_id": 70360122,
+            "interact_id": 14,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1010.366,
+                "y": 408.122,
+                "z": -1023.001
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 10,
+            "config_id": 139004,
+            "pos": {
+                "x": 995.185,
+                "y": 404.307,
+                "z": -1026.029
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                139001,
+                139003,
+                139005,
+                139006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                139004
+            ],
+            "triggers": [
+                "GADGET_STATE_CHANGE_139002",
+                "ENTER_REGION_139004",
+                "GADGET_STATE_CHANGE_139007",
+                "GROUP_LOAD_139008"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_139002",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_139002",
+            "config_id": 1139002,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_139002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_139004",
+            "condition": "condition_EVENT_ENTER_REGION_139004",
+            "config_id": 1139004,
+            "event": 4,
+            "name": "ENTER_REGION_139004",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_139007",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_139007",
+            "config_id": 1139007,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_139007",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_139008",
+            "condition": "condition_EVENT_GROUP_LOAD_139008",
+            "config_id": 1139008,
+            "event": 29,
+            "name": "GROUP_LOAD_139008",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "open",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

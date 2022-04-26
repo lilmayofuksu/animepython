@@ -1,0 +1,104 @@
+{
+    "action_EVENT_ENTER_REGION_9005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_9002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_9003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_9004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_9002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_9003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_9004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 9001,
+            "gadget_id": 70330057,
+            "level": 1,
+            "pos": {
+                "x": 0.473,
+                "y": 0.066,
+                "z": -0.097
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 202
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 9005,
+            "pos": {
+                "x": 2.029,
+                "y": 0.047,
+                "z": -1.875
+            },
+            "radius": 50,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                9005
+            ],
+            "triggers": [
+                "VARIABLE_CHANGE_9002",
+                "VARIABLE_CHANGE_9003",
+                "VARIABLE_CHANGE_9004",
+                "ENTER_REGION_9005"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_9002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_9002",
+            "config_id": 1009002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_9002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_9003",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_9003",
+            "config_id": 1009003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_9003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_9004",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_9004",
+            "config_id": 1009004,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_9004",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_9005",
+            "condition": "",
+            "config_id": 1009005,
+            "event": 4,
+            "name": "ENTER_REGION_9005",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

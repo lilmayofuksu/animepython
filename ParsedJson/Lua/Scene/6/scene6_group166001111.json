@@ -1,0 +1,90 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_111005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_MONSTER_BATTLE_111004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_111005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_MONSTER_BATTLE_111004": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 300,
+            "config_id": 111001,
+            "disableWander": true,
+            "drop_tag": "\u9ed1\u86c7\u5251\u58eb",
+            "level": 36,
+            "monster_id": 22080101,
+            "pos": {
+                "x": 807.731,
+                "y": 791.162,
+                "z": 637.001
+            },
+            "pose_id": 101,
+            "rot": {
+                "x": 0,
+                "y": 163.484,
+                "z": 0
+            },
+            "special_name_id": 10110,
+            "title_id": 10077
+        },
+        {
+            "area_id": 300,
+            "config_id": 111002,
+            "disableWander": true,
+            "drop_tag": "\u9ed1\u86c7\u5251\u58eb",
+            "level": 36,
+            "monster_id": 22070101,
+            "pos": {
+                "x": 806.597,
+                "y": 791,
+                "z": 629.856
+            },
+            "pose_id": 101,
+            "rot": {
+                "x": 0,
+                "y": 346.567,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [
+                111001,
+                111002
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "MONSTER_BATTLE_111004",
+                "ANY_MONSTER_DIE_111005"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_MONSTER_BATTLE_111004",
+            "condition": "condition_EVENT_MONSTER_BATTLE_111004",
+            "config_id": 1111004,
+            "event": 22,
+            "name": "MONSTER_BATTLE_111004",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_111005",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_111005",
+            "config_id": 1111005,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_111005",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

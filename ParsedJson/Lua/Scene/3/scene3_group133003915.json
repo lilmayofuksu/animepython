@@ -1,0 +1,99 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_915001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_915004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_915003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_915001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_START_915003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 1,
+            "chest_drop_id": 1000100,
+            "config_id": 915002,
+            "drop_count": 1,
+            "gadget_id": 70210102,
+            "isOneoff": true,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2373.349,
+                "y": 225.481,
+                "z": -1167.056
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 2
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                915002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_915001"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_915003",
+                "QUEST_FINISH_915004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_915001",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_915001",
+            "config_id": 1915001,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_915001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_915003",
+            "condition": "condition_EVENT_QUEST_START_915003",
+            "config_id": 1915003,
+            "event": 28,
+            "name": "QUEST_START_915003",
+            "source": "4112506",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_915004",
+            "condition": "",
+            "config_id": 1915004,
+            "event": 21,
+            "name": "QUEST_FINISH_915004",
+            "source": "4112505",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "QuestVar4",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

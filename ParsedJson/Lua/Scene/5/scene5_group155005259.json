@@ -1,0 +1,196 @@
+{
+    "GadgetStateSwitcher": "WARN: Lua function omitted from the dump",
+    "Initial": "WARN: Lua function omitted from the dump",
+    "UpdateGamePlayState": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_259007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_259008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_259001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_259009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_259010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_259002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_259007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_259008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_259002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 259003,
+            "gadget_id": 70290170,
+            "is_use_point_array": true,
+            "level": 36,
+            "pos": {
+                "x": 232.245,
+                "y": 313.329,
+                "z": 289.062
+            },
+            "rot": {
+                "x": 0,
+                "y": 307.001,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 259004,
+            "gadget_id": 70290281,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 224.212,
+                "y": 319.442,
+                "z": 294.925
+            },
+            "rot": {
+                "x": 0,
+                "y": 305.371,
+                "z": 180
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 259005,
+            "gadget_id": 70360305,
+            "level": 36,
+            "pos": {
+                "x": 233.165,
+                "y": 313.876,
+                "z": 299.254
+            },
+            "rot": {
+                "x": 0,
+                "y": 40.024,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 259006,
+            "gadget_id": 70360309,
+            "level": 36,
+            "pos": {
+                "x": 220.573,
+                "y": 313.937,
+                "z": 299.082
+            },
+            "rot": {
+                "x": 0,
+                "y": 308.813,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_259001",
+                "VARIABLE_CHANGE_259002"
+            ]
+        },
+        {
+            "gadgets": [
+                259003,
+                259004,
+                259005,
+                259006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_259007",
+                "GADGET_STATE_CHANGE_259008",
+                "TIME_AXIS_PASS_259009",
+                "TIME_AXIS_PASS_259010"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_LOAD_259001",
+            "condition": "",
+            "config_id": 1259001,
+            "event": 29,
+            "name": "GROUP_LOAD_259001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_259002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_259002",
+            "config_id": 1259002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_259002",
+            "source": "gameplayState",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_259007",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_259007",
+            "config_id": 1259007,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_259007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_259008",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_259008",
+            "config_id": 1259008,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_259008",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_259009",
+            "condition": "",
+            "config_id": 1259009,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_259009",
+            "source": "ReachPoint_02",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_259010",
+            "condition": "",
+            "config_id": 1259010,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_259010",
+            "source": "ReachPoint_01",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "gameplayState",
+            "no_refresh": true,
+            "value": 1
+        },
+        {
+            "configId": 2,
+            "name": "wallpos",
+            "no_refresh": true,
+            "value": 1
+        }
+    ]
+}

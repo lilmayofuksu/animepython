@@ -1,0 +1,259 @@
+{
+    "action_EVENT_ANY_MONSTER_LIVE_11014": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_11012": "WARN: Lua function omitted from the dump",
+    "action_EVENT_MONSTER_TIDE_DIE_11015": "WARN: Lua function omitted from the dump",
+    "action_EVENT_MONSTER_TIDE_DIE_11016": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SEAL_BATTLE_END_11021": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_11013": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_11022": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_11003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_LIVE_11014": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_11012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_MONSTER_TIDE_DIE_11015": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_MONSTER_TIDE_DIE_11016": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SEAL_BATTLE_END_11021": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_11013": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_11022": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 9,
+            "config_id": 11011,
+            "gadget_id": 70710208,
+            "level": 15,
+            "persistent": true,
+            "pos": {
+                "x": 658.728,
+                "y": 201.075,
+                "z": 337.832
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "affix": [
+                4107,
+                4108,
+                4109
+            ],
+            "area_id": 9,
+            "config_id": 11001,
+            "drop_id": 1000100,
+            "kill_score": 80,
+            "level": 1,
+            "monster_id": 23010401,
+            "pos": {
+                "x": 661.188,
+                "y": 201.075,
+                "z": 334.139
+            },
+            "rot": {
+                "x": 0,
+                "y": 322.246,
+                "z": 0
+            }
+        },
+        {
+            "affix": [
+                4107,
+                4108,
+                4109
+            ],
+            "area_id": 9,
+            "config_id": 11002,
+            "drop_id": 1000100,
+            "kill_score": 80,
+            "level": 1,
+            "monster_id": 23010301,
+            "pos": {
+                "x": 657.426,
+                "y": 201.075,
+                "z": 342.204
+            },
+            "rot": {
+                "x": 0,
+                "y": 161.835,
+                "z": 0
+            }
+        },
+        {
+            "affix": [
+                4107,
+                4108,
+                4109
+            ],
+            "area_id": 9,
+            "config_id": 11004,
+            "drop_id": 1000100,
+            "kill_score": 80,
+            "level": 1,
+            "monster_id": 23010401,
+            "pos": {
+                "x": 661.601,
+                "y": 201.075,
+                "z": 339.224
+            },
+            "rot": {
+                "x": 0,
+                "y": 242.778,
+                "z": 0
+            }
+        },
+        {
+            "affix": [
+                4107,
+                4108,
+                4109
+            ],
+            "area_id": 9,
+            "config_id": 11006,
+            "drop_id": 1000100,
+            "kill_score": 80,
+            "level": 1,
+            "monster_id": 23010501,
+            "pos": {
+                "x": 654.947,
+                "y": 201.124,
+                "z": 336.475
+            },
+            "rot": {
+                "x": 0,
+                "y": 62.956,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                11011
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "TIMER_EVENT_11003",
+                "GADGET_CREATE_11012",
+                "SELECT_OPTION_11013",
+                "SEAL_BATTLE_END_11021",
+                "SELECT_OPTION_11022"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                11001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_LIVE_11014",
+                "MONSTER_TIDE_DIE_11015",
+                "MONSTER_TIDE_DIE_11016"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                11002,
+                11004,
+                11006
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_TIMER_EVENT_11003",
+            "condition": "",
+            "config_id": 1011003,
+            "event": 15,
+            "name": "TIMER_EVENT_11003",
+            "source": "timer1"
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_11012",
+            "condition": "condition_EVENT_GADGET_CREATE_11012",
+            "config_id": 1011012,
+            "event": 6,
+            "name": "GADGET_CREATE_11012",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_11013",
+            "condition": "condition_EVENT_SELECT_OPTION_11013",
+            "config_id": 1011013,
+            "event": 9,
+            "name": "SELECT_OPTION_11013",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_LIVE_11014",
+            "condition": "condition_EVENT_ANY_MONSTER_LIVE_11014",
+            "config_id": 1011014,
+            "event": 11,
+            "name": "ANY_MONSTER_LIVE_11014",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_MONSTER_TIDE_DIE_11015",
+            "condition": "condition_EVENT_MONSTER_TIDE_DIE_11015",
+            "config_id": 1011015,
+            "event": 37,
+            "name": "MONSTER_TIDE_DIE_11015",
+            "source": "1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_MONSTER_TIDE_DIE_11016",
+            "condition": "condition_EVENT_MONSTER_TIDE_DIE_11016",
+            "config_id": 1011016,
+            "event": 37,
+            "name": "MONSTER_TIDE_DIE_11016",
+            "source": "2",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SEAL_BATTLE_END_11021",
+            "condition": "condition_EVENT_SEAL_BATTLE_END_11021",
+            "config_id": 1011021,
+            "event": 19,
+            "name": "SEAL_BATTLE_END_11021",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_11022",
+            "condition": "condition_EVENT_SELECT_OPTION_11022",
+            "config_id": 1011022,
+            "event": 9,
+            "name": "SELECT_OPTION_11022",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "isDone",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

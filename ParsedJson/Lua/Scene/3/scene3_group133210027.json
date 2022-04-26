@@ -1,0 +1,145 @@
+{
+    "action_EVENT_QUEST_FINISH_27001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_27008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_27009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_27004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_27005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_27002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_27003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_27006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_27007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_START_27008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_START_27009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_TIME_AXIS_PASS_27004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_TIME_AXIS_PASS_27005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_27002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_27003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_27006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_27007": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_27001",
+                "VARIABLE_CHANGE_27002",
+                "VARIABLE_CHANGE_27003",
+                "TIME_AXIS_PASS_27004",
+                "TIME_AXIS_PASS_27005",
+                "VARIABLE_CHANGE_27006",
+                "VARIABLE_CHANGE_27007",
+                "QUEST_START_27008",
+                "QUEST_START_27009"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_27001",
+            "condition": "",
+            "config_id": 1027001,
+            "event": 21,
+            "name": "QUEST_FINISH_27001",
+            "source": "7223301"
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_27002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_27002",
+            "config_id": 1027002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_27002",
+            "source": "ActiveCount"
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_27003",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_27003",
+            "config_id": 1027003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_27003",
+            "source": "ActiveCount"
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_27004",
+            "condition": "condition_EVENT_TIME_AXIS_PASS_27004",
+            "config_id": 1027004,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_27004",
+            "source": "reminder1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_27005",
+            "condition": "condition_EVENT_TIME_AXIS_PASS_27005",
+            "config_id": 1027005,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_27005",
+            "source": "reminder2",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_27006",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_27006",
+            "config_id": 1027006,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_27006",
+            "source": "QuestFinish1"
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_27007",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_27007",
+            "config_id": 1027007,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_27007",
+            "source": "QuestFinish2"
+        },
+        {
+            "action": "action_EVENT_QUEST_START_27008",
+            "condition": "condition_EVENT_QUEST_START_27008",
+            "config_id": 1027008,
+            "event": 28,
+            "name": "QUEST_START_27008",
+            "source": "7223314",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_27009",
+            "condition": "condition_EVENT_QUEST_START_27009",
+            "config_id": 1027009,
+            "event": 28,
+            "name": "QUEST_START_27009",
+            "source": "7223315",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "ActiveCount",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "QuestFinish1",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "QuestFinish2",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

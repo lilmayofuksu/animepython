@@ -1,0 +1,211 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_246009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_246005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_246006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_246007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_246010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_246009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_246005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_246006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_246007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_246010": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 14,
+            "config_id": 246002,
+            "drop_tag": "\u89e3\u8c1c\u8d85\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211132,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -4430.552,
+                "y": 165.278,
+                "z": -3772.62
+            },
+            "rot": {
+                "x": 3.871,
+                "y": 205.534,
+                "z": 357.244
+            },
+            "state": 101
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 14,
+            "config_id": 246001,
+            "drop_tag": "\u62df\u751f\u673a\u5173",
+            "isOneoff": true,
+            "level": 30,
+            "monster_id": 24020201,
+            "pos": {
+                "x": -4428.052,
+                "y": 164.475,
+                "z": -3776.283
+            },
+            "pose_id": 101,
+            "rot": {
+                "x": 5.984,
+                "y": 213.016,
+                "z": 3.875
+            }
+        },
+        {
+            "area_id": 14,
+            "config_id": 246003,
+            "drop_tag": "\u62df\u751f\u673a\u5173",
+            "isOneoff": true,
+            "level": 30,
+            "monster_id": 24020301,
+            "pos": {
+                "x": -4431.458,
+                "y": 164.492,
+                "z": -3776.076
+            },
+            "pose_id": 101,
+            "rot": {
+                "x": 0.098,
+                "y": 211.539,
+                "z": 359.636
+            }
+        },
+        {
+            "area_id": 14,
+            "config_id": 246004,
+            "drop_tag": "\u62df\u751f\u673a\u5173",
+            "isOneoff": true,
+            "level": 30,
+            "monster_id": 24020201,
+            "pos": {
+                "x": -4432.918,
+                "y": 164.629,
+                "z": -3774.097
+            },
+            "pose_id": 101,
+            "rot": {
+                "x": 3.481,
+                "y": 166.681,
+                "z": 359.177
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 14,
+            "config_id": 246005,
+            "pos": {
+                "x": -4432.253,
+                "y": 164.946,
+                "z": -3776.719
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                246002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                246005
+            ],
+            "triggers": [
+                "ENTER_REGION_246005",
+                "GROUP_LOAD_246006",
+                "GROUP_LOAD_246007",
+                "ANY_MONSTER_DIE_246009",
+                "VARIABLE_CHANGE_246010"
+            ]
+        },
+        {
+            "gadgets": [
+                246002
+            ],
+            "monsters": [
+                246001,
+                246003,
+                246004
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_246009"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_246005",
+            "condition": "condition_EVENT_ENTER_REGION_246005",
+            "config_id": 1246005,
+            "event": 4,
+            "name": "ENTER_REGION_246005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_246006",
+            "condition": "condition_EVENT_GROUP_LOAD_246006",
+            "config_id": 1246006,
+            "event": 29,
+            "name": "GROUP_LOAD_246006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_246007",
+            "condition": "condition_EVENT_GROUP_LOAD_246007",
+            "config_id": 1246007,
+            "event": 29,
+            "name": "GROUP_LOAD_246007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_246009",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_246009",
+            "config_id": 1246009,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_246009",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_246010",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_246010",
+            "config_id": 1246010,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_246010",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "open",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "win",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "SLC_SetTransfromState": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_MONSTER_DIE_1002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_1003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_1002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_1003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 1004,
+            "gadget_id": 70360001,
+            "level": 1,
+            "pos": {
+                "x": 0.216,
+                "y": 0,
+                "z": 6.413
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "boss_chest": {
+                "life_time": 1800,
+                "monster_config_id": 1001,
+                "resin": 60,
+                "take_num": 1
+            },
+            "config_id": 1005,
+            "drop_tag": "\u96f7\u7535\u5c06\u519b",
+            "gadget_id": 70210106,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 0.208,
+                "y": 0,
+                "z": 6.408
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 1001,
+            "level": 1,
+            "monster_id": 29060203,
+            "pos": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rot": {
+                "x": 0,
+                "y": 180,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                1004
+            ],
+            "monsters": [
+                1001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_1002",
+                "GADGET_STATE_CHANGE_1003"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_1002",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_1002",
+            "config_id": 1001002,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_1002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_1003",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_1003",
+            "config_id": 1001003,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_1003",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

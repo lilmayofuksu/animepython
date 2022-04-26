@@ -1,0 +1,142 @@
+{
+    "MovePlatform": "WARN: Lua function omitted from the dump",
+    "action_EVENT_AVATAR_NEAR_PLATFORM_169003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_169004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_PLATFORM_REACH_POINT_169005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_AVATAR_NEAR_PLATFORM_169003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_169004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_PLATFORM_REACH_POINT_169005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 102,
+            "chest_drop_id": 1002000,
+            "config_id": 169001,
+            "drop_count": 1,
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70210105,
+            "isOneoff": true,
+            "level": 16,
+            "persistent": true,
+            "pos": {
+                "x": 93.76,
+                "y": 120,
+                "z": 94.617
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 102,
+            "config_id": 169002,
+            "gadget_id": 70950081,
+            "is_use_point_array": true,
+            "level": 1,
+            "pos": {
+                "x": 42.049,
+                "y": 120,
+                "z": 261.218
+            },
+            "rot": {
+                "x": 0,
+                "y": 235.625,
+                "z": 0
+            },
+            "start_route": false
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 102,
+            "config_id": 169004,
+            "pos": {
+                "x": 42.049,
+                "y": 120,
+                "z": 261.218
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                169002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                169004
+            ],
+            "triggers": [
+                "AVATAR_NEAR_PLATFORM_169003",
+                "ENTER_REGION_169004",
+                "PLATFORM_REACH_POINT_169005"
+            ]
+        },
+        {
+            "gadgets": [
+                169001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_AVATAR_NEAR_PLATFORM_169003",
+            "condition": "condition_EVENT_AVATAR_NEAR_PLATFORM_169003",
+            "config_id": 1169003,
+            "event": 25,
+            "name": "AVATAR_NEAR_PLATFORM_169003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_169004",
+            "condition": "condition_EVENT_ENTER_REGION_169004",
+            "config_id": 1169004,
+            "event": 4,
+            "name": "ENTER_REGION_169004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_PLATFORM_REACH_POINT_169005",
+            "condition": "condition_EVENT_PLATFORM_REACH_POINT_169005",
+            "config_id": 1169005,
+            "event": 26,
+            "name": "PLATFORM_REACH_POINT_169005",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "currentPathNode",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "isReachGoal",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

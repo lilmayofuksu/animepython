@@ -1,0 +1,307 @@
+{
+    "action_EVENT_ENTER_REGION_230001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_230005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_230006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_318": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_315": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SEAL_BATTLE_END_303": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_302": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_230001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_230005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SEAL_BATTLE_END_303": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_302": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 4,
+            "config_id": 973,
+            "gadget_id": 70950008,
+            "level": 28,
+            "persistent": true,
+            "pos": {
+                "x": 2566.507,
+                "y": 208.411,
+                "z": 311.177
+            },
+            "rot": {
+                "x": 0,
+                "y": 81.978,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 4,
+            "config_id": 976,
+            "gadget_id": 70950007,
+            "level": 28,
+            "pos": {
+                "x": 2566.5,
+                "y": 208.4,
+                "z": 311.2
+            },
+            "rot": {
+                "x": 0,
+                "y": 278.917,
+                "z": 0
+            },
+            "state": 202
+        },
+        {
+            "area_id": 4,
+            "config_id": 230002,
+            "gadget_id": 70950006,
+            "level": 1,
+            "pos": {
+                "x": 2561.456,
+                "y": 208.793,
+                "z": 337.677
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 4,
+            "config_id": 230003,
+            "gadget_id": 70950006,
+            "level": 1,
+            "pos": {
+                "x": 2589.25,
+                "y": 206.739,
+                "z": 299.651
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 4,
+            "config_id": 230004,
+            "gadget_id": 70950006,
+            "level": 1,
+            "pos": {
+                "x": 2555.736,
+                "y": 208.002,
+                "z": 289.801
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 4,
+            "config_id": 422,
+            "drop_id": 1000100,
+            "level": 24,
+            "monster_id": 22010101,
+            "pos": {
+                "x": 2561.086,
+                "y": 208.524,
+                "z": 311.213
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 4,
+            "config_id": 423,
+            "drop_id": 1000100,
+            "level": 22,
+            "monster_id": 21030201,
+            "pos": {
+                "x": 2569.039,
+                "y": 208.202,
+                "z": 305.856
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 4,
+            "config_id": 424,
+            "drop_id": 1000100,
+            "level": 22,
+            "monster_id": 21030201,
+            "pos": {
+                "x": 2567.324,
+                "y": 208.108,
+                "z": 319.888
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 4,
+            "config_id": 230001,
+            "pos": {
+                "x": 2566.5,
+                "y": 210.716,
+                "z": 311.2
+            },
+            "radius": 15,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                973
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_315",
+                "GROUP_LOAD_318"
+            ]
+        },
+        {
+            "gadgets": [
+                976
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                230001
+            ],
+            "triggers": [
+                "SELECT_OPTION_302",
+                "SEAL_BATTLE_END_303",
+                "ENTER_REGION_230001",
+                "GADGET_CREATE_230005",
+                "GADGET_STATE_CHANGE_230006"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                422,
+                423,
+                424
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_SELECT_OPTION_302",
+            "condition": "condition_EVENT_SELECT_OPTION_302",
+            "config_id": 1000302,
+            "event": 9,
+            "name": "SELECT_OPTION_302",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SEAL_BATTLE_END_303",
+            "condition": "condition_EVENT_SEAL_BATTLE_END_303",
+            "config_id": 1000303,
+            "event": 19,
+            "name": "SEAL_BATTLE_END_303",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_315",
+            "condition": "",
+            "config_id": 1000315,
+            "event": 21,
+            "name": "QUEST_FINISH_315",
+            "source": "39004",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_318",
+            "condition": "",
+            "config_id": 1000318,
+            "event": 29,
+            "name": "GROUP_LOAD_318",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_230001",
+            "condition": "condition_EVENT_ENTER_REGION_230001",
+            "config_id": 1230001,
+            "event": 4,
+            "name": "ENTER_REGION_230001",
+            "source": "1"
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_230005",
+            "condition": "condition_EVENT_GADGET_CREATE_230005",
+            "config_id": 1230005,
+            "event": 6,
+            "name": "GADGET_CREATE_230005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_230006",
+            "condition": "",
+            "config_id": 1230006,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_230006",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Quest_Flag",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "first_touch_done",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "seal_battle_done",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 4,
+            "name": "Point_Value",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 5,
+            "name": "Temp_Point_Value",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

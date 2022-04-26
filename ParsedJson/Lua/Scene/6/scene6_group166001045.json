@@ -1,0 +1,112 @@
+{
+    "action_EVENT_ENTER_REGION_45003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_45004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_45002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_45003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_45004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 300,
+            "config_id": 45001,
+            "gadget_id": 70290341,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 453.74,
+                "y": 378.071,
+                "z": 520.79
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 300,
+            "config_id": 45003,
+            "pos": {
+                "x": 453.171,
+                "y": 378.229,
+                "z": 520.838
+            },
+            "radius": 20,
+            "shape": 1
+        },
+        {
+            "area_id": 300,
+            "config_id": 45004,
+            "pos": {
+                "x": 477.154,
+                "y": 380.323,
+                "z": 526.089
+            },
+            "radius": 13,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                45001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                45003,
+                45004
+            ],
+            "triggers": [
+                "QUEST_FINISH_45002",
+                "ENTER_REGION_45003",
+                "ENTER_REGION_45004"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_45002",
+            "condition": "",
+            "config_id": 1045002,
+            "event": 21,
+            "name": "QUEST_FINISH_45002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_45003",
+            "condition": "condition_EVENT_ENTER_REGION_45003",
+            "config_id": 1045003,
+            "event": 4,
+            "name": "ENTER_REGION_45003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_45004",
+            "condition": "condition_EVENT_ENTER_REGION_45004",
+            "config_id": 1045004,
+            "event": 4,
+            "name": "ENTER_REGION_45004",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

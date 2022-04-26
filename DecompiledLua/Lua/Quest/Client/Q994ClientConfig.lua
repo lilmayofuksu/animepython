@@ -1,0 +1,29 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
+L0_1 = {}
+L0_1.MainID = 994
+L0_1.ActorAlias = "994"
+L1_1 = {}
+L1_1.q99401 = 99401
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L1_1.Qin = "Qin"
+L1_1.QinScript = "Actor/Quest/Q411/Qin"
+L1_1.QinID = 1006
+L2_1 = sceneData
+L3_1 = L2_1
+L2_1 = L2_1.GetDummyPoint
+L4_1 = 1004
+L5_1 = "Q358Qin"
+L2_1 = L2_1(L3_1, L4_1, L5_1)
+L2_1 = L2_1.pos
+L1_1.bornPos = L2_1
+L2_1 = sceneData
+L3_1 = L2_1
+L2_1 = L2_1.GetDummyPoint
+L4_1 = 1004
+L5_1 = "Q358Qin"
+L2_1 = L2_1(L3_1, L4_1, L5_1)
+L2_1 = L2_1.rot
+L1_1.bornDir = L2_1
+L0_1.QinData = L1_1
+return L0_1

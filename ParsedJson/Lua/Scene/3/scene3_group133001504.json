@@ -1,0 +1,152 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_504006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_504005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_504006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_504005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 2,
+            "config_id": 504004,
+            "drop_tag": "\u89e3\u8c1c\u4f4e\u7ea7\u8499\u5fb7",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211102,
+            "isOneoff": true,
+            "level": 11,
+            "persistent": true,
+            "pos": {
+                "x": 1152.303,
+                "y": 298.517,
+                "z": -1570.115
+            },
+            "rot": {
+                "x": 356.485,
+                "y": 0.327,
+                "z": 349.38
+            },
+            "state": 103
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 2,
+            "config_id": 504001,
+            "drop_tag": "\u53f2\u83b1\u59c6",
+            "level": 32,
+            "monster_id": 20010801,
+            "pos": {
+                "x": 1153.067,
+                "y": 298.381,
+                "z": -1568.207
+            },
+            "rot": {
+                "x": 0,
+                "y": 28.221,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 2,
+            "config_id": 504002,
+            "drop_tag": "\u53f2\u83b1\u59c6",
+            "level": 32,
+            "monster_id": 20010801,
+            "pos": {
+                "x": 1153.538,
+                "y": 298.263,
+                "z": -1570.501
+            },
+            "rot": {
+                "x": 0,
+                "y": 28.221,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 2,
+            "config_id": 504003,
+            "drop_tag": "\u53f2\u83b1\u59c6",
+            "level": 32,
+            "monster_id": 20010801,
+            "pos": {
+                "x": 1150.144,
+                "y": 298.858,
+                "z": -1570.269
+            },
+            "rot": {
+                "x": 0,
+                "y": 28.221,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 2,
+            "config_id": 504005,
+            "pos": {
+                "x": 1152.406,
+                "y": 298.506,
+                "z": -1569.974
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                504004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                504005
+            ],
+            "triggers": [
+                "ENTER_REGION_504005",
+                "ANY_MONSTER_DIE_504006"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                504001,
+                504002,
+                504003
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_504006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_504005",
+            "condition": "condition_EVENT_ENTER_REGION_504005",
+            "config_id": 1504005,
+            "event": 4,
+            "name": "ENTER_REGION_504005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_504006",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_504006",
+            "config_id": 1504006,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_504006",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

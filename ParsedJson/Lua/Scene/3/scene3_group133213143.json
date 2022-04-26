@@ -1,0 +1,140 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_143002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_FAIL_143005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_143004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_143008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_MONSTER_BATTLE_143003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_143006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_143002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_MONSTER_BATTLE_143003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_143006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 12,
+            "config_id": 143007,
+            "gadget_id": 70290147,
+            "level": 27,
+            "pos": {
+                "x": -3821.418,
+                "y": 332.595,
+                "z": -3097.468
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "affix": [
+                5104
+            ],
+            "area_id": 12,
+            "config_id": 143001,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "level": 1,
+            "monster_id": 25100101,
+            "pos": {
+                "x": -3822.075,
+                "y": 333.361,
+                "z": -3096.397
+            },
+            "pose_id": 1,
+            "rot": {
+                "x": 0,
+                "y": 105.163,
+                "z": 0
+            },
+            "special_name_id": 10058,
+            "title_id": 10035
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                143007
+            ],
+            "monsters": [
+                143001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "MONSTER_BATTLE_143003",
+                "CHALLENGE_SUCCESS_143004",
+                "CHALLENGE_FAIL_143005",
+                "GROUP_LOAD_143008"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_143002",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_143002",
+            "config_id": 1143002,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_143002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_MONSTER_BATTLE_143003",
+            "condition": "condition_EVENT_MONSTER_BATTLE_143003",
+            "config_id": 1143003,
+            "event": 22,
+            "name": "MONSTER_BATTLE_143003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_143004",
+            "condition": "",
+            "config_id": 1143004,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_143004",
+            "source": "180"
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_143005",
+            "condition": "",
+            "config_id": 1143005,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_143005",
+            "source": "180",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_143006",
+            "condition": "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_143006",
+            "config_id": 1143006,
+            "event": 12,
+            "name": "SPECIFIC_MONSTER_HP_CHANGE_143006",
+            "source": "143001"
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_143008",
+            "condition": "",
+            "config_id": 1143008,
+            "event": 29,
+            "name": "GROUP_LOAD_143008",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

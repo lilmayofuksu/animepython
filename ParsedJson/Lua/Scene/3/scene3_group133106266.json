@@ -1,0 +1,145 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_266004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_BLOSSOM_PROGRESS_FINISH_266005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_266006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_REFRESH_266003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 8,
+            "config_id": 266001,
+            "gadget_id": 70500000,
+            "level": 1,
+            "persistent": true,
+            "point_type": 1003,
+            "pos": {
+                "x": -671.075,
+                "y": 147.007,
+                "z": 879.681
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 330.331
+            }
+        },
+        {
+            "area_id": 8,
+            "config_id": 266002,
+            "gadget_id": 70500000,
+            "level": 1,
+            "persistent": true,
+            "point_type": 1003,
+            "pos": {
+                "x": -669.198,
+                "y": 146.147,
+                "z": 876.472
+            },
+            "rot": {
+                "x": 22.112,
+                "y": 94.102,
+                "z": 1.551
+            }
+        },
+        {
+            "area_id": 8,
+            "config_id": 266007,
+            "gadget_id": 70360001,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": -669.931,
+                "y": 147.543,
+                "z": 876.874
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_266006"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_REFRESH_266003",
+                "ANY_GADGET_DIE_266004",
+                "BLOSSOM_PROGRESS_FINISH_266005"
+            ]
+        },
+        {
+            "gadgets": [
+                266001,
+                266002,
+                266007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_REFRESH_266003",
+            "condition": "",
+            "config_id": 1266003,
+            "event": 32,
+            "name": "GROUP_REFRESH_266003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_266004",
+            "condition": "",
+            "config_id": 1266004,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_266004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_BLOSSOM_PROGRESS_FINISH_266005",
+            "condition": "",
+            "config_id": 1266005,
+            "event": 39,
+            "name": "BLOSSOM_PROGRESS_FINISH_266005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_266006",
+            "condition": "",
+            "config_id": 1266006,
+            "event": 29,
+            "name": "GROUP_LOAD_266006",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "GroupCompletion",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

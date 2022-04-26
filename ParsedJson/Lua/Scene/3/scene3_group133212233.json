@@ -1,0 +1,98 @@
+{
+    "CheckSuccess02": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_GADGET_DIE_233012": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_233013": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_233012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_233013": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 13,
+            "config_id": 233010,
+            "gadget_id": 70950143,
+            "level": 27,
+            "pos": {
+                "x": -3696.066,
+                "y": 200,
+                "z": -1757.787
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 13,
+            "config_id": 233011,
+            "gadget_id": 70500000,
+            "isOneoff": true,
+            "level": 27,
+            "persistent": true,
+            "point_type": 9171,
+            "pos": {
+                "x": -3695.882,
+                "y": 205.628,
+                "z": -1759.189
+            },
+            "rot": {
+                "x": 0,
+                "y": 344.571,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_GADGET_DIE_233012",
+                "VARIABLE_CHANGE_233013"
+            ]
+        },
+        {
+            "gadgets": [
+                233010,
+                233011
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_GADGET_DIE_233012",
+                "VARIABLE_CHANGE_233013"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_233012",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_233012",
+            "config_id": 1233012,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_233012",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_233013",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_233013",
+            "config_id": 1233013,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_233013",
+            "source": "ShootTrigger",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

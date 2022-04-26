@@ -1,0 +1,76 @@
+{
+    "action_EVENT_GROUP_REFRESH_910003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_910002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_FINISH_910002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 2,
+            "config_id": 910001,
+            "gadget_id": 70300119,
+            "level": 5,
+            "persistent": true,
+            "pos": {
+                "x": 1894.553,
+                "y": 202.519,
+                "z": -1255.419
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                910001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_910002",
+                "GROUP_REFRESH_910003"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_910002",
+            "condition": "condition_EVENT_QUEST_FINISH_910002",
+            "config_id": 1910002,
+            "event": 21,
+            "name": "QUEST_FINISH_910002",
+            "source": "39607",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_REFRESH_910003",
+            "condition": "",
+            "config_id": 1910003,
+            "event": 32,
+            "name": "GROUP_REFRESH_910003",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

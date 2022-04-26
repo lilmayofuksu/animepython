@@ -1,0 +1,173 @@
+{
+    "action_EVENT_CHALLENGE_FAIL_1009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_1010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_DUNGEON_ALL_AVATAR_DIE_1004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_1007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_1008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_DUNGEON_ALL_AVATAR_DIE_1004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_1007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_1008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 1002,
+            "gadget_id": 70330064,
+            "interact_id": 35,
+            "level": 1,
+            "pos": {
+                "x": 19,
+                "y": -0.102,
+                "z": 3
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 1003,
+            "gadget_id": 70330064,
+            "interact_id": 35,
+            "level": 1,
+            "pos": {
+                "x": -19,
+                "y": -0.102,
+                "z": 3
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 1006,
+            "gadget_id": 70360010,
+            "level": 1,
+            "pos": {
+                "x": -0.02,
+                "y": -0.102,
+                "z": -0.055
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 1001,
+            "disableWander": true,
+            "isElite": true,
+            "level": 1,
+            "monster_id": 24021102,
+            "pos": {
+                "x": -0.104,
+                "y": -0.102,
+                "z": -5.281
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 1005,
+            "pos": {
+                "x": 0.139,
+                "y": -0.102,
+                "z": 0.713
+            },
+            "radius": 35,
+            "shape": 1,
+            "team_ability_group_list": [
+                "RoleElectricPowerSource_Play_TeamBuff"
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                1002,
+                1003,
+                1006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                1005
+            ],
+            "triggers": [
+                "DUNGEON_ALL_AVATAR_DIE_1004",
+                "GADGET_CREATE_1007",
+                "SELECT_OPTION_1008",
+                "CHALLENGE_FAIL_1009",
+                "CHALLENGE_SUCCESS_1010"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                1001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_DUNGEON_ALL_AVATAR_DIE_1004",
+            "condition": "condition_EVENT_DUNGEON_ALL_AVATAR_DIE_1004",
+            "config_id": 1001004,
+            "event": 60,
+            "name": "DUNGEON_ALL_AVATAR_DIE_1004",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_1007",
+            "condition": "condition_EVENT_GADGET_CREATE_1007",
+            "config_id": 1001007,
+            "event": 6,
+            "name": "GADGET_CREATE_1007",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_1008",
+            "condition": "condition_EVENT_SELECT_OPTION_1008",
+            "config_id": 1001008,
+            "event": 9,
+            "name": "SELECT_OPTION_1008",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_1009",
+            "condition": "",
+            "config_id": 1001009,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_1009",
+            "source": "101",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_1010",
+            "condition": "",
+            "config_id": 1001010,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_1010",
+            "source": "101"
+        }
+    ],
+    "variables": []
+}

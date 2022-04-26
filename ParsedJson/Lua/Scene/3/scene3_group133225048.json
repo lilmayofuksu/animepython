@@ -1,0 +1,109 @@
+{
+    "action_EVENT_QUEST_START_48002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_48003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_48004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_48003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_48004": "WARN: Lua function omitted from the dump",
+    "defs": {
+        "child_group": [],
+        "group_id": 133225048,
+        "hasChild": true,
+        "hasMultiStatues": false,
+        "isRandom": false,
+        "notifyQuest": true,
+        "selfSuiteId": 2,
+        "statuesMap": {
+            "10001": 2
+        }
+    },
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 48001,
+            "gadget_id": 70290160,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -6424.812,
+                "y": 202.166,
+                "z": -2774.553
+            },
+            "rot": {
+                "x": 3.739,
+                "y": 234.047,
+                "z": 6.332
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                48001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_48002",
+                "VARIABLE_CHANGE_48003",
+                "VARIABLE_CHANGE_48004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_START_48002",
+            "condition": "",
+            "config_id": 1048002,
+            "event": 28,
+            "name": "QUEST_START_48002",
+            "source": "7216610",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_48003",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_48003",
+            "config_id": 1048003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_48003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_48004",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_48004",
+            "config_id": 1048004,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_48004",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Notified",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "Seed",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "reminder_trigger",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

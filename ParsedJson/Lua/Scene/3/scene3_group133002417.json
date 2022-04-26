@@ -1,0 +1,114 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_417004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_417003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_417002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_417004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_START_417002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 417001,
+            "gadget_id": 70300118,
+            "level": 35,
+            "pos": {
+                "x": 1265.046,
+                "y": 381.372,
+                "z": -869.281
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 417005,
+            "drop_count": 1,
+            "drop_id": 1050117,
+            "gadget_id": 70710267,
+            "level": 35,
+            "pos": {
+                "x": 1265.039,
+                "y": 381.293,
+                "z": -869.205
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 2
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                417001,
+                417005
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_417002",
+                "QUEST_FINISH_417003",
+                "ANY_GADGET_DIE_417004"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_417002",
+                "QUEST_FINISH_417003"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_START_417002",
+            "condition": "condition_EVENT_QUEST_START_417002",
+            "config_id": 1417002,
+            "event": 28,
+            "name": "QUEST_START_417002",
+            "source": "1104211",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_417003",
+            "condition": "",
+            "config_id": 1417003,
+            "event": 21,
+            "name": "QUEST_FINISH_417003",
+            "source": "1104209",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_417004",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_417004",
+            "config_id": 1417004,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_417004",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "quest",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

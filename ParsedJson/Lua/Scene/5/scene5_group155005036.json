@@ -1,0 +1,266 @@
+{
+    "UpdateGamePlayState": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_36021": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_36024": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_36020": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_36005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_36015": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_36016": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_36023": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_36025": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_36006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_36008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_36021": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_36024": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_36020": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_36006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 36001,
+            "gadget_id": 70360309,
+            "level": 36,
+            "pos": {
+                "x": 511.507,
+                "y": 172.492,
+                "z": 652.622
+            },
+            "rot": {
+                "x": 2.654,
+                "y": 27.477,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 36002,
+            "gadget_id": 70360314,
+            "level": 36,
+            "pos": {
+                "x": 511.704,
+                "y": 170.494,
+                "z": 652.134
+            },
+            "rot": {
+                "x": 2.318,
+                "y": 28.623,
+                "z": 357.32
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 36007,
+            "gadget_id": 70350006,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 514.073,
+                "y": 172.248,
+                "z": 656.742
+            },
+            "rot": {
+                "x": 0,
+                "y": 29.971,
+                "z": 0
+            }
+        }
+    ],
+    "garbages": {
+        "triggers": [
+            {
+                "action": "action_EVENT_GADGET_CREATE_36018",
+                "condition": "condition_EVENT_GADGET_CREATE_36018",
+                "config_id": 1036018,
+                "event": 6,
+                "name": "GADGET_CREATE_36018",
+                "source": "",
+                "trigger_count": 0
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 200,
+            "config_id": 36021,
+            "pos": {
+                "x": 499.675,
+                "y": 172.976,
+                "z": 659.277
+            },
+            "radius": 8,
+            "shape": 1
+        },
+        {
+            "area_id": 200,
+            "config_id": 36024,
+            "pos": {
+                "x": 497.004,
+                "y": 172.4,
+                "z": 661.58
+            },
+            "radius": 15,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                36001,
+                36007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                36021
+            ],
+            "triggers": [
+                "GROUP_LOAD_36005",
+                "VARIABLE_CHANGE_36006",
+                "VARIABLE_CHANGE_36008",
+                "QUEST_START_36015",
+                "QUEST_START_36016",
+                "GADGET_STATE_CHANGE_36020",
+                "ENTER_REGION_36021",
+                "QUEST_START_36023"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                36024
+            ],
+            "triggers": [
+                "ENTER_REGION_36024",
+                "TIME_AXIS_PASS_36025"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_LOAD_36005",
+            "condition": "",
+            "config_id": 1036005,
+            "event": 29,
+            "name": "GROUP_LOAD_36005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_36006",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_36006",
+            "config_id": 1036006,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_36006",
+            "source": "activecount",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_36008",
+            "condition": "",
+            "config_id": 1036008,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_36008",
+            "source": "gameplayState",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_36015",
+            "condition": "",
+            "config_id": 1036015,
+            "event": 28,
+            "name": "QUEST_START_36015",
+            "source": "7219203",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_36016",
+            "condition": "",
+            "config_id": 1036016,
+            "event": 28,
+            "name": "QUEST_START_36016",
+            "source": "7219204",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_36020",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_36020",
+            "config_id": 1036020,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_36020",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_36021",
+            "condition": "condition_EVENT_ENTER_REGION_36021",
+            "config_id": 1036021,
+            "event": 4,
+            "name": "ENTER_REGION_36021",
+            "source": "1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_36023",
+            "condition": "",
+            "config_id": 1036023,
+            "event": 28,
+            "name": "QUEST_START_36023",
+            "source": "7219201",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_36024",
+            "condition": "condition_EVENT_ENTER_REGION_36024",
+            "config_id": 1036024,
+            "event": 4,
+            "name": "ENTER_REGION_36024",
+            "source": "1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_36025",
+            "condition": "",
+            "config_id": 1036025,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_36025",
+            "source": "reactiveReminder",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "gameplayState",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "activecount",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "ReminderTimer",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

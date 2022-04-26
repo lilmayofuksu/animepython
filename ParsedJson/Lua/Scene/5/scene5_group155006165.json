@@ -1,0 +1,158 @@
+{
+    "action_EVENT_GROUP_LOAD_165006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_165003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_165006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_165003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 165002,
+            "drop_tag": "\u6218\u6597\u4e2d\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211012,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": 278.886,
+                "y": 238.579,
+                "z": -381.673
+            },
+            "rot": {
+                "x": 349.345,
+                "y": 272.371,
+                "z": 0
+            },
+            "state": 101
+        },
+        {
+            "area_id": 200,
+            "config_id": 165004,
+            "gadget_id": 70300107,
+            "level": 36,
+            "pos": {
+                "x": 278.484,
+                "y": 235.787,
+                "z": -375.54
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 201
+        },
+        {
+            "area_id": 200,
+            "config_id": 165005,
+            "gadget_id": 70300107,
+            "level": 36,
+            "pos": {
+                "x": 270.012,
+                "y": 237.165,
+                "z": -373.327
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 201
+        },
+        {
+            "area_id": 200,
+            "config_id": 165007,
+            "gadget_id": 70300107,
+            "level": 36,
+            "pos": {
+                "x": 273.313,
+                "y": 236.26,
+                "z": -383.344
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 201
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 200,
+            "config_id": 165001,
+            "disableWander": true,
+            "drop_tag": "\u6df1\u6e0a\u6cd5\u5e08",
+            "level": 36,
+            "monster_id": 22010301,
+            "pos": {
+                "x": 274.071,
+                "y": 236.379,
+                "z": -377.89
+            },
+            "pose_id": 9013,
+            "rot": {
+                "x": 0,
+                "y": 41.731,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                165002,
+                165004,
+                165005,
+                165007
+            ],
+            "monsters": [
+                165001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_165003",
+                "GROUP_LOAD_165006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_165003",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_165003",
+            "config_id": 1165003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_165003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_165006",
+            "condition": "condition_EVENT_GROUP_LOAD_165006",
+            "config_id": 1165006,
+            "event": 29,
+            "name": "GROUP_LOAD_165006",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "activecount",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

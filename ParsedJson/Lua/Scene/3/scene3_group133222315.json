@@ -1,0 +1,253 @@
+{
+    "action_EVENT_ENTER_REGION_315002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_315007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_315003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_315004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_315008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_315011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_315005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_315009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_315002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_315007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_315003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_315004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_315008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_315011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_START_315005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_TIME_AXIS_PASS_315009": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 14,
+            "autopick": true,
+            "config_id": 315001,
+            "drop_tag": "\u89e3\u8c1c\u4f4e\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211102,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -4544.322,
+                "y": 371.482,
+                "z": -4141.794
+            },
+            "rot": {
+                "x": 0,
+                "y": 265.792,
+                "z": 0
+            },
+            "state": 101
+        },
+        {
+            "area_id": 14,
+            "config_id": 315006,
+            "drop_tag": "\u89e3\u8c1c\u4f4e\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211102,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -4544.322,
+                "y": 198.326,
+                "z": -4141.794
+            },
+            "rot": {
+                "x": 0,
+                "y": 265.792,
+                "z": 0
+            },
+            "state": 101
+        }
+    ],
+    "garbages": {
+        "triggers": [
+            {
+                "action": "action_EVENT_TIME_AXIS_PASS_315010",
+                "condition": "condition_EVENT_TIME_AXIS_PASS_315010",
+                "config_id": 1315010,
+                "event": 72,
+                "name": "TIME_AXIS_PASS_315010",
+                "source": "Finish",
+                "trigger_count": 0
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 4,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 14,
+            "config_id": 315002,
+            "pos": {
+                "x": -4545.941,
+                "y": 371.673,
+                "z": -4142.247
+            },
+            "radius": 5,
+            "shape": 1
+        },
+        {
+            "area_id": 14,
+            "config_id": 315007,
+            "pos": {
+                "x": -4544.435,
+                "y": 198.32,
+                "z": -4141.925
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                315001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                315002
+            ],
+            "triggers": [
+                "ENTER_REGION_315002",
+                "GADGET_STATE_CHANGE_315003",
+                "GROUP_LOAD_315004",
+                "QUEST_START_315005",
+                "GROUP_LOAD_315008",
+                "TIME_AXIS_PASS_315009",
+                "GROUP_LOAD_315011"
+            ]
+        },
+        {
+            "gadgets": [
+                315006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                315007
+            ],
+            "triggers": [
+                "GROUP_LOAD_315004",
+                "QUEST_START_315005",
+                "ENTER_REGION_315007",
+                "GROUP_LOAD_315008",
+                "GROUP_LOAD_315011"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_315002",
+            "condition": "condition_EVENT_ENTER_REGION_315002",
+            "config_id": 1315002,
+            "event": 4,
+            "name": "ENTER_REGION_315002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_315003",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_315003",
+            "config_id": 1315003,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_315003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_315004",
+            "condition": "condition_EVENT_GROUP_LOAD_315004",
+            "config_id": 1315004,
+            "event": 29,
+            "name": "GROUP_LOAD_315004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_315005",
+            "condition": "condition_EVENT_QUEST_START_315005",
+            "config_id": 1315005,
+            "event": 28,
+            "name": "QUEST_START_315005",
+            "source": "7215805",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_315007",
+            "condition": "condition_EVENT_ENTER_REGION_315007",
+            "config_id": 1315007,
+            "event": 4,
+            "name": "ENTER_REGION_315007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_315008",
+            "condition": "condition_EVENT_GROUP_LOAD_315008",
+            "config_id": 1315008,
+            "event": 29,
+            "name": "GROUP_LOAD_315008",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_315009",
+            "condition": "condition_EVENT_TIME_AXIS_PASS_315009",
+            "config_id": 1315009,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_315009",
+            "source": "Finish",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_315011",
+            "condition": "condition_EVENT_GROUP_LOAD_315011",
+            "config_id": 1315011,
+            "event": 29,
+            "name": "GROUP_LOAD_315011",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Open",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "Quest",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

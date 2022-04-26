@@ -1,0 +1,35 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
+L0_1 = {}
+L0_1.MainID = 309
+L0_1.ActorAlias = "309"
+L1_1 = {}
+L1_1.q30901 = 30901
+L1_1.q30903 = 30903
+L1_1.q30904 = 30904
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L1_1.Paimon = "Paimon"
+L1_1.PaimonScript = "Actor/Quest/Q352/Paimon"
+L1_1.PaimonID = 1005
+L0_1.PaimonData = L1_1
+L1_1 = {}
+L2_1 = CutsceneType
+L2_1 = L2_1.TIME_LINE_PREFAB
+L1_1.type = L2_1
+L1_1.canSkip = true
+L1_1.castListPath = "Cs_CastList_Paimon"
+L1_1.resPath = "ART/Cutscene/Cs_MDAQ000_ChangeWeather_Convert"
+L2_1 = CutsceneInitPosType
+L2_1 = L2_1.FREE
+L1_1.startPosType = L2_1
+L2_1 = {}
+L3_1 = 0
+L4_1 = 0
+L5_1 = 0
+L2_1[1] = L3_1
+L2_1[2] = L4_1
+L2_1[3] = L5_1
+L1_1.startOffset = L2_1
+L1_1.fadeInDuration = 2.0
+L0_1.CutsceneData = L1_1
+return L0_1

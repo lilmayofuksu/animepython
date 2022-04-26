@@ -1,0 +1,65 @@
+{
+    "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_4002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_4002": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 8,
+            "config_id": 4001,
+            "drop_id": 1000100,
+            "level": 29,
+            "monster_id": 23020101,
+            "pos": {
+                "x": -499.972,
+                "y": 225.25,
+                "z": 784.261
+            },
+            "rot": {
+                "x": 0,
+                "y": 5.146,
+                "z": 0
+            },
+            "special_name_id": 10006
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [
+                4001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "SPECIFIC_MONSTER_HP_CHANGE_4002"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_4002",
+            "condition": "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_4002",
+            "config_id": 1004002,
+            "event": 12,
+            "name": "SPECIFIC_MONSTER_HP_CHANGE_4002",
+            "source": "4001"
+        }
+    ],
+    "variables": []
+}

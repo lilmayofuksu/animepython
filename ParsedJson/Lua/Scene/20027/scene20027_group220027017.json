@@ -1,0 +1,90 @@
+{
+    "action_EVENT_ENTER_REGION_17001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_32": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_33": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_17001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_32": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_33": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 111,
+            "gadget_id": 70360010,
+            "level": 1,
+            "pos": {
+                "x": -56.259,
+                "y": -67.532,
+                "z": -160.439
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 17001,
+            "pos": {
+                "x": -53.844,
+                "y": -67.648,
+                "z": -105.014
+            },
+            "radius": 16.4,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                111
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                17001
+            ],
+            "triggers": [
+                "GADGET_CREATE_32",
+                "SELECT_OPTION_33",
+                "ENTER_REGION_17001"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_CREATE_32",
+            "condition": "condition_EVENT_GADGET_CREATE_32",
+            "config_id": 1000032,
+            "event": 6,
+            "name": "GADGET_CREATE_32",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_33",
+            "condition": "condition_EVENT_SELECT_OPTION_33",
+            "config_id": 1000033,
+            "event": 9,
+            "forbid_guest": false,
+            "name": "SELECT_OPTION_33",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_17001",
+            "condition": "condition_EVENT_ENTER_REGION_17001",
+            "config_id": 1017001,
+            "event": 4,
+            "name": "ENTER_REGION_17001",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

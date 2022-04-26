@@ -1,0 +1,155 @@
+{
+    "action_EVENT_AVATAR_NEAR_PLATFORM_120006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_120007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_PLATFORM_REACH_POINT_120005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_AVATAR_NEAR_PLATFORM_120006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_120007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_PLATFORM_REACH_POINT_120005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 120001,
+            "gadget_id": 70710006,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 216.948,
+                "y": 4,
+                "z": -376.748
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 120002,
+            "gadget_id": 70710010,
+            "level": 1,
+            "pos": {
+                "x": 231.948,
+                "y": 4,
+                "z": -391.048
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "route_id": 50008058
+        },
+        {
+            "config_id": 120003,
+            "gadget_id": 70710007,
+            "level": 1,
+            "pos": {
+                "x": 217.648,
+                "y": 4,
+                "z": -377.848
+            },
+            "rot": {
+                "x": 0,
+                "y": 148,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 120004,
+            "drop_tag": "\u641c\u522e\u70b9\u89e3\u8c1c\u901a\u7528\u8499\u5fb7",
+            "gadget_id": 70210101,
+            "isOneoff": true,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 216.948,
+                "y": 5,
+                "z": -376.448
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 120007,
+            "pos": {
+                "x": 233.448,
+                "y": 4,
+                "z": -390.948
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                120001,
+                120002,
+                120003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                120007
+            ],
+            "triggers": [
+                "PLATFORM_REACH_POINT_120005",
+                "AVATAR_NEAR_PLATFORM_120006",
+                "ENTER_REGION_120007"
+            ]
+        },
+        {
+            "gadgets": [
+                120001,
+                120004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_PLATFORM_REACH_POINT_120005",
+            "condition": "condition_EVENT_PLATFORM_REACH_POINT_120005",
+            "config_id": 1120005,
+            "event": 26,
+            "name": "PLATFORM_REACH_POINT_120005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_AVATAR_NEAR_PLATFORM_120006",
+            "condition": "condition_EVENT_AVATAR_NEAR_PLATFORM_120006",
+            "config_id": 1120006,
+            "event": 25,
+            "forbid_guest": false,
+            "name": "AVATAR_NEAR_PLATFORM_120006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_120007",
+            "condition": "condition_EVENT_ENTER_REGION_120007",
+            "config_id": 1120007,
+            "event": 4,
+            "forbid_guest": false,
+            "name": "ENTER_REGION_120007",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

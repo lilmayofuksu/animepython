@@ -1,0 +1,92 @@
+{
+    "action_EVENT_GROUP_LOAD_152004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_152003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_152004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_152003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 17,
+            "config_id": 152001,
+            "gadget_id": 70330064,
+            "interact_id": 35,
+            "level": 30,
+            "pos": {
+                "x": -3843.071,
+                "y": 125.685,
+                "z": -644.252
+            },
+            "rot": {
+                "x": 4.523,
+                "y": 200.916,
+                "z": 7.78
+            },
+            "state": 202
+        },
+        {
+            "area_id": 17,
+            "config_id": 152002,
+            "gadget_id": 70330090,
+            "level": 30,
+            "pos": {
+                "x": -3831.396,
+                "y": 119.982,
+                "z": -643.945
+            },
+            "rot": {
+                "x": 0,
+                "y": 83.318,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                152001,
+                152002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_152003",
+                "GROUP_LOAD_152004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_152003",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_152003",
+            "config_id": 1152003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_152003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_152004",
+            "condition": "condition_EVENT_GROUP_LOAD_152004",
+            "config_id": 1152004,
+            "event": 29,
+            "name": "GROUP_LOAD_152004",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "GadgetState",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

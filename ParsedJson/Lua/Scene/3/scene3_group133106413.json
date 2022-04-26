@@ -1,0 +1,154 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_413005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_413006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_413007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_413005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_413006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_TIME_AXIS_PASS_413007": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 19,
+            "config_id": 413001,
+            "drop_id": 1000100,
+            "level": 36,
+            "monster_id": 25070101,
+            "pos": {
+                "x": -742.871,
+                "y": 158.155,
+                "z": 1577.68
+            },
+            "rot": {
+                "x": 0,
+                "y": 124.668,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 19,
+            "config_id": 413002,
+            "drop_id": 1000100,
+            "level": 36,
+            "monster_id": 25030301,
+            "pos": {
+                "x": -741.45,
+                "y": 156.728,
+                "z": 1581.424
+            },
+            "rot": {
+                "x": 0,
+                "y": 138.33,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 19,
+            "config_id": 413003,
+            "drop_id": 1000100,
+            "level": 36,
+            "monster_id": 25010501,
+            "pos": {
+                "x": -746.347,
+                "y": 157.562,
+                "z": 1580.487
+            },
+            "rot": {
+                "x": 0,
+                "y": 126.251,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 19,
+            "config_id": 413004,
+            "drop_id": 1000100,
+            "level": 36,
+            "monster_id": 25020201,
+            "pos": {
+                "x": -745.293,
+                "y": 156.729,
+                "z": 1582.475
+            },
+            "rot": {
+                "x": 0,
+                "y": 138.613,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 19,
+            "config_id": 413006,
+            "pos": {
+                "x": -732.513,
+                "y": 160.695,
+                "z": 1561.858
+            },
+            "radius": 15,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                413006
+            ],
+            "triggers": [
+                "ANY_MONSTER_DIE_413005",
+                "ENTER_REGION_413006",
+                "TIME_AXIS_PASS_413007"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                413001,
+                413002,
+                413003,
+                413004
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_413005"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_413005",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_413005",
+            "config_id": 1413005,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_413005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_413006",
+            "condition": "condition_EVENT_ENTER_REGION_413006",
+            "config_id": 1413006,
+            "event": 4,
+            "name": "ENTER_REGION_413006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_413007",
+            "condition": "condition_EVENT_TIME_AXIS_PASS_413007",
+            "config_id": 1413007,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_413007",
+            "source": "create_monster"
+        }
+    ],
+    "variables": []
+}

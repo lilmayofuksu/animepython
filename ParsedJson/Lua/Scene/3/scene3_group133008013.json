@@ -1,0 +1,177 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_13007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_13005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_13001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_13002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_13009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_13011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_13006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_13010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_13007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_13005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_13001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_13002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_13009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_13011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_13006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 13003,
+            "gadget_id": 70290045,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1170.404,
+                "y": 264.673,
+                "z": -547.204
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 13004,
+            "gadget_id": 70290046,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1170.429,
+                "y": 266.149,
+                "z": -547.231
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 13008,
+            "gadget_id": 70360001,
+            "level": 30,
+            "pos": {
+                "x": 1170.429,
+                "y": 266.149,
+                "z": -547.231
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 2
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                13003,
+                13008
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_13001",
+                "GADGET_STATE_CHANGE_13002",
+                "GADGET_CREATE_13005",
+                "SELECT_OPTION_13006",
+                "ANY_GADGET_DIE_13007",
+                "GADGET_STATE_CHANGE_13009",
+                "TIMER_EVENT_13010",
+                "GROUP_LOAD_13011"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_13001",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_13001",
+            "config_id": 1013001,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_13001",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_13002",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_13002",
+            "config_id": 1013002,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_13002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_13005",
+            "condition": "condition_EVENT_GADGET_CREATE_13005",
+            "config_id": 1013005,
+            "event": 6,
+            "name": "GADGET_CREATE_13005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_13006",
+            "condition": "condition_EVENT_SELECT_OPTION_13006",
+            "config_id": 1013006,
+            "event": 9,
+            "name": "SELECT_OPTION_13006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_13007",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_13007",
+            "config_id": 1013007,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_13007",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_13009",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_13009",
+            "config_id": 1013009,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_13009",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_13010",
+            "condition": "",
+            "config_id": 1013010,
+            "event": 15,
+            "name": "TIMER_EVENT_13010",
+            "source": "delay",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_13011",
+            "condition": "condition_EVENT_GROUP_LOAD_13011",
+            "config_id": 1013011,
+            "event": 29,
+            "name": "GROUP_LOAD_13011",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

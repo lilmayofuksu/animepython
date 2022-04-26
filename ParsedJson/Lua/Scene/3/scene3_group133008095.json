@@ -1,0 +1,85 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_95004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_95003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_95004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 95001,
+            "gadget_id": 70360098,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 902.682,
+                "y": 420.019,
+                "z": -851.339
+            },
+            "rot": {
+                "x": 3.173,
+                "y": 92.314,
+                "z": 1.748
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [
+        {
+            "area_id": 10,
+            "config_id": 95002,
+            "npc_id": 20185,
+            "pos": {
+                "x": 902.851,
+                "y": 421.258,
+                "z": -851.424
+            },
+            "rot": {
+                "x": 4.261,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                95001
+            ],
+            "monsters": [],
+            "npcs": [
+                95002
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_95003",
+                "GADGET_STATE_CHANGE_95004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_95003",
+            "condition": "",
+            "config_id": 1095003,
+            "event": 21,
+            "name": "QUEST_FINISH_95003",
+            "source": "7012402"
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_95004",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_95004",
+            "config_id": 1095004,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_95004",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

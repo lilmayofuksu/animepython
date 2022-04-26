@@ -1,0 +1,125 @@
+{
+    "condition_EVENT_VARIABLE_CHANGE_183007": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 17,
+            "config_id": 183001,
+            "gadget_id": 70950068,
+            "level": 10,
+            "pos": {
+                "x": -3622.892,
+                "y": 112.239,
+                "z": -827.432
+            },
+            "rot": {
+                "x": 356.63,
+                "y": 39.541,
+                "z": 0.496
+            },
+            "state": 201
+        },
+        {
+            "area_id": 17,
+            "config_id": 183002,
+            "gadget_id": 70950070,
+            "level": 10,
+            "pos": {
+                "x": -3657.574,
+                "y": 113.717,
+                "z": -837.394
+            },
+            "rot": {
+                "x": 358.534,
+                "y": 13.098,
+                "z": 1.617
+            }
+        },
+        {
+            "area_id": 17,
+            "config_id": 183005,
+            "drop_tag": "\u89e3\u8c1c\u4f4e\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211101,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -3649.416,
+                "y": 112.741,
+                "z": -830.387
+            },
+            "rot": {
+                "x": 350.813,
+                "y": 163.195,
+                "z": 357.226
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 17,
+            "config_id": 183006,
+            "pos": {
+                "x": -3643.289,
+                "y": 130.299,
+                "z": -807.642
+            },
+            "radius": 40,
+            "shape": 1,
+            "team_ability_group_list": [
+                "Move_Electric_Stake_Play"
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                183001,
+                183002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                183006
+            ],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                183005
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_183007",
+            "config_id": 1183007,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_183007",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

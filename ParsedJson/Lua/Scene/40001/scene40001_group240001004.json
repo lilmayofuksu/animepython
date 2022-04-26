@@ -1,0 +1,162 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_4": "WARN: Lua function omitted from the dump",
+    "action_EVENT_DUNGEON_SETTLE_7": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_3": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_4": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_DUNGEON_SETTLE_7": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_3": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 1,
+            "drop_tag": "\u6218\u6597\u4e2d\u7ea7\u8499\u5fb7",
+            "gadget_id": 70211011,
+            "isOneoff": true,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 15.814,
+                "y": 42.016,
+                "z": 94.759
+            },
+            "rot": {
+                "x": 0,
+                "y": 268.4,
+                "z": 0
+            },
+            "showcutscene": true
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 13,
+            "level": 1,
+            "monster_id": 21020101,
+            "pos": {
+                "x": 7.479,
+                "y": 42.016,
+                "z": 96.081
+            },
+            "rot": {
+                "x": 0,
+                "y": 311.99,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 14,
+            "level": 1,
+            "monster_id": 21010701,
+            "pos": {
+                "x": 59.788,
+                "y": 42.017,
+                "z": 123.708
+            },
+            "rot": {
+                "x": 0,
+                "y": 261.56,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 15,
+            "level": 1,
+            "monster_id": 21010701,
+            "pos": {
+                "x": 59.919,
+                "y": 42.017,
+                "z": 120.303
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 16,
+            "level": 1,
+            "monster_id": 21010701,
+            "pos": {
+                "x": -3.741,
+                "y": 47,
+                "z": 61.402
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 17,
+            "level": 1,
+            "monster_id": 21010701,
+            "pos": {
+                "x": 1.092,
+                "y": 47,
+                "z": 64.009
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                13
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "SPECIFIC_MONSTER_HP_CHANGE_3",
+                "ANY_MONSTER_DIE_4",
+                "DUNGEON_SETTLE_7"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_3",
+            "condition": "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_3",
+            "config_id": 1000003,
+            "event": 12,
+            "name": "SPECIFIC_MONSTER_HP_CHANGE_3",
+            "source": "13"
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_4",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_4",
+            "config_id": 1000004,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_4",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_DUNGEON_SETTLE_7",
+            "condition": "condition_EVENT_DUNGEON_SETTLE_7",
+            "config_id": 1000007,
+            "event": 8,
+            "name": "DUNGEON_SETTLE_7",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

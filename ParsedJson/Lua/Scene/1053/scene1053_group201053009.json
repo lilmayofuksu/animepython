@@ -1,0 +1,90 @@
+{
+    "action_EVENT_ENTER_REGION_9003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_9003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 9001,
+            "gadget_id": 70220036,
+            "level": 1,
+            "pos": {
+                "x": -10.83,
+                "y": 71.832,
+                "z": 93.45
+            },
+            "rot": {
+                "x": 354.861,
+                "y": 322.289,
+                "z": 335.049
+            }
+        },
+        {
+            "config_id": 9002,
+            "gadget_id": 70900201,
+            "level": 1,
+            "pos": {
+                "x": -22.33,
+                "y": 63.1,
+                "z": 104.708
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 9003,
+            "pos": {
+                "x": -20.248,
+                "y": 63.1,
+                "z": 105.324
+            },
+            "radius": 15,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                9001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                9003
+            ],
+            "triggers": [
+                "ENTER_REGION_9003"
+            ]
+        },
+        {
+            "gadgets": [
+                9002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_9003",
+            "condition": "condition_EVENT_ENTER_REGION_9003",
+            "config_id": 1009003,
+            "event": 4,
+            "name": "ENTER_REGION_9003",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

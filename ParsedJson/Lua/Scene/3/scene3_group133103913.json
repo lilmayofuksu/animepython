@@ -1,0 +1,143 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_913005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_913006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_913007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_913005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_913006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_FINISH_913007": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 6,
+            "config_id": 913001,
+            "gadget_id": 70360045,
+            "level": 24,
+            "persistent": true,
+            "pos": {
+                "x": 706.453,
+                "y": 410.973,
+                "z": 1845.225
+            },
+            "rot": {
+                "x": 0,
+                "y": 314.588,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 6,
+            "config_id": 913002,
+            "gadget_id": 70360045,
+            "level": 24,
+            "persistent": true,
+            "pos": {
+                "x": 698.926,
+                "y": 410.448,
+                "z": 1877.153
+            },
+            "rot": {
+                "x": 0,
+                "y": 318.747,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 6,
+            "config_id": 913003,
+            "drop_id": 1000100,
+            "level": 24,
+            "monster_id": 20011401,
+            "pos": {
+                "x": 699.351,
+                "y": 411.448,
+                "z": 1877.077
+            },
+            "rot": {
+                "x": 0,
+                "y": 333.651,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 6,
+            "config_id": 913004,
+            "drop_id": 1000100,
+            "level": 24,
+            "monster_id": 20011202,
+            "pos": {
+                "x": 706.631,
+                "y": 412.182,
+                "z": 1845.625
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_913007"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                913001,
+                913002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_913005",
+                "GADGET_STATE_CHANGE_913006",
+                "QUEST_FINISH_913007"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_913005",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_913005",
+            "config_id": 1913005,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_913005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_913006",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_913006",
+            "config_id": 1913006,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_913006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_913007",
+            "condition": "condition_EVENT_QUEST_FINISH_913007",
+            "config_id": 1913007,
+            "event": 21,
+            "name": "QUEST_FINISH_913007",
+            "source": "100808"
+        }
+    ],
+    "variables": []
+}

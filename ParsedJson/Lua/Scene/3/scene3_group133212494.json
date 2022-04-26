@@ -1,0 +1,171 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_494003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GATHER_494007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_494008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_494003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GATHER_494007": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 13,
+            "config_id": 494001,
+            "gadget_id": 70330105,
+            "level": 27,
+            "persistent": true,
+            "pos": {
+                "x": -3869.487,
+                "y": 200.038,
+                "z": -2526.592
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 13,
+            "config_id": 494002,
+            "gadget_id": 70500000,
+            "isOneoff": true,
+            "level": 27,
+            "persistent": true,
+            "point_type": 9169,
+            "pos": {
+                "x": -3869.487,
+                "y": 207.203,
+                "z": -2526.592
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 13,
+            "config_id": 494004,
+            "drop_tag": "\u6df1\u6e0a\u6cd5\u5e08",
+            "level": 27,
+            "monster_id": 22010301,
+            "pos": {
+                "x": -3876.975,
+                "y": 200,
+                "z": -2527.785
+            },
+            "rot": {
+                "x": 0,
+                "y": 63.452,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 13,
+            "config_id": 494005,
+            "drop_tag": "\u6df1\u6e0a\u6cd5\u5e08",
+            "level": 27,
+            "monster_id": 22010301,
+            "pos": {
+                "x": -3866.693,
+                "y": 200,
+                "z": -2534.08
+            },
+            "rot": {
+                "x": 0,
+                "y": 333.654,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 13,
+            "config_id": 494006,
+            "drop_tag": "\u6df1\u6e0a\u6cd5\u5e08",
+            "level": 27,
+            "monster_id": 22010301,
+            "pos": {
+                "x": -3864.958,
+                "y": 200,
+                "z": -2519.406
+            },
+            "rot": {
+                "x": 0,
+                "y": 215.699,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                494001,
+                494002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_494003",
+                "GATHER_494007",
+                "QUEST_START_494008"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                494004,
+                494005,
+                494006
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GATHER_494007",
+                "QUEST_START_494008"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_494003",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_494003",
+            "config_id": 1494003,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_494003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GATHER_494007",
+            "condition": "condition_EVENT_GATHER_494007",
+            "config_id": 1494007,
+            "event": 20,
+            "name": "GATHER_494007",
+            "source": "494002",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_494008",
+            "condition": "",
+            "config_id": 1494008,
+            "event": 28,
+            "name": "QUEST_START_494008",
+            "source": "7213107",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "reminder",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

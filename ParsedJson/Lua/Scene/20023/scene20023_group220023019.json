@@ -1,0 +1,162 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_35": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_43": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_44": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_35": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_43": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_FINISH_44": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 48,
+            "gadget_id": 70220007,
+            "level": 1,
+            "pos": {
+                "x": 183.236,
+                "y": 27.017,
+                "z": 32.506
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 49,
+            "gadget_id": 70220007,
+            "level": 1,
+            "pos": {
+                "x": 178.15,
+                "y": 27.017,
+                "z": 32.269
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 50,
+            "gadget_id": 70220007,
+            "level": 1,
+            "pos": {
+                "x": 195.823,
+                "y": 27.017,
+                "z": 53.957
+            },
+            "rot": {
+                "x": 0,
+                "y": 98.151,
+                "z": 0
+            }
+        },
+        {
+            "chest_drop_id": 11010800,
+            "config_id": 51,
+            "drop_count": 1,
+            "gadget_id": 70210102,
+            "level": 6,
+            "pos": {
+                "x": 178.385,
+                "y": 27.017,
+                "z": 29.785
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "chest_drop_id": 11010800,
+            "config_id": 54,
+            "drop_count": 1,
+            "gadget_id": 70210102,
+            "level": 6,
+            "pos": {
+                "x": 177.648,
+                "y": 27.016,
+                "z": 29.834
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                48,
+                49,
+                50,
+                51
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_35",
+                "QUEST_FINISH_44"
+            ]
+        },
+        {
+            "gadgets": [
+                48,
+                49,
+                50,
+                54
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_43"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_35",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_35",
+            "config_id": 1000035,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_35",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_43",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_43",
+            "config_id": 1000043,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_43",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_44",
+            "condition": "condition_EVENT_QUEST_FINISH_44",
+            "config_id": 1000044,
+            "event": 21,
+            "name": "QUEST_FINISH_44",
+            "source": "2010140"
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "isdone",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

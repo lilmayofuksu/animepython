@@ -1,0 +1,365 @@
+{
+    "GetNextPath": "WARN: Lua function omitted from the dump",
+    "MovePlatform": "WARN: Lua function omitted from the dump",
+    "action_EVENT_AVATAR_NEAR_PLATFORM_436005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_436006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_REFRESH_436003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_PLATFORM_REACH_POINT_436004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_AVATAR_NEAR_PLATFORM_436005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_436006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_REFRESH_436003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_PLATFORM_REACH_POINT_436004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 436001,
+            "gadget_id": 70350317,
+            "is_use_point_array": true,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -6007.892,
+                "y": 219.916,
+                "z": -2861.448
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "chest_drop_id": 1000100,
+            "config_id": 436002,
+            "drop_count": 1,
+            "gadget_id": 70217011,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -6032.548,
+                "y": 206.588,
+                "z": -2902.887
+            },
+            "rot": {
+                "x": 344.757,
+                "y": 109.549,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 436007,
+            "gadget_id": 70360286,
+            "level": 1,
+            "pos": {
+                "x": -6019.031,
+                "y": 204.28,
+                "z": -2892.992
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 436008,
+            "gadget_id": 70360286,
+            "level": 1,
+            "pos": {
+                "x": -6056.515,
+                "y": 207.437,
+                "z": -2893.938
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 436009,
+            "gadget_id": 70360286,
+            "level": 1,
+            "pos": {
+                "x": -6014.85,
+                "y": 212.173,
+                "z": -2915.458
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "io_type": 1,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suite_disk": [
+        {
+            "gadgets": [
+                {
+                    "config_id": 436001,
+                    "platform_info": {
+                        "is_started": false,
+                        "move_type": 1,
+                        "point_id": 0,
+                        "route_id": 0,
+                        "route_index": 0
+                    },
+                    "state": 0
+                },
+                {
+                    "config_id": 436007,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "GROUP_REFRESH_436003",
+                "PLATFORM_REACH_POINT_436004",
+                "AVATAR_NEAR_PLATFORM_436005"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "isFinished",
+                    "no_refresh": true,
+                    "value": 0
+                },
+                {
+                    "configId": 2,
+                    "name": "isMoving",
+                    "no_refresh": false,
+                    "value": 0
+                },
+                {
+                    "configId": 3,
+                    "name": "currentRouteIndex",
+                    "no_refresh": false,
+                    "value": 0
+                },
+                {
+                    "configId": 4,
+                    "name": "nextRouteIndex",
+                    "no_refresh": false,
+                    "value": 1
+                },
+                {
+                    "configId": 5,
+                    "name": "isstart",
+                    "no_refresh": false,
+                    "value": 0
+                },
+                {
+                    "configId": 6,
+                    "name": "currentPathNodeIndex",
+                    "no_refresh": false,
+                    "value": 0
+                },
+                {
+                    "configId": 7,
+                    "name": "featherfinish",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 436002,
+                    "platform_info": {
+                        "is_started": false,
+                        "move_type": 1,
+                        "point_id": 0,
+                        "route_id": 0,
+                        "route_index": 0
+                    },
+                    "state": 0
+                },
+                {
+                    "config_id": 436008,
+                    "state": 0
+                },
+                {
+                    "config_id": 436009,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_436006"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "isFinished",
+                    "no_refresh": true,
+                    "value": 1
+                },
+                {
+                    "configId": 2,
+                    "name": "isMoving",
+                    "no_refresh": false,
+                    "value": 0
+                },
+                {
+                    "configId": 3,
+                    "name": "currentRouteIndex",
+                    "no_refresh": false,
+                    "value": 0
+                },
+                {
+                    "configId": 4,
+                    "name": "nextRouteIndex",
+                    "no_refresh": false,
+                    "value": 1
+                },
+                {
+                    "configId": 5,
+                    "name": "isstart",
+                    "no_refresh": false,
+                    "value": 0
+                },
+                {
+                    "configId": 6,
+                    "name": "currentPathNodeIndex",
+                    "no_refresh": false,
+                    "value": 0
+                },
+                {
+                    "configId": 7,
+                    "name": "featherfinish",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                436001,
+                436007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_REFRESH_436003",
+                "PLATFORM_REACH_POINT_436004",
+                "AVATAR_NEAR_PLATFORM_436005"
+            ]
+        },
+        {
+            "gadgets": [
+                436002,
+                436008,
+                436009
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_436006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_REFRESH_436003",
+            "condition": "condition_EVENT_GROUP_REFRESH_436003",
+            "config_id": 1436003,
+            "event": 32,
+            "name": "GROUP_REFRESH_436003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_PLATFORM_REACH_POINT_436004",
+            "condition": "condition_EVENT_PLATFORM_REACH_POINT_436004",
+            "config_id": 1436004,
+            "event": 26,
+            "name": "PLATFORM_REACH_POINT_436004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_AVATAR_NEAR_PLATFORM_436005",
+            "condition": "condition_EVENT_AVATAR_NEAR_PLATFORM_436005",
+            "config_id": 1436005,
+            "event": 25,
+            "name": "AVATAR_NEAR_PLATFORM_436005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_436006",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_436006",
+            "config_id": 1436006,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_436006",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "isFinished",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "isMoving",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "currentRouteIndex",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 4,
+            "name": "nextRouteIndex",
+            "no_refresh": false,
+            "value": 1
+        },
+        {
+            "configId": 5,
+            "name": "isstart",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 6,
+            "name": "currentPathNodeIndex",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 7,
+            "name": "featherfinish",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

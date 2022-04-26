@@ -1,0 +1,155 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_301006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_301005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_301006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_301005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 3,
+            "config_id": 301004,
+            "drop_tag": "\u89e3\u8c1c\u4f4e\u7ea7\u8499\u5fb7",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211102,
+            "isOneoff": true,
+            "level": 11,
+            "persistent": true,
+            "pos": {
+                "x": 2124.4,
+                "y": 211.622,
+                "z": -559.3
+            },
+            "rot": {
+                "x": 0,
+                "y": 41.277,
+                "z": 0
+            },
+            "state": 103
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 3,
+            "config_id": 301007,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "level": 11,
+            "monster_id": 20010801,
+            "pos": {
+                "x": 2122.936,
+                "y": 212.13,
+                "z": -557.951
+            },
+            "rot": {
+                "x": 0,
+                "y": 39.083,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 3,
+            "config_id": 301008,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "level": 11,
+            "monster_id": 20010801,
+            "pos": {
+                "x": 2125.878,
+                "y": 212.13,
+                "z": -560.355
+            },
+            "rot": {
+                "x": 0,
+                "y": 338.685,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 3,
+            "config_id": 301009,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "level": 11,
+            "monster_id": 20010801,
+            "pos": {
+                "x": 2125.478,
+                "y": 212.13,
+                "z": -557.973
+            },
+            "rot": {
+                "x": 0,
+                "y": 41.509,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 3,
+            "config_id": 301005,
+            "pos": {
+                "x": 2125.116,
+                "y": 212.05,
+                "z": -558.52
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                301004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                301005
+            ],
+            "triggers": [
+                "ENTER_REGION_301005",
+                "ANY_MONSTER_DIE_301006"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                301007,
+                301008,
+                301009
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_301006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_301005",
+            "condition": "condition_EVENT_ENTER_REGION_301005",
+            "config_id": 1301005,
+            "event": 4,
+            "name": "ENTER_REGION_301005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_301006",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_301006",
+            "config_id": 1301006,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_301006",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

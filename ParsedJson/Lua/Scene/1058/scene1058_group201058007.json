@@ -1,0 +1,73 @@
+{
+    "action_EVENT_ENTER_REGION_7002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_7002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 7001,
+            "gadget_id": 70900201,
+            "level": 1,
+            "pos": {
+                "x": -69.676,
+                "y": 109.024,
+                "z": 37.285
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 7002,
+            "pos": {
+                "x": -70.092,
+                "y": 109.024,
+                "z": 36.901
+            },
+            "radius": 10,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                7001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                7002
+            ],
+            "triggers": [
+                "ENTER_REGION_7002"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_7002",
+            "condition": "condition_EVENT_ENTER_REGION_7002",
+            "config_id": 1007002,
+            "event": 4,
+            "name": "ENTER_REGION_7002",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

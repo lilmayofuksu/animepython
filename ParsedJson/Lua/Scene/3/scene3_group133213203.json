@@ -1,0 +1,104 @@
+{
+    "action_EVENT_ENTER_REGION_203004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_203002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_203004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_203002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 12,
+            "config_id": 203001,
+            "gadget_id": 70350006,
+            "isOneoff": true,
+            "level": 27,
+            "persistent": true,
+            "pos": {
+                "x": -3341.718,
+                "y": 216.826,
+                "z": -3451.203
+            },
+            "rot": {
+                "x": 274.535,
+                "y": 180.024,
+                "z": 325
+            }
+        },
+        {
+            "area_id": 12,
+            "config_id": 203003,
+            "gadget_id": 70350006,
+            "isOneoff": true,
+            "level": 27,
+            "persistent": true,
+            "pos": {
+                "x": -3341.227,
+                "y": 216.778,
+                "z": -3451.807
+            },
+            "rot": {
+                "x": 274.535,
+                "y": 180.024,
+                "z": 145
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 12,
+            "config_id": 203004,
+            "pos": {
+                "x": -3342.094,
+                "y": 219.176,
+                "z": -3449.954
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                203001,
+                203003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_203002"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_203002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_203002",
+            "config_id": 1203002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_203002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_203004",
+            "condition": "condition_EVENT_ENTER_REGION_203004",
+            "config_id": 1203004,
+            "event": 4,
+            "name": "ENTER_REGION_203004",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "count",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

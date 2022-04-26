@@ -1,0 +1,92 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_71004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_71004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 71001,
+            "gadget_id": 70360104,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1379.646,
+                "y": 290.205,
+                "z": -1151.929
+            },
+            "rot": {
+                "x": 0.731,
+                "y": 0.799,
+                "z": 6.024
+            },
+            "state": 201
+        },
+        {
+            "area_id": 10,
+            "chest_drop_id": 1000100,
+            "config_id": 71005,
+            "drop_count": 1,
+            "gadget_id": 70210102,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": 1379.624,
+                "y": 290.182,
+                "z": -1151.967
+            },
+            "rot": {
+                "x": 351.889,
+                "y": 0,
+                "z": 4.296
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 3,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                71005
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_71004"
+            ]
+        },
+        {
+            "gadgets": [
+                71001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_71004",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_71004",
+            "config_id": 1071004,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_71004",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

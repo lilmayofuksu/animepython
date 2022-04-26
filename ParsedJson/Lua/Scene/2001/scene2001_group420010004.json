@@ -1,0 +1,108 @@
+{
+    "EnterField": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_4004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_4005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 4001,
+            "gadget_id": 77307006,
+            "level": 1,
+            "pos": {
+                "x": 813.6,
+                "y": 318.155,
+                "z": 128.6
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "server_global_value_config": {
+                "SGV_ScoringShelf_01": 0
+            }
+        },
+        {
+            "config_id": 4002,
+            "gadget_id": 77307010,
+            "level": 1,
+            "pos": {
+                "x": 813.6,
+                "y": 318.155,
+                "z": 133.6
+            },
+            "rot": {
+                "x": 0,
+                "y": 90,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 4003,
+            "follow_entity": 4001,
+            "gadget_id": 70360001,
+            "is_guest_can_operate": true,
+            "level": 1,
+            "pos": {
+                "x": 803.567,
+                "y": 318.155,
+                "z": 126.134
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "worktop_config": {
+                "init_options": [
+                    326
+                ]
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                4001,
+                4002,
+                4003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_4004",
+                "SELECT_OPTION_4005"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_CREATE_4004",
+            "condition": "",
+            "config_id": 1004004,
+            "event": 6,
+            "name": "GADGET_CREATE_4004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_4005",
+            "condition": "",
+            "config_id": 1004005,
+            "event": 9,
+            "forbid_guest": false,
+            "name": "SELECT_OPTION_4005",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

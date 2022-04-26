@@ -1,0 +1,223 @@
+{
+    "UpdateGamePlayState": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_MONSTER_DIE_16008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_16010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_16001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_16002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_16008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_16010": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 16009,
+            "drop_tag": "\u6218\u6597\u8d85\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211031,
+            "isOneoff": true,
+            "level": 16,
+            "persistent": true,
+            "pos": {
+                "x": -145.21,
+                "y": 264.172,
+                "z": 430.554
+            },
+            "rot": {
+                "x": 358.769,
+                "y": 359.647,
+                "z": 359.827
+            }
+        }
+    ],
+    "garbages": {
+        "monsters": [
+            {
+                "area_id": 200,
+                "config_id": 16006,
+                "disableWander": true,
+                "drop_id": 1000100,
+                "level": 36,
+                "monster_id": 24010101,
+                "pos": {
+                    "x": -144.126,
+                    "y": 256.302,
+                    "z": 438.502
+                },
+                "pose_id": 100,
+                "rot": {
+                    "x": 0,
+                    "y": 173.155,
+                    "z": 0
+                }
+            },
+            {
+                "area_id": 200,
+                "config_id": 16007,
+                "disableWander": true,
+                "drop_id": 1000100,
+                "level": 36,
+                "monster_id": 24010101,
+                "pos": {
+                    "x": -144.485,
+                    "y": 254.753,
+                    "z": 431.876
+                },
+                "pose_id": 101,
+                "rot": {
+                    "x": 0,
+                    "y": 124.347,
+                    "z": 0
+                }
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 200,
+            "config_id": 16003,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "level": 36,
+            "monster_id": 24010101,
+            "pos": {
+                "x": -154.188,
+                "y": 264.505,
+                "z": 434.147
+            },
+            "pose_id": 100,
+            "rot": {
+                "x": 0,
+                "y": 103.053,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 16004,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "level": 36,
+            "monster_id": 24010101,
+            "pos": {
+                "x": -139.852,
+                "y": 264.395,
+                "z": 420.911
+            },
+            "pose_id": 100,
+            "rot": {
+                "x": 0,
+                "y": 323.835,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 16005,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "level": 36,
+            "monster_id": 24010101,
+            "pos": {
+                "x": -134.831,
+                "y": 264.347,
+                "z": 432.583
+            },
+            "pose_id": 100,
+            "rot": {
+                "x": 0,
+                "y": 250.841,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_16001",
+                "VARIABLE_CHANGE_16002"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                16003,
+                16004,
+                16005
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_16008"
+            ]
+        },
+        {
+            "gadgets": [
+                16009
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_16010"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_LOAD_16001",
+            "condition": "",
+            "config_id": 1016001,
+            "event": 29,
+            "name": "GROUP_LOAD_16001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_16002",
+            "condition": "",
+            "config_id": 1016002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_16002",
+            "source": "gameplayState",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_16008",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_16008",
+            "config_id": 1016008,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_16008",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_16010",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_16010",
+            "config_id": 1016010,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_16010",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "gameplayState",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

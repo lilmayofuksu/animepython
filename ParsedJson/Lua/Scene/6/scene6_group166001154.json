@@ -1,0 +1,116 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_154006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_154005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_154006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_154005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 300,
+            "config_id": 154004,
+            "drop_tag": "\u89e3\u8c1c\u4f4e\u7ea7\u7483\u6708",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211102,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": 906.637,
+                "y": 725.115,
+                "z": 340.829
+            },
+            "rot": {
+                "x": 0,
+                "y": 183.713,
+                "z": 0
+            },
+            "state": 103
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 300,
+            "config_id": 154003,
+            "drop_tag": "\u503a\u52a1\u5904\u7406\u4eba",
+            "level": 36,
+            "monster_id": 23020101,
+            "pos": {
+                "x": 906.24,
+                "y": 725.138,
+                "z": 334.272
+            },
+            "rot": {
+                "x": 0,
+                "y": 1.353,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 300,
+            "config_id": 154005,
+            "pos": {
+                "x": 906.741,
+                "y": 726.005,
+                "z": 340.97
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                154004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                154005
+            ],
+            "triggers": [
+                "ENTER_REGION_154005",
+                "ANY_MONSTER_DIE_154006"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                154003
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_154006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_154005",
+            "condition": "condition_EVENT_ENTER_REGION_154005",
+            "config_id": 1154005,
+            "event": 4,
+            "name": "ENTER_REGION_154005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_154006",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_154006",
+            "config_id": 1154006,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_154006",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

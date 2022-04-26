@@ -1,0 +1,208 @@
+{
+    "action_EVENT_QUEST_FINISH_9004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_9005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_9006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SEALAMP_PHASE_CHANGE_9007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_9011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SEALAMP_PHASE_CHANGE_9007": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 7,
+            "config_id": 9001,
+            "gadget_id": 70800018,
+            "level": 1,
+            "pos": {
+                "x": -492.42,
+                "y": 203.78,
+                "z": 285.7
+            },
+            "rot": {
+                "x": 0,
+                "y": 314.2,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 7,
+            "config_id": 9002,
+            "gadget_id": 70800019,
+            "level": 1,
+            "pos": {
+                "x": -492.42,
+                "y": 203.78,
+                "z": 285.7
+            },
+            "rot": {
+                "x": 0,
+                "y": 314.2,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 7,
+            "config_id": 9003,
+            "gadget_id": 70800020,
+            "level": 1,
+            "pos": {
+                "x": -492.42,
+                "y": 203.78,
+                "z": 285.7
+            },
+            "rot": {
+                "x": 0,
+                "y": 314.2,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 7,
+            "config_id": 9009,
+            "gadget_id": 70800026,
+            "level": 1,
+            "pos": {
+                "x": -492.42,
+                "y": 203.78,
+                "z": 285.7
+            },
+            "rot": {
+                "x": 0,
+                "y": 134.2,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                9001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_9004",
+                "QUEST_FINISH_9005",
+                "QUEST_FINISH_9006",
+                "SEALAMP_PHASE_CHANGE_9007",
+                "GROUP_LOAD_9011"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                9002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_9004",
+                "QUEST_FINISH_9005",
+                "SEALAMP_PHASE_CHANGE_9007",
+                "GROUP_LOAD_9011"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                9003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_9004",
+                "QUEST_FINISH_9005",
+                "SEALAMP_PHASE_CHANGE_9007",
+                "GROUP_LOAD_9011"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                9009
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_9004",
+                "QUEST_FINISH_9005",
+                "SEALAMP_PHASE_CHANGE_9007",
+                "GROUP_LOAD_9011"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_9004",
+            "condition": "",
+            "config_id": 1009004,
+            "event": 21,
+            "name": "QUEST_FINISH_9004",
+            "source": "4000108"
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_9005",
+            "condition": "",
+            "config_id": 1009005,
+            "event": 21,
+            "name": "QUEST_FINISH_9005",
+            "source": "4000506"
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_9006",
+            "condition": "",
+            "config_id": 1009006,
+            "event": 21,
+            "name": "QUEST_FINISH_9006",
+            "source": "4000108"
+        },
+        {
+            "action": "action_EVENT_SEALAMP_PHASE_CHANGE_9007",
+            "condition": "condition_EVENT_SEALAMP_PHASE_CHANGE_9007",
+            "config_id": 1009007,
+            "event": 38,
+            "name": "SEALAMP_PHASE_CHANGE_9007",
+            "source": ""
+        },
+        {
+            "action": "",
+            "condition": "condition_EVENT_GROUP_LOAD_9011",
+            "config_id": 1009011,
+            "event": 29,
+            "name": "GROUP_LOAD_9011",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Quest 1 State",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "Quest 2 State",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "Lamp State",
+            "no_refresh": true,
+            "value": 1
+        }
+    ]
+}

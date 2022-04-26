@@ -1,0 +1,295 @@
+{
+    "action_EVENT_CHALLENGE_FAIL_10013": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_10003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_DUNGEON_ALL_AVATAR_DIE_10009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_DUNGEON_SETTLE_10010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_10001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_10006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_10014": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_10015": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_10007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_10002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_10004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_DUNGEON_SETTLE_10010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_10001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_10006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_10014": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_10015": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_10002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_10004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 10005,
+            "gadget_id": 70310008,
+            "level": 1,
+            "pos": {
+                "x": 2.555,
+                "y": -13.531,
+                "z": -30.67
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 10011,
+            "drop_tag": "\u6218\u6597\u9ad8\u7ea7\u7a3b\u59bb",
+            "gadget_id": 70211021,
+            "isOneoff": true,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 7.252,
+                "y": -6.997,
+                "z": -28.841
+            },
+            "rot": {
+                "x": 0,
+                "y": 270,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 10012,
+            "gadget_id": 70330162,
+            "level": 1,
+            "pos": {
+                "x": 4.82,
+                "y": -6.473,
+                "z": -35.857
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "garbages": {
+        "triggers": [
+            {
+                "action": "action_EVENT_TIME_AXIS_PASS_10008",
+                "condition": "",
+                "config_id": 1010008,
+                "event": 72,
+                "name": "TIME_AXIS_PASS_10008",
+                "source": "T1"
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 10001,
+            "pos": {
+                "x": 0.388,
+                "y": -6.938,
+                "z": -31.946
+            },
+            "shape": 2,
+            "size": {
+                "x": 10,
+                "y": 5,
+                "z": 20
+            }
+        },
+        {
+            "config_id": 10006,
+            "pos": {
+                "x": 4.707,
+                "y": -6.473,
+                "z": -35.027
+            },
+            "shape": 2,
+            "size": {
+                "x": 5,
+                "y": 3,
+                "z": 3
+            }
+        },
+        {
+            "config_id": 10014,
+            "pos": {
+                "x": 19.147,
+                "y": 3.036,
+                "z": -35.605
+            },
+            "radius": 50,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                10012
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                10001
+            ],
+            "triggers": [
+                "ENTER_REGION_10001",
+                "VARIABLE_CHANGE_10002",
+                "CHALLENGE_SUCCESS_10003",
+                "VARIABLE_CHANGE_10004",
+                "TIME_AXIS_PASS_10007",
+                "DUNGEON_ALL_AVATAR_DIE_10009",
+                "DUNGEON_SETTLE_10010",
+                "CHALLENGE_FAIL_10013"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                10014
+            ],
+            "triggers": [
+                "ENTER_REGION_10014"
+            ]
+        },
+        {
+            "gadgets": [
+                10005
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_10015"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_10001",
+            "condition": "condition_EVENT_ENTER_REGION_10001",
+            "config_id": 1010001,
+            "event": 4,
+            "name": "ENTER_REGION_10001",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_10002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_10002",
+            "config_id": 1010002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_10002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_10003",
+            "condition": "",
+            "config_id": 1010003,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_10003",
+            "source": "101"
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_10004",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_10004",
+            "config_id": 1010004,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_10004",
+            "source": "",
+            "tag": "123",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_10006",
+            "condition": "condition_EVENT_ENTER_REGION_10006",
+            "config_id": 1010006,
+            "event": 4,
+            "name": "ENTER_REGION_10006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_10007",
+            "condition": "",
+            "config_id": 1010007,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_10007",
+            "source": "T1"
+        },
+        {
+            "action": "action_EVENT_DUNGEON_ALL_AVATAR_DIE_10009",
+            "condition": "",
+            "config_id": 1010009,
+            "event": 60,
+            "name": "DUNGEON_ALL_AVATAR_DIE_10009",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_DUNGEON_SETTLE_10010",
+            "condition": "condition_EVENT_DUNGEON_SETTLE_10010",
+            "config_id": 1010010,
+            "event": 8,
+            "name": "DUNGEON_SETTLE_10010",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_10013",
+            "condition": "",
+            "config_id": 1010013,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_10013",
+            "source": "101",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_10014",
+            "condition": "condition_EVENT_ENTER_REGION_10014",
+            "config_id": 1010014,
+            "event": 4,
+            "name": "ENTER_REGION_10014",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_10015",
+            "condition": "condition_EVENT_GADGET_CREATE_10015",
+            "config_id": 1010015,
+            "event": 6,
+            "name": "GADGET_CREATE_10015",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Start",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "Lamp",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "Yes",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 4,
+            "name": "Omega",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

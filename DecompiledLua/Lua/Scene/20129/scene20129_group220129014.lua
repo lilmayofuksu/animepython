@@ -1,0 +1,623 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
+L0_1 = {}
+L0_1.group_id = 220129014
+L1_1 = {}
+monsters = L1_1
+L1_1 = {}
+npcs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 14001
+L2_1.gadget_id = 70800135
+L3_1 = {}
+L3_1.x = 302.975
+L3_1.y = 205.439
+L3_1.z = 721.333
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 0.0
+L3_1.y = 85.683
+L3_1.z = 0.0
+L2_1.rot = L3_1
+L2_1.level = 1
+L3_1 = {}
+L3_1.config_id = 14002
+L3_1.gadget_id = 70800136
+L4_1 = {}
+L4_1.x = 302.8
+L4_1.y = 205.424
+L4_1.z = 491.802
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 0.0
+L4_1.y = 92.182
+L4_1.z = 0.0
+L3_1.rot = L4_1
+L3_1.level = 1
+L4_1 = {}
+L4_1.config_id = 14003
+L4_1.gadget_id = 70800137
+L5_1 = {}
+L5_1.x = 302.991
+L5_1.y = 205.469
+L5_1.z = 269.913
+L4_1.pos = L5_1
+L5_1 = {}
+L5_1.x = 0.0
+L5_1.y = 86.138
+L5_1.z = 0.0
+L4_1.rot = L5_1
+L4_1.level = 1
+L5_1 = {}
+L5_1.config_id = 14004
+L5_1.gadget_id = 70800138
+L6_1 = {}
+L6_1.x = 302.847
+L6_1.y = 205.428
+L6_1.z = 68.287
+L5_1.pos = L6_1
+L6_1 = {}
+L6_1.x = 0.0
+L6_1.y = 91.963
+L6_1.z = 0.0
+L5_1.rot = L6_1
+L5_1.level = 1
+L6_1 = {}
+L6_1.config_id = 14005
+L6_1.gadget_id = 70800139
+L7_1 = {}
+L7_1.x = -457.264
+L7_1.y = -47.164
+L7_1.z = 974.0
+L6_1.pos = L7_1
+L7_1 = {}
+L7_1.x = 0.0
+L7_1.y = 85.077
+L7_1.z = 0.0
+L6_1.rot = L7_1
+L6_1.level = 1
+L7_1 = {}
+L7_1.config_id = 14006
+L7_1.gadget_id = 70800159
+L8_1 = {}
+L8_1.x = -458.293
+L8_1.y = -1.921
+L8_1.z = -75.525
+L7_1.pos = L8_1
+L8_1 = {}
+L8_1.x = 0.0
+L8_1.y = 0.0
+L8_1.z = 0.0
+L7_1.rot = L8_1
+L7_1.level = 1
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+L1_1[6] = L7_1
+gadgets = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 14007
+L3_1 = RegionShape
+L3_1 = L3_1.CUBIC
+L2_1.shape = L3_1
+L3_1 = {}
+L3_1.x = 400.0
+L3_1.y = 400.0
+L3_1.z = 1200.0
+L2_1.size = L3_1
+L3_1 = {}
+L3_1.x = 331.334
+L3_1.y = 200.072
+L3_1.z = 491.685
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.config_id = 14013
+L4_1 = RegionShape
+L4_1 = L4_1.SPHERE
+L3_1.shape = L4_1
+L3_1.radius = 100
+L4_1 = {}
+L4_1.x = -373.185
+L4_1.y = -29.19
+L4_1.z = 977.199
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.config_id = 14014
+L5_1 = RegionShape
+L5_1 = L5_1.SPHERE
+L4_1.shape = L5_1
+L4_1.radius = 200
+L5_1 = {}
+L5_1.x = -456.181
+L5_1.y = -0.195
+L5_1.z = -51.985
+L4_1.pos = L5_1
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+regions = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 1014007
+L2_1.name = "ENTER_REGION_14007"
+L3_1 = EventType
+L3_1 = L3_1.EVENT_ENTER_REGION
+L2_1.event = L3_1
+L2_1.source = ""
+L2_1.condition = ""
+L2_1.action = "action_EVENT_ENTER_REGION_14007"
+L2_1.trigger_count = 0
+L3_1 = {}
+L3_1.config_id = 1014013
+L3_1.name = "ENTER_REGION_14013"
+L4_1 = EventType
+L4_1 = L4_1.EVENT_ENTER_REGION
+L3_1.event = L4_1
+L3_1.source = ""
+L3_1.condition = "condition_EVENT_ENTER_REGION_14013"
+L3_1.action = "action_EVENT_ENTER_REGION_14013"
+L3_1.trigger_count = 0
+L4_1 = {}
+L4_1.config_id = 1014014
+L4_1.name = "ENTER_REGION_14014"
+L5_1 = EventType
+L5_1 = L5_1.EVENT_ENTER_REGION
+L4_1.event = L5_1
+L4_1.source = ""
+L4_1.condition = ""
+L4_1.action = "action_EVENT_ENTER_REGION_14014"
+L4_1.trigger_count = 0
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+triggers = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.configId = 1
+L2_1.name = "time"
+L2_1.value = 2
+L2_1.no_refresh = true
+L3_1 = {}
+L3_1.configId = 2
+L3_1.name = "min_time"
+L3_1.value = 2
+L3_1.no_refresh = true
+L4_1 = {}
+L4_1.configId = 3
+L4_1.name = "max_time"
+L4_1.value = 3
+L4_1.no_refresh = true
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+variables = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L3_1.config_id = 14012
+L4_1 = RegionShape
+L4_1 = L4_1.CUBIC
+L3_1.shape = L4_1
+L4_1 = {}
+L4_1.x = 300.0
+L4_1.y = 400.0
+L4_1.z = 1000.0
+L3_1.size = L4_1
+L4_1 = {}
+L4_1.x = 331.414
+L4_1.y = 290.277
+L4_1.z = 491.542
+L3_1.pos = L4_1
+L2_1[1] = L3_1
+L1_1.regions = L2_1
+L2_1 = {}
+L3_1 = {}
+L3_1.config_id = 1014008
+L3_1.name = "VARIABLE_CHANGE_14008"
+L4_1 = EventType
+L4_1 = L4_1.EVENT_VARIABLE_CHANGE
+L3_1.event = L4_1
+L3_1.source = "time"
+L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_14008"
+L3_1.action = "action_EVENT_VARIABLE_CHANGE_14008"
+L3_1.trigger_count = 0
+L4_1 = {}
+L4_1.config_id = 1014009
+L4_1.name = "VARIABLE_CHANGE_14009"
+L5_1 = EventType
+L5_1 = L5_1.EVENT_VARIABLE_CHANGE
+L4_1.event = L5_1
+L4_1.source = "time"
+L4_1.condition = "condition_EVENT_VARIABLE_CHANGE_14009"
+L4_1.action = "action_EVENT_VARIABLE_CHANGE_14009"
+L4_1.trigger_count = 0
+L5_1 = {}
+L5_1.config_id = 1014010
+L5_1.name = "VARIABLE_CHANGE_14010"
+L6_1 = EventType
+L6_1 = L6_1.EVENT_VARIABLE_CHANGE
+L5_1.event = L6_1
+L5_1.source = "time"
+L5_1.condition = "condition_EVENT_VARIABLE_CHANGE_14010"
+L5_1.action = "action_EVENT_VARIABLE_CHANGE_14010"
+L5_1.trigger_count = 0
+L6_1 = {}
+L6_1.config_id = 1014011
+L6_1.name = "VARIABLE_CHANGE_14011"
+L7_1 = EventType
+L7_1 = L7_1.EVENT_VARIABLE_CHANGE
+L6_1.event = L7_1
+L6_1.source = "time"
+L6_1.condition = "condition_EVENT_VARIABLE_CHANGE_14011"
+L6_1.action = "action_EVENT_VARIABLE_CHANGE_14011"
+L6_1.trigger_count = 0
+L7_1 = {}
+L7_1.config_id = 1014012
+L7_1.name = "ENTER_REGION_14012"
+L8_1 = EventType
+L8_1 = L8_1.EVENT_ENTER_REGION
+L7_1.event = L8_1
+L7_1.source = ""
+L7_1.condition = "condition_EVENT_ENTER_REGION_14012"
+L7_1.action = "action_EVENT_ENTER_REGION_14012"
+L7_1.trigger_count = 0
+L2_1[1] = L3_1
+L2_1[2] = L4_1
+L2_1[3] = L5_1
+L2_1[4] = L6_1
+L2_1[5] = L7_1
+L1_1.triggers = L2_1
+garbages = L1_1
+L1_1 = {}
+L1_1.suite = 1
+L1_1.end_suite = 0
+L1_1.rand_suite = false
+init_config = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L2_1.monsters = L3_1
+L3_1 = {}
+L2_1.gadgets = L3_1
+L3_1 = {}
+L4_1 = 14007
+L5_1 = 14013
+L6_1 = 14014
+L3_1[1] = L4_1
+L3_1[2] = L5_1
+L3_1[3] = L6_1
+L2_1.regions = L3_1
+L3_1 = {}
+L4_1 = "ENTER_REGION_14007"
+L5_1 = "ENTER_REGION_14013"
+L6_1 = "ENTER_REGION_14014"
+L3_1[1] = L4_1
+L3_1[2] = L5_1
+L3_1[3] = L6_1
+L2_1.triggers = L3_1
+L2_1.rand_weight = 100
+L3_1 = {}
+L4_1 = {}
+L3_1.monsters = L4_1
+L4_1 = {}
+L5_1 = 14001
+L6_1 = 14002
+L7_1 = 14003
+L8_1 = 14004
+L9_1 = 14006
+L4_1[1] = L5_1
+L4_1[2] = L6_1
+L4_1[3] = L7_1
+L4_1[4] = L8_1
+L4_1[5] = L9_1
+L3_1.gadgets = L4_1
+L4_1 = {}
+L3_1.regions = L4_1
+L4_1 = {}
+L3_1.triggers = L4_1
+L3_1.rand_weight = 100
+L4_1 = {}
+L5_1 = {}
+L4_1.monsters = L5_1
+L5_1 = {}
+L6_1 = 14005
+L5_1[1] = L6_1
+L4_1.gadgets = L5_1
+L5_1 = {}
+L4_1.regions = L5_1
+L5_1 = {}
+L4_1.triggers = L5_1
+L4_1.rand_weight = 100
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+suites = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.RemoveExtraGroupSuite
+  L3_2 = A0_2
+  L4_2 = 220129014
+  L5_2 = 2
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = ScriptLib
+  L2_2 = L2_2.CreateGadget
+  L3_2 = A0_2
+  L4_2 = {}
+  L4_2.config_id = 14005
+  L2_2(L3_2, L4_2)
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_ENTER_REGION_14007 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = A1_2.param1
+  if L2_2 ~= 14013 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetRegionEntityCount
+  L3_2 = A0_2
+  L4_2 = {}
+  L5_2 = A1_2.source_eid
+  L4_2.region_eid = L5_2
+  L5_2 = EntityType
+  L5_2 = L5_2.AVATAR
+  L4_2.entity_type = L5_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 < 1 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_ENTER_REGION_14013 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.RemoveExtraGroupSuite
+  L3_2 = A0_2
+  L4_2 = 220129016
+  L5_2 = 2
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = ScriptLib
+  L2_2 = L2_2.RemoveExtraGroupSuite
+  L3_2 = A0_2
+  L4_2 = 220129017
+  L5_2 = 2
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = ScriptLib
+  L2_2 = L2_2.RemoveExtraGroupSuite
+  L3_2 = A0_2
+  L4_2 = 220129018
+  L5_2 = 2
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = ScriptLib
+  L2_2 = L2_2.RemoveExtraGroupSuite
+  L3_2 = A0_2
+  L4_2 = 220129019
+  L5_2 = 2
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = ScriptLib
+  L2_2 = L2_2.RemoveExtraGroupSuite
+  L3_2 = A0_2
+  L4_2 = 220129016
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = ScriptLib
+  L2_2 = L2_2.RemoveExtraGroupSuite
+  L3_2 = A0_2
+  L4_2 = 220129017
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = ScriptLib
+  L2_2 = L2_2.RemoveExtraGroupSuite
+  L3_2 = A0_2
+  L4_2 = 220129018
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = ScriptLib
+  L2_2 = L2_2.RemoveExtraGroupSuite
+  L3_2 = A0_2
+  L4_2 = 220129019
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = ScriptLib
+  L2_2 = L2_2.RemoveExtraGroupSuite
+  L3_2 = A0_2
+  L4_2 = 220129020
+  L5_2 = 2
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetGroupVariableValue
+  L3_2 = A0_2
+  L4_2 = "time"
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 == 1 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.RemoveExtraGroupSuite
+    L3_2 = A0_2
+    L4_2 = 220129014
+    L5_2 = 3
+    L2_2(L3_2, L4_2, L5_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.CreateGadget
+    L3_2 = A0_2
+    L4_2 = {}
+    L4_2.config_id = 14001
+    L2_2(L3_2, L4_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.AddExtraGroupSuite
+    L3_2 = A0_2
+    L4_2 = 220129016
+    L5_2 = 3
+    L2_2(L3_2, L4_2, L5_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.SetGroupGadgetStateByConfigId
+    L3_2 = A0_2
+    L4_2 = 220129020
+    L5_2 = 20007
+    L6_2 = GadgetState
+    L6_2 = L6_2.ChestLocked
+    L2_2(L3_2, L4_2, L5_2, L6_2)
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetGroupVariableValue
+  L3_2 = A0_2
+  L4_2 = "time"
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 == 2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.RemoveExtraGroupSuite
+    L3_2 = A0_2
+    L4_2 = 220129014
+    L5_2 = 3
+    L2_2(L3_2, L4_2, L5_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.CreateGadget
+    L3_2 = A0_2
+    L4_2 = {}
+    L4_2.config_id = 14002
+    L2_2(L3_2, L4_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.AddExtraGroupSuite
+    L3_2 = A0_2
+    L4_2 = 220129017
+    L5_2 = 3
+    L2_2(L3_2, L4_2, L5_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.SetGroupGadgetStateByConfigId
+    L3_2 = A0_2
+    L4_2 = 220129020
+    L5_2 = 20007
+    L6_2 = GadgetState
+    L6_2 = L6_2.ChestOpened
+    L2_2(L3_2, L4_2, L5_2, L6_2)
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetGroupVariableValue
+  L3_2 = A0_2
+  L4_2 = "time"
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 == 3 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.RemoveExtraGroupSuite
+    L3_2 = A0_2
+    L4_2 = 220129014
+    L5_2 = 3
+    L2_2(L3_2, L4_2, L5_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.CreateGadget
+    L3_2 = A0_2
+    L4_2 = {}
+    L4_2.config_id = 14003
+    L2_2(L3_2, L4_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.AddExtraGroupSuite
+    L3_2 = A0_2
+    L4_2 = 220129018
+    L5_2 = 3
+    L2_2(L3_2, L4_2, L5_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.SetGroupGadgetStateByConfigId
+    L3_2 = A0_2
+    L4_2 = 220129020
+    L5_2 = 20007
+    L6_2 = GadgetState
+    L6_2 = L6_2.ChestTrap
+    L2_2(L3_2, L4_2, L5_2, L6_2)
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetGroupVariableValue
+  L3_2 = A0_2
+  L4_2 = "time"
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 == 4 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.RemoveExtraGroupSuite
+    L3_2 = A0_2
+    L4_2 = 220129014
+    L5_2 = 3
+    L2_2(L3_2, L4_2, L5_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.CreateGadget
+    L3_2 = A0_2
+    L4_2 = {}
+    L4_2.config_id = 14004
+    L2_2(L3_2, L4_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.AddExtraGroupSuite
+    L3_2 = A0_2
+    L4_2 = 220129019
+    L5_2 = 3
+    L2_2(L3_2, L4_2, L5_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.SetGroupGadgetStateByConfigId
+    L3_2 = A0_2
+    L4_2 = 220129020
+    L5_2 = 20007
+    L6_2 = GadgetState
+    L6_2 = L6_2.ChestBramble
+    L2_2(L3_2, L4_2, L5_2, L6_2)
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetGroupVariableValue
+  L3_2 = A0_2
+  L4_2 = "time"
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 == 5 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.RemoveExtraGroupSuite
+    L3_2 = A0_2
+    L4_2 = 220129014
+    L5_2 = 3
+    L2_2(L3_2, L4_2, L5_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.CreateGadget
+    L3_2 = A0_2
+    L4_2 = {}
+    L4_2.config_id = 14006
+    L2_2(L3_2, L4_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.AddExtraGroupSuite
+    L3_2 = A0_2
+    L4_2 = 220129016
+    L5_2 = 3
+    L2_2(L3_2, L4_2, L5_2)
+    L2_2 = ScriptLib
+    L2_2 = L2_2.SetGroupGadgetStateByConfigId
+    L3_2 = A0_2
+    L4_2 = 220129020
+    L5_2 = 20007
+    L6_2 = GadgetState
+    L6_2 = L6_2.ChestFrozen
+    L2_2(L3_2, L4_2, L5_2, L6_2)
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_ENTER_REGION_14013 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.RemoveExtraGroupSuite
+  L3_2 = A0_2
+  L4_2 = 220129014
+  L5_2 = 2
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = ScriptLib
+  L2_2 = L2_2.CreateGadget
+  L3_2 = A0_2
+  L4_2 = {}
+  L4_2.config_id = 14005
+  L2_2(L3_2, L4_2)
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_ENTER_REGION_14014 = L1_1

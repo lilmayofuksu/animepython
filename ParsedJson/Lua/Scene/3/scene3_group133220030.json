@@ -1,0 +1,213 @@
+{
+    "action_EVENT_ENTER_REGION_30001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_30006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_30004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_30005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_30009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_30018": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_30041": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_30001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_30006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 11,
+            "config_id": 30002,
+            "gadget_id": 70300093,
+            "level": 1,
+            "pos": {
+                "x": -2687.912,
+                "y": 209.504,
+                "z": -4134.843
+            },
+            "rot": {
+                "x": 5.014,
+                "y": 356.749,
+                "z": 357.645
+            }
+        },
+        {
+            "area_id": 11,
+            "config_id": 30007,
+            "gadget_id": 70300093,
+            "level": 27,
+            "pos": {
+                "x": -2693.222,
+                "y": 209.672,
+                "z": -4139.517
+            },
+            "rot": {
+                "x": 8.288,
+                "y": 161.407,
+                "z": 359.529
+            }
+        }
+    ],
+    "garbages": {
+        "triggers": [
+            {
+                "action": "",
+                "condition": "",
+                "config_id": 1030012,
+                "event": 21,
+                "name": "QUEST_FINISH_30012",
+                "source": "",
+                "trigger_count": 0
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 11,
+            "config_id": 30001,
+            "pos": {
+                "x": -2727.307,
+                "y": 204.319,
+                "z": -4080.543
+            },
+            "radius": 15,
+            "shape": 1
+        },
+        {
+            "area_id": 11,
+            "config_id": 30006,
+            "pos": {
+                "x": -2754.353,
+                "y": 205.065,
+                "z": -4117.318
+            },
+            "radius": 30,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                30002,
+                30007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                30001,
+                30006
+            ],
+            "triggers": [
+                "ENTER_REGION_30001",
+                "QUEST_FINISH_30004",
+                "QUEST_FINISH_30005",
+                "ENTER_REGION_30006",
+                "QUEST_FINISH_30009",
+                "QUEST_FINISH_30018",
+                "QUEST_FINISH_30041"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_30001",
+            "condition": "condition_EVENT_ENTER_REGION_30001",
+            "config_id": 1030001,
+            "event": 4,
+            "name": "ENTER_REGION_30001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_30004",
+            "condition": "",
+            "config_id": 1030004,
+            "event": 21,
+            "name": "QUEST_FINISH_30004",
+            "source": "7210605",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_30005",
+            "condition": "",
+            "config_id": 1030005,
+            "event": 21,
+            "name": "QUEST_FINISH_30005",
+            "source": "7210610",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_30006",
+            "condition": "condition_EVENT_ENTER_REGION_30006",
+            "config_id": 1030006,
+            "event": 4,
+            "name": "ENTER_REGION_30006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_30009",
+            "condition": "",
+            "config_id": 1030009,
+            "event": 21,
+            "name": "QUEST_FINISH_30009",
+            "source": "7210619",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_30018",
+            "condition": "",
+            "config_id": 1030018,
+            "event": 21,
+            "name": "QUEST_FINISH_30018",
+            "source": "7210607",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_30041",
+            "condition": "",
+            "config_id": 1030041,
+            "event": 21,
+            "name": "QUEST_FINISH_30041",
+            "source": "7210631",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "opengate",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

@@ -1,0 +1,153 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_49002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_49003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_49008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_49001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_49002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_FINISH_49003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_FINISH_49008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_49001": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 300,
+            "config_id": 49004,
+            "gadget_id": 70290364,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 56.177,
+                "y": 313.63,
+                "z": 364.597
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 202
+        },
+        {
+            "area_id": 300,
+            "config_id": 49005,
+            "gadget_id": 70290291,
+            "level": 32,
+            "persistent": true,
+            "pos": {
+                "x": 71.641,
+                "y": 312.391,
+                "z": 392.098
+            },
+            "rot": {
+                "x": 0,
+                "y": 88,
+                "z": 0.077
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 49006,
+            "gadget_id": 70310001,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 59.468,
+                "y": 313.664,
+                "z": 366.85
+            },
+            "rot": {
+                "x": 0,
+                "y": 356.253,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 49007,
+            "gadget_id": 70310001,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 52.902,
+                "y": 313.799,
+                "z": 366.82
+            },
+            "rot": {
+                "x": 0,
+                "y": 356.253,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                49004,
+                49005,
+                49006,
+                49007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_49001",
+                "GADGET_STATE_CHANGE_49002",
+                "QUEST_FINISH_49003",
+                "QUEST_FINISH_49008"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_49001",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_49001",
+            "config_id": 1049001,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_49001",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_49002",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_49002",
+            "config_id": 1049002,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_49002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_49003",
+            "condition": "condition_EVENT_QUEST_FINISH_49003",
+            "config_id": 1049003,
+            "event": 21,
+            "name": "QUEST_FINISH_49003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_49008",
+            "condition": "condition_EVENT_QUEST_FINISH_49008",
+            "config_id": 1049008,
+            "event": 21,
+            "name": "QUEST_FINISH_49008",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "open",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

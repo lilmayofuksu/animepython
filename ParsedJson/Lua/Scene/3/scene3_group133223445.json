@@ -1,0 +1,225 @@
+{
+    "condition_EVENT_VARIABLE_CHANGE_445014": "WARN: Lua function omitted from the dump",
+    "endLinkMap": [
+        {
+            "inPort": [
+                445005
+            ],
+            "outPort": [
+                445006
+            ]
+        }
+    ],
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 445001,
+            "gadget_id": 70950068,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -6083.19,
+                "y": 208.646,
+                "z": -2865.402
+            },
+            "rot": {
+                "x": 359.648,
+                "y": 27.33,
+                "z": -0.002
+            },
+            "state": 201
+        },
+        {
+            "area_id": 18,
+            "config_id": 445002,
+            "gadget_id": 70950070,
+            "level": 33,
+            "pos": {
+                "x": -6066.694,
+                "y": 210.613,
+                "z": -2842.529
+            },
+            "rot": {
+                "x": 359.648,
+                "y": 27.564,
+                "z": -0.004
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 445004,
+            "gadget_id": 70950069,
+            "level": 33,
+            "pos": {
+                "x": -6066.89,
+                "y": 208.266,
+                "z": -2853.221
+            },
+            "rot": {
+                "x": 328.651,
+                "y": 26.781,
+                "z": 0.001
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 445005,
+            "gadget_id": 70330136,
+            "level": 33,
+            "pos": {
+                "x": -6073.5,
+                "y": 210.489,
+                "z": -2849.92
+            },
+            "rot": {
+                "x": 359.649,
+                "y": 28.735,
+                "z": 359.989
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 445006,
+            "gadget_id": 70330136,
+            "level": 33,
+            "pos": {
+                "x": -6068.896,
+                "y": 210.542,
+                "z": -2841.377
+            },
+            "rot": {
+                "x": 359.649,
+                "y": 28.735,
+                "z": 359.989
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 445007,
+            "drop_tag": "\u89e3\u8c1c\u4f4e\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211101,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -6075.644,
+                "y": 210.543,
+                "z": -2848.819
+            },
+            "rot": {
+                "x": 359.994,
+                "y": 297.993,
+                "z": 0.352
+            }
+        }
+    ],
+    "garbages": {
+        "regions": [
+            {
+                "area_id": 18,
+                "config_id": 445003,
+                "pos": {
+                    "x": -6062.395,
+                    "y": 205.9,
+                    "z": -2833.401
+                },
+                "radius": 15,
+                "shape": 1
+            }
+        ],
+        "triggers": [
+            {
+                "action": "",
+                "condition": "",
+                "config_id": 1445003,
+                "event": 4,
+                "name": "ENTER_REGION_445003",
+                "source": ""
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 18,
+            "config_id": 445013,
+            "pos": {
+                "x": -6074.857,
+                "y": 210.576,
+                "z": -2848.693
+            },
+            "radius": 15,
+            "shape": 1,
+            "team_ability_group_list": [
+                "Move_Electric_Stake_Play"
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                445001,
+                445002,
+                445004,
+                445005,
+                445006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_445014"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                445013
+            ],
+            "triggers": [
+                "ENTER_REGION_445013"
+            ]
+        },
+        {
+            "gadgets": [
+                445007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "",
+            "condition": "",
+            "config_id": 1445013,
+            "event": 4,
+            "name": "ENTER_REGION_445013",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_445014",
+            "config_id": 1445014,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_445014",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

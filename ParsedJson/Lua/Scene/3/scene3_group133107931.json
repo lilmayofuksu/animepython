@@ -1,0 +1,161 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_931007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_931002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_931009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_931004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_931005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_931006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_931003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_931008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_931007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_931002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_931004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_931005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_931006": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 7,
+            "config_id": 931001,
+            "drop_id": 1000100,
+            "level": 1,
+            "monster_id": 21020501,
+            "pos": {
+                "x": -795.619,
+                "y": 232.402,
+                "z": 440.752
+            },
+            "pose_id": 401,
+            "rot": {
+                "x": 0,
+                "y": 80,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 7,
+            "config_id": 931002,
+            "pos": {
+                "x": -795.619,
+                "y": 232.402,
+                "z": 440.752
+            },
+            "radius": 50,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [
+                931001
+            ],
+            "rand_weight": 100,
+            "regions": [
+                931002
+            ],
+            "triggers": [
+                "ENTER_REGION_931002",
+                "TIMER_EVENT_931003",
+                "SPECIFIC_MONSTER_HP_CHANGE_931004",
+                "SPECIFIC_MONSTER_HP_CHANGE_931005",
+                "SPECIFIC_MONSTER_HP_CHANGE_931006",
+                "ANY_MONSTER_DIE_931007",
+                "TIMER_EVENT_931008",
+                "QUEST_START_931009"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_931002",
+            "condition": "condition_EVENT_ENTER_REGION_931002",
+            "config_id": 1931002,
+            "event": 4,
+            "name": "ENTER_REGION_931002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_931003",
+            "condition": "",
+            "config_id": 1931003,
+            "event": 15,
+            "name": "TIMER_EVENT_931003",
+            "source": "waitTillCamera"
+        },
+        {
+            "action": "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_931004",
+            "condition": "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_931004",
+            "config_id": 1931004,
+            "event": 12,
+            "name": "SPECIFIC_MONSTER_HP_CHANGE_931004",
+            "source": "931001"
+        },
+        {
+            "action": "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_931005",
+            "condition": "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_931005",
+            "config_id": 1931005,
+            "event": 12,
+            "name": "SPECIFIC_MONSTER_HP_CHANGE_931005",
+            "source": "931001"
+        },
+        {
+            "action": "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_931006",
+            "condition": "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_931006",
+            "config_id": 1931006,
+            "event": 12,
+            "name": "SPECIFIC_MONSTER_HP_CHANGE_931006",
+            "source": "931001"
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_931007",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_931007",
+            "config_id": 1931007,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_931007",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_931008",
+            "condition": "",
+            "config_id": 1931008,
+            "event": 15,
+            "name": "TIMER_EVENT_931008",
+            "source": "waitTillReminder"
+        },
+        {
+            "action": "action_EVENT_QUEST_START_931009",
+            "condition": "",
+            "config_id": 1931009,
+            "event": 28,
+            "name": "QUEST_START_931009",
+            "source": "7180302",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "hasKilledMonster",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

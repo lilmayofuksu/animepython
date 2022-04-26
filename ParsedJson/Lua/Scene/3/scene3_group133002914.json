@@ -1,0 +1,90 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_914003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_914003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 914001,
+            "gadget_id": 70710232,
+            "level": 1,
+            "pos": {
+                "x": 945.233,
+                "y": 364.926,
+                "z": -690.785
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 914002,
+            "gadget_id": 70360102,
+            "level": 1,
+            "pos": {
+                "x": 946.36,
+                "y": 364.929,
+                "z": -689.898
+            },
+            "rot": {
+                "x": 0,
+                "y": 100.3,
+                "z": 357.035
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                914001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                914002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_GADGET_DIE_914003"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_914003",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_914003",
+            "config_id": 1914003,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_914003",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,265 @@
+{
+    "UpdateGamePlayState": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_MONSTER_DIE_38011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_38002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_38005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_38012": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_38004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_38010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_38013": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIME_AXIS_PASS_38014": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_38003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_38011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_38002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_38005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 38001,
+            "gadget_id": 70360312,
+            "level": 36,
+            "pos": {
+                "x": 213.394,
+                "y": 174.858,
+                "z": -412.741
+            },
+            "rot": {
+                "x": 0,
+                "y": 98.185,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 38006,
+            "gadget_id": 70290291,
+            "level": 36,
+            "pos": {
+                "x": 214.264,
+                "y": 174.763,
+                "z": -417.471
+            },
+            "rot": {
+                "x": 0,
+                "y": 59.254,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 200,
+            "config_id": 38007,
+            "drop_id": 1000100,
+            "level": 36,
+            "monster_id": 22040101,
+            "pos": {
+                "x": 219.191,
+                "y": 174.436,
+                "z": -422.662
+            },
+            "pose_id": 101,
+            "rot": {
+                "x": 0,
+                "y": 11.629,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 38008,
+            "drop_id": 1000100,
+            "level": 36,
+            "monster_id": 22040101,
+            "pos": {
+                "x": 214.156,
+                "y": 173.903,
+                "z": -412.055
+            },
+            "pose_id": 101,
+            "rot": {
+                "x": 0,
+                "y": 58.791,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 38009,
+            "drop_id": 1000100,
+            "level": 36,
+            "monster_id": 22040101,
+            "pos": {
+                "x": 222.079,
+                "y": 174.448,
+                "z": -414.591
+            },
+            "pose_id": 101,
+            "rot": {
+                "x": 0,
+                "y": 281.739,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 200,
+            "config_id": 38002,
+            "pos": {
+                "x": 216.602,
+                "y": 175.214,
+                "z": -416.21
+            },
+            "radius": 10,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                38001,
+                38006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_38003",
+                "QUEST_START_38004",
+                "GADGET_STATE_CHANGE_38005",
+                "QUEST_START_38010",
+                "GROUP_LOAD_38012",
+                "QUEST_START_38013"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                38002
+            ],
+            "triggers": [
+                "ENTER_REGION_38002",
+                "TIME_AXIS_PASS_38014"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                38007,
+                38008,
+                38009
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_38011"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_38002",
+            "condition": "condition_EVENT_ENTER_REGION_38002",
+            "config_id": 1038002,
+            "event": 4,
+            "name": "ENTER_REGION_38002",
+            "source": "1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_38003",
+            "condition": "",
+            "config_id": 1038003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_38003",
+            "source": "gameplayState",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_38004",
+            "condition": "",
+            "config_id": 1038004,
+            "event": 28,
+            "name": "QUEST_START_38004",
+            "source": "7219001",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_38005",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_38005",
+            "config_id": 1038005,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_38005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_38010",
+            "condition": "",
+            "config_id": 1038010,
+            "event": 28,
+            "name": "QUEST_START_38010",
+            "source": "7219003",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_38011",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_38011",
+            "config_id": 1038011,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_38011",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_38012",
+            "condition": "",
+            "config_id": 1038012,
+            "event": 29,
+            "name": "GROUP_LOAD_38012",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_38013",
+            "condition": "",
+            "config_id": 1038013,
+            "event": 28,
+            "name": "QUEST_START_38013",
+            "source": "7219002",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIME_AXIS_PASS_38014",
+            "condition": "",
+            "config_id": 1038014,
+            "event": 72,
+            "name": "TIME_AXIS_PASS_38014",
+            "source": "reactiveReminder",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "gameplayState",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "ReminderTimer",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

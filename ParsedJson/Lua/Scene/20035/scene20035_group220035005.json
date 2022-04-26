@@ -1,0 +1,87 @@
+{
+    "action_EVENT_GADGET_CREATE_5003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_5004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_5003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 5001,
+            "gadget_id": 70900205,
+            "level": 1,
+            "pos": {
+                "x": 346.957,
+                "y": -15.21,
+                "z": 260.571
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 5002,
+            "gadget_id": 70900205,
+            "level": 1,
+            "pos": {
+                "x": 346.957,
+                "y": -15.21,
+                "z": 260.571
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                5002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                5001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_5003",
+                "TIMER_EVENT_5004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_CREATE_5003",
+            "condition": "condition_EVENT_GADGET_CREATE_5003",
+            "config_id": 1005003,
+            "event": 6,
+            "name": "GADGET_CREATE_5003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_5004",
+            "condition": "",
+            "config_id": 1005004,
+            "event": 15,
+            "name": "TIMER_EVENT_5004",
+            "source": "fail_delay"
+        }
+    ],
+    "variables": []
+}

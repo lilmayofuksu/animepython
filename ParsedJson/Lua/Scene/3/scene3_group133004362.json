@@ -1,0 +1,160 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_362004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_MONSTER_DIE_362006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_362008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_362004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_362006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_362008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 3,
+            "config_id": 362001,
+            "gadget_id": 70220004,
+            "level": 15,
+            "pos": {
+                "x": 2105.027,
+                "y": 275.601,
+                "z": -207.654
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 3,
+            "config_id": 362002,
+            "gadget_id": 70220004,
+            "level": 15,
+            "pos": {
+                "x": 2106.852,
+                "y": 275.197,
+                "z": -191.748
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 3,
+            "config_id": 362003,
+            "gadget_id": 70220004,
+            "level": 15,
+            "pos": {
+                "x": 2091.927,
+                "y": 274.655,
+                "z": -200.558
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 3,
+            "config_id": 362007,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u8499\u5fb7",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211111,
+            "isOneoff": true,
+            "level": 11,
+            "persistent": true,
+            "pos": {
+                "x": 2105.529,
+                "y": 274.863,
+                "z": -199.086
+            },
+            "rot": {
+                "x": 6.028,
+                "y": 267.311,
+                "z": 355.272
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 3,
+            "config_id": 362005,
+            "drop_tag": "\u9a97\u9a97\u82b1",
+            "level": 15,
+            "monster_id": 26010101,
+            "pos": {
+                "x": 2101.461,
+                "y": 274.684,
+                "z": -200.018
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                362001,
+                362002,
+                362003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_GADGET_DIE_362004",
+                "ANY_MONSTER_DIE_362006",
+                "GROUP_LOAD_362008"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_362004",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_362004",
+            "config_id": 1362004,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_362004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_362006",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_362006",
+            "config_id": 1362006,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_362006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_362008",
+            "condition": "condition_EVENT_GROUP_LOAD_362008",
+            "config_id": 1362008,
+            "event": 29,
+            "name": "GROUP_LOAD_362008",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "chest_open",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

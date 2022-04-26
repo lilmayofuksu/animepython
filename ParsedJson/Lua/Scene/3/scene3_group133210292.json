@@ -1,0 +1,216 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_292004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_292007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_292002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_292003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_292004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_292007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_292002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_292003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 17,
+            "config_id": 292001,
+            "gadget_id": 70360184,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": -3810.804,
+                "y": 125.464,
+                "z": -923.498
+            },
+            "rot": {
+                "x": 0,
+                "y": 302.788,
+                "z": 0
+            },
+            "state": 202
+        },
+        {
+            "area_id": 17,
+            "config_id": 292005,
+            "gadget_id": 70950134,
+            "level": 30,
+            "pos": {
+                "x": -3810.804,
+                "y": 126.867,
+                "z": -923.498
+            },
+            "rot": {
+                "x": 0,
+                "y": 198.424,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 17,
+            "config_id": 292008,
+            "gadget_id": 70590058,
+            "interact_id": 59,
+            "level": 30,
+            "pos": {
+                "x": -3815.662,
+                "y": 124.111,
+                "z": -920.565
+            },
+            "rot": {
+                "x": 0,
+                "y": 284.685,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "io_type": 1,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suite_disk": [
+        {
+            "gadgets": [
+                {
+                    "config_id": 292001,
+                    "state": 202
+                },
+                {
+                    "config_id": 292005,
+                    "state": 0
+                },
+                {
+                    "config_id": 292008,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_292007"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "GadgetActive",
+                    "no_refresh": true,
+                    "value": 0
+                },
+                {
+                    "configId": 2,
+                    "name": "GadgetState",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 292001,
+                    "state": 203
+                },
+                {
+                    "config_id": 292008,
+                    "state": 201
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "GadgetActive",
+                    "no_refresh": true,
+                    "value": 0
+                },
+                {
+                    "configId": 2,
+                    "name": "GadgetState",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                292001,
+                292005,
+                292008
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_292007"
+            ]
+        },
+        {
+            "gadgets": [
+                292001,
+                292008
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_292002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_292002",
+            "config_id": 1292002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_292002",
+            "source": "GadgetState",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_292003",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_292003",
+            "config_id": 1292003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_292003",
+            "source": "GadgetState",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_292004",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_292004",
+            "config_id": 1292004,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_292004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_292007",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_292007",
+            "config_id": 1292007,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_292007",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "GadgetActive",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "GadgetState",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

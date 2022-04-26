@@ -1,0 +1,94 @@
+{
+    "action_EVENT_QUEST_START_219003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_219002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_START_219003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_219002": "WARN: Lua function omitted from the dump",
+    "defs": {
+        "child_group": {
+            "133223371": 2
+        },
+        "group_id": 133225219,
+        "hasChild": true,
+        "hasMultiStatues": false,
+        "isRandom": false,
+        "notifyQuest": true,
+        "selfSuiteId": 2,
+        "statuesMap": {
+            "10001": 2
+        }
+    },
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 219001,
+            "gadget_id": 70290160,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -6417.549,
+                "y": 199.806,
+                "z": -2384.307
+            },
+            "rot": {
+                "x": 2.538,
+                "y": 169.647,
+                "z": 1.987
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                219001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_219002",
+                "QUEST_START_219003"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_219002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_219002",
+            "config_id": 1219002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_219002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_START_219003",
+            "condition": "condition_EVENT_QUEST_START_219003",
+            "config_id": 1219003,
+            "event": 28,
+            "name": "QUEST_START_219003",
+            "source": "7220803",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Seed",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "Notified",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

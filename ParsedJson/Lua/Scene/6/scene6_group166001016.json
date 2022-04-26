@@ -1,0 +1,87 @@
+{
+    "action_EVENT_GATHER_16001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_16002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_16002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 300,
+            "config_id": 16003,
+            "explore": {
+                "exp": 3,
+                "name": "gather"
+            },
+            "gadget_id": 70500000,
+            "isOneoff": true,
+            "level": 1,
+            "persistent": true,
+            "point_type": 4013,
+            "pos": {
+                "x": 947.954,
+                "y": 1082.317,
+                "z": 850.119
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                16003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GATHER_16001",
+                "GROUP_LOAD_16002"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GATHER_16001",
+            "condition": "",
+            "config_id": 1016001,
+            "event": 20,
+            "name": "GATHER_16001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_16002",
+            "condition": "condition_EVENT_GROUP_LOAD_16002",
+            "config_id": 1016002,
+            "event": 29,
+            "name": "GROUP_LOAD_16002",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "done",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

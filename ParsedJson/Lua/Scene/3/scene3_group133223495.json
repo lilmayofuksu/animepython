@@ -1,0 +1,180 @@
+{
+    "action_EVENT_ENTER_REGION_495005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_495001": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 495003,
+            "gadget_id": 70360001,
+            "level": 33,
+            "pos": {
+                "x": -6008.351,
+                "y": 214.886,
+                "z": -2915.49
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 495006,
+            "gadget_id": 70360001,
+            "level": 33,
+            "pos": {
+                "x": -6008.249,
+                "y": 214.955,
+                "z": -2916.726
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "garbages": {
+        "gadgets": [
+            {
+                "area_id": 18,
+                "config_id": 495004,
+                "gadget_id": 70360001,
+                "level": 33,
+                "pos": {
+                    "x": -6008.249,
+                    "y": 214.955,
+                    "z": -2916.726
+                },
+                "rot": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        ],
+        "regions": [
+            {
+                "area_id": 18,
+                "config_id": 495002,
+                "pos": {
+                    "x": -6009.717,
+                    "y": 214.594,
+                    "z": -2915.084
+                },
+                "radius": 10,
+                "shape": 1
+            },
+            {
+                "area_id": 18,
+                "config_id": 495007,
+                "pos": {
+                    "x": -6008.121,
+                    "y": 214.871,
+                    "z": -2914.989
+                },
+                "radius": 5,
+                "shape": 1
+            }
+        ],
+        "triggers": [
+            {
+                "action": "action_EVENT_ENTER_REGION_495002",
+                "condition": "",
+                "config_id": 1495002,
+                "event": 4,
+                "name": "ENTER_REGION_495002",
+                "source": ""
+            },
+            {
+                "action": "",
+                "condition": "",
+                "config_id": 1495007,
+                "event": 4,
+                "name": "ENTER_REGION_495007",
+                "source": ""
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 18,
+            "config_id": 495005,
+            "pos": {
+                "x": -6009.717,
+                "y": 214.594,
+                "z": -2915.084
+            },
+            "radius": 10,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                495003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_495001"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                495006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                495005
+            ],
+            "triggers": [
+                "ENTER_REGION_495005"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_495001",
+            "condition": "",
+            "config_id": 1495001,
+            "event": 21,
+            "name": "QUEST_FINISH_495001",
+            "source": "7222501",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_495005",
+            "condition": "",
+            "config_id": 1495005,
+            "event": 4,
+            "name": "ENTER_REGION_495005",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

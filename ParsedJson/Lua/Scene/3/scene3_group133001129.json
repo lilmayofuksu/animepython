@@ -1,0 +1,161 @@
+{
+    "action_EVENT_AVATAR_NEAR_PLATFORM_129006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_129007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_129009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_129008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_PLATFORM_REACH_POINT_129005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_AVATAR_NEAR_PLATFORM_129006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_129007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_129009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_129008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_PLATFORM_REACH_POINT_129005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 2,
+            "config_id": 129001,
+            "gadget_id": 70710006,
+            "level": 15,
+            "pos": {
+                "x": 1384.499,
+                "y": 233.793,
+                "z": -1515.541
+            },
+            "rot": {
+                "x": 0,
+                "y": 55.491,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 2,
+            "config_id": 129002,
+            "gadget_id": 70710010,
+            "level": 15,
+            "pos": {
+                "x": 1361.132,
+                "y": 241.567,
+                "z": -1520.059
+            },
+            "rot": {
+                "x": 0,
+                "y": 78.51,
+                "z": 0
+            },
+            "route_id": 300100231
+        },
+        {
+            "area_id": 2,
+            "config_id": 129003,
+            "gadget_id": 70710007,
+            "level": 15,
+            "pos": {
+                "x": 1383.712,
+                "y": 233.845,
+                "z": -1515.983
+            },
+            "rot": {
+                "x": 0,
+                "y": 246.015,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 2,
+            "config_id": 129007,
+            "pos": {
+                "x": 1363.151,
+                "y": 241.88,
+                "z": -1520.22
+            },
+            "radius": 2,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                129001,
+                129002,
+                129003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                129007
+            ],
+            "triggers": [
+                "PLATFORM_REACH_POINT_129005",
+                "AVATAR_NEAR_PLATFORM_129006",
+                "ENTER_REGION_129007",
+                "GADGET_STATE_CHANGE_129008"
+            ]
+        },
+        {
+            "gadgets": [
+                129001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_129009"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_PLATFORM_REACH_POINT_129005",
+            "condition": "condition_EVENT_PLATFORM_REACH_POINT_129005",
+            "config_id": 1129005,
+            "event": 26,
+            "name": "PLATFORM_REACH_POINT_129005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_AVATAR_NEAR_PLATFORM_129006",
+            "condition": "condition_EVENT_AVATAR_NEAR_PLATFORM_129006",
+            "config_id": 1129006,
+            "event": 25,
+            "name": "AVATAR_NEAR_PLATFORM_129006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_129007",
+            "condition": "condition_EVENT_ENTER_REGION_129007",
+            "config_id": 1129007,
+            "event": 4,
+            "name": "ENTER_REGION_129007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_129008",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_129008",
+            "config_id": 1129008,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_129008",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_129009",
+            "condition": "condition_EVENT_GADGET_CREATE_129009",
+            "config_id": 1129009,
+            "event": 6,
+            "name": "GADGET_CREATE_129009",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

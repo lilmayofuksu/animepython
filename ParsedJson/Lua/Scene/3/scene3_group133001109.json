@@ -1,0 +1,106 @@
+{
+    "action_EVENT_GADGET_CREATE_109001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_427": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_109002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_392": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_109001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_427": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_109002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 2,
+            "chest_drop_id": 2001000,
+            "config_id": 1781,
+            "drop_count": 1,
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211131,
+            "isOneoff": true,
+            "level": 11,
+            "persistent": true,
+            "pos": {
+                "x": 1372.863,
+                "y": 235.803,
+                "z": -1569.772
+            },
+            "rot": {
+                "x": 0,
+                "y": 48.72,
+                "z": 0
+            },
+            "state": 101
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": true,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                1781
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "TIMER_EVENT_392",
+                "GADGET_STATE_CHANGE_427",
+                "GADGET_CREATE_109001",
+                "GROUP_LOAD_109002"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_TIMER_EVENT_392",
+            "condition": "",
+            "config_id": 1000392,
+            "event": 15,
+            "name": "TIMER_EVENT_392",
+            "source": "chest",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_427",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_427",
+            "config_id": 1000427,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_427",
+            "source": "",
+            "tlog_tag": "\u6253\u5f00\u5251\u51a2\u5b9d\u7bb1"
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_109001",
+            "condition": "condition_EVENT_GADGET_CREATE_109001",
+            "config_id": 1109001,
+            "event": 6,
+            "name": "GADGET_CREATE_109001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_109002",
+            "condition": "condition_EVENT_GROUP_LOAD_109002",
+            "config_id": 1109002,
+            "event": 29,
+            "name": "GROUP_LOAD_109002",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Key",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

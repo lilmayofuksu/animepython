@@ -1,0 +1,173 @@
+{
+    "action_EVENT_DUNGEON_SETTLE_5002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_20": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_DUNGEON_SETTLE_5002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_20": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 47,
+            "gadget_id": 70350002,
+            "level": 1,
+            "pos": {
+                "x": -48.633,
+                "y": 11.628,
+                "z": -13.849
+            },
+            "rot": {
+                "x": 0,
+                "y": 90,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 5001,
+            "drop_tag": "\u6218\u6597\u9ad8\u7ea7\u8499\u5fb7",
+            "gadget_id": 70211021,
+            "isOneoff": true,
+            "level": 1,
+            "pos": {
+                "x": -78.712,
+                "y": 10.476,
+                "z": -13.473
+            },
+            "rot": {
+                "x": 0,
+                "y": 90.822,
+                "z": 0
+            },
+            "showcutscene": true
+        }
+    ],
+    "init_config": {
+        "end_suite": 1,
+        "rand_suite": true,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 6,
+            "disableWander": true,
+            "isElite": true,
+            "level": 1,
+            "monster_id": 25020101,
+            "pos": {
+                "x": -74.462,
+                "y": 10.597,
+                "z": -13.661
+            },
+            "rot": {
+                "x": 0,
+                "y": 96.7,
+                "z": 0
+            },
+            "special_name_id": 10012,
+            "title_id": 7006
+        },
+        {
+            "config_id": 12,
+            "disableWander": true,
+            "level": 1,
+            "monster_id": 25010601,
+            "pos": {
+                "x": -79.207,
+                "y": 10.28,
+                "z": -3.727
+            },
+            "rot": {
+                "x": 0,
+                "y": 121.154,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 13,
+            "disableWander": true,
+            "level": 1,
+            "monster_id": 25010201,
+            "pos": {
+                "x": -78.776,
+                "y": 10.383,
+                "z": -22.189
+            },
+            "rot": {
+                "x": 0,
+                "y": 63.765,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 5003,
+            "disableWander": true,
+            "level": 1,
+            "monster_id": 25030201,
+            "pos": {
+                "x": -71.314,
+                "y": 10.597,
+                "z": -18.515
+            },
+            "rot": {
+                "x": 0,
+                "y": 57.299,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 20,
+            "pos": {
+                "x": -41.726,
+                "y": 14.491,
+                "z": -13.702
+            },
+            "shape": 2,
+            "size": {
+                "x": 12,
+                "y": 5,
+                "z": 7
+            }
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                47
+            ],
+            "monsters": [
+                6,
+                12,
+                13,
+                5003
+            ],
+            "rand_weight": 100,
+            "regions": [
+                20
+            ],
+            "triggers": [
+                "ENTER_REGION_20",
+                "DUNGEON_SETTLE_5002"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_20",
+            "condition": "condition_EVENT_ENTER_REGION_20",
+            "config_id": 1000020,
+            "event": 4,
+            "forbid_guest": false,
+            "name": "ENTER_REGION_20",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_DUNGEON_SETTLE_5002",
+            "condition": "condition_EVENT_DUNGEON_SETTLE_5002",
+            "config_id": 1005002,
+            "event": 8,
+            "name": "DUNGEON_SETTLE_5002",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

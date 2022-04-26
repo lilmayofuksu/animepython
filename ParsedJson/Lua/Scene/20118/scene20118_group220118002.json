@@ -1,0 +1,158 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_2007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_2001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_2002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_2007": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 2003,
+            "disableWander": true,
+            "level": 1,
+            "monster_id": 25080201,
+            "pos": {
+                "x": 66.495,
+                "y": 76.94,
+                "z": -77.762
+            },
+            "pose_id": 1,
+            "rot": {
+                "x": 0,
+                "y": 265.394,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2011,
+            "disableWander": true,
+            "level": 1,
+            "monster_id": 25080201,
+            "pos": {
+                "x": 66.501,
+                "y": 76.94,
+                "z": -85.105
+            },
+            "pose_id": 1,
+            "rot": {
+                "x": 0,
+                "y": 271.127,
+                "z": 0
+            }
+        },
+        {
+            "affix": [
+                1007
+            ],
+            "config_id": 2014,
+            "disableWander": true,
+            "isElite": true,
+            "level": 1,
+            "monster_id": 25100201,
+            "pos": {
+                "x": 64.67,
+                "y": 76.942,
+                "z": -81.187
+            },
+            "pose_id": 1,
+            "rot": {
+                "x": 0,
+                "y": 270.075,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 2001,
+            "pos": {
+                "x": 34.291,
+                "y": 77.892,
+                "z": -80.947
+            },
+            "radius": 6.49,
+            "shape": 1
+        },
+        {
+            "config_id": 2002,
+            "pos": {
+                "x": 52.993,
+                "y": 78.658,
+                "z": -81.83
+            },
+            "shape": 2,
+            "size": {
+                "x": 10,
+                "y": 11.94,
+                "z": 54.66
+            }
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                2001,
+                2002
+            ],
+            "triggers": [
+                "ENTER_REGION_2001",
+                "ENTER_REGION_2002"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                2003,
+                2011,
+                2014
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_2007"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_2001",
+            "condition": "",
+            "config_id": 1002001,
+            "event": 4,
+            "name": "ENTER_REGION_2001",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_2002",
+            "condition": "",
+            "config_id": 1002002,
+            "event": 4,
+            "name": "ENTER_REGION_2002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_2007",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_2007",
+            "config_id": 1002007,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_2007",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "alive1",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "action_EVENT_ENTER_REGION_1004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_1002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_1003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_1004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_1002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_1003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 1001,
+            "gadget_id": 70360002,
+            "level": 1,
+            "pos": {
+                "x": 223.991,
+                "y": 21.591,
+                "z": -27.834
+            },
+            "rot": {
+                "x": 0,
+                "y": 180,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 1004,
+            "pos": {
+                "x": 225.306,
+                "y": 15.575,
+                "z": -5.657
+            },
+            "shape": 2,
+            "size": {
+                "x": 40,
+                "y": 5,
+                "z": 45
+            }
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                1001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                1004
+            ],
+            "triggers": [
+                "GADGET_CREATE_1002",
+                "SELECT_OPTION_1003",
+                "ENTER_REGION_1004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_CREATE_1002",
+            "condition": "condition_EVENT_GADGET_CREATE_1002",
+            "config_id": 1001002,
+            "event": 6,
+            "name": "GADGET_CREATE_1002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_1003",
+            "condition": "condition_EVENT_SELECT_OPTION_1003",
+            "config_id": 1001003,
+            "event": 9,
+            "name": "SELECT_OPTION_1003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_1004",
+            "condition": "condition_EVENT_ENTER_REGION_1004",
+            "config_id": 1001004,
+            "event": 4,
+            "name": "ENTER_REGION_1004",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

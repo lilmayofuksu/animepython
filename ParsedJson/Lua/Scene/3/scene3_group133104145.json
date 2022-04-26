@@ -1,0 +1,159 @@
+{
+    "action_EVENT_ENTER_REGION_145006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_145009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_145007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_145008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_145006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_145009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_145007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_145008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 9,
+            "config_id": 145001,
+            "gadget_id": 70360001,
+            "level": 19,
+            "pos": {
+                "x": 731.68,
+                "y": 208.054,
+                "z": 222.42
+            },
+            "rot": {
+                "x": 0,
+                "y": 17.305,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 9,
+            "config_id": 145002,
+            "gadget_id": 70710290,
+            "level": 19,
+            "pos": {
+                "x": 731.946,
+                "y": 208.198,
+                "z": 223.167
+            },
+            "rot": {
+                "x": 0,
+                "y": 26.388,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 9,
+            "config_id": 145006,
+            "pos": {
+                "x": 733.322,
+                "y": 203.271,
+                "z": 223.429
+            },
+            "radius": 4,
+            "shape": 1
+        },
+        {
+            "area_id": 9,
+            "config_id": 145009,
+            "pos": {
+                "x": 742.325,
+                "y": 204.641,
+                "z": 245.402
+            },
+            "radius": 4,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                145006
+            ],
+            "triggers": [
+                "ENTER_REGION_145006"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                145001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_145007",
+                "SELECT_OPTION_145008"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                145002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                145009
+            ],
+            "triggers": [
+                "ENTER_REGION_145009"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_145006",
+            "condition": "condition_EVENT_ENTER_REGION_145006",
+            "config_id": 1145006,
+            "event": 4,
+            "name": "ENTER_REGION_145006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_145007",
+            "condition": "condition_EVENT_GADGET_CREATE_145007",
+            "config_id": 1145007,
+            "event": 6,
+            "name": "GADGET_CREATE_145007",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_145008",
+            "condition": "condition_EVENT_SELECT_OPTION_145008",
+            "config_id": 1145008,
+            "event": 9,
+            "name": "SELECT_OPTION_145008",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_145009",
+            "condition": "condition_EVENT_ENTER_REGION_145009",
+            "config_id": 1145009,
+            "event": 4,
+            "name": "ENTER_REGION_145009",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

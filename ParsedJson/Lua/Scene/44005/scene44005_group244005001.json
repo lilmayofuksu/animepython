@@ -1,0 +1,292 @@
+{
+    "action_EVENT_CHALLENGE_FAIL_1012": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_FAIL_1017": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_1014": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_1016": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_1018": "WARN: Lua function omitted from the dump",
+    "action_EVENT_DUNGEON_ALL_AVATAR_DIE_1020": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_1002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_POOL_MONSTER_TIDE_DIE_1004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_POOL_MONSTER_TIDE_DIE_1005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_1003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_1013": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_DUNGEON_ALL_AVATAR_DIE_1020": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_1002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_POOL_MONSTER_TIDE_DIE_1004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_POOL_MONSTER_TIDE_DIE_1005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_1003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 1001,
+            "gadget_id": 70360010,
+            "level": 1,
+            "pos": {
+                "x": 0.017,
+                "y": -0.204,
+                "z": -0.014
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 1015,
+            "gadget_id": 70330054,
+            "level": 1,
+            "pos": {
+                "x": 0.027,
+                "y": -0.102,
+                "z": -0.008
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 1019,
+            "gadget_id": 44000006,
+            "level": 1,
+            "pos": {
+                "x": -0.027,
+                "y": -0.102,
+                "z": 13.979
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "points": [
+        {
+            "config_id": 1006,
+            "pos": {
+                "x": 8.054,
+                "y": -0.102,
+                "z": -10.07
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "tag": 2
+        },
+        {
+            "config_id": 1007,
+            "pos": {
+                "x": -8.11,
+                "y": -0.102,
+                "z": -10.094
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "tag": 2
+        },
+        {
+            "config_id": 1008,
+            "pos": {
+                "x": -0.009,
+                "y": -0.102,
+                "z": 10.148
+            },
+            "rot": {
+                "x": 0,
+                "y": 180,
+                "z": 0
+            },
+            "tag": 4
+        },
+        {
+            "config_id": 1009,
+            "pos": {
+                "x": 0.013,
+                "y": -0.102,
+                "z": -10.266
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "tag": 4
+        },
+        {
+            "config_id": 1010,
+            "pos": {
+                "x": 13.067,
+                "y": -0.102,
+                "z": -0.101
+            },
+            "rot": {
+                "x": 0,
+                "y": 270,
+                "z": 0
+            },
+            "tag": 8
+        },
+        {
+            "config_id": 1011,
+            "pos": {
+                "x": -13.366,
+                "y": -0.102,
+                "z": -0.093
+            },
+            "rot": {
+                "x": 0,
+                "y": 90,
+                "z": 0
+            },
+            "tag": 8
+        }
+    ],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                1001,
+                1015,
+                1019
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_1002",
+                "SELECT_OPTION_1003",
+                "POOL_MONSTER_TIDE_DIE_1004",
+                "POOL_MONSTER_TIDE_DIE_1005",
+                "CHALLENGE_FAIL_1012",
+                "TIMER_EVENT_1013",
+                "CHALLENGE_SUCCESS_1014",
+                "CHALLENGE_SUCCESS_1016",
+                "CHALLENGE_FAIL_1017",
+                "DUNGEON_ALL_AVATAR_DIE_1020"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "CHALLENGE_SUCCESS_1018"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_CREATE_1002",
+            "condition": "condition_EVENT_GADGET_CREATE_1002",
+            "config_id": 1001002,
+            "event": 6,
+            "name": "GADGET_CREATE_1002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_1003",
+            "condition": "condition_EVENT_SELECT_OPTION_1003",
+            "config_id": 1001003,
+            "event": 9,
+            "name": "SELECT_OPTION_1003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_POOL_MONSTER_TIDE_DIE_1004",
+            "condition": "condition_EVENT_POOL_MONSTER_TIDE_DIE_1004",
+            "config_id": 1001004,
+            "event": 68,
+            "name": "POOL_MONSTER_TIDE_DIE_1004",
+            "source": "1"
+        },
+        {
+            "action": "action_EVENT_POOL_MONSTER_TIDE_DIE_1005",
+            "condition": "condition_EVENT_POOL_MONSTER_TIDE_DIE_1005",
+            "config_id": 1001005,
+            "event": 68,
+            "name": "POOL_MONSTER_TIDE_DIE_1005",
+            "source": "2"
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_1012",
+            "condition": "",
+            "config_id": 1001012,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_1012",
+            "source": "101"
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_1013",
+            "condition": "",
+            "config_id": 1001013,
+            "event": 15,
+            "name": "TIMER_EVENT_1013",
+            "source": "start",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_1014",
+            "condition": "",
+            "config_id": 1001014,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_1014",
+            "source": "202"
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_1016",
+            "condition": "",
+            "config_id": 1001016,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_1016",
+            "source": "202"
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_1017",
+            "condition": "",
+            "config_id": 1001017,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_1017",
+            "source": "202"
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_1018",
+            "condition": "",
+            "config_id": 1001018,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_1018",
+            "source": "201"
+        },
+        {
+            "action": "action_EVENT_DUNGEON_ALL_AVATAR_DIE_1020",
+            "condition": "condition_EVENT_DUNGEON_ALL_AVATAR_DIE_1020",
+            "config_id": 1001020,
+            "event": 60,
+            "name": "DUNGEON_ALL_AVATAR_DIE_1020",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "IS_IN_LIMIT_TIME",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

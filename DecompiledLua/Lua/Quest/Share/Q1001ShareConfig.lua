@@ -1,0 +1,27 @@
+local L0_1, L1_1, L2_1, L3_1
+main_id = 1001
+L0_1 = {}
+L1_1 = 100101
+L2_1 = 100102
+L3_1 = 100103
+L0_1[1] = L1_1
+L0_1[2] = L2_1
+L0_1[3] = L3_1
+sub_ids = L0_1
+L0_1 = {}
+rewind_data = L0_1
+L0_1 = rewind_data
+L1_1 = {}
+L0_1["100101"] = L1_1
+L0_1 = {}
+quest_data = L0_1
+L0_1 = quest_data
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L3_1.point_id = 1
+L3_1.scene_id = 3
+L3_1.pos = "Q1001Trans01"
+L2_1[1] = L3_1
+L1_1.transmit_points = L2_1
+L0_1["100102"] = L1_1

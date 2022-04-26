@@ -1,0 +1,78 @@
+{
+    "action_EVENT_GADGET_CREATE_110003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_110002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_110003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_110002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 110001,
+            "gadget_id": 70710597,
+            "interact_id": 77,
+            "isOneoff": true,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 586.351,
+                "y": 211.244,
+                "z": 620.689
+            },
+            "rot": {
+                "x": 0,
+                "y": 36.602,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                110001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_110002",
+                "GADGET_CREATE_110003"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_110002",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_110002",
+            "config_id": 1110002,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_110002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_110003",
+            "condition": "condition_EVENT_GADGET_CREATE_110003",
+            "config_id": 1110003,
+            "event": 6,
+            "name": "GADGET_CREATE_110003",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

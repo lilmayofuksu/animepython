@@ -1,0 +1,183 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_192007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_BLOSSOM_PROGRESS_FINISH_192008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_192009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_REFRESH_192006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 6,
+            "config_id": 192001,
+            "gadget_id": 70500000,
+            "level": 1,
+            "persistent": true,
+            "point_type": 1003,
+            "pos": {
+                "x": 1197.863,
+                "y": 248.705,
+                "z": 1051.37
+            },
+            "rot": {
+                "x": 12.658,
+                "y": 2.461,
+                "z": 21.921
+            }
+        },
+        {
+            "area_id": 6,
+            "config_id": 192002,
+            "gadget_id": 70500000,
+            "level": 1,
+            "persistent": true,
+            "point_type": 1003,
+            "pos": {
+                "x": 1202.242,
+                "y": 246.745,
+                "z": 1038.061
+            },
+            "rot": {
+                "x": 354.274,
+                "y": 359.314,
+                "z": 13.658
+            }
+        },
+        {
+            "area_id": 6,
+            "config_id": 192003,
+            "gadget_id": 70360001,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 1200.418,
+                "y": 249.193,
+                "z": 1046.414
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 6,
+            "config_id": 192004,
+            "gadget_id": 70500000,
+            "level": 1,
+            "persistent": true,
+            "point_type": 1005,
+            "pos": {
+                "x": 1203.465,
+                "y": 249.5,
+                "z": 1053.73
+            },
+            "rot": {
+                "x": 351.245,
+                "y": 359.252,
+                "z": 9.753
+            }
+        },
+        {
+            "area_id": 6,
+            "config_id": 192005,
+            "gadget_id": 70500000,
+            "level": 1,
+            "persistent": true,
+            "point_type": 1005,
+            "pos": {
+                "x": 1199.026,
+                "y": 249.09,
+                "z": 1047.572
+            },
+            "rot": {
+                "x": 21.147,
+                "y": 284.007,
+                "z": 359.299
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_192009"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_REFRESH_192006",
+                "ANY_GADGET_DIE_192007",
+                "BLOSSOM_PROGRESS_FINISH_192008"
+            ]
+        },
+        {
+            "gadgets": [
+                192001,
+                192002,
+                192003,
+                192004,
+                192005
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_REFRESH_192006",
+            "condition": "",
+            "config_id": 1192006,
+            "event": 32,
+            "name": "GROUP_REFRESH_192006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_192007",
+            "condition": "",
+            "config_id": 1192007,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_192007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_BLOSSOM_PROGRESS_FINISH_192008",
+            "condition": "",
+            "config_id": 1192008,
+            "event": 39,
+            "name": "BLOSSOM_PROGRESS_FINISH_192008",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_192009",
+            "condition": "",
+            "config_id": 1192009,
+            "event": 29,
+            "name": "GROUP_LOAD_192009",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "GroupCompletion",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

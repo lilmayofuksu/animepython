@@ -1,0 +1,181 @@
+{
+    "action_EVENT_GATHER_95005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GATHER_95007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_95009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_95006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_95009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_95006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 300,
+            "config_id": 95001,
+            "gadget_id": 70500000,
+            "isOneoff": true,
+            "level": 1,
+            "point_type": 9303,
+            "pos": {
+                "x": 778.072,
+                "y": 705.529,
+                "z": 449.941
+            },
+            "rot": {
+                "x": 352.416,
+                "y": 0.694,
+                "z": 349.558
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 95002,
+            "gadget_id": 70500000,
+            "isOneoff": true,
+            "level": 1,
+            "point_type": 9303,
+            "pos": {
+                "x": 777.2,
+                "y": 705.538,
+                "z": 450.454
+            },
+            "rot": {
+                "x": 354.673,
+                "y": 188.413,
+                "z": 353.427
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 95003,
+            "gadget_id": 70500000,
+            "isOneoff": true,
+            "level": 1,
+            "point_type": 9303,
+            "pos": {
+                "x": 780.005,
+                "y": 705.27,
+                "z": 445.944
+            },
+            "rot": {
+                "x": 9.956,
+                "y": 359.42,
+                "z": 353.347
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 95004,
+            "gadget_id": 70500000,
+            "isOneoff": true,
+            "level": 1,
+            "point_type": 9303,
+            "pos": {
+                "x": 772.641,
+                "y": 705.11,
+                "z": 441.102
+            },
+            "rot": {
+                "x": 0,
+                "y": 168.896,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 95008,
+            "gadget_id": 70500000,
+            "isOneoff": true,
+            "level": 36,
+            "point_type": 2044,
+            "pos": {
+                "x": 773.003,
+                "y": 705.288,
+                "z": 449.438
+            },
+            "rot": {
+                "x": 0,
+                "y": 168.896,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                95008
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                95001,
+                95002,
+                95003,
+                95004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GATHER_95005",
+                "VARIABLE_CHANGE_95006",
+                "GATHER_95007",
+                "GROUP_LOAD_95009"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GATHER_95005",
+            "condition": "",
+            "config_id": 1095005,
+            "event": 20,
+            "name": "GATHER_95005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_95006",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_95006",
+            "config_id": 1095006,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_95006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GATHER_95007",
+            "condition": "",
+            "config_id": 1095007,
+            "event": 20,
+            "name": "GATHER_95007",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_95009",
+            "condition": "condition_EVENT_GROUP_LOAD_95009",
+            "config_id": 1095009,
+            "event": 29,
+            "name": "GROUP_LOAD_95009",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Pick",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

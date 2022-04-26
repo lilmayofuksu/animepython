@@ -1,0 +1,100 @@
+{
+    "action_EVENT_ENTER_REGION_191001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_191001": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 300,
+            "config_id": 191002,
+            "gadget_id": 70360001,
+            "level": 32,
+            "pos": {
+                "x": 58.146,
+                "y": 313.108,
+                "z": 376.339
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 191003,
+            "gadget_id": 70360001,
+            "level": 32,
+            "pos": {
+                "x": 429.596,
+                "y": 382.044,
+                "z": 533.603
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 300,
+            "config_id": 191001,
+            "pos": {
+                "x": 57.883,
+                "y": 312.533,
+                "z": 381.882
+            },
+            "radius": 8,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                191003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                191002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                191001
+            ],
+            "triggers": [
+                "ENTER_REGION_191001"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_191001",
+            "condition": "condition_EVENT_ENTER_REGION_191001",
+            "config_id": 1191001,
+            "event": 4,
+            "name": "ENTER_REGION_191001",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "bell",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

@@ -1,0 +1,146 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_715003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_715005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_715004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_MONSTER_BATTLE_715006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_715003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_715005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_715004": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 11,
+            "config_id": 715001,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "level": 27,
+            "monster_id": 23010301,
+            "pos": {
+                "x": -2486.716,
+                "y": 241.62,
+                "z": -4461.258
+            },
+            "rot": {
+                "x": 356.093,
+                "y": 333.267,
+                "z": 2.991
+            }
+        },
+        {
+            "area_id": 11,
+            "config_id": 715002,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "level": 27,
+            "monster_id": 23010601,
+            "pos": {
+                "x": -2477.578,
+                "y": 241.617,
+                "z": -4452.791
+            },
+            "pose_id": 9002,
+            "rot": {
+                "x": 0,
+                "y": 122.015,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 11,
+            "config_id": 715005,
+            "pos": {
+                "x": -2452.156,
+                "y": 248.089,
+                "z": -4473.184
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_715004"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                715001,
+                715002
+            ],
+            "rand_weight": 100,
+            "regions": [
+                715005
+            ],
+            "triggers": [
+                "ANY_MONSTER_DIE_715003",
+                "GROUP_LOAD_715004",
+                "ENTER_REGION_715005",
+                "MONSTER_BATTLE_715006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_715003",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_715003",
+            "config_id": 1715003,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_715003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_715004",
+            "condition": "condition_EVENT_GROUP_LOAD_715004",
+            "config_id": 1715004,
+            "event": 29,
+            "name": "GROUP_LOAD_715004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_715005",
+            "condition": "condition_EVENT_ENTER_REGION_715005",
+            "config_id": 1715005,
+            "event": 4,
+            "name": "ENTER_REGION_715005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_MONSTER_BATTLE_715006",
+            "condition": "",
+            "config_id": 1715006,
+            "event": 22,
+            "name": "MONSTER_BATTLE_715006",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "win",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "reminder",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

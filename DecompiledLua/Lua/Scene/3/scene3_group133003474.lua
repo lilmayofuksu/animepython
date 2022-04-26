@@ -1,0 +1,466 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
+L0_1 = {}
+L0_1.group_id = 133003474
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 1638
+L2_1.monster_id = 21010501
+L3_1 = {}
+L3_1.x = 2519.255
+L3_1.y = 202.923
+L3_1.z = -1122.435
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 0.0
+L3_1.y = 338.2
+L3_1.z = 0.0
+L2_1.rot = L3_1
+L2_1.level = 1
+L2_1.drop_tag = "\232\191\156\231\168\139\228\184\152\228\184\152\228\186\186"
+L2_1.area_id = 1
+L3_1 = {}
+L3_1.config_id = 1640
+L3_1.monster_id = 21010501
+L4_1 = {}
+L4_1.x = 2516.671
+L4_1.y = 202.669
+L4_1.z = -1120.113
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 0.0
+L4_1.y = 128.874
+L4_1.z = 0.0
+L3_1.rot = L4_1
+L3_1.level = 1
+L3_1.drop_tag = "\232\191\156\231\168\139\228\184\152\228\184\152\228\186\186"
+L3_1.area_id = 1
+L4_1 = {}
+L4_1.config_id = 1653
+L4_1.monster_id = 21020201
+L5_1 = {}
+L5_1.x = 2504.588
+L5_1.y = 202.984
+L5_1.z = -1135.972
+L4_1.pos = L5_1
+L5_1 = {}
+L5_1.x = 0.0
+L5_1.y = 70.827
+L5_1.z = 0.0
+L4_1.rot = L5_1
+L4_1.level = 1
+L4_1.drop_tag = "\228\184\152\228\184\152\230\154\180\229\190\146"
+L4_1.disableWander = true
+L4_1.area_id = 1
+L5_1 = {}
+L5_1.config_id = 1654
+L5_1.monster_id = 21010201
+L6_1 = {}
+L6_1.x = 2510.529
+L6_1.y = 202.494
+L6_1.z = -1134.095
+L5_1.pos = L6_1
+L6_1 = {}
+L6_1.x = 0.0
+L6_1.y = 337.425
+L6_1.z = 0.0
+L5_1.rot = L6_1
+L5_1.level = 1
+L5_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
+L5_1.area_id = 1
+L6_1 = {}
+L6_1.config_id = 1655
+L6_1.monster_id = 21010201
+L7_1 = {}
+L7_1.x = 2516.369
+L7_1.y = 202.543
+L7_1.z = -1132.42
+L6_1.pos = L7_1
+L7_1 = {}
+L7_1.x = 0.0
+L7_1.y = 351.873
+L7_1.z = 0.0
+L6_1.rot = L7_1
+L6_1.level = 1
+L6_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
+L6_1.area_id = 1
+L7_1 = {}
+L7_1.config_id = 1656
+L7_1.monster_id = 21010601
+L8_1 = {}
+L8_1.x = 2525.887
+L8_1.y = 204.831
+L8_1.z = -1145.989
+L7_1.pos = L8_1
+L8_1 = {}
+L8_1.x = 0.0
+L8_1.y = 32.3
+L8_1.z = 0.0
+L7_1.rot = L8_1
+L7_1.level = 1
+L7_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
+L7_1.area_id = 1
+L8_1 = {}
+L8_1.config_id = 1657
+L8_1.monster_id = 21010601
+L9_1 = {}
+L9_1.x = 2516.287
+L9_1.y = 204.412
+L9_1.z = -1146.989
+L8_1.pos = L9_1
+L9_1 = {}
+L9_1.x = 0.0
+L9_1.y = 0.0
+L9_1.z = 0.0
+L8_1.rot = L9_1
+L8_1.level = 1
+L8_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
+L8_1.area_id = 1
+L9_1 = {}
+L9_1.config_id = 1658
+L9_1.monster_id = 21020101
+L10_1 = {}
+L10_1.x = 2520.387
+L10_1.y = 204.818
+L10_1.z = -1145.789
+L9_1.pos = L10_1
+L10_1 = {}
+L10_1.x = 0.0
+L10_1.y = 357.815
+L10_1.z = 0.0
+L9_1.rot = L10_1
+L9_1.level = 1
+L9_1.drop_tag = "\228\184\152\228\184\152\230\154\180\229\190\146"
+L9_1.area_id = 1
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+L1_1[6] = L7_1
+L1_1[7] = L8_1
+L1_1[8] = L9_1
+monsters = L1_1
+L1_1 = {}
+npcs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 4264
+L2_1.gadget_id = 70220013
+L3_1 = {}
+L3_1.x = 2506.13
+L3_1.y = 202.494
+L3_1.z = -1127.798
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 0.0
+L3_1.y = 328.3
+L3_1.z = 0.0
+L2_1.rot = L3_1
+L2_1.level = 1
+L2_1.area_id = 1
+L3_1 = {}
+L3_1.config_id = 4275
+L3_1.gadget_id = 70220013
+L4_1 = {}
+L4_1.x = 2507.087
+L4_1.y = 202.156
+L4_1.z = -1124.989
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 7.332
+L4_1.y = 342.875
+L4_1.z = 359.605
+L3_1.rot = L4_1
+L3_1.level = 1
+L3_1.area_id = 1
+L4_1 = {}
+L4_1.config_id = 4277
+L4_1.gadget_id = 70300100
+L5_1 = {}
+L5_1.x = 2514.057
+L5_1.y = 202.482
+L5_1.z = -1129.716
+L4_1.pos = L5_1
+L5_1 = {}
+L5_1.x = 0.0
+L5_1.y = 152.3
+L5_1.z = 0.0
+L4_1.rot = L5_1
+L4_1.level = 1
+L4_1.area_id = 1
+L5_1 = {}
+L5_1.config_id = 4278
+L5_1.gadget_id = 70300100
+L6_1 = {}
+L6_1.x = 2508.946
+L6_1.y = 202.489
+L6_1.z = -1130.577
+L5_1.pos = L6_1
+L6_1 = {}
+L6_1.x = 0.0
+L6_1.y = 122.9
+L6_1.z = 0.0
+L5_1.rot = L6_1
+L5_1.level = 1
+L5_1.area_id = 1
+L6_1 = {}
+L6_1.config_id = 4454
+L6_1.gadget_id = 70300098
+L7_1 = {}
+L7_1.x = 2518.335
+L7_1.y = 202.812
+L7_1.z = -1121.166
+L6_1.pos = L7_1
+L7_1 = {}
+L7_1.x = 0.0
+L7_1.y = 0.0
+L7_1.z = 0.0
+L6_1.rot = L7_1
+L6_1.level = 1
+L6_1.area_id = 1
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+gadgets = L1_1
+L1_1 = {}
+regions = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 1000569
+L2_1.name = "ANY_MONSTER_DIE_569"
+L3_1 = EventType
+L3_1 = L3_1.EVENT_ANY_MONSTER_DIE
+L2_1.event = L3_1
+L2_1.source = ""
+L2_1.condition = "condition_EVENT_ANY_MONSTER_DIE_569"
+L2_1.action = "action_EVENT_ANY_MONSTER_DIE_569"
+L3_1 = {}
+L3_1.config_id = 1000574
+L3_1.name = "ANY_MONSTER_LIVE_574"
+L4_1 = EventType
+L4_1 = L4_1.EVENT_ANY_MONSTER_LIVE
+L3_1.event = L4_1
+L3_1.source = ""
+L3_1.condition = "condition_EVENT_ANY_MONSTER_LIVE_574"
+L3_1.action = "action_EVENT_ANY_MONSTER_LIVE_574"
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+triggers = L1_1
+L1_1 = {}
+variables = L1_1
+L1_1 = {}
+L1_1.suite = 1
+L1_1.end_suite = 0
+L1_1.rand_suite = true
+init_config = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L4_1 = 1638
+L5_1 = 1640
+L6_1 = 1653
+L7_1 = 1654
+L8_1 = 1655
+L3_1[1] = L4_1
+L3_1[2] = L5_1
+L3_1[3] = L6_1
+L3_1[4] = L7_1
+L3_1[5] = L8_1
+L2_1.monsters = L3_1
+L3_1 = {}
+L4_1 = 4264
+L5_1 = 4275
+L6_1 = 4277
+L7_1 = 4278
+L8_1 = 4454
+L3_1[1] = L4_1
+L3_1[2] = L5_1
+L3_1[3] = L6_1
+L3_1[4] = L7_1
+L3_1[5] = L8_1
+L2_1.gadgets = L3_1
+L3_1 = {}
+L2_1.regions = L3_1
+L3_1 = {}
+L4_1 = "ANY_MONSTER_DIE_569"
+L5_1 = "ANY_MONSTER_LIVE_574"
+L3_1[1] = L4_1
+L3_1[2] = L5_1
+L2_1.triggers = L3_1
+L2_1.rand_weight = 100
+L1_1[1] = L2_1
+suites = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetGroupMonsterCount
+  L3_2 = A0_2
+  L2_2 = L2_2(L3_2)
+  if L2_2 ~= 0 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_ANY_MONSTER_DIE_569 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.CreateMonster
+  L3_2 = A0_2
+  L4_2 = {}
+  L4_2.config_id = 1657
+  L4_2.delay_time = 0
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : create_monster"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.CreateMonster
+  L3_2 = A0_2
+  L4_2 = {}
+  L4_2.config_id = 1658
+  L4_2.delay_time = 0
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : create_monster"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.CreateMonster
+  L3_2 = A0_2
+  L4_2 = {}
+  L4_2.config_id = 1656
+  L4_2.delay_time = 0
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : create_monster"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = {}
+  L2_2.x = 2510
+  L2_2.y = 194
+  L2_2.z = -1141
+  L3_2 = ScriptLib
+  L3_2 = L3_2.ScenePlaySound
+  L4_2 = A0_2
+  L5_2 = {}
+  L5_2.play_pos = L2_2
+  L5_2.sound_name = "LevelHornSound001"
+  L5_2.play_type = 1
+  L5_2.is_broadcast = false
+  L3_2 = L3_2(L4_2, L5_2)
+  if 0 ~= L3_2 then
+    L3_2 = ScriptLib
+    L3_2 = L3_2.PrintContextLog
+    L4_2 = A0_2
+    L5_2 = "@@ LUA_WARNING : active_soundplay"
+    L3_2(L4_2, L5_2)
+    L3_2 = -1
+    return L3_2
+  end
+  L3_2 = {}
+  L3_2.x = 2510
+  L3_2.y = 194
+  L3_2.z = -1141
+  L4_2 = ScriptLib
+  L4_2 = L4_2.ShowReminderRadius
+  L5_2 = A0_2
+  L6_2 = 400004
+  L7_2 = L3_2
+  L8_2 = 50
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  if 0 ~= L4_2 then
+    L4_2 = ScriptLib
+    L4_2 = L4_2.PrintContextLog
+    L5_2 = A0_2
+    L6_2 = "@@ LUA_WARNING : active_reminder_ui_bypos"
+    L4_2(L5_2, L6_2)
+    L4_2 = -1
+    return L4_2
+  end
+  L4_2 = 0
+  return L4_2
+end
+action_EVENT_ANY_MONSTER_DIE_569 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2
+  L2_2 = A1_2.param1
+  if 1656 ~= L2_2 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_ANY_MONSTER_LIVE_574 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.SetMonsterBattleByGroup
+  L3_2 = A0_2
+  L4_2 = 1656
+  L5_2 = 133003474
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.SetMonsterBattleByGroup
+  L3_2 = A0_2
+  L4_2 = 1657
+  L5_2 = 133003474
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = ScriptLib
+  L2_2 = L2_2.SetMonsterBattleByGroup
+  L3_2 = A0_2
+  L4_2 = 1658
+  L5_2 = 133003474
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  if 0 ~= L2_2 then
+    L2_2 = ScriptLib
+    L2_2 = L2_2.PrintContextLog
+    L3_2 = A0_2
+    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
+    L2_2(L3_2, L4_2)
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_ANY_MONSTER_LIVE_574 = L1_1

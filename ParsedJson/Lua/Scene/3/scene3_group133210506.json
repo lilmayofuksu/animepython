@@ -1,0 +1,144 @@
+{
+    "action_EVENT_ENTER_REGION_506004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_506005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_506004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_506005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 17,
+            "config_id": 506001,
+            "gadget_id": 70290096,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": -3695.556,
+                "y": 200.88,
+                "z": -1382.865
+            },
+            "rot": {
+                "x": 358.056,
+                "y": 30.391,
+                "z": 5.07
+            }
+        },
+        {
+            "area_id": 17,
+            "config_id": 506002,
+            "gadget_id": 70290158,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": -3688.811,
+                "y": 201.378,
+                "z": -1380.293
+            },
+            "rot": {
+                "x": 5.076,
+                "y": 278.503,
+                "z": 356.255
+            },
+            "state": 201
+        },
+        {
+            "area_id": 17,
+            "config_id": 506003,
+            "gadget_id": 70290158,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": -3697.544,
+                "y": 200.497,
+                "z": -1388.648
+            },
+            "rot": {
+                "x": 3.066,
+                "y": 163.993,
+                "z": 354.488
+            },
+            "state": 201
+        },
+        {
+            "area_id": 17,
+            "config_id": 506006,
+            "drop_tag": "\u89e3\u8c1c\u4f4e\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211102,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -3690.229,
+                "y": 203.111,
+                "z": -1385.59
+            },
+            "rot": {
+                "x": 4.179,
+                "y": 322.652,
+                "z": 346.449
+            },
+            "state": 101
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 17,
+            "config_id": 506004,
+            "pos": {
+                "x": -3692.896,
+                "y": 201.418,
+                "z": -1383.483
+            },
+            "radius": 8,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                506001,
+                506002,
+                506003,
+                506006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                506004
+            ],
+            "triggers": [
+                "ENTER_REGION_506004",
+                "GADGET_STATE_CHANGE_506005"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_506004",
+            "condition": "condition_EVENT_ENTER_REGION_506004",
+            "config_id": 1506004,
+            "event": 4,
+            "name": "ENTER_REGION_506004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_506005",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_506005",
+            "config_id": 1506005,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_506005",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

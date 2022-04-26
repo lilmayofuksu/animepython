@@ -1,0 +1,93 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_75002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_GADGET_DIE_75005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_75002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_75005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 7,
+            "config_id": 75001,
+            "gadget_id": 70710242,
+            "level": 24,
+            "pos": {
+                "x": -742.38,
+                "y": 236.58,
+                "z": 474.033
+            },
+            "rot": {
+                "x": 0,
+                "y": 260,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 7,
+            "config_id": 75003,
+            "gadget_id": 70710242,
+            "level": 24,
+            "pos": {
+                "x": -757.04,
+                "y": 236.543,
+                "z": 507.08
+            },
+            "rot": {
+                "x": 0,
+                "y": 234,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                75001,
+                75003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_GADGET_DIE_75002",
+                "ANY_GADGET_DIE_75005"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_75002",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_75002",
+            "config_id": 1075002,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_75002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_75005",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_75005",
+            "config_id": 1075005,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_75005",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

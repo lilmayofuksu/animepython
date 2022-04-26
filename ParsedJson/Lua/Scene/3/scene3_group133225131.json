@@ -1,0 +1,111 @@
+{
+    "action_EVENT_VARIABLE_CHANGE_131003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_131003": "WARN: Lua function omitted from the dump",
+    "defs": {
+        "child_group": {
+            "0": 0
+        },
+        "group_id": 133225131,
+        "hasChild": false,
+        "hasMultiStatues": false,
+        "isRandom": false,
+        "notifyQuest": true,
+        "selfSuiteId": 2,
+        "statuesMap": {
+            "10001": 2
+        }
+    },
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 131001,
+            "gadget_id": 70290160,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -6235.24,
+                "y": 215.746,
+                "z": -2826.583
+            },
+            "rot": {
+                "x": 0,
+                "y": 191.976,
+                "z": 0
+            },
+            "state": 201
+        },
+        {
+            "area_id": 18,
+            "config_id": 131002,
+            "gadget_id": 70230054,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -6235.391,
+                "y": 216.221,
+                "z": -2828.705
+            },
+            "rot": {
+                "x": 347.867,
+                "y": 226.479,
+                "z": 21.423
+            },
+            "state": 201
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                131001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_131003"
+            ]
+        },
+        {
+            "gadgets": [
+                131002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_131003",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_131003",
+            "config_id": 1131003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_131003",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Seed",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "Notified",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

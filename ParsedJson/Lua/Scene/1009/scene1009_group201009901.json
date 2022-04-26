@@ -1,0 +1,74 @@
+{
+    "condition_EVENT_ENTER_REGION_1": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_2": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": true,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 1,
+            "pos": {
+                "x": 4.827,
+                "y": 0,
+                "z": 4.151
+            },
+            "radius": 3,
+            "room": 1,
+            "shape": 1
+        },
+        {
+            "config_id": 2,
+            "pos": {
+                "x": 2.124,
+                "y": 5.514,
+                "z": -2.7
+            },
+            "radius": 2,
+            "room": 1,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                1,
+                2
+            ],
+            "triggers": [
+                "ENTER_REGION_1",
+                "ENTER_REGION_2"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "",
+            "condition": "condition_EVENT_ENTER_REGION_1",
+            "config_id": 1000001,
+            "event": 4,
+            "forbid_guest": false,
+            "name": "ENTER_REGION_1",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "",
+            "condition": "condition_EVENT_ENTER_REGION_2",
+            "config_id": 1000002,
+            "event": 4,
+            "forbid_guest": false,
+            "name": "ENTER_REGION_2",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

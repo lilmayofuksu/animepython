@@ -1,0 +1,491 @@
+{
+    "action_EVENT_ENTER_REGION_37010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_37002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_37018": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_37005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_37009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_37003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_37007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_37011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_37012": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_37001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_37015": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_37010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_37002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_37018": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_37001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_37015": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 17,
+            "config_id": 37004,
+            "gadget_id": 70360001,
+            "level": 30,
+            "pos": {
+                "x": -4100.918,
+                "y": 215.014,
+                "z": -1164.042
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 17,
+            "config_id": 37006,
+            "gadget_id": 70290083,
+            "level": 30,
+            "pos": {
+                "x": -4102.463,
+                "y": 213.793,
+                "z": -1163.643
+            },
+            "rot": {
+                "x": 0,
+                "y": 105.18,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 17,
+            "config_id": 37008,
+            "gadget_id": 70710091,
+            "level": 30,
+            "pos": {
+                "x": -4103.354,
+                "y": 214.225,
+                "z": -1167.135
+            },
+            "rot": {
+                "x": 0,
+                "y": 73.757,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "io_type": 1,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [
+        {
+            "area_id": 17,
+            "config_id": 37019,
+            "npc_id": 20314,
+            "pos": {
+                "x": -4103.326,
+                "y": 215.29,
+                "z": -1167.203
+            },
+            "rot": {
+                "x": 0,
+                "y": 68.07,
+                "z": 0
+            }
+        }
+    ],
+    "regions": [
+        {
+            "area_id": 17,
+            "config_id": 37010,
+            "pos": {
+                "x": -4070.221,
+                "y": 206.718,
+                "z": -1173.127
+            },
+            "radius": 40,
+            "shape": 1
+        }
+    ],
+    "suite_disk": [
+        {
+            "gadgets": [
+                {
+                    "config_id": 37006,
+                    "state": 0
+                },
+                {
+                    "config_id": 37008,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [
+                37019
+            ],
+            "regions": [],
+            "triggers": [
+                "QUEST_START_37011"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "Gadget_Count",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 37006,
+                    "state": 202
+                },
+                {
+                    "config_id": 37008,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [
+                37019
+            ],
+            "regions": [
+                37010
+            ],
+            "triggers": [
+                "QUEST_FINISH_37005",
+                "ENTER_REGION_37010",
+                "QUEST_START_37012"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "Gadget_Count",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 37006,
+                    "state": 202
+                },
+                {
+                    "config_id": 37008,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [
+                37019
+            ],
+            "regions": [],
+            "triggers": [
+                "QUEST_START_37003",
+                "VARIABLE_CHANGE_37015"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "Gadget_Count",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 37006,
+                    "state": 0
+                },
+                {
+                    "config_id": 37008,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [
+                37019
+            ],
+            "regions": [],
+            "triggers": [
+                "QUEST_START_37007"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "Gadget_Count",
+                    "no_refresh": true,
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 37004,
+                    "state": 0
+                },
+                {
+                    "config_id": 37006,
+                    "state": 201
+                },
+                {
+                    "config_id": 37008,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [
+                37019
+            ],
+            "regions": [],
+            "triggers": [
+                "SELECT_OPTION_37001",
+                "GADGET_CREATE_37002",
+                "QUEST_FINISH_37009",
+                "GADGET_STATE_CHANGE_37018"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "Gadget_Count",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 37006,
+                    "state": 0
+                },
+                {
+                    "config_id": 37008,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [
+                37019
+            ],
+            "regions": [],
+            "triggers": [],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "Gadget_Count",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                37006,
+                37008
+            ],
+            "monsters": [],
+            "npcs": [
+                37019
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_37011"
+            ]
+        },
+        {
+            "gadgets": [
+                37006,
+                37008
+            ],
+            "monsters": [],
+            "npcs": [
+                37019
+            ],
+            "rand_weight": 100,
+            "regions": [
+                37010
+            ],
+            "triggers": [
+                "QUEST_FINISH_37005",
+                "ENTER_REGION_37010",
+                "QUEST_START_37012"
+            ]
+        },
+        {
+            "gadgets": [
+                37006,
+                37008
+            ],
+            "monsters": [],
+            "npcs": [
+                37019
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_37003",
+                "VARIABLE_CHANGE_37015"
+            ]
+        },
+        {
+            "gadgets": [
+                37006,
+                37008
+            ],
+            "monsters": [],
+            "npcs": [
+                37019
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_37007"
+            ]
+        },
+        {
+            "gadgets": [
+                37004,
+                37006,
+                37008
+            ],
+            "monsters": [],
+            "npcs": [
+                37019
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "SELECT_OPTION_37001",
+                "GADGET_CREATE_37002",
+                "QUEST_FINISH_37009",
+                "GADGET_STATE_CHANGE_37018"
+            ]
+        },
+        {
+            "gadgets": [
+                37006,
+                37008
+            ],
+            "monsters": [],
+            "npcs": [
+                37019
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_SELECT_OPTION_37001",
+            "condition": "condition_EVENT_SELECT_OPTION_37001",
+            "config_id": 1037001,
+            "event": 9,
+            "name": "SELECT_OPTION_37001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_37002",
+            "condition": "condition_EVENT_GADGET_CREATE_37002",
+            "config_id": 1037002,
+            "event": 6,
+            "name": "GADGET_CREATE_37002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_37003",
+            "condition": "",
+            "config_id": 1037003,
+            "event": 28,
+            "name": "QUEST_START_37003",
+            "source": "7214804",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_37005",
+            "condition": "",
+            "config_id": 1037005,
+            "event": 21,
+            "name": "QUEST_FINISH_37005",
+            "source": "7214801",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_37007",
+            "condition": "",
+            "config_id": 1037007,
+            "event": 28,
+            "name": "QUEST_START_37007",
+            "source": "7214805",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_37009",
+            "condition": "",
+            "config_id": 1037009,
+            "event": 21,
+            "name": "QUEST_FINISH_37009",
+            "source": "7214805",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_37010",
+            "condition": "condition_EVENT_ENTER_REGION_37010",
+            "config_id": 1037010,
+            "event": 4,
+            "name": "ENTER_REGION_37010",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_37011",
+            "condition": "",
+            "config_id": 1037011,
+            "event": 28,
+            "name": "QUEST_START_37011",
+            "source": "7214801",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_37012",
+            "condition": "",
+            "config_id": 1037012,
+            "event": 28,
+            "name": "QUEST_START_37012",
+            "source": "7214803",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_37015",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_37015",
+            "config_id": 1037015,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_37015",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_37018",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_37018",
+            "config_id": 1037018,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_37018",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Gadget_Count",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

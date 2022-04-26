@@ -1,0 +1,86 @@
+{
+    "action_EVENT_ENTER_REGION_911001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_911002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_911001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_911002": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 2
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 1,
+            "config_id": 911001,
+            "pos": {
+                "x": 2369.281,
+                "y": 259.998,
+                "z": -703.883
+            },
+            "radius": 8,
+            "shape": 1
+        },
+        {
+            "area_id": 1,
+            "config_id": 911002,
+            "pos": {
+                "x": 2330.634,
+                "y": 259.998,
+                "z": -684.745
+            },
+            "radius": 8,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                911001,
+                911002
+            ],
+            "triggers": [
+                "ENTER_REGION_911001",
+                "ENTER_REGION_911002"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_911001",
+            "condition": "condition_EVENT_ENTER_REGION_911001",
+            "config_id": 1911001,
+            "event": 4,
+            "name": "ENTER_REGION_911001",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_911002",
+            "condition": "condition_EVENT_ENTER_REGION_911002",
+            "config_id": 1911002,
+            "event": 4,
+            "name": "ENTER_REGION_911002",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "AnyTrigger",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

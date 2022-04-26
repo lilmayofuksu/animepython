@@ -1,0 +1,232 @@
+{
+    "action_EVENT_DUNGEON_SETTLE_5002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_5001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_5004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_5007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_5008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_DUNGEON_SETTLE_5002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_5001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_5004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_5007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_5008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 5003,
+            "drop_tag": "\u89e3\u8c1c\u9ad8\u7ea7\u7483\u6708",
+            "gadget_id": 70211121,
+            "isOneoff": true,
+            "level": 11,
+            "persistent": true,
+            "pos": {
+                "x": -253.956,
+                "y": 38.436,
+                "z": 307.654
+            },
+            "rot": {
+                "x": 0,
+                "y": 270.089,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 5005,
+            "gadget_id": 70900201,
+            "level": 1,
+            "pos": {
+                "x": -176.622,
+                "y": 26.498,
+                "z": 234.643
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 5006,
+            "drop_tag": "\u6218\u6597\u4e2d\u7ea7\u7483\u6708",
+            "gadget_id": 70211011,
+            "isOneoff": true,
+            "level": 11,
+            "persistent": true,
+            "pos": {
+                "x": -157.008,
+                "y": 16.541,
+                "z": 218.448
+            },
+            "rot": {
+                "x": 0,
+                "y": 268.216,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 5009,
+            "drop_tag": "\u6218\u6597\u4f4e\u7ea7\u7483\u6708",
+            "gadget_id": 70211001,
+            "isOneoff": true,
+            "level": 11,
+            "persistent": true,
+            "pos": {
+                "x": -164.74,
+                "y": 26.524,
+                "z": 301.682
+            },
+            "rot": {
+                "x": 0,
+                "y": 200.301,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 5001,
+            "pos": {
+                "x": -177.445,
+                "y": 28.458,
+                "z": 237.15
+            },
+            "shape": 2,
+            "size": {
+                "x": 15,
+                "y": 5,
+                "z": 5
+            }
+        },
+        {
+            "config_id": 5004,
+            "pos": {
+                "x": -165.984,
+                "y": 31.203,
+                "z": 133.946
+            },
+            "shape": 2,
+            "size": {
+                "x": 80,
+                "y": 1,
+                "z": 80
+            }
+        },
+        {
+            "config_id": 5007,
+            "pos": {
+                "x": -172.016,
+                "y": 18.863,
+                "z": 219.429
+            },
+            "shape": 2,
+            "size": {
+                "x": 5,
+                "y": 20,
+                "z": 15
+            }
+        },
+        {
+            "config_id": 5008,
+            "pos": {
+                "x": -159.211,
+                "y": 18.679,
+                "z": 200.194
+            },
+            "shape": 2,
+            "size": {
+                "x": 20,
+                "y": 20,
+                "z": 5
+            }
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                5006,
+                5009
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                5001,
+                5004,
+                5007,
+                5008
+            ],
+            "triggers": [
+                "ENTER_REGION_5001",
+                "DUNGEON_SETTLE_5002",
+                "ENTER_REGION_5004",
+                "ENTER_REGION_5007",
+                "ENTER_REGION_5008"
+            ]
+        },
+        {
+            "gadgets": [
+                5003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_5001",
+            "condition": "condition_EVENT_ENTER_REGION_5001",
+            "config_id": 1005001,
+            "event": 4,
+            "name": "ENTER_REGION_5001",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_DUNGEON_SETTLE_5002",
+            "condition": "condition_EVENT_DUNGEON_SETTLE_5002",
+            "config_id": 1005002,
+            "event": 8,
+            "name": "DUNGEON_SETTLE_5002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_5004",
+            "condition": "condition_EVENT_ENTER_REGION_5004",
+            "config_id": 1005004,
+            "event": 4,
+            "name": "ENTER_REGION_5004",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_5007",
+            "condition": "condition_EVENT_ENTER_REGION_5007",
+            "config_id": 1005007,
+            "event": 4,
+            "name": "ENTER_REGION_5007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_5008",
+            "condition": "condition_EVENT_ENTER_REGION_5008",
+            "config_id": 1005008,
+            "event": 4,
+            "name": "ENTER_REGION_5008",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Weather",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

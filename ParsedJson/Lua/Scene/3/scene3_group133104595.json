@@ -1,0 +1,248 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_595015": "WARN: Lua function omitted from the dump",
+    "action_EVENT_BLOSSOM_CHEST_DIE_595011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_BLOSSOM_PROGRESS_FINISH_595016": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_595009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_595012": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_595007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_595008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_595017": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_REFRESH_595010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_595013": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_595014": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_BLOSSOM_CHEST_DIE_595011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_595009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_595012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_595007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_595008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_595013": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_595014": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 9,
+            "config_id": 595004,
+            "gadget_id": 70360056,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 685.985,
+                "y": 203.459,
+                "z": 140.231
+            },
+            "rot": {
+                "x": 0,
+                "y": 359.836,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 9,
+            "config_id": 595005,
+            "gadget_id": 70360057,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 685.985,
+                "y": 203.459,
+                "z": 140.231
+            },
+            "rot": {
+                "x": 0,
+                "y": 359.836,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 9,
+            "chest_drop_id": 1000100,
+            "config_id": 595006,
+            "drop_count": 1,
+            "gadget_id": 70210106,
+            "is_blossom_chest": true,
+            "level": 16,
+            "persistent": true,
+            "pos": {
+                "x": 683.241,
+                "y": 203.389,
+                "z": 144.431
+            },
+            "rot": {
+                "x": 0,
+                "y": 81.633,
+                "z": 0
+            },
+            "showcutscene": true
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 9,
+            "config_id": 595001,
+            "drop_tag": "\u9057\u8ff9\u5b88\u536b",
+            "level": 3,
+            "monster_id": 24010101,
+            "pos": {
+                "x": 683.258,
+                "y": 203.399,
+                "z": 143.668
+            },
+            "pose_id": 100,
+            "rot": {
+                "x": 358.749,
+                "y": 144.447,
+                "z": 352.142
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_595017"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_595007",
+                "GADGET_STATE_CHANGE_595008",
+                "GADGET_CREATE_595009",
+                "GROUP_REFRESH_595010",
+                "BLOSSOM_CHEST_DIE_595011",
+                "GADGET_CREATE_595012",
+                "SELECT_OPTION_595013",
+                "SELECT_OPTION_595014",
+                "ANY_MONSTER_DIE_595015",
+                "BLOSSOM_PROGRESS_FINISH_595016"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                595001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_595007",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_595007",
+            "config_id": 1595007,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_595007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_595008",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_595008",
+            "config_id": 1595008,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_595008",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_595009",
+            "condition": "condition_EVENT_GADGET_CREATE_595009",
+            "config_id": 1595009,
+            "event": 6,
+            "name": "GADGET_CREATE_595009",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_REFRESH_595010",
+            "condition": "",
+            "config_id": 1595010,
+            "event": 32,
+            "name": "GROUP_REFRESH_595010",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_BLOSSOM_CHEST_DIE_595011",
+            "condition": "condition_EVENT_BLOSSOM_CHEST_DIE_595011",
+            "config_id": 1595011,
+            "event": 40,
+            "name": "BLOSSOM_CHEST_DIE_595011",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_595012",
+            "condition": "condition_EVENT_GADGET_CREATE_595012",
+            "config_id": 1595012,
+            "event": 6,
+            "name": "GADGET_CREATE_595012",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_595013",
+            "condition": "condition_EVENT_SELECT_OPTION_595013",
+            "config_id": 1595013,
+            "event": 9,
+            "name": "SELECT_OPTION_595013",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_595014",
+            "condition": "condition_EVENT_SELECT_OPTION_595014",
+            "config_id": 1595014,
+            "event": 9,
+            "name": "SELECT_OPTION_595014",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_595015",
+            "condition": "",
+            "config_id": 1595015,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_595015",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_BLOSSOM_PROGRESS_FINISH_595016",
+            "condition": "",
+            "config_id": 1595016,
+            "event": 39,
+            "name": "BLOSSOM_PROGRESS_FINISH_595016",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_595017",
+            "condition": "",
+            "config_id": 1595017,
+            "event": 29,
+            "name": "GROUP_LOAD_595017",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "GroupCompletion",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

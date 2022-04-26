@@ -1,0 +1,140 @@
+{
+    "action_EVENT_GADGET_CREATE_10004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_10006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_10007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_10008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_10004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_10006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_10007": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 10001,
+            "gadget_id": 70360170,
+            "level": 1,
+            "pos": {
+                "x": 13.687,
+                "y": -0.13,
+                "z": -13.49
+            },
+            "rot": {
+                "x": 0,
+                "y": 180,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 10002,
+            "gadget_id": 70360001,
+            "level": 1,
+            "pos": {
+                "x": 13.687,
+                "y": 0.24,
+                "z": -13.49
+            },
+            "rot": {
+                "x": 0,
+                "y": 90,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 10005,
+            "pos": {
+                "x": -1.628,
+                "y": 0.938,
+                "z": -22.153
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                10001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                10005
+            ],
+            "triggers": [
+                "GADGET_CREATE_10004",
+                "ENTER_REGION_10005",
+                "SELECT_OPTION_10006",
+                "SELECT_OPTION_10007",
+                "TIMER_EVENT_10008"
+            ]
+        },
+        {
+            "gadgets": [
+                10002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_CREATE_10004",
+            "condition": "condition_EVENT_GADGET_CREATE_10004",
+            "config_id": 1010004,
+            "event": 6,
+            "name": "GADGET_CREATE_10004",
+            "source": ""
+        },
+        {
+            "action": "",
+            "condition": "",
+            "config_id": 1010005,
+            "event": 4,
+            "name": "ENTER_REGION_10005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_10006",
+            "condition": "condition_EVENT_SELECT_OPTION_10006",
+            "config_id": 1010006,
+            "event": 9,
+            "name": "SELECT_OPTION_10006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_10007",
+            "condition": "condition_EVENT_SELECT_OPTION_10007",
+            "config_id": 1010007,
+            "event": 9,
+            "name": "SELECT_OPTION_10007",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_10008",
+            "condition": "",
+            "config_id": 1010008,
+            "event": 15,
+            "name": "TIMER_EVENT_10008",
+            "source": "rotationtime",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

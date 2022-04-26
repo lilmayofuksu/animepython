@@ -1,0 +1,131 @@
+{
+    "action_EVENT_ANY_MONSTER_LIVE_2008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_FAIL_2003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_DUNGEON_ALL_AVATAR_DIE_2004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_LIVE_2008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_DUNGEON_ALL_AVATAR_DIE_2004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 2002,
+            "gadget_id": 70900205,
+            "level": 1,
+            "pos": {
+                "x": -1.674,
+                "y": -2.446,
+                "z": -5.656
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2005,
+            "gadget_id": 44000006,
+            "level": 1,
+            "pos": {
+                "x": 0,
+                "y": 0,
+                "z": 19
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 2001,
+            "level": 1,
+            "monster_id": 20040102,
+            "pos": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "special_name_id": 10020,
+            "title_id": 10004
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                2002,
+                2005
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                2002
+            ],
+            "monsters": [
+                2001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "CHALLENGE_FAIL_2003",
+                "DUNGEON_ALL_AVATAR_DIE_2004",
+                "ANY_MONSTER_LIVE_2008"
+            ]
+        },
+        {
+            "gadgets": [
+                2002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_2003",
+            "condition": "",
+            "config_id": 1002003,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_2003",
+            "source": "1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_DUNGEON_ALL_AVATAR_DIE_2004",
+            "condition": "condition_EVENT_DUNGEON_ALL_AVATAR_DIE_2004",
+            "config_id": 1002004,
+            "event": 60,
+            "name": "DUNGEON_ALL_AVATAR_DIE_2004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_LIVE_2008",
+            "condition": "condition_EVENT_ANY_MONSTER_LIVE_2008",
+            "config_id": 1002008,
+            "event": 11,
+            "name": "ANY_MONSTER_LIVE_2008",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,134 @@
+{
+    "action_EVENT_ENTER_REGION_190001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_190001": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 300,
+            "config_id": 190002,
+            "gadget_id": 70360001,
+            "level": 32,
+            "pos": {
+                "x": 433.643,
+                "y": 380.671,
+                "z": 530.682
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 190003,
+            "gadget_id": 70360001,
+            "level": 32,
+            "pos": {
+                "x": 676.583,
+                "y": 420.036,
+                "z": 762.082
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 300,
+            "config_id": 190001,
+            "height": 24.178,
+            "point_array": [
+                {
+                    "x": 683.6,
+                    "y": 769.081
+                },
+                {
+                    "x": 673.964,
+                    "y": 774.612
+                },
+                {
+                    "x": 662.87,
+                    "y": 772.04
+                },
+                {
+                    "x": 660.747,
+                    "y": 760.25
+                },
+                {
+                    "x": 664.575,
+                    "y": 750.482
+                },
+                {
+                    "x": 670.695,
+                    "y": 746.975
+                },
+                {
+                    "x": 678.639,
+                    "y": 749.596
+                },
+                {
+                    "x": 685.898,
+                    "y": 758.95
+                }
+            ],
+            "pos": {
+                "x": 673.323,
+                "y": 432.289,
+                "z": 760.793
+            },
+            "shape": 4
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                190002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                190003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                190001
+            ],
+            "triggers": [
+                "ENTER_REGION_190001"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_190001",
+            "condition": "condition_EVENT_ENTER_REGION_190001",
+            "config_id": 1190001,
+            "event": 4,
+            "name": "ENTER_REGION_190001",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "bell",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "action_EVENT_CHALLENGE_FAIL_926002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_926004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_MONSTER_BATTLE_926003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_926005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_926007": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 2
+    },
+    "monsters": [
+        {
+            "area_id": 4,
+            "config_id": 926001,
+            "drop_id": 1000100,
+            "level": 26,
+            "monster_id": 24010101,
+            "pos": {
+                "x": 2614.607,
+                "y": 270.359,
+                "z": -425.769
+            },
+            "pose_id": 101,
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [
+                926001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "CHALLENGE_FAIL_926002",
+                "MONSTER_BATTLE_926003",
+                "CHALLENGE_SUCCESS_926004",
+                "QUEST_FINISH_926005"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_926007"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_926002",
+            "condition": "",
+            "config_id": 1926002,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_926002",
+            "source": "180",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_MONSTER_BATTLE_926003",
+            "condition": "",
+            "config_id": 1926003,
+            "event": 22,
+            "name": "MONSTER_BATTLE_926003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_926004",
+            "condition": "",
+            "config_id": 1926004,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_926004",
+            "source": "180",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_926005",
+            "condition": "",
+            "config_id": 1926005,
+            "event": 21,
+            "name": "QUEST_FINISH_926005",
+            "source": "1908715",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_926007",
+            "condition": "",
+            "config_id": 1926007,
+            "event": 28,
+            "name": "QUEST_START_926007",
+            "source": "1908706",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

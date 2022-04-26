@@ -1,0 +1,132 @@
+{
+    "action_EVENT_ENTER_REGION_902001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_902006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_902001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_902006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 5,
+            "config_id": 902003,
+            "gadget_id": 70900201,
+            "level": 16,
+            "pos": {
+                "x": 1760,
+                "y": 244.558,
+                "z": 150
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 5,
+            "config_id": 902001,
+            "pos": {
+                "x": 1777.958,
+                "y": 200.496,
+                "z": 132.884
+            },
+            "radius": 60,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                902001
+            ],
+            "triggers": [
+                "ENTER_REGION_902001",
+                "VARIABLE_CHANGE_902006"
+            ]
+        },
+        {
+            "gadgets": [
+                902003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_902001",
+            "condition": "condition_EVENT_ENTER_REGION_902001",
+            "config_id": 1902001,
+            "event": 4,
+            "name": "ENTER_REGION_902001",
+            "source": "1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_902006",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_902006",
+            "config_id": 1902006,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_902006",
+            "source": "133102584",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "902001",
+            "no_refresh": false,
+            "value": 1
+        },
+        {
+            "configId": 2,
+            "name": "902002",
+            "no_refresh": false,
+            "value": 1
+        },
+        {
+            "configId": 3,
+            "name": "902004",
+            "no_refresh": false,
+            "value": 1
+        },
+        {
+            "configId": 4,
+            "name": "902005",
+            "no_refresh": false,
+            "value": 1
+        },
+        {
+            "configId": 5,
+            "name": "902006",
+            "no_refresh": false,
+            "value": 1
+        },
+        {
+            "configId": 6,
+            "name": "133102584",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

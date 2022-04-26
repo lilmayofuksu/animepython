@@ -1,0 +1,237 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_434009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_434009": "WARN: Lua function omitted from the dump",
+    "defs": {
+        "child_group": [],
+        "group_id": 133223434,
+        "hasChild": false,
+        "hasMultiStatues": false,
+        "isRandom": false,
+        "notifyQuest": true,
+        "selfSuiteId": 2,
+        "statuesMap": {
+            "10001": 2
+        }
+    },
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 434001,
+            "gadget_id": 70290160,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -6378.327,
+                "y": 200.667,
+                "z": -2903.831
+            },
+            "rot": {
+                "x": 358.776,
+                "y": 173.524,
+                "z": 356.907
+            },
+            "state": 201
+        }
+    ],
+    "garbages": {
+        "gadgets": [
+            {
+                "area_id": 18,
+                "config_id": 434002,
+                "gadget_id": 70330064,
+                "interact_id": 35,
+                "level": 33,
+                "pos": {
+                    "x": -6375.151,
+                    "y": 200.323,
+                    "z": -2904.269
+                },
+                "rot": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            {
+                "area_id": 18,
+                "config_id": 434004,
+                "explore": {
+                    "exp": 3,
+                    "name": "gather"
+                },
+                "gadget_id": 70500000,
+                "isOneoff": true,
+                "level": 33,
+                "persistent": true,
+                "point_type": 4005,
+                "pos": {
+                    "x": -6378.064,
+                    "y": 203.839,
+                    "z": -2918.497
+                },
+                "rot": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            {
+                "area_id": 18,
+                "config_id": 434005,
+                "gadget_id": 70900380,
+                "level": 33,
+                "pos": {
+                    "x": -6380.13,
+                    "y": 206.291,
+                    "z": -2906.004
+                },
+                "rot": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        ],
+        "regions": [
+            {
+                "area_id": 18,
+                "config_id": 434006,
+                "pos": {
+                    "x": -6376.936,
+                    "y": 200,
+                    "z": -2919.808
+                },
+                "radius": 20,
+                "shape": 1
+            }
+        ],
+        "triggers": [
+            {
+                "action": "action_EVENT_ENTER_REGION_434006",
+                "condition": "condition_EVENT_ENTER_REGION_434006",
+                "config_id": 1434006,
+                "event": 4,
+                "name": "ENTER_REGION_434006",
+                "source": ""
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 18,
+            "climate_area_id": 7,
+            "config_id": 434003,
+            "drop_id": 1000100,
+            "level": 33,
+            "monster_id": 20011101,
+            "pos": {
+                "x": -6381.176,
+                "y": 200,
+                "z": -2910.71
+            },
+            "rot": {
+                "x": 0,
+                "y": 40.539,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "climate_area_id": 7,
+            "config_id": 434007,
+            "drop_id": 1000100,
+            "level": 33,
+            "monster_id": 20011101,
+            "pos": {
+                "x": -6381.788,
+                "y": 201.162,
+                "z": -2900.085
+            },
+            "rot": {
+                "x": 0,
+                "y": 102.481,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "climate_area_id": 7,
+            "config_id": 434008,
+            "drop_id": 1000100,
+            "level": 33,
+            "monster_id": 20011101,
+            "pos": {
+                "x": -6372.152,
+                "y": 200.286,
+                "z": -2902.882
+            },
+            "rot": {
+                "x": 0,
+                "y": 269.983,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                434001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                434003,
+                434007,
+                434008
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_434009"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_434009",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_434009",
+            "config_id": 1434009,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_434009",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Seed",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "Notified",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "Finish",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

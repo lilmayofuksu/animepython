@@ -1,0 +1,144 @@
+{
+    "action_EVENT_GADGET_CREATE_503007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_503005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_503006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_503007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_503005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 2,
+            "config_id": 503001,
+            "gadget_id": 70300107,
+            "level": 32,
+            "persistent": true,
+            "pos": {
+                "x": 1251.409,
+                "y": 311.738,
+                "z": -1292.767
+            },
+            "rot": {
+                "x": 0,
+                "y": 292.723,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 2,
+            "config_id": 503002,
+            "gadget_id": 70300107,
+            "level": 32,
+            "persistent": true,
+            "pos": {
+                "x": 1252.398,
+                "y": 312.457,
+                "z": -1300.536
+            },
+            "rot": {
+                "x": 0,
+                "y": 68.467,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 503003,
+            "gadget_id": 70300107,
+            "level": 32,
+            "persistent": true,
+            "pos": {
+                "x": 1243.455,
+                "y": 312.178,
+                "z": -1296.031
+            },
+            "rot": {
+                "x": 0,
+                "y": 46.873,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 2,
+            "config_id": 503004,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u8499\u5fb7",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211111,
+            "isOneoff": true,
+            "level": 6,
+            "persistent": true,
+            "pos": {
+                "x": 1248.783,
+                "y": 312.206,
+                "z": -1296.456
+            },
+            "rot": {
+                "x": 5.356,
+                "y": 359.958,
+                "z": 359.105
+            },
+            "showcutscene": true
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                503001,
+                503002,
+                503003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_503005",
+                "GADGET_STATE_CHANGE_503006",
+                "GADGET_CREATE_503007"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_503005",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_503005",
+            "config_id": 1503005,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_503005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_503006",
+            "condition": "",
+            "config_id": 1503006,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_503006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_503007",
+            "condition": "condition_EVENT_GADGET_CREATE_503007",
+            "config_id": 1503007,
+            "event": 6,
+            "name": "GADGET_CREATE_503007",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "start",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

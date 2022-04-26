@@ -1,0 +1,93 @@
+{
+    "action_EVENT_GADGET_CREATE_85003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_85004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_85005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_85003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_85004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 85001,
+            "gadget_id": 70710132,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2457.851,
+                "y": 221.877,
+                "z": -1331.29
+            },
+            "rot": {
+                "x": 0,
+                "y": 318.084,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 85002,
+            "gadget_id": 70360001,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2457.851,
+                "y": 221.877,
+                "z": -1331.29
+            },
+            "rot": {
+                "x": 0,
+                "y": 318.084,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                85001,
+                85002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_85003",
+                "SELECT_OPTION_85004",
+                "TIMER_EVENT_85005"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_CREATE_85003",
+            "condition": "condition_EVENT_GADGET_CREATE_85003",
+            "config_id": 1085003,
+            "event": 6,
+            "name": "GADGET_CREATE_85003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_85004",
+            "condition": "condition_EVENT_SELECT_OPTION_85004",
+            "config_id": 1085004,
+            "event": 9,
+            "name": "SELECT_OPTION_85004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_85005",
+            "condition": "",
+            "config_id": 1085005,
+            "event": 15,
+            "name": "TIMER_EVENT_85005",
+            "source": "waitForRecharge"
+        }
+    ],
+    "variables": []
+}

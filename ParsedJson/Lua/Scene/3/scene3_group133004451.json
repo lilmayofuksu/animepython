@@ -1,0 +1,174 @@
+{
+    "action_EVENT_CHALLENGE_FAIL_451017": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_451016": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_451011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_451011": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "affix": [
+                1105
+            ],
+            "area_id": 3,
+            "config_id": 451006,
+            "drop_id": 1000100,
+            "level": 26,
+            "monster_id": 20010101,
+            "pos": {
+                "x": 2340.383,
+                "y": 261.908,
+                "z": -402.677
+            },
+            "pose_id": 201,
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "affix": [
+                1105
+            ],
+            "area_id": 3,
+            "config_id": 451007,
+            "drop_id": 1000100,
+            "level": 26,
+            "monster_id": 20010101,
+            "pos": {
+                "x": 2346.211,
+                "y": 263.726,
+                "z": -408.488
+            },
+            "pose_id": 201,
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "affix": [
+                1105
+            ],
+            "area_id": 3,
+            "config_id": 451008,
+            "drop_id": 1000100,
+            "level": 26,
+            "monster_id": 20010101,
+            "pos": {
+                "x": 2340.481,
+                "y": 261.951,
+                "z": -412.278
+            },
+            "pose_id": 201,
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "affix": [
+                1105
+            ],
+            "area_id": 3,
+            "config_id": 451009,
+            "drop_id": 1000100,
+            "level": 26,
+            "monster_id": 20010101,
+            "pos": {
+                "x": 2350.841,
+                "y": 264.988,
+                "z": -412.82
+            },
+            "pose_id": 201,
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 3,
+            "config_id": 451011,
+            "pos": {
+                "x": 2345.149,
+                "y": 263.384,
+                "z": -408.546
+            },
+            "radius": 25,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                451011
+            ],
+            "triggers": [
+                "ENTER_REGION_451011"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                451006,
+                451007,
+                451008,
+                451009
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "CHALLENGE_SUCCESS_451016",
+                "CHALLENGE_FAIL_451017"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_451011",
+            "condition": "condition_EVENT_ENTER_REGION_451011",
+            "config_id": 1451011,
+            "event": 4,
+            "name": "ENTER_REGION_451011",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_451016",
+            "condition": "",
+            "config_id": 1451016,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_451016",
+            "source": "666"
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_451017",
+            "condition": "",
+            "config_id": 1451017,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_451017",
+            "source": "666"
+        }
+    ],
+    "variables": []
+}

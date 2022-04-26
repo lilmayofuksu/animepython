@@ -1,0 +1,16 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.OneWay = 0
+L0_1.Reciprocate = 1
+L0_1.Loop = 2
+RouteType = L0_1
+L0_1 = {}
+L0_1.ROT_NONE = 0
+L0_1.ROT_ANGLE = 1
+L0_1.ROT_ROUND = 2
+RotType = L0_1
+L0_1 = {}
+L0_1.ROT_ANGLE_X = 0
+L0_1.ROT_ANGLE_Y = 1
+L0_1.ROT_ANGLE_Z = 2
+RotAngleType = L0_1

@@ -1,0 +1,176 @@
+{
+    "action_EVENT_GROUP_LOAD_191008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_OFFERING_LEVELUP_191002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_191007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_191009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_191005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_191006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 191001,
+            "gadget_id": 70290032,
+            "level": 30,
+            "offering_config": {
+                "offering_id": 1
+            },
+            "pos": {
+                "x": 1291,
+                "y": 297.5,
+                "z": -1049
+            },
+            "rot": {
+                "x": 0,
+                "y": 138.224,
+                "z": 0
+            },
+            "state": 204
+        },
+        {
+            "area_id": 10,
+            "config_id": 191003,
+            "gadget_id": 70310023,
+            "level": 30,
+            "pos": {
+                "x": 1290.454,
+                "y": 298.589,
+                "z": -1049.426
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 191004,
+            "gadget_id": 70290022,
+            "level": 30,
+            "pos": {
+                "x": 1288.98,
+                "y": 297.61,
+                "z": -1047.79
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 3,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                191004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "OFFERING_LEVELUP_191002",
+                "QUEST_START_191005",
+                "TIMER_EVENT_191006",
+                "QUEST_FINISH_191009"
+            ]
+        },
+        {
+            "gadgets": [
+                191001,
+                191003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "OFFERING_LEVELUP_191002",
+                "QUEST_FINISH_191007"
+            ]
+        },
+        {
+            "gadgets": [
+                191001,
+                191003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "OFFERING_LEVELUP_191002",
+                "GROUP_LOAD_191008"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_OFFERING_LEVELUP_191002",
+            "condition": "",
+            "config_id": 1191002,
+            "event": 57,
+            "name": "OFFERING_LEVELUP_191002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_191005",
+            "condition": "",
+            "config_id": 1191005,
+            "event": 28,
+            "name": "QUEST_START_191005",
+            "source": "7014118",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_191006",
+            "condition": "",
+            "config_id": 1191006,
+            "event": 15,
+            "name": "TIMER_EVENT_191006",
+            "source": "ice_destroy_delay",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_191007",
+            "condition": "",
+            "config_id": 1191007,
+            "event": 21,
+            "name": "QUEST_FINISH_191007",
+            "source": "7014118",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_191008",
+            "condition": "",
+            "config_id": 1191008,
+            "event": 29,
+            "name": "GROUP_LOAD_191008",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_191009",
+            "condition": "",
+            "config_id": 1191009,
+            "event": 21,
+            "name": "QUEST_FINISH_191009",
+            "source": "7014118",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "is_cs_finish",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

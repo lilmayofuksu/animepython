@@ -1,0 +1,275 @@
+{
+    "SLC_Active_Portal": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_19011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_19012": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_19013": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_19014": "WARN: Lua function omitted from the dump",
+    "action_EVENT_PLATFORM_REACH_POINT_19006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_19004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_19005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_19007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_19011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_19012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_19013": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_19014": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_PLATFORM_REACH_POINT_19006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_19004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_19005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 19001,
+            "gadget_id": 70800164,
+            "is_use_point_array": true,
+            "level": 1,
+            "pos": {
+                "x": 534.067,
+                "y": 279,
+                "z": 102
+            },
+            "rot": {
+                "x": 0,
+                "y": 269.1,
+                "z": 9.128
+            }
+        },
+        {
+            "config_id": 19002,
+            "gadget_id": 70800166,
+            "is_use_point_array": true,
+            "level": 1,
+            "pos": {
+                "x": 318.69,
+                "y": 200.915,
+                "z": 42.52
+            },
+            "rot": {
+                "x": 347.229,
+                "y": 20.623,
+                "z": 12.888
+            },
+            "worktop_config": {
+                "init_options": [
+                    752,
+                    753
+                ],
+                "is_persistent": true
+            }
+        },
+        {
+            "config_id": 19003,
+            "gadget_id": 70800172,
+            "level": 1,
+            "pos": {
+                "x": 360.438,
+                "y": 200.344,
+                "z": 72.218
+            },
+            "rot": {
+                "x": 0,
+                "y": 268.088,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 19008,
+            "gadget_id": 70800163,
+            "level": 1,
+            "pos": {
+                "x": 550.9,
+                "y": 279,
+                "z": 102
+            },
+            "rot": {
+                "x": 0,
+                "y": 269.1,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 19009,
+            "gadget_id": 70800140,
+            "level": 1,
+            "pos": {
+                "x": 359.569,
+                "y": 200.367,
+                "z": 72.25
+            },
+            "rot": {
+                "x": 0,
+                "y": 268.127,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 19010,
+            "gadget_id": 70800165,
+            "level": 1,
+            "pos": {
+                "x": 318.574,
+                "y": 200.84,
+                "z": 42.209
+            },
+            "rot": {
+                "x": 347.229,
+                "y": 20.623,
+                "z": 5.394
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 19011,
+            "pos": {
+                "x": 358.926,
+                "y": 200.141,
+                "z": 71.898
+            },
+            "radius": 15,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                19002,
+                19009,
+                19010
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                19011
+            ],
+            "triggers": [
+                "SELECT_OPTION_19004",
+                "SELECT_OPTION_19005",
+                "PLATFORM_REACH_POINT_19006",
+                "VARIABLE_CHANGE_19007",
+                "ENTER_REGION_19011",
+                "GADGET_CREATE_19012",
+                "GADGET_CREATE_19013",
+                "GADGET_CREATE_19014"
+            ]
+        },
+        {
+            "gadgets": [
+                19003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                19001,
+                19008
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_SELECT_OPTION_19004",
+            "condition": "condition_EVENT_SELECT_OPTION_19004",
+            "config_id": 1019004,
+            "event": 9,
+            "name": "SELECT_OPTION_19004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_19005",
+            "condition": "condition_EVENT_SELECT_OPTION_19005",
+            "config_id": 1019005,
+            "event": 9,
+            "name": "SELECT_OPTION_19005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_PLATFORM_REACH_POINT_19006",
+            "condition": "condition_EVENT_PLATFORM_REACH_POINT_19006",
+            "config_id": 1019006,
+            "event": 26,
+            "name": "PLATFORM_REACH_POINT_19006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_19007",
+            "condition": "",
+            "config_id": 1019007,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_19007",
+            "source": "time",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_19011",
+            "condition": "condition_EVENT_ENTER_REGION_19011",
+            "config_id": 1019011,
+            "event": 4,
+            "name": "ENTER_REGION_19011",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_19012",
+            "condition": "condition_EVENT_GADGET_CREATE_19012",
+            "config_id": 1019012,
+            "event": 6,
+            "name": "GADGET_CREATE_19012",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_19013",
+            "condition": "condition_EVENT_GADGET_CREATE_19013",
+            "config_id": 1019013,
+            "event": 6,
+            "name": "GADGET_CREATE_19013",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_19014",
+            "condition": "condition_EVENT_GADGET_CREATE_19014",
+            "config_id": 1019014,
+            "event": 6,
+            "name": "GADGET_CREATE_19014",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "time",
+            "no_refresh": true,
+            "value": 3
+        },
+        {
+            "configId": 2,
+            "name": "min_time",
+            "no_refresh": true,
+            "value": 1
+        },
+        {
+            "configId": 3,
+            "name": "max_time",
+            "no_refresh": true,
+            "value": 4
+        }
+    ]
+}

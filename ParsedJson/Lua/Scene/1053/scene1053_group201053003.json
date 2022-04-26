@@ -1,0 +1,173 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_3001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_MONSTER_DIE_3007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_3009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_3001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_3007": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 3008,
+            "gadget_id": 70300116,
+            "level": 1,
+            "pos": {
+                "x": -140.874,
+                "y": 37.216,
+                "z": 77.111
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 3002,
+            "level": 1,
+            "monster_id": 20011001,
+            "pos": {
+                "x": -142.778,
+                "y": 37.24,
+                "z": 84.021
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 3003,
+            "level": 1,
+            "monster_id": 20011001,
+            "pos": {
+                "x": -132.674,
+                "y": 37.242,
+                "z": 86.156
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 3004,
+            "level": 1,
+            "monster_id": 20011001,
+            "pos": {
+                "x": -139.702,
+                "y": 37.234,
+                "z": 80.02
+            },
+            "rot": {
+                "x": 0,
+                "y": 139.798,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 3005,
+            "level": 1,
+            "monster_id": 20011001,
+            "pos": {
+                "x": -133.394,
+                "y": 37.259,
+                "z": 81.889
+            },
+            "rot": {
+                "x": 0,
+                "y": 175.192,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 3006,
+            "level": 1,
+            "monster_id": 20011001,
+            "pos": {
+                "x": -140.025,
+                "y": 37.231,
+                "z": 87.754
+            },
+            "rot": {
+                "x": 0,
+                "y": 143.057,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                3008
+            ],
+            "monsters": [
+                3002,
+                3003,
+                3004,
+                3005,
+                3006
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_3001",
+                "TIMER_EVENT_3009"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_3007"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_3001",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_3001",
+            "config_id": 1003001,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_3001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_3007",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_3007",
+            "config_id": 1003007,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_3007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_3009",
+            "condition": "",
+            "config_id": 1003009,
+            "event": 15,
+            "name": "TIMER_EVENT_3009",
+            "source": "waitTillWaterRaise"
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,92 @@
+{
+    "action_EVENT_GROUP_LOAD_272004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_272003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_272004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_272003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 17,
+            "config_id": 272001,
+            "gadget_id": 70330064,
+            "interact_id": 35,
+            "level": 30,
+            "pos": {
+                "x": -3826.062,
+                "y": 108.544,
+                "z": -907.491
+            },
+            "rot": {
+                "x": 8.833,
+                "y": 61.869,
+                "z": 3.318
+            },
+            "state": 202
+        },
+        {
+            "area_id": 17,
+            "config_id": 272002,
+            "gadget_id": 70330090,
+            "level": 30,
+            "pos": {
+                "x": -3824.984,
+                "y": 107.874,
+                "z": -886.774
+            },
+            "rot": {
+                "x": 1.917,
+                "y": 289.866,
+                "z": 2.594
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                272001,
+                272002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_272003",
+                "GROUP_LOAD_272004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_272003",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_272003",
+            "config_id": 1272003,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_272003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_272004",
+            "condition": "condition_EVENT_GROUP_LOAD_272004",
+            "config_id": 1272004,
+            "event": 29,
+            "name": "GROUP_LOAD_272004",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "GadgetState",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

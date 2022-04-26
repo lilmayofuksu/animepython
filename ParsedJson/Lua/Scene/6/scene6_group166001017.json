@@ -1,0 +1,169 @@
+{
+    "action_EVENT_ENTER_REGION_17004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_17008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_MONSTER_BATTLE_17006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_17005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_17004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_17008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_MONSTER_BATTLE_17006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 300,
+            "config_id": 17001,
+            "gadget_id": 70360089,
+            "level": 1,
+            "pos": {
+                "x": 924.659,
+                "y": 1093.891,
+                "z": 943.522
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 17002,
+            "gadget_id": 70290017,
+            "level": 1,
+            "pos": {
+                "x": 924.696,
+                "y": 1093.856,
+                "z": 943.381
+            },
+            "rot": {
+                "x": 279.549,
+                "y": 210.092,
+                "z": 171.685
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 300,
+            "config_id": 17003,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "level": 36,
+            "monster_id": 26040102,
+            "pos": {
+                "x": 927.463,
+                "y": 1093.708,
+                "z": 955.462
+            },
+            "rot": {
+                "x": 0,
+                "y": 123.758,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [
+        {
+            "area_id": 300,
+            "config_id": 17007,
+            "npc_id": 20539,
+            "pos": {
+                "x": 924.739,
+                "y": 1093.974,
+                "z": 943.709
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "regions": [
+        {
+            "area_id": 300,
+            "config_id": 17004,
+            "pos": {
+                "x": 931.559,
+                "y": 1093.234,
+                "z": 946.57
+            },
+            "radius": 20,
+            "shape": 1
+        },
+        {
+            "area_id": 300,
+            "config_id": 17008,
+            "pos": {
+                "x": 923.524,
+                "y": 1095.392,
+                "z": 962.04
+            },
+            "radius": 10,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                17001,
+                17002
+            ],
+            "monsters": [
+                17003
+            ],
+            "npcs": [
+                17007
+            ],
+            "rand_weight": 100,
+            "regions": [
+                17004,
+                17008
+            ],
+            "triggers": [
+                "ENTER_REGION_17004",
+                "QUEST_FINISH_17005",
+                "MONSTER_BATTLE_17006",
+                "ENTER_REGION_17008"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_17004",
+            "condition": "condition_EVENT_ENTER_REGION_17004",
+            "config_id": 1017004,
+            "event": 4,
+            "name": "ENTER_REGION_17004",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_17005",
+            "condition": "",
+            "config_id": 1017005,
+            "event": 21,
+            "name": "QUEST_FINISH_17005",
+            "source": "7103706"
+        },
+        {
+            "action": "action_EVENT_MONSTER_BATTLE_17006",
+            "condition": "condition_EVENT_MONSTER_BATTLE_17006",
+            "config_id": 1017006,
+            "event": 22,
+            "name": "MONSTER_BATTLE_17006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_17008",
+            "condition": "condition_EVENT_ENTER_REGION_17008",
+            "config_id": 1017008,
+            "event": 4,
+            "name": "ENTER_REGION_17008",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

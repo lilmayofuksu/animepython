@@ -1,0 +1,86 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_1002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_1003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_1004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_1002": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 1001,
+            "level": 1,
+            "monster_id": 29060201,
+            "pos": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rot": {
+                "x": 0,
+                "y": 171.52,
+                "z": 0
+            },
+            "special_name_id": 11,
+            "title_id": 153
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_1003",
+                "TIMER_EVENT_1004"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                1001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_1002",
+                "QUEST_START_1003",
+                "TIMER_EVENT_1004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_1002",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_1002",
+            "config_id": 1001002,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_1002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_START_1003",
+            "condition": "",
+            "config_id": 1001003,
+            "event": 28,
+            "name": "QUEST_START_1003",
+            "source": "1204112",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_1004",
+            "condition": "",
+            "config_id": 1001004,
+            "event": 15,
+            "name": "TIMER_EVENT_1004",
+            "source": "playreminder"
+        }
+    ],
+    "variables": []
+}

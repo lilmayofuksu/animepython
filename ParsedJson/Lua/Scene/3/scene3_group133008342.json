@@ -1,0 +1,92 @@
+{
+    "action_EVENT_GROUP_LOAD_342004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_342002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_342004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 342001,
+            "gadget_id": 70360120,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1030.76,
+                "y": 343.174,
+                "z": -1016.951
+            },
+            "rot": {
+                "x": 0,
+                "y": 339.788,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 342003,
+            "gadget_id": 70360118,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 888.825,
+                "y": 289.016,
+                "z": -984.505
+            },
+            "rot": {
+                "x": 0,
+                "y": 73.827,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                342001,
+                342003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_342002",
+                "GROUP_LOAD_342004"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_342002",
+            "condition": "",
+            "config_id": 1342002,
+            "event": 21,
+            "name": "QUEST_FINISH_342002",
+            "source": "7014119",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_342004",
+            "condition": "condition_EVENT_GROUP_LOAD_342004",
+            "config_id": 1342004,
+            "event": 29,
+            "name": "GROUP_LOAD_342004",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

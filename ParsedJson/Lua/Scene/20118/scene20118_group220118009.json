@@ -1,0 +1,96 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_9004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_MONSTER_BATTLE_9003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_9004": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 9001,
+            "disableWander": true,
+            "level": 1,
+            "monster_id": 25080101,
+            "pos": {
+                "x": -11.955,
+                "y": 54.563,
+                "z": -72.259
+            },
+            "pose_id": 1004,
+            "rot": {
+                "x": 0,
+                "y": 272.771,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 9002,
+            "disableWander": true,
+            "level": 1,
+            "monster_id": 25080101,
+            "pos": {
+                "x": -11.992,
+                "y": 54.544,
+                "z": -75.813
+            },
+            "pose_id": 1006,
+            "rot": {
+                "x": 0,
+                "y": 271.741,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [
+                9001,
+                9002
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "MONSTER_BATTLE_9003",
+                "ANY_MONSTER_DIE_9004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_MONSTER_BATTLE_9003",
+            "condition": "",
+            "config_id": 1009003,
+            "event": 22,
+            "name": "MONSTER_BATTLE_9003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_9004",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_9004",
+            "config_id": 1009004,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_9004",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "isEnterBattle",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "isAllKill",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

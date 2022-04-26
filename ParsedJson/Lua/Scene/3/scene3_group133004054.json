@@ -1,0 +1,182 @@
+{
+    "action_EVENT_QUEST_FINISH_54005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_54008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_54009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_FINISH_54005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_FINISH_54008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_FINISH_54009": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 54001,
+            "gadget_id": 70710564,
+            "level": 1,
+            "pos": {
+                "x": 1197.887,
+                "y": 374.35,
+                "z": -799.1
+            },
+            "rot": {
+                "x": 0,
+                "y": 180,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 54002,
+            "gadget_id": 70710545,
+            "isOneoff": true,
+            "level": 1,
+            "pos": {
+                "x": 1198.241,
+                "y": 374.235,
+                "z": -798.015
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 54003,
+            "gadget_id": 70710563,
+            "level": 1,
+            "pos": {
+                "x": 1197.301,
+                "y": 374.21,
+                "z": -792.03
+            },
+            "rot": {
+                "x": 0,
+                "y": 90,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 54004,
+            "gadget_id": 70710564,
+            "level": 1,
+            "pos": {
+                "x": 1192.783,
+                "y": 374.21,
+                "z": -794.439
+            },
+            "rot": {
+                "x": 0,
+                "y": 149.853,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 54006,
+            "gadget_id": 70710573,
+            "isOneoff": true,
+            "level": 1,
+            "pos": {
+                "x": 1193.427,
+                "y": 374.21,
+                "z": -793.924
+            },
+            "rot": {
+                "x": 0,
+                "y": 329.853,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 54007,
+            "gadget_id": 70710574,
+            "isOneoff": true,
+            "level": 1,
+            "pos": {
+                "x": 1198.113,
+                "y": 374.163,
+                "z": -790.51
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                54001,
+                54003,
+                54004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                54001,
+                54002,
+                54003,
+                54004,
+                54006,
+                54007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_54005",
+                "QUEST_FINISH_54008",
+                "QUEST_FINISH_54009"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_54005",
+            "condition": "condition_EVENT_QUEST_FINISH_54005",
+            "config_id": 1054005,
+            "event": 21,
+            "name": "QUEST_FINISH_54005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_54008",
+            "condition": "condition_EVENT_QUEST_FINISH_54008",
+            "config_id": 1054008,
+            "event": 21,
+            "name": "QUEST_FINISH_54008",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_54009",
+            "condition": "condition_EVENT_QUEST_FINISH_54009",
+            "config_id": 1054009,
+            "event": 21,
+            "name": "QUEST_FINISH_54009",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

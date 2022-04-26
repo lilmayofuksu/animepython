@@ -1,0 +1,139 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
+L0_1 = {}
+L1_1 = {}
+L1_1.config_id = 2001
+L1_1.monster_id = 20010604
+L2_1 = {}
+L2_1.x = 1809.915
+L2_1.y = 234.393
+L2_1.z = -846.533
+L1_1.pos = L2_1
+L2_1 = {}
+L2_1.x = 0.0
+L2_1.y = 32.17
+L2_1.z = 0.0
+L1_1.rot = L2_1
+L1_1.level = 1
+L2_1 = {}
+L2_1.config_id = 2002
+L2_1.monster_id = 20010604
+L3_1 = {}
+L3_1.x = 1813.654
+L3_1.y = 234.416
+L3_1.z = -846.106
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 0.0
+L3_1.y = 329.14
+L3_1.z = 0.0
+L2_1.rot = L3_1
+L2_1.level = 1
+L3_1 = {}
+L3_1.config_id = 2003
+L3_1.monster_id = 20011304
+L4_1 = {}
+L4_1.x = 1809.989
+L4_1.y = 234.643
+L4_1.z = -847.595
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 0.0
+L4_1.y = 13.29
+L4_1.z = 0.0
+L3_1.rot = L4_1
+L3_1.level = 1
+L4_1 = {}
+L4_1.config_id = 2004
+L4_1.monster_id = 20011304
+L5_1 = {}
+L5_1.x = 1811.792
+L5_1.y = 234.55
+L5_1.z = -846.616
+L4_1.pos = L5_1
+L5_1 = {}
+L5_1.x = 0.0
+L5_1.y = 351.88
+L5_1.z = 0.0
+L4_1.rot = L5_1
+L4_1.level = 1
+L0_1[1] = L1_1
+L0_1[2] = L2_1
+L0_1[3] = L3_1
+L0_1[4] = L4_1
+monsters = L0_1
+L0_1 = {}
+npcs = L0_1
+L0_1 = {}
+gadgets = L0_1
+L0_1 = {}
+regions = L0_1
+L0_1 = {}
+L1_1 = {}
+L1_1.name = "ANY_MONSTER_DIE_2005"
+L2_1 = EventType
+L2_1 = L2_1.EVENT_ANY_MONSTER_DIE
+L1_1.event = L2_1
+L1_1.source = ""
+L1_1.condition = "condition_EVENT_ANY_MONSTER_DIE_2005"
+L1_1.action = "action_EVENT_ANY_MONSTER_DIE_2005"
+L0_1[1] = L1_1
+triggers = L0_1
+L0_1 = {}
+variables = L0_1
+L0_1 = {}
+L0_1.suite = 1
+L0_1.end_suite = 0
+L0_1.rand_suite = false
+init_config = L0_1
+L0_1 = {}
+L1_1 = {}
+L2_1 = {}
+L3_1 = 2001
+L4_1 = 2002
+L5_1 = 2003
+L6_1 = 2004
+L2_1[1] = L3_1
+L2_1[2] = L4_1
+L2_1[3] = L5_1
+L2_1[4] = L6_1
+L1_1.monsters = L2_1
+L2_1 = {}
+L1_1.gadgets = L2_1
+L2_1 = {}
+L1_1.regions = L2_1
+L2_1 = {}
+L3_1 = "ANY_MONSTER_DIE_2005"
+L2_1[1] = L3_1
+L1_1.triggers = L2_1
+L1_1.rand_weight = 100
+L0_1[1] = L1_1
+suites = L0_1
+function L0_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.GetGroupMonsterCount
+  L3_2 = A0_2
+  L2_2 = L2_2(L3_2)
+  if L2_2 ~= 0 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_ANY_MONSTER_DIE_2005 = L0_1
+function L0_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.AddQuestProgress
+  L3_2 = A0_2
+  L4_2 = "3050020021"
+  L2_2 = L2_2(L3_2, L4_2)
+  if 0 ~= L2_2 then
+    L2_2 = -1
+    return L2_2
+  end
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_ANY_MONSTER_DIE_2005 = L0_1

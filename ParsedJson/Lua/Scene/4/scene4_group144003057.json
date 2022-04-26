@@ -1,0 +1,142 @@
+{
+    "MovePlatform": "WARN: Lua function omitted from the dump",
+    "action_EVENT_AVATAR_NEAR_PLATFORM_57003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_57004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_PLATFORM_REACH_POINT_57005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_AVATAR_NEAR_PLATFORM_57003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_57004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_PLATFORM_REACH_POINT_57005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 103,
+            "chest_drop_id": 1002000,
+            "config_id": 57001,
+            "drop_count": 1,
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70210105,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -556.091,
+                "y": 120,
+                "z": 907.2
+            },
+            "rot": {
+                "x": 0,
+                "y": 235.625,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 103,
+            "config_id": 57002,
+            "gadget_id": 70950081,
+            "is_use_point_array": true,
+            "level": 1,
+            "pos": {
+                "x": -574.1,
+                "y": 120,
+                "z": 806.137
+            },
+            "rot": {
+                "x": 0,
+                "y": 235.625,
+                "z": 0
+            },
+            "start_route": false
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 103,
+            "config_id": 57004,
+            "pos": {
+                "x": -574.1,
+                "y": 120,
+                "z": 806.137
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                57002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                57004
+            ],
+            "triggers": [
+                "AVATAR_NEAR_PLATFORM_57003",
+                "ENTER_REGION_57004",
+                "PLATFORM_REACH_POINT_57005"
+            ]
+        },
+        {
+            "gadgets": [
+                57001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_AVATAR_NEAR_PLATFORM_57003",
+            "condition": "condition_EVENT_AVATAR_NEAR_PLATFORM_57003",
+            "config_id": 1057003,
+            "event": 25,
+            "name": "AVATAR_NEAR_PLATFORM_57003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_57004",
+            "condition": "condition_EVENT_ENTER_REGION_57004",
+            "config_id": 1057004,
+            "event": 4,
+            "name": "ENTER_REGION_57004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_PLATFORM_REACH_POINT_57005",
+            "condition": "condition_EVENT_PLATFORM_REACH_POINT_57005",
+            "config_id": 1057005,
+            "event": 26,
+            "name": "PLATFORM_REACH_POINT_57005",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "currentPathNode",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "isReachGoal",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

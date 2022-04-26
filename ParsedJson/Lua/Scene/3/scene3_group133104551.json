@@ -1,0 +1,150 @@
+{
+    "action_EVENT_ENTER_REGION_551008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_551003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_551004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_551008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_551003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_551004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 6,
+            "config_id": 551001,
+            "gadget_id": 70360001,
+            "isOneoff": true,
+            "level": 19,
+            "persistent": true,
+            "pos": {
+                "x": 337.165,
+                "y": 298.618,
+                "z": 725.747
+            },
+            "rot": {
+                "x": 0,
+                "y": 29.62,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 6,
+            "chest_drop_id": 2000500,
+            "config_id": 551002,
+            "drop_count": 1,
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211121,
+            "isOneoff": true,
+            "level": 16,
+            "persistent": true,
+            "pos": {
+                "x": 337.53,
+                "y": 298.057,
+                "z": 725.692
+            },
+            "rot": {
+                "x": 8.528,
+                "y": 36.932,
+                "z": 351.584
+            },
+            "showcutscene": true
+        }
+    ],
+    "init_config": {
+        "end_suite": 3,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 6,
+            "config_id": 551008,
+            "pos": {
+                "x": 336.73,
+                "y": 300.72,
+                "z": 726.157
+            },
+            "radius": 15,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                551001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                551008
+            ],
+            "triggers": [
+                "GADGET_CREATE_551003",
+                "SELECT_OPTION_551004",
+                "ENTER_REGION_551008"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                551002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_CREATE_551003",
+            "condition": "condition_EVENT_GADGET_CREATE_551003",
+            "config_id": 1551003,
+            "event": 6,
+            "name": "GADGET_CREATE_551003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_551004",
+            "condition": "condition_EVENT_SELECT_OPTION_551004",
+            "config_id": 1551004,
+            "event": 9,
+            "name": "SELECT_OPTION_551004",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_551008",
+            "condition": "condition_EVENT_ENTER_REGION_551008",
+            "config_id": 1551008,
+            "event": 4,
+            "name": "ENTER_REGION_551008",
+            "source": "1"
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "wishIndex",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "isActive",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

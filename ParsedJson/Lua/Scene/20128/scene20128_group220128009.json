@@ -1,0 +1,115 @@
+{
+    "action_EVENT_ENTER_REGION_9002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_9005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_9004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_9002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_9005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_9004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 9001,
+            "gadget_id": 70800213,
+            "level": 1,
+            "pos": {
+                "x": 81.092,
+                "y": -216.112,
+                "z": -44.989
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 9003,
+            "gadget_id": 70360001,
+            "level": 1,
+            "pos": {
+                "x": 81.135,
+                "y": -216.112,
+                "z": -44.285
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 9002,
+            "pos": {
+                "x": 80.909,
+                "y": -216.095,
+                "z": -44.473
+            },
+            "radius": 5,
+            "shape": 1
+        },
+        {
+            "config_id": 9005,
+            "pos": {
+                "x": 78.03,
+                "y": -216.095,
+                "z": -41.237
+            },
+            "radius": 15,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                9001,
+                9003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                9002,
+                9005
+            ],
+            "triggers": [
+                "ENTER_REGION_9002",
+                "SELECT_OPTION_9004",
+                "ENTER_REGION_9005"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_9002",
+            "condition": "condition_EVENT_ENTER_REGION_9002",
+            "config_id": 1009002,
+            "event": 4,
+            "name": "ENTER_REGION_9002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_9004",
+            "condition": "condition_EVENT_SELECT_OPTION_9004",
+            "config_id": 1009004,
+            "event": 9,
+            "name": "SELECT_OPTION_9004",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_9005",
+            "condition": "condition_EVENT_ENTER_REGION_9005",
+            "config_id": 1009005,
+            "event": 4,
+            "name": "ENTER_REGION_9005",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

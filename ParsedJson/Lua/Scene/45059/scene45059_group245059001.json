@@ -1,0 +1,157 @@
+{
+    "airwall_graph": [
+        {
+            "airwall_suite": 0,
+            "next_room": 0
+        }
+    ],
+    "defs": {
+        "connect_region": 1003,
+        "is_offical": true,
+        "startpoint": 1001,
+        "synchronizer": 1005
+    },
+    "gadgets": [
+        {
+            "config_id": 1001,
+            "gadget_id": 70350353,
+            "level": 1,
+            "pos": {
+                "x": -0.5,
+                "y": 31,
+                "z": -2.537
+            },
+            "rot": {
+                "x": 0,
+                "y": 90,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 1005,
+            "gadget_id": 70350430,
+            "level": 1,
+            "pos": {
+                "x": -7.72,
+                "y": 43,
+                "z": -2.449
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "garbages": {
+        "gadgets": [
+            {
+                "config_id": 1002,
+                "gadget_id": 70360002,
+                "level": 1,
+                "pos": {
+                    "x": -2.487,
+                    "y": 31,
+                    "z": 2.536
+                },
+                "rot": {
+                    "x": 0,
+                    "y": 180,
+                    "z": 0
+                }
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "offical_settings": {
+        "coins_collect": 40,
+        "coins_max": 70,
+        "editors": [
+            1002
+        ],
+        "has_dest": 1,
+        "max_lives": 10,
+        "time": 600
+    },
+    "points": [
+        {
+            "config_id": 1004,
+            "pos": {
+                "x": -0.571,
+                "y": 31.432,
+                "z": -2.69
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "regions": [
+        {
+            "config_id": 1003,
+            "pos": {
+                "x": 9.562,
+                "y": 5.627,
+                "z": 14.9
+            },
+            "radius": 200,
+            "shape": 1
+        },
+        {
+            "config_id": 1006,
+            "pos": {
+                "x": 9.562,
+                "y": 5.627,
+                "z": 14.9
+            },
+            "radius": 100,
+            "shape": 1
+        }
+    ],
+    "room_infos": [
+        {
+            "point_safe": 1004,
+            "region_enter": 0,
+            "region_self": 1006,
+            "region_wall_enter": 0,
+            "room_cur": 1,
+            "room_next": 0,
+            "wall_connect": 0
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                1001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                1003,
+                1006
+            ],
+            "triggers": [
+                "ENTER_REGION_1003"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "",
+            "condition": "",
+            "config_id": 1001003,
+            "event": 4,
+            "name": "ENTER_REGION_1003",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

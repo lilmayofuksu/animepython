@@ -1,0 +1,16 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.Show = 1
+L0_1.Anger = 2
+L0_1.Domangic = 3
+L0_1.Guide = 4
+L0_1.Hope = 5
+L0_1.Wave = 6
+L0_1.ShowMove = 7
+PaimonSkill = L0_1
+L0_1 = {}
+L0_1.SelfTick = 1
+L0_1.DevUI = 2
+L0_1.Task = 3
+L0_1.Navigation = 4
+PaimonRequestFrom = L0_1

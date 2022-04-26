@@ -1,0 +1,174 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_243008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_243010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_243005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_243006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_243007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_243008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_243010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_243005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_243006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 300,
+            "config_id": 243002,
+            "gadget_id": 70290276,
+            "level": 32,
+            "persistent": true,
+            "pos": {
+                "x": 910.107,
+                "y": 773.902,
+                "z": 302.125
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 243003,
+            "gadget_id": 70290204,
+            "level": 32,
+            "persistent": true,
+            "pos": {
+                "x": 910.171,
+                "y": 748.667,
+                "z": 301.944
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 243004,
+            "gadget_id": 70290233,
+            "level": 32,
+            "persistent": true,
+            "pos": {
+                "x": 911.142,
+                "y": 748.547,
+                "z": 307.069
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 300,
+            "config_id": 243001,
+            "drop_tag": "\u9a97\u9a97\u82b1",
+            "level": 36,
+            "monster_id": 26010301,
+            "pos": {
+                "x": 907.452,
+                "y": 748.835,
+                "z": 301.047
+            },
+            "rot": {
+                "x": 0,
+                "y": 84.22,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 300,
+            "config_id": 243010,
+            "pos": {
+                "x": 909.082,
+                "y": 750.328,
+                "z": 302.085
+            },
+            "radius": 7.5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                243002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                243010
+            ],
+            "triggers": [
+                "GADGET_CREATE_243005",
+                "GROUP_LOAD_243006",
+                "VARIABLE_CHANGE_243007",
+                "ANY_GADGET_DIE_243008",
+                "ENTER_REGION_243010"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_CREATE_243005",
+            "condition": "condition_EVENT_GADGET_CREATE_243005",
+            "config_id": 1243005,
+            "event": 6,
+            "name": "GADGET_CREATE_243005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_243006",
+            "condition": "condition_EVENT_GROUP_LOAD_243006",
+            "config_id": 1243006,
+            "event": 29,
+            "name": "GROUP_LOAD_243006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_243007",
+            "condition": "",
+            "config_id": 1243007,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_243007",
+            "source": "DropRockAbyssBulletTrigger"
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_243008",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_243008",
+            "config_id": 1243008,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_243008",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_243010",
+            "condition": "condition_EVENT_ENTER_REGION_243010",
+            "config_id": 1243010,
+            "event": 4,
+            "name": "ENTER_REGION_243010",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "drop",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

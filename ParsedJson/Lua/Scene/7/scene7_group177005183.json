@@ -1,0 +1,95 @@
+{
+    "action_EVENT_ENTER_REGION_183002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_183002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 210,
+            "config_id": 183001,
+            "gadget_id": 70290275,
+            "level": 36,
+            "pos": {
+                "x": 219.361,
+                "y": 315.359,
+                "z": 299.429
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 210,
+            "config_id": 183003,
+            "gadget_id": 70360286,
+            "level": 36,
+            "pos": {
+                "x": 226.053,
+                "y": 313.817,
+                "z": 295.925
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 210,
+            "config_id": 183002,
+            "pos": {
+                "x": 219.361,
+                "y": 315.359,
+                "z": 299.429
+            },
+            "radius": 2,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                183003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                183001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                183002
+            ],
+            "triggers": [
+                "ENTER_REGION_183002"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_183002",
+            "condition": "condition_EVENT_ENTER_REGION_183002",
+            "config_id": 1183002,
+            "event": 4,
+            "forbid_guest": false,
+            "name": "ENTER_REGION_183002",
+            "source": "1",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,166 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_6006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_6008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_6007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_6006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_6008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_6007": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 6003,
+            "gadget_id": 70690008,
+            "level": 1,
+            "pos": {
+                "x": -125.545,
+                "y": 44.391,
+                "z": 147.689
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 6004,
+            "gadget_id": 70360002,
+            "level": 1,
+            "pos": {
+                "x": -122.409,
+                "y": 47.044,
+                "z": 157.429
+            },
+            "rot": {
+                "x": 0,
+                "y": 104.789,
+                "z": 0
+            },
+            "state": 202
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 6001,
+            "disableWander": true,
+            "level": 1,
+            "monster_id": 25010301,
+            "pos": {
+                "x": -118.916,
+                "y": 47.058,
+                "z": 152.927
+            },
+            "rot": {
+                "x": 0,
+                "y": 30.788,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 6002,
+            "disableWander": true,
+            "level": 1,
+            "monster_id": 25010501,
+            "pos": {
+                "x": -120.495,
+                "y": 47.043,
+                "z": 154.986
+            },
+            "rot": {
+                "x": 0,
+                "y": 115.949,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 6009,
+            "disableWander": true,
+            "level": 1,
+            "monster_id": 25010501,
+            "pos": {
+                "x": -116.729,
+                "y": 47.041,
+                "z": 153.354
+            },
+            "rot": {
+                "x": 0,
+                "y": 297.86,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 6008,
+            "pos": {
+                "x": -125.387,
+                "y": 68.397,
+                "z": 148.13
+            },
+            "radius": 7,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                6004
+            ],
+            "monsters": [
+                6001,
+                6002,
+                6009
+            ],
+            "rand_weight": 100,
+            "regions": [
+                6008
+            ],
+            "triggers": [
+                "ANY_MONSTER_DIE_6006",
+                "SELECT_OPTION_6007",
+                "ENTER_REGION_6008"
+            ]
+        },
+        {
+            "gadgets": [
+                6003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_6006",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_6006",
+            "config_id": 1006006,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_6006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_6007",
+            "condition": "condition_EVENT_SELECT_OPTION_6007",
+            "config_id": 1006007,
+            "event": 9,
+            "name": "SELECT_OPTION_6007",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_6008",
+            "condition": "condition_EVENT_ENTER_REGION_6008",
+            "config_id": 1006008,
+            "event": 4,
+            "name": "ENTER_REGION_6008",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

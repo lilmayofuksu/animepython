@@ -1,0 +1,74 @@
+{
+    "action_EVENT_GROUP_LOAD_344003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_344002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_344003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 344001,
+            "gadget_id": 70360120,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1141.641,
+                "y": 270.191,
+                "z": -525.224
+            },
+            "rot": {
+                "x": 0,
+                "y": 330.357,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                344001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_344002",
+                "GROUP_LOAD_344003"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_344002",
+            "condition": "",
+            "config_id": 1344002,
+            "event": 21,
+            "name": "QUEST_FINISH_344002",
+            "source": "7014120",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_344003",
+            "condition": "condition_EVENT_GROUP_LOAD_344003",
+            "config_id": 1344003,
+            "event": 29,
+            "name": "GROUP_LOAD_344003",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

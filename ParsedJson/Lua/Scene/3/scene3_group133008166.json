@@ -1,0 +1,92 @@
+{
+    "action_EVENT_ENTER_REGION_166002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_166003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_166002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "autopick": true,
+            "chest_drop_id": 1050109,
+            "config_id": 166001,
+            "drop_count": 1,
+            "gadget_id": 70210101,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": 874.47,
+                "y": 349.438,
+                "z": -782.411
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 10,
+            "config_id": 166002,
+            "pos": {
+                "x": 872.596,
+                "y": 347.744,
+                "z": -788.961
+            },
+            "radius": 10,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                166001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                166001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                166002
+            ],
+            "triggers": [
+                "ENTER_REGION_166002",
+                "QUEST_FINISH_166003"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_166002",
+            "condition": "condition_EVENT_ENTER_REGION_166002",
+            "config_id": 1166002,
+            "event": 4,
+            "name": "ENTER_REGION_166002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_166003",
+            "condition": "",
+            "config_id": 1166003,
+            "event": 21,
+            "name": "QUEST_FINISH_166003",
+            "source": "7012105"
+        }
+    ],
+    "variables": []
+}

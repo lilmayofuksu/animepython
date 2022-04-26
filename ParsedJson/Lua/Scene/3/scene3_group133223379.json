@@ -1,0 +1,110 @@
+{
+    "action_EVENT_QUEST_FINISH_379004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_379003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_379002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_FINISH_379004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_START_379003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_379002": "WARN: Lua function omitted from the dump",
+    "defs": {
+        "child_group": [],
+        "group_id": 133223379,
+        "hasChild": true,
+        "hasMultiStatues": false,
+        "isRandom": false,
+        "notifyQuest": true,
+        "selfSuiteId": 2,
+        "statuesMap": {
+            "10001": 2
+        }
+    },
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 379001,
+            "gadget_id": 70290160,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -6141.95,
+                "y": 201.303,
+                "z": -2598.559
+            },
+            "rot": {
+                "x": 0.482,
+                "y": 122.494,
+                "z": 2.31
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                379001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_379002",
+                "QUEST_START_379003",
+                "QUEST_FINISH_379004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_379002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_379002",
+            "config_id": 1379002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_379002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_379003",
+            "condition": "condition_EVENT_QUEST_START_379003",
+            "config_id": 1379003,
+            "event": 28,
+            "name": "QUEST_START_379003",
+            "source": "7216642",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_379004",
+            "condition": "condition_EVENT_QUEST_FINISH_379004",
+            "config_id": 1379004,
+            "event": 21,
+            "name": "QUEST_FINISH_379004",
+            "source": "7216612"
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Notified",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "Seed",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "Quest_Finish",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

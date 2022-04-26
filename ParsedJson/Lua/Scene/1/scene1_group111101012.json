@@ -1,0 +1,222 @@
+{
+    "action_EVENT_CHALLENGE_FAIL_12011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_12010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_12009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_12012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_12009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_12012": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 12006,
+            "gadget_id": 70900008,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2707.103,
+                "y": 284.467,
+                "z": -1417.332
+            },
+            "rot": {
+                "x": 358.591,
+                "y": 359.913,
+                "z": 7.039
+            }
+        },
+        {
+            "config_id": 12007,
+            "gadget_id": 70300118,
+            "level": 1,
+            "pos": {
+                "x": 2707.096,
+                "y": 284.442,
+                "z": -1417.34
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 12008,
+            "gadget_id": 70330011,
+            "level": 1,
+            "pos": {
+                "x": 2708.329,
+                "y": 284.687,
+                "z": -1417.179
+            },
+            "rot": {
+                "x": 358.591,
+                "y": 359.913,
+                "z": 7.039
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 12001,
+            "drop_id": 1000100,
+            "level": 1,
+            "monster_id": 21010101,
+            "pos": {
+                "x": 2701.651,
+                "y": 283.792,
+                "z": -1415.921
+            },
+            "rot": {
+                "x": 358.591,
+                "y": 359.913,
+                "z": 7.039
+            }
+        },
+        {
+            "config_id": 12002,
+            "drop_id": 1000100,
+            "level": 1,
+            "monster_id": 21010101,
+            "pos": {
+                "x": 2705.744,
+                "y": 284.114,
+                "z": -1424.291
+            },
+            "rot": {
+                "x": 358.591,
+                "y": 359.913,
+                "z": 7.039
+            }
+        },
+        {
+            "config_id": 12003,
+            "drop_id": 1000100,
+            "level": 1,
+            "monster_id": 21011001,
+            "pos": {
+                "x": 2699.589,
+                "y": 283.376,
+                "z": -1421.705
+            },
+            "rot": {
+                "x": 358.591,
+                "y": 359.913,
+                "z": 7.039
+            }
+        },
+        {
+            "config_id": 12004,
+            "drop_id": 1000100,
+            "level": 1,
+            "monster_id": 21010101,
+            "pos": {
+                "x": 2711.601,
+                "y": 285.115,
+                "z": -1413.547
+            },
+            "rot": {
+                "x": 6.184,
+                "y": 228.019,
+                "z": 356.35
+            }
+        },
+        {
+            "config_id": 12005,
+            "drop_id": 1000100,
+            "level": 1,
+            "monster_id": 21010101,
+            "pos": {
+                "x": 2710.171,
+                "y": 284.7,
+                "z": -1421.944
+            },
+            "rot": {
+                "x": 6.184,
+                "y": 228.019,
+                "z": 356.35
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                12006,
+                12007,
+                12008
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_12009",
+                "CHALLENGE_SUCCESS_12010",
+                "CHALLENGE_FAIL_12011",
+                "GADGET_STATE_CHANGE_12012"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                12001,
+                12002,
+                12003,
+                12004,
+                12005
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_12009",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_12009",
+            "config_id": 1012009,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_12009",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_12010",
+            "condition": "",
+            "config_id": 1012010,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_12010",
+            "source": "180",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_12011",
+            "condition": "",
+            "config_id": 1012011,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_12011",
+            "source": "180",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_12012",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_12012",
+            "config_id": 1012012,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_12012",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "hasFinished",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

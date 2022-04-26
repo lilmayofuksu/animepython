@@ -1,0 +1,151 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_318004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_GADGET_DIE_318006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_318007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_318008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_318004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_318006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_318005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_TIMER_EVENT_318007": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 1,
+            "config_id": 318001,
+            "gadget_id": 70300113,
+            "level": 2,
+            "pos": {
+                "x": 2260.425,
+                "y": 236.351,
+                "z": -733.158
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 1,
+            "config_id": 318002,
+            "gadget_id": 70300113,
+            "level": 2,
+            "pos": {
+                "x": 2262.484,
+                "y": 236.351,
+                "z": -736.841
+            },
+            "rot": {
+                "x": 0,
+                "y": 236.563,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 1,
+            "config_id": 318003,
+            "gadget_id": 70300113,
+            "level": 2,
+            "pos": {
+                "x": 2260.725,
+                "y": 236.351,
+                "z": -732.106
+            },
+            "rot": {
+                "x": 0,
+                "y": 285.266,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                318001,
+                318002,
+                318003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_GADGET_DIE_318004",
+                "GADGET_CREATE_318005",
+                "ANY_GADGET_DIE_318006",
+                "TIMER_EVENT_318007",
+                "TIMER_EVENT_318008"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_318004",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_318004",
+            "config_id": 1318004,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_318004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "",
+            "condition": "condition_EVENT_GADGET_CREATE_318005",
+            "config_id": 1318005,
+            "event": 6,
+            "name": "GADGET_CREATE_318005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_318006",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_318006",
+            "config_id": 1318006,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_318006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_318007",
+            "condition": "condition_EVENT_TIMER_EVENT_318007",
+            "config_id": 1318007,
+            "event": 15,
+            "name": "TIMER_EVENT_318007",
+            "source": "delayJudge2",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_318008",
+            "condition": "",
+            "config_id": 1318008,
+            "event": 15,
+            "name": "TIMER_EVENT_318008",
+            "source": "delayMessage2",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "isfail",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

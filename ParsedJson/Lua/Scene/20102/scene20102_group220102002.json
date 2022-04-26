@@ -1,0 +1,188 @@
+{
+    "action_EVENT_ENTER_REGION_2012": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_2009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_2003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_2012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_2009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_FINISH_2003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 2001,
+            "gadget_id": 70360006,
+            "level": 1,
+            "pos": {
+                "x": -29.37,
+                "y": 3.718,
+                "z": 64.139
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2002,
+            "gadget_id": 70360006,
+            "level": 1,
+            "pos": {
+                "x": -16.552,
+                "y": 3.686,
+                "z": 64.196
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2008,
+            "gadget_id": 70350025,
+            "level": 1,
+            "pos": {
+                "x": -22.432,
+                "y": 15.201,
+                "z": 53.544
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 180
+            }
+        },
+        {
+            "config_id": 2010,
+            "gadget_id": 70220013,
+            "level": 1,
+            "pos": {
+                "x": -39.351,
+                "y": 1.928,
+                "z": 84.405
+            },
+            "rot": {
+                "x": 0,
+                "y": 300,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2011,
+            "gadget_id": 70350005,
+            "level": 1,
+            "pos": {
+                "x": -22.427,
+                "y": 0.25,
+                "z": 90.358
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2013,
+            "gadget_id": 70220026,
+            "level": 1,
+            "pos": {
+                "x": -40.451,
+                "y": 1.928,
+                "z": 85.919
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2014,
+            "gadget_id": 70220026,
+            "level": 1,
+            "pos": {
+                "x": -39.474,
+                "y": 1.929,
+                "z": 82.699
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 2012,
+            "pos": {
+                "x": -22.368,
+                "y": 5.371,
+                "z": 76.532
+            },
+            "shape": 2,
+            "size": {
+                "x": 15,
+                "y": 10,
+                "z": 10
+            }
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                2001,
+                2002,
+                2008,
+                2010,
+                2011,
+                2013,
+                2014
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                2012
+            ],
+            "triggers": [
+                "QUEST_FINISH_2003",
+                "GADGET_STATE_CHANGE_2009",
+                "ENTER_REGION_2012"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_2003",
+            "condition": "condition_EVENT_QUEST_FINISH_2003",
+            "config_id": 1002003,
+            "event": 21,
+            "name": "QUEST_FINISH_2003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_2009",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_2009",
+            "config_id": 1002009,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_2009",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_2012",
+            "condition": "condition_EVENT_ENTER_REGION_2012",
+            "config_id": 1002012,
+            "event": 4,
+            "name": "ENTER_REGION_2012",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

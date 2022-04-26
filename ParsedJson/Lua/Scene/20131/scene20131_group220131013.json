@@ -1,0 +1,100 @@
+{
+    "action_EVENT_ENTER_REGION_13002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_13002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 13001,
+            "gadget_id": 70310020,
+            "is_use_point_array": true,
+            "level": 1,
+            "pos": {
+                "x": 90.61,
+                "y": -4.08,
+                "z": -10.153
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 13003,
+            "gadget_id": 70710348,
+            "level": 1,
+            "pos": {
+                "x": 103.291,
+                "y": -13.958,
+                "z": -24.912
+            },
+            "rot": {
+                "x": 0,
+                "y": 90,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 13004,
+            "gadget_id": 70710348,
+            "level": 1,
+            "pos": {
+                "x": 114.065,
+                "y": -13.961,
+                "z": -26.57
+            },
+            "rot": {
+                "x": 0,
+                "y": 270,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 13002,
+            "pos": {
+                "x": 90.347,
+                "y": -3.113,
+                "z": -10.178
+            },
+            "radius": 2,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                13001,
+                13003,
+                13004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                13002
+            ],
+            "triggers": [
+                "ENTER_REGION_13002"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_13002",
+            "condition": "condition_EVENT_ENTER_REGION_13002",
+            "config_id": 1013002,
+            "event": 4,
+            "name": "ENTER_REGION_13002",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,90 @@
+{
+    "action_EVENT_ENTER_REGION_158001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_158008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_158001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_158008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 13,
+            "chest_drop_id": 1050142,
+            "config_id": 158009,
+            "drop_count": 1,
+            "gadget_id": 70210101,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -4074.968,
+                "y": 234.93,
+                "z": -2413.513
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 13,
+            "config_id": 158001,
+            "pos": {
+                "x": -4075.021,
+                "y": 235.118,
+                "z": -2411.932
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                158009
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                158001
+            ],
+            "triggers": [
+                "ENTER_REGION_158001",
+                "GADGET_STATE_CHANGE_158008"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_158001",
+            "condition": "condition_EVENT_ENTER_REGION_158001",
+            "config_id": 1158001,
+            "event": 4,
+            "name": "ENTER_REGION_158001",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_158008",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_158008",
+            "config_id": 1158008,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_158008",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

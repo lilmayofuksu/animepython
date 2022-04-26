@@ -1,0 +1,77 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_932003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_932002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_932003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 7,
+            "config_id": 932001,
+            "gadget_id": 70710111,
+            "interact_id": 12,
+            "level": 18,
+            "pos": {
+                "x": -360.478,
+                "y": 209.169,
+                "z": 360.149
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                932001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_932002"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_932003"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_START_932002",
+            "condition": "",
+            "config_id": 1932002,
+            "event": 28,
+            "name": "QUEST_START_932002",
+            "source": "7180702",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_932003",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_932003",
+            "config_id": 1932003,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_932003",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

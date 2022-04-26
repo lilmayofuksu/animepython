@@ -1,0 +1,257 @@
+{
+    "action_EVENT_GADGET_CREATE_71005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_71009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_71003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_71006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_71005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_71009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_71006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 17,
+            "config_id": 71001,
+            "gadget_id": 70360040,
+            "level": 30,
+            "pos": {
+                "x": -4035.902,
+                "y": 202.322,
+                "z": -682.875
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 17,
+            "config_id": 71007,
+            "gadget_id": 70360001,
+            "isOneoff": true,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": -4037.473,
+                "y": 201.189,
+                "z": -684.066
+            },
+            "rot": {
+                "x": 0,
+                "y": 175.4,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 17,
+            "config_id": 71008,
+            "drop_tag": "\u89e3\u8c1c\u9ad8\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211121,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -4037.096,
+                "y": 201.238,
+                "z": -683.883
+            },
+            "rot": {
+                "x": 4.81,
+                "y": 235.358,
+                "z": 351.326
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "io_type": 1,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [
+        {
+            "area_id": 17,
+            "config_id": 71002,
+            "npc_id": 20336,
+            "pos": {
+                "x": -4035.902,
+                "y": 202.322,
+                "z": -682.875
+            },
+            "rot": {
+                "x": 0,
+                "y": 234.467,
+                "z": 0
+            }
+        }
+    ],
+    "regions": [],
+    "suite_disk": [
+        {
+            "gadgets": [
+                {
+                    "config_id": 71001,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [
+                71002
+            ],
+            "regions": [],
+            "triggers": [
+                "QUEST_START_71003"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "QuestState",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 71001,
+                    "state": 0
+                },
+                {
+                    "config_id": 71007,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [
+                71002
+            ],
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_71005",
+                "SELECT_OPTION_71006"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "QuestState",
+                    "no_refresh": true,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 71008,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_71009"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "QuestState",
+                    "no_refresh": true,
+                    "value": 2
+                }
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                71001
+            ],
+            "monsters": [],
+            "npcs": [
+                71002
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_71003"
+            ]
+        },
+        {
+            "gadgets": [
+                71001,
+                71007
+            ],
+            "monsters": [],
+            "npcs": [
+                71002
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_71005",
+                "SELECT_OPTION_71006"
+            ]
+        },
+        {
+            "gadgets": [
+                71008
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_71009"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_START_71003",
+            "condition": "",
+            "config_id": 1071003,
+            "event": 28,
+            "name": "QUEST_START_71003",
+            "source": "7215203",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_71005",
+            "condition": "condition_EVENT_GADGET_CREATE_71005",
+            "config_id": 1071005,
+            "event": 6,
+            "name": "GADGET_CREATE_71005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_71006",
+            "condition": "condition_EVENT_SELECT_OPTION_71006",
+            "config_id": 1071006,
+            "event": 9,
+            "name": "SELECT_OPTION_71006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_71009",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_71009",
+            "config_id": 1071009,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_71009",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "QuestState",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

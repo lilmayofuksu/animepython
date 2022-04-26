@@ -1,0 +1,109 @@
+{
+    "action_EVENT_ENTER_REGION_16005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_16003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_16004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_16005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_FINISH_16003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 16001,
+            "gadget_id": 70900201,
+            "level": 1,
+            "pos": {
+                "x": -71.284,
+                "y": 127.989,
+                "z": 75.019
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 16002,
+            "gadget_id": 71700099,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": -71.313,
+                "y": 127.459,
+                "z": 75.019
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 16005,
+            "pos": {
+                "x": -66.75,
+                "y": 126.465,
+                "z": 74.812
+            },
+            "radius": 8,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                16005
+            ],
+            "triggers": [
+                "ENTER_REGION_16005"
+            ]
+        },
+        {
+            "gadgets": [
+                16001,
+                16002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_16003",
+            "condition": "condition_EVENT_QUEST_FINISH_16003",
+            "config_id": 1016003,
+            "event": 21,
+            "name": "QUEST_FINISH_16003",
+            "source": "7180004"
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_16004",
+            "condition": "",
+            "config_id": 1016004,
+            "event": 15,
+            "name": "TIMER_EVENT_16004",
+            "source": "outtime"
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_16005",
+            "condition": "condition_EVENT_ENTER_REGION_16005",
+            "config_id": 1016005,
+            "event": 4,
+            "name": "ENTER_REGION_16005",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,186 @@
+{
+    "action_EVENT_DUNGEON_ALL_AVATAR_DIE_10001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_DUNGEON_AVATAR_SLIP_DIE_10008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_DUNGEON_REVIVE_10002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_10005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_10004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_10006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_10009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_10005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 10003,
+            "gadget_id": 70900205,
+            "level": 1,
+            "pos": {
+                "x": -57.642,
+                "y": 250.328,
+                "z": -79.853
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 10007,
+            "gadget_id": 70350106,
+            "level": 1,
+            "pos": {
+                "x": -28.76,
+                "y": 246.1,
+                "z": -63.081
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 10005,
+            "pos": {
+                "x": 12.212,
+                "y": 256.747,
+                "z": 11.591
+            },
+            "radius": 400,
+            "shape": 1
+        }
+    ],
+    "stage_ready": "WARN: Lua function omitted from the dump",
+    "suites": [
+        {
+            "gadgets": [
+                10003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                10005
+            ],
+            "triggers": [
+                "DUNGEON_ALL_AVATAR_DIE_10001",
+                "DUNGEON_REVIVE_10002",
+                "TIMER_EVENT_10004",
+                "ENTER_REGION_10005",
+                "TIMER_EVENT_10006",
+                "DUNGEON_AVATAR_SLIP_DIE_10008",
+                "TIMER_EVENT_10009"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_DUNGEON_ALL_AVATAR_DIE_10001",
+            "condition": "",
+            "config_id": 1010001,
+            "event": 60,
+            "name": "DUNGEON_ALL_AVATAR_DIE_10001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_DUNGEON_REVIVE_10002",
+            "condition": "",
+            "config_id": 1010002,
+            "event": 58,
+            "name": "DUNGEON_REVIVE_10002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_10004",
+            "condition": "",
+            "config_id": 1010004,
+            "event": 15,
+            "name": "TIMER_EVENT_10004",
+            "source": "xiao_skill",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_10005",
+            "condition": "condition_EVENT_ENTER_REGION_10005",
+            "config_id": 1010005,
+            "event": 4,
+            "name": "ENTER_REGION_10005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_10006",
+            "condition": "",
+            "config_id": 1010006,
+            "event": 15,
+            "name": "TIMER_EVENT_10006",
+            "source": "xiao_skill_re",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_DUNGEON_AVATAR_SLIP_DIE_10008",
+            "condition": "",
+            "config_id": 1010008,
+            "event": 69,
+            "name": "DUNGEON_AVATAR_SLIP_DIE_10008",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_10009",
+            "condition": "",
+            "config_id": 1010009,
+            "event": 15,
+            "name": "TIMER_EVENT_10009",
+            "source": "unlock_input",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "test",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "isFirstEntry",
+            "no_refresh": false,
+            "value": 1
+        },
+        {
+            "configId": 3,
+            "name": "test_re",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 4,
+            "name": "test_enter_region",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 5,
+            "name": "isSlipDie",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 6,
+            "name": "test_slip_enter_region",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

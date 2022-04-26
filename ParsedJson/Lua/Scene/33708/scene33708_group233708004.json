@@ -1,0 +1,148 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_4006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_MONSTER_LIVE_4008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_FAIL_4010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_4009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_4006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_LIVE_4008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 4007,
+            "gadget_id": 70900205,
+            "level": 1,
+            "pos": {
+                "x": 6.702,
+                "y": -1.263,
+                "z": 2.99
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 4001,
+            "level": 1,
+            "monster_id": 20020101,
+            "pos": {
+                "x": -0.021,
+                "y": -0.11,
+                "z": -10.327
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 4011,
+            "level": 1,
+            "monster_id": 24010101,
+            "pos": {
+                "x": 0.035,
+                "y": -0.11,
+                "z": 10.023
+            },
+            "pose_id": 100,
+            "rot": {
+                "x": 0,
+                "y": 180,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                4007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                4007
+            ],
+            "monsters": [
+                4001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_4006",
+                "ANY_MONSTER_LIVE_4008",
+                "CHALLENGE_SUCCESS_4009",
+                "CHALLENGE_FAIL_4010"
+            ]
+        },
+        {
+            "gadgets": [
+                4007
+            ],
+            "monsters": [
+                4011
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "CHALLENGE_SUCCESS_4009",
+                "CHALLENGE_FAIL_4010"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_4006",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_4006",
+            "config_id": 1004006,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_4006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_LIVE_4008",
+            "condition": "condition_EVENT_ANY_MONSTER_LIVE_4008",
+            "config_id": 1004008,
+            "event": 11,
+            "name": "ANY_MONSTER_LIVE_4008",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_4009",
+            "condition": "",
+            "config_id": 1004009,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_4009",
+            "source": "2"
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_4010",
+            "condition": "",
+            "config_id": 1004010,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_4010",
+            "source": "2"
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "monster_wave",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

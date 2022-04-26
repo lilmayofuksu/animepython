@@ -1,0 +1,151 @@
+{
+    "UpdateGamePlayState": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_215006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_215001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_LEVEL_TAG_CHANGE_215007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_215002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_215006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_215002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 215003,
+            "gadget_id": 70360318,
+            "level": 36,
+            "pos": {
+                "x": -163.021,
+                "y": 228.572,
+                "z": 241.715
+            },
+            "rot": {
+                "x": 0,
+                "y": 17.562,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 215004,
+            "gadget_id": 70360310,
+            "level": 36,
+            "pos": {
+                "x": -163.509,
+                "y": 228.777,
+                "z": 242.303
+            },
+            "rot": {
+                "x": 6.293,
+                "y": 352.069,
+                "z": 344.284
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 215005,
+            "drop_tag": "\u89e3\u8c1c\u8d85\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211132,
+            "isOneoff": true,
+            "level": 16,
+            "persistent": true,
+            "pos": {
+                "x": -161.552,
+                "y": 235.825,
+                "z": 243.479
+            },
+            "rot": {
+                "x": 9.03,
+                "y": 358.731,
+                "z": 344.036
+            },
+            "state": 101
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_215001",
+                "VARIABLE_CHANGE_215002"
+            ]
+        },
+        {
+            "gadgets": [
+                215005
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_215006",
+                "LEVEL_TAG_CHANGE_215007"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_LOAD_215001",
+            "condition": "",
+            "config_id": 1215001,
+            "event": 29,
+            "name": "GROUP_LOAD_215001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_215002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_215002",
+            "config_id": 1215002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_215002",
+            "source": "gameplayState",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_215006",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_215006",
+            "config_id": 1215006,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_215006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_LEVEL_TAG_CHANGE_215007",
+            "condition": "",
+            "config_id": 1215007,
+            "event": 96,
+            "name": "LEVEL_TAG_CHANGE_215007",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "gameplayState",
+            "no_refresh": true,
+            "value": 1
+        }
+    ]
+}

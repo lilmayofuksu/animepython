@@ -1,0 +1,155 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_375003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_375007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_375008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_375009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_375002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_375005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_375006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_375003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_375008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_375009": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 375001,
+            "gadget_id": 70360116,
+            "level": 30,
+            "pos": {
+                "x": 1040.632,
+                "y": 458.9,
+                "z": -819.798
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 375004,
+            "gadget_id": 70360112,
+            "level": 30,
+            "pos": {
+                "x": 1040.39,
+                "y": 459.705,
+                "z": -820.633
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                375001,
+                375004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_375002",
+                "ANY_GADGET_DIE_375003",
+                "TIMER_EVENT_375005",
+                "TIMER_EVENT_375006",
+                "GROUP_LOAD_375008",
+                "GROUP_LOAD_375009"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_375007"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_START_375002",
+            "condition": "",
+            "config_id": 1375002,
+            "event": 28,
+            "name": "QUEST_START_375002",
+            "source": "7014122",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_375003",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_375003",
+            "config_id": 1375003,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_375003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_375005",
+            "condition": "",
+            "config_id": 1375005,
+            "event": 15,
+            "name": "TIMER_EVENT_375005",
+            "source": "delay_2",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_375006",
+            "condition": "",
+            "config_id": 1375006,
+            "event": 15,
+            "name": "TIMER_EVENT_375006",
+            "source": "delay_1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_375007",
+            "condition": "",
+            "config_id": 1375007,
+            "event": 29,
+            "name": "GROUP_LOAD_375007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_375008",
+            "condition": "condition_EVENT_GROUP_LOAD_375008",
+            "config_id": 1375008,
+            "event": 29,
+            "name": "GROUP_LOAD_375008",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_375009",
+            "condition": "condition_EVENT_GROUP_LOAD_375009",
+            "config_id": 1375009,
+            "event": 29,
+            "name": "GROUP_LOAD_375009",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "is_rollback",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

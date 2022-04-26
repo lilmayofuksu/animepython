@@ -1,0 +1,104 @@
+{
+    "action_EVENT_SELECT_OPTION_456005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_456005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 19,
+            "config_id": 456001,
+            "gadget_id": 70360001,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": -695.124,
+                "y": 100.967,
+                "z": 1844.176
+            },
+            "rot": {
+                "x": 0,
+                "y": 224.31,
+                "z": 5.522
+            },
+            "worktop_config": {
+                "init_options": [
+                    7
+                ],
+                "is_persistent": true
+            }
+        },
+        {
+            "area_id": 19,
+            "config_id": 456003,
+            "gadget_id": 70690033,
+            "level": 36,
+            "pos": {
+                "x": -713.872,
+                "y": 37.63,
+                "z": 1853.887
+            },
+            "rot": {
+                "x": 0,
+                "y": 204.387,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 19,
+            "config_id": 456002,
+            "pos": {
+                "x": -716.671,
+                "y": 6.318,
+                "z": 1856.093
+            },
+            "radius": 40,
+            "shape": 1,
+            "team_ability_group_list": [
+                "CYJY_Enter_TransPlayer_Handle"
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                456003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                456001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                456002
+            ],
+            "triggers": [
+                "SELECT_OPTION_456005"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_SELECT_OPTION_456005",
+            "condition": "condition_EVENT_SELECT_OPTION_456005",
+            "config_id": 1456005,
+            "event": 9,
+            "name": "SELECT_OPTION_456005",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

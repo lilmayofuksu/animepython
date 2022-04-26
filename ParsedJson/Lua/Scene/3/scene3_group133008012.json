@@ -1,0 +1,202 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_12007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_12005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_12009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_12001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_12002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_12006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_12012": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_12010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_12011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_12007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_12005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_12009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_12001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_12002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_12006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_12012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_12010": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 12003,
+            "gadget_id": 70290046,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1294.815,
+                "y": 297.391,
+                "z": -1045.343
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 12004,
+            "gadget_id": 70290045,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 1294.866,
+                "y": 295.91,
+                "z": -1045.291
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 12008,
+            "gadget_id": 70360001,
+            "level": 30,
+            "pos": {
+                "x": 1294.75,
+                "y": 297.374,
+                "z": -1045.412
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 2
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 10,
+            "config_id": 12005,
+            "pos": {
+                "x": 1289.485,
+                "y": 295.438,
+                "z": -1039.97
+            },
+            "radius": 45,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                12004,
+                12008
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                12005
+            ],
+            "triggers": [
+                "GADGET_STATE_CHANGE_12001",
+                "GADGET_STATE_CHANGE_12002",
+                "ENTER_REGION_12005",
+                "GADGET_STATE_CHANGE_12006",
+                "ANY_GADGET_DIE_12007",
+                "GADGET_CREATE_12009",
+                "SELECT_OPTION_12010",
+                "TIMER_EVENT_12011",
+                "GROUP_LOAD_12012"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_12001",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_12001",
+            "config_id": 1012001,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_12001",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_12002",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_12002",
+            "config_id": 1012002,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_12002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_12005",
+            "condition": "condition_EVENT_ENTER_REGION_12005",
+            "config_id": 1012005,
+            "event": 4,
+            "name": "ENTER_REGION_12005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_12006",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_12006",
+            "config_id": 1012006,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_12006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_12007",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_12007",
+            "config_id": 1012007,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_12007",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_12009",
+            "condition": "condition_EVENT_GADGET_CREATE_12009",
+            "config_id": 1012009,
+            "event": 6,
+            "name": "GADGET_CREATE_12009",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_12010",
+            "condition": "condition_EVENT_SELECT_OPTION_12010",
+            "config_id": 1012010,
+            "event": 9,
+            "name": "SELECT_OPTION_12010",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_12011",
+            "condition": "",
+            "config_id": 1012011,
+            "event": 15,
+            "name": "TIMER_EVENT_12011",
+            "source": "delay",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_12012",
+            "condition": "condition_EVENT_GROUP_LOAD_12012",
+            "config_id": 1012012,
+            "event": 29,
+            "name": "GROUP_LOAD_12012",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

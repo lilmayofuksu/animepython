@@ -1,0 +1,103 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_103003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_103004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_103003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_103004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 7,
+            "chest_drop_id": 1000600,
+            "config_id": 103001,
+            "drop_count": 1,
+            "gadget_id": 70211101,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -379.442,
+                "y": 202.166,
+                "z": -705.326
+            },
+            "rot": {
+                "x": 9.206,
+                "y": 60.42,
+                "z": 1.489
+            },
+            "state": 101
+        },
+        {
+            "area_id": 7,
+            "config_id": 103002,
+            "gadget_id": 70220021,
+            "level": 32,
+            "persistent": true,
+            "pos": {
+                "x": -378.3,
+                "y": 201.175,
+                "z": -706.175
+            },
+            "rot": {
+                "x": 31.189,
+                "y": 231.62,
+                "z": 0.289
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                103001,
+                103002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_GADGET_DIE_103003",
+                "GADGET_STATE_CHANGE_103004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_103003",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_103003",
+            "config_id": 1103003,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_103003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_103004",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_103004",
+            "config_id": 1103004,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_103004",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Dug",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

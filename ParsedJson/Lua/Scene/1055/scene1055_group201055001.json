@@ -1,0 +1,166 @@
+{
+    "action_EVENT_ENTER_REGION_1005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_1004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_1006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_1008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_1009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_1005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_1004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_FINISH_1006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 1001,
+            "gadget_id": 70350002,
+            "level": 1,
+            "pos": {
+                "x": -10.165,
+                "y": 53.897,
+                "z": -6.731
+            },
+            "rot": {
+                "x": 0,
+                "y": 180,
+                "z": 0
+            },
+            "state": 201
+        },
+        {
+            "config_id": 1002,
+            "gadget_id": 70900049,
+            "level": 1,
+            "pos": {
+                "x": -31.853,
+                "y": 48.457,
+                "z": 17.5
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 901
+        },
+        {
+            "config_id": 1003,
+            "gadget_id": 70380020,
+            "level": 1,
+            "pos": {
+                "x": -25.332,
+                "y": 48.397,
+                "z": 22.321
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "route_id": 1,
+            "start_route": false
+        },
+        {
+            "config_id": 1007,
+            "drop_tag": "\u6218\u6597\u4f4e\u7ea7\u7483\u6708",
+            "gadget_id": 70211001,
+            "isOneoff": true,
+            "level": 11,
+            "persistent": true,
+            "pos": {
+                "x": -47.242,
+                "y": 52.766,
+                "z": 16.648
+            },
+            "rot": {
+                "x": 0,
+                "y": 89.823,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 1005,
+            "pos": {
+                "x": -48.48,
+                "y": 58.474,
+                "z": -2.518
+            },
+            "radius": 10,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                1001,
+                1002,
+                1003,
+                1007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                1005
+            ],
+            "triggers": [
+                "GADGET_STATE_CHANGE_1004",
+                "ENTER_REGION_1005",
+                "QUEST_FINISH_1006",
+                "TIMER_EVENT_1008",
+                "TIMER_EVENT_1009"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_1004",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_1004",
+            "config_id": 1001004,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_1004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_1005",
+            "condition": "condition_EVENT_ENTER_REGION_1005",
+            "config_id": 1001005,
+            "event": 4,
+            "name": "ENTER_REGION_1005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_1006",
+            "condition": "condition_EVENT_QUEST_FINISH_1006",
+            "config_id": 1001006,
+            "event": 21,
+            "name": "QUEST_FINISH_1006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_1008",
+            "condition": "",
+            "config_id": 1001008,
+            "event": 15,
+            "name": "TIMER_EVENT_1008",
+            "source": "water2",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_1009",
+            "condition": "",
+            "config_id": 1001009,
+            "event": 15,
+            "name": "TIMER_EVENT_1009",
+            "source": "water1",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

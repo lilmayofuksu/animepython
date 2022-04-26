@@ -1,0 +1,222 @@
+{
+    "action_EVENT_ENTER_REGION_30009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_30002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_30001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_30008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_30010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_30009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_QUEST_START_30002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_30001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_30008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_30010": "WARN: Lua function omitted from the dump",
+    "defs": {
+        "Lightup_Seq": [
+            30006,
+            30007,
+            30004,
+            30005,
+            30003
+        ],
+        "group_id": 133225030
+    },
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 30003,
+            "gadget_id": 70310137,
+            "level": 33,
+            "pos": {
+                "x": -6419.23,
+                "y": 202.275,
+                "z": -2773.399
+            },
+            "rot": {
+                "x": 353.656,
+                "y": 12.702,
+                "z": 14.106
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 30004,
+            "gadget_id": 70310140,
+            "level": 33,
+            "pos": {
+                "x": -6414.431,
+                "y": 203.131,
+                "z": -2772.463
+            },
+            "rot": {
+                "x": 11.412,
+                "y": 174.515,
+                "z": 336.722
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 30005,
+            "gadget_id": 70310134,
+            "level": 33,
+            "pos": {
+                "x": -6410.32,
+                "y": 203.049,
+                "z": -2773.046
+            },
+            "rot": {
+                "x": 7.934,
+                "y": 216.952,
+                "z": 351.52
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 30006,
+            "gadget_id": 70310135,
+            "level": 33,
+            "pos": {
+                "x": -6407.01,
+                "y": 202.122,
+                "z": -2775.595
+            },
+            "rot": {
+                "x": 3.359,
+                "y": 247.772,
+                "z": 14.261
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 30007,
+            "gadget_id": 70310138,
+            "level": 33,
+            "pos": {
+                "x": -6405.193,
+                "y": 201.115,
+                "z": -2779.494
+            },
+            "rot": {
+                "x": 349.421,
+                "y": 241.333,
+                "z": 357.692
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 18,
+            "config_id": 30009,
+            "pos": {
+                "x": -6414.298,
+                "y": 200.796,
+                "z": -2774.858
+            },
+            "radius": 10,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                30003,
+                30004,
+                30005,
+                30006,
+                30007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                30009
+            ],
+            "triggers": [
+                "VARIABLE_CHANGE_30001",
+                "QUEST_START_30002",
+                "VARIABLE_CHANGE_30008",
+                "ENTER_REGION_30009",
+                "VARIABLE_CHANGE_30010"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_30001",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_30001",
+            "config_id": 1030001,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_30001",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_START_30002",
+            "condition": "condition_EVENT_QUEST_START_30002",
+            "config_id": 1030002,
+            "event": 28,
+            "name": "QUEST_START_30002",
+            "source": "7216610",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_30008",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_30008",
+            "config_id": 1030008,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_30008",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_30009",
+            "condition": "condition_EVENT_ENTER_REGION_30009",
+            "config_id": 1030009,
+            "event": 4,
+            "name": "ENTER_REGION_30009",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_30010",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_30010",
+            "config_id": 1030010,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_30010",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Finished",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "FailCount",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "TsurumiStone",
+            "no_refresh": true,
+            "value": 1
+        },
+        {
+            "configId": 4,
+            "name": "reminder_can_trigger",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 5,
+            "name": "isQuestNotify",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

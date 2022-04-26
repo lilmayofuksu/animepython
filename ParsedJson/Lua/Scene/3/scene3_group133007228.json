@@ -1,0 +1,183 @@
+{
+    "action_EVENT_GADGET_CREATE_307": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_304": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_319": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_310": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_307": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 4,
+            "config_id": 965,
+            "gadget_id": 70950008,
+            "level": 23,
+            "persistent": true,
+            "pos": {
+                "x": 2741.946,
+                "y": 212.451,
+                "z": -94.798
+            },
+            "rot": {
+                "x": 0,
+                "y": 43.788,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 4,
+            "config_id": 966,
+            "gadget_id": 70950006,
+            "level": 23,
+            "pos": {
+                "x": 2738.495,
+                "y": 212.851,
+                "z": -107.185
+            },
+            "rot": {
+                "x": 0,
+                "y": 211.607,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 4,
+            "config_id": 967,
+            "gadget_id": 70950006,
+            "level": 23,
+            "pos": {
+                "x": 2794.028,
+                "y": 249.473,
+                "z": -71.903
+            },
+            "rot": {
+                "x": 0,
+                "y": 98.52,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 4,
+            "config_id": 968,
+            "gadget_id": 70950006,
+            "level": 23,
+            "pos": {
+                "x": 2819.938,
+                "y": 258.631,
+                "z": -22.103
+            },
+            "rot": {
+                "x": 0,
+                "y": 276.301,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 4,
+            "config_id": 980,
+            "gadget_id": 70950007,
+            "level": 23,
+            "pos": {
+                "x": 2741.9,
+                "y": 212.5,
+                "z": -94.8
+            },
+            "rot": {
+                "x": 0,
+                "y": 92.471,
+                "z": 0
+            },
+            "state": 202
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                965
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_310",
+                "GROUP_LOAD_319"
+            ]
+        },
+        {
+            "gadgets": [
+                980
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_304",
+                "GADGET_CREATE_307"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_304",
+            "condition": "",
+            "config_id": 1000304,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_304",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_307",
+            "condition": "condition_EVENT_GADGET_CREATE_307",
+            "config_id": 1000307,
+            "event": 6,
+            "name": "GADGET_CREATE_307",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_310",
+            "condition": "",
+            "config_id": 1000310,
+            "event": 21,
+            "name": "QUEST_FINISH_310",
+            "source": "39004",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_319",
+            "condition": "",
+            "config_id": 1000319,
+            "event": 29,
+            "name": "GROUP_LOAD_319",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Point_Value",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "Temp_Point_Value",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "Quest_Flag",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

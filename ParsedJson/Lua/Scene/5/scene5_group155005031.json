@@ -1,0 +1,188 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_31004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_31002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_31003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_31005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_31004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 31001,
+            "gadget_id": 70290283,
+            "level": 36,
+            "pos": {
+                "x": 269.465,
+                "y": 225.391,
+                "z": 212.372
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "chest_drop_id": 1000100,
+            "config_id": 31006,
+            "drop_count": 1,
+            "gadget_id": 70210102,
+            "level": 16,
+            "pos": {
+                "x": 270.249,
+                "y": 225.486,
+                "z": 211.803
+            },
+            "rot": {
+                "x": 0,
+                "y": 96.369,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "io_type": 1,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suite_disk": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "QUEST_START_31002"
+            ],
+            "variables": []
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 31001,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "QUEST_START_31003"
+            ],
+            "variables": []
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 31001,
+                    "state": 0
+                },
+                {
+                    "config_id": 31006,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_31004",
+                "QUEST_START_31005"
+            ],
+            "variables": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [],
+            "variables": []
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_31002"
+            ]
+        },
+        {
+            "gadgets": [
+                31001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_31003"
+            ]
+        },
+        {
+            "gadgets": [
+                31001,
+                31006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_31004",
+                "QUEST_START_31005"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_START_31002",
+            "condition": "",
+            "config_id": 1031002,
+            "event": 28,
+            "name": "QUEST_START_31002",
+            "source": "7217748",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_31003",
+            "condition": "",
+            "config_id": 1031003,
+            "event": 28,
+            "name": "QUEST_START_31003",
+            "source": "7217744",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_31004",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_31004",
+            "config_id": 1031004,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_31004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_31005",
+            "condition": "",
+            "config_id": 1031005,
+            "event": 28,
+            "name": "QUEST_START_31005",
+            "source": "7217749",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

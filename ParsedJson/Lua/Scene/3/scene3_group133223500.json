@@ -1,0 +1,144 @@
+{
+    "action_EVENT_GROUP_REFRESH_500005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_REFRESH_500007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_500002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_500006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_REFRESH_500005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_REFRESH_500007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_500002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_500006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 500001,
+            "gadget_id": 70330114,
+            "level": 33,
+            "persistent": true,
+            "pos": {
+                "x": -6255.147,
+                "y": 229.266,
+                "z": -2947.775
+            },
+            "rot": {
+                "x": 13.155,
+                "y": 277.896,
+                "z": 2.815
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 500003,
+            "gadget_id": 70330114,
+            "level": 33,
+            "pos": {
+                "x": -6312.937,
+                "y": 218.679,
+                "z": -2967.045
+            },
+            "rot": {
+                "x": 325.218,
+                "y": 93.492,
+                "z": 351.412
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 500004,
+            "gadget_id": 70330114,
+            "level": 33,
+            "pos": {
+                "x": -6291.71,
+                "y": 222.991,
+                "z": -2943.758
+            },
+            "rot": {
+                "x": 0,
+                "y": 226.894,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                500001,
+                500003,
+                500004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_500002",
+                "GROUP_REFRESH_500005",
+                "VARIABLE_CHANGE_500006",
+                "GROUP_REFRESH_500007"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_500002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_500002",
+            "config_id": 1500002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_500002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_REFRESH_500005",
+            "condition": "condition_EVENT_GROUP_REFRESH_500005",
+            "config_id": 1500005,
+            "event": 32,
+            "name": "GROUP_REFRESH_500005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_500006",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_500006",
+            "config_id": 1500006,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_500006",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_REFRESH_500007",
+            "condition": "condition_EVENT_GROUP_REFRESH_500007",
+            "config_id": 1500007,
+            "event": 32,
+            "name": "GROUP_REFRESH_500007",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "group_1_progress",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "group_2_progress",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

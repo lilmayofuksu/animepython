@@ -1,0 +1,89 @@
+{
+    "action_EVENT_ENTER_REGION_366002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_366003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_366002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 366001,
+            "gadget_id": 70290275,
+            "level": 36,
+            "pos": {
+                "x": 272.992,
+                "y": 338.027,
+                "z": 246.662
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 200,
+            "config_id": 366002,
+            "pos": {
+                "x": 272.992,
+                "y": 338.027,
+                "z": 246.662
+            },
+            "radius": 2,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_366003"
+            ]
+        },
+        {
+            "gadgets": [
+                366001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                366002
+            ],
+            "triggers": [
+                "ENTER_REGION_366002"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_366002",
+            "condition": "condition_EVENT_ENTER_REGION_366002",
+            "config_id": 1366002,
+            "event": 4,
+            "forbid_guest": false,
+            "name": "ENTER_REGION_366002",
+            "source": "1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_366003",
+            "condition": "",
+            "config_id": 1366003,
+            "event": 28,
+            "name": "QUEST_START_366003",
+            "source": "7224113",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,107 @@
+{
+    "action_EVENT_GADGET_STATE_CHANGE_83002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_83003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_83004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_83002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_83003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_83004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 83001,
+            "drop_tag": "\u89e3\u8c1c\u4e2d\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211111,
+            "isOneoff": true,
+            "level": 16,
+            "persistent": true,
+            "pos": {
+                "x": 375.803,
+                "y": 186.682,
+                "z": -179.053
+            },
+            "rot": {
+                "x": 22.407,
+                "y": 40.904,
+                "z": 14.8
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_83004"
+            ]
+        },
+        {
+            "gadgets": [
+                83001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_83002",
+                "GROUP_LOAD_83003"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_83002",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_83002",
+            "config_id": 1083002,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_83002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_83003",
+            "condition": "condition_EVENT_GROUP_LOAD_83003",
+            "config_id": 1083003,
+            "event": 29,
+            "name": "GROUP_LOAD_83003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_83004",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_83004",
+            "config_id": 1083004,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_83004",
+            "source": "activecount",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "activecount",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "chestopened",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

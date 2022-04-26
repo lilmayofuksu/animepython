@@ -1,0 +1,253 @@
+{
+    "ElectricPowerSource_ElectricBomb_Creation": "WARN: Lua function omitted from the dump",
+    "ElectricPowerSource_ElectricBomb_Removal": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_2011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_2014": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_2013": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_2010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_2012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_2011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_2014": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 2001,
+            "gadget_id": 70330062,
+            "level": 1,
+            "pos": {
+                "x": 16,
+                "y": -0.102,
+                "z": 5
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2002,
+            "gadget_id": 70330062,
+            "level": 1,
+            "pos": {
+                "x": 16,
+                "y": -0.102,
+                "z": -5
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2003,
+            "gadget_id": 70330062,
+            "level": 1,
+            "pos": {
+                "x": 21,
+                "y": -0.102,
+                "z": 0
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2004,
+            "gadget_id": 70330063,
+            "level": 1,
+            "pos": {
+                "x": 14,
+                "y": -0.102,
+                "z": 0
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 201
+        },
+        {
+            "config_id": 2005,
+            "gadget_id": 70330062,
+            "level": 1,
+            "pos": {
+                "x": -16,
+                "y": -0.102,
+                "z": 5
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2006,
+            "gadget_id": 70330062,
+            "level": 1,
+            "pos": {
+                "x": -16,
+                "y": -0.102,
+                "z": -5
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2007,
+            "gadget_id": 70330062,
+            "level": 1,
+            "pos": {
+                "x": -21,
+                "y": -0.102,
+                "z": 0
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2008,
+            "gadget_id": 70330063,
+            "level": 1,
+            "pos": {
+                "x": -14,
+                "y": -0.102,
+                "z": 0
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 201
+        },
+        {
+            "config_id": 2009,
+            "gadget_id": 70900205,
+            "level": 1,
+            "pos": {
+                "x": -0.332,
+                "y": -3.089,
+                "z": -5.981
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                2009
+            ],
+            "monsters": [],
+            "rand_weight": 0,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                2001,
+                2002,
+                2003,
+                2005,
+                2006,
+                2007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "TIMER_EVENT_2010",
+                "GADGET_CREATE_2011"
+            ]
+        },
+        {
+            "gadgets": [
+                2004,
+                2008
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_2014"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 0,
+            "regions": [],
+            "triggers": [
+                "TIMER_EVENT_2012",
+                "GROUP_LOAD_2013"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_TIMER_EVENT_2010",
+            "condition": "",
+            "config_id": 1002010,
+            "event": 15,
+            "name": "TIMER_EVENT_2010",
+            "source": "T1"
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_2011",
+            "condition": "condition_EVENT_GADGET_CREATE_2011",
+            "config_id": 1002011,
+            "event": 6,
+            "name": "GADGET_CREATE_2011",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_2012",
+            "condition": "",
+            "config_id": 1002012,
+            "event": 15,
+            "name": "TIMER_EVENT_2012",
+            "source": "T2",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_2013",
+            "condition": "",
+            "config_id": 1002013,
+            "event": 29,
+            "name": "GROUP_LOAD_2013",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_2014",
+            "condition": "condition_EVENT_GADGET_CREATE_2014",
+            "config_id": 1002014,
+            "event": 6,
+            "name": "GADGET_CREATE_2014",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

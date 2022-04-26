@@ -1,0 +1,82 @@
+{
+    "action_EVENT_GROUP_LOAD_26018": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_26017": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_26018": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_26017": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 26001,
+            "gadget_id": 70290196,
+            "level": 36,
+            "pos": {
+                "x": 634.711,
+                "y": 244.906,
+                "z": 777.302
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                26001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_26017"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_26018"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_26017",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_26017",
+            "config_id": 1026017,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_26017",
+            "source": "activecount",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_26018",
+            "condition": "condition_EVENT_GROUP_LOAD_26018",
+            "config_id": 1026018,
+            "event": 29,
+            "name": "GROUP_LOAD_26018",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "activecount",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_5002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_5014": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_5002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_5014": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "affix": [
+                4116,
+                6110
+            ],
+            "config_id": 5001,
+            "disableWander": true,
+            "level": 1,
+            "monster_id": 21020401,
+            "pos": {
+                "x": -290.767,
+                "y": 31.754,
+                "z": 170.786
+            },
+            "pose_id": 401,
+            "rot": {
+                "x": 0,
+                "y": 51.36,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [
+                5001
+            ],
+            "rand_weight": 0,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_5002",
+                "SPECIFIC_MONSTER_HP_CHANGE_5014"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_5002",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_5002",
+            "config_id": 1005002,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_5002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_5014",
+            "condition": "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_5014",
+            "config_id": 1005014,
+            "event": 12,
+            "name": "SPECIFIC_MONSTER_HP_CHANGE_5014",
+            "source": "5001"
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "SummonWave",
+            "no_refresh": false,
+            "value": 2
+        }
+    ]
+}

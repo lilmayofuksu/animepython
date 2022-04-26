@@ -1,0 +1,155 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_332006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_332005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_332006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_332005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 332004,
+            "drop_tag": "\u96ea\u5c71\u6218\u6597\u4e2d\u7ea7\u8499\u5fb7",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211012,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": 658.309,
+                "y": 203.171,
+                "z": -931.77
+            },
+            "rot": {
+                "x": 8.575,
+                "y": 347.864,
+                "z": 14.167
+            },
+            "state": 103
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 10,
+            "climate_area_id": 1,
+            "config_id": 332001,
+            "drop_tag": "\u9a97\u9a97\u82b1",
+            "level": 30,
+            "monster_id": 26010101,
+            "pos": {
+                "x": 658.763,
+                "y": 203.2,
+                "z": -929.659
+            },
+            "rot": {
+                "x": 1.379,
+                "y": 1.876,
+                "z": 12.386
+            }
+        },
+        {
+            "area_id": 10,
+            "climate_area_id": 1,
+            "config_id": 332002,
+            "drop_tag": "\u9a97\u9a97\u82b1",
+            "level": 30,
+            "monster_id": 26010101,
+            "pos": {
+                "x": 656.161,
+                "y": 202.818,
+                "z": -931.989
+            },
+            "rot": {
+                "x": 1.603,
+                "y": 1.198,
+                "z": 8.912
+            }
+        },
+        {
+            "area_id": 10,
+            "climate_area_id": 1,
+            "config_id": 332003,
+            "drop_tag": "\u9a97\u9a97\u82b1",
+            "level": 30,
+            "monster_id": 26010101,
+            "pos": {
+                "x": 660.12,
+                "y": 203.693,
+                "z": -933.064
+            },
+            "rot": {
+                "x": 359.582,
+                "y": 2.06,
+                "z": 11.475
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 10,
+            "config_id": 332005,
+            "pos": {
+                "x": 658.641,
+                "y": 203.924,
+                "z": -931.765
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                332004
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                332005
+            ],
+            "triggers": [
+                "ENTER_REGION_332005",
+                "ANY_MONSTER_DIE_332006"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                332001,
+                332002,
+                332003
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_332006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_332005",
+            "condition": "condition_EVENT_ENTER_REGION_332005",
+            "config_id": 1332005,
+            "event": 4,
+            "name": "ENTER_REGION_332005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_332006",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_332006",
+            "config_id": 1332006,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_332006",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

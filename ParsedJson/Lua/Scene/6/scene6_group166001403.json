@@ -1,0 +1,79 @@
+{
+    "action_EVENT_QUEST_FINISH_403002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 300,
+            "config_id": 403001,
+            "gadget_id": 70290388,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 950.95,
+                "y": 1081.655,
+                "z": 855.116
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 300,
+            "config_id": 403003,
+            "gadget_id": 70360001,
+            "level": 36,
+            "pos": {
+                "x": 950.589,
+                "y": 1080.769,
+                "z": 855.602
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                403003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                403001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_403002"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_403002",
+            "condition": "",
+            "config_id": 1403002,
+            "event": 21,
+            "name": "QUEST_FINISH_403002",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,152 @@
+{
+    "action_EVENT_GADGET_CREATE_97003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_97005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_97004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_97006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_97003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_97005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_97004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_97006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 97001,
+            "gadget_id": 70360001,
+            "level": 19,
+            "pos": {
+                "x": -6354.242,
+                "y": 246.616,
+                "z": -2658.022
+            },
+            "rot": {
+                "x": 0,
+                "y": 175.4,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "chest_drop_id": 1050152,
+            "config_id": 97002,
+            "drop_count": 1,
+            "gadget_id": 70217010,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -6354.171,
+                "y": 246.688,
+                "z": -2658.115
+            },
+            "rot": {
+                "x": 347.747,
+                "y": 81.152,
+                "z": 356.87
+            },
+            "showcutscene": true
+        },
+        {
+            "area_id": 18,
+            "config_id": 97007,
+            "gadget_id": 70360089,
+            "level": 33,
+            "pos": {
+                "x": -6354.14,
+                "y": 247.204,
+                "z": -2658.041
+            },
+            "rot": {
+                "x": 0,
+                "y": 222.405,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 2,
+        "rand_suite": false,
+        "suite": 3
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                97001,
+                97007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_97003",
+                "SELECT_OPTION_97004"
+            ]
+        },
+        {
+            "gadgets": [
+                97002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_97005"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_97006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_CREATE_97003",
+            "condition": "condition_EVENT_GADGET_CREATE_97003",
+            "config_id": 1097003,
+            "event": 6,
+            "name": "GADGET_CREATE_97003",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_97004",
+            "condition": "condition_EVENT_SELECT_OPTION_97004",
+            "config_id": 1097004,
+            "event": 9,
+            "name": "SELECT_OPTION_97004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_97005",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_97005",
+            "config_id": 1097005,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_97005",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_97006",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_97006",
+            "config_id": 1097006,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_97006",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "start",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

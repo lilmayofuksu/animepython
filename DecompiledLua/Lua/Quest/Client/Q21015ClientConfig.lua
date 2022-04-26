@@ -1,0 +1,33 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
+L0_1 = {}
+L0_1.MainID = 21015
+L0_1.ActorAlias = "21015"
+L1_1 = {}
+L1_1.q2101501 = 2101501
+L1_1.q2101502 = 2101502
+L1_1.q2101503 = 2101503
+L1_1.q2101504 = 2101504
+L1_1.q2101505 = 2101505
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L1_1.Alias = "Npc2311"
+L1_1.Script = "Actor/Npc/TempNPC"
+L1_1.ID = 2311
+L2_1 = sceneData
+L3_1 = L2_1
+L2_1 = L2_1.GetDummyPoint
+L4_1 = 3
+L5_1 = "Q21015hua03"
+L2_1 = L2_1(L3_1, L4_1, L5_1)
+L2_1 = L2_1.pos
+L1_1.BornPos01 = L2_1
+L2_1 = sceneData
+L3_1 = L2_1
+L2_1 = L2_1.GetDummyPoint
+L4_1 = 3
+L5_1 = "Q21015hua03"
+L2_1 = L2_1(L3_1, L4_1, L5_1)
+L2_1 = L2_1.rot
+L1_1.BornDir01 = L2_1
+L0_1.XiaojiujiuData = L1_1
+return L0_1

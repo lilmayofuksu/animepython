@@ -1,0 +1,116 @@
+{
+    "action_EVENT_VARIABLE_CHANGE_432001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_432001": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 17,
+            "config_id": 432002,
+            "drop_tag": "\u6218\u6597\u4e2d\u7ea7\u7a3b\u59bb",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211011,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -3571.899,
+                "y": 205.775,
+                "z": -607.558
+            },
+            "rot": {
+                "x": 1.921,
+                "y": 137.199,
+                "z": 359.441
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "io_type": 1,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suite_disk": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_432001"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "MonsCount",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 432002,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "MonsCount",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "VARIABLE_CHANGE_432001"
+            ]
+        },
+        {
+            "gadgets": [
+                432002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_432001",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_432001",
+            "config_id": 1432001,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_432001",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "MonsCount",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

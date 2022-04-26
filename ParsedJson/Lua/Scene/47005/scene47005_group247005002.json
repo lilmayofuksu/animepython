@@ -1,0 +1,119 @@
+{
+    "action_EVENT_QUEST_FINISH_2003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_2007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_2006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 2001,
+            "gadget_id": 70310125,
+            "level": 1,
+            "pos": {
+                "x": -0.014,
+                "y": 0.206,
+                "z": 19.84
+            },
+            "rot": {
+                "x": 0,
+                "y": 180,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2004,
+            "gadget_id": 70900201,
+            "level": 1,
+            "pos": {
+                "x": 80.034,
+                "y": -0.328,
+                "z": 649.281
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2005,
+            "gadget_id": 70900201,
+            "level": 1,
+            "pos": {
+                "x": 5.3,
+                "y": 2.382,
+                "z": -2.356
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 2002,
+            "pos": {
+                "x": 0,
+                "y": 0.05,
+                "z": 0
+            },
+            "shape": 2,
+            "size": {
+                "x": 40,
+                "y": 20,
+                "z": 40
+            }
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                2001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                2002
+            ],
+            "triggers": [
+                "QUEST_FINISH_2003",
+                "QUEST_START_2006",
+                "QUEST_FINISH_2007"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_2003",
+            "condition": "",
+            "config_id": 1002003,
+            "event": 21,
+            "name": "QUEST_FINISH_2003",
+            "source": "4002114"
+        },
+        {
+            "action": "action_EVENT_QUEST_START_2006",
+            "condition": "",
+            "config_id": 1002006,
+            "event": 28,
+            "name": "QUEST_START_2006",
+            "source": "4002111"
+        },
+        {
+            "action": "action_EVENT_QUEST_FINISH_2007",
+            "condition": "",
+            "config_id": 1002007,
+            "event": 21,
+            "name": "QUEST_FINISH_2007",
+            "source": "4002111"
+        }
+    ],
+    "variables": []
+}

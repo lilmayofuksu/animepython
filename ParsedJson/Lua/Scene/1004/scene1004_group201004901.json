@@ -1,0 +1,106 @@
+{
+    "condition_EVENT_ENTER_REGION_1": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_2": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_3": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": true,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 1,
+            "pos": {
+                "x": -0.126,
+                "y": 0.027,
+                "z": 13.951
+            },
+            "radius": 5,
+            "room": 1,
+            "shape": 1
+        },
+        {
+            "config_id": 2,
+            "pos": {
+                "x": 12.689,
+                "y": 0,
+                "z": 7.063
+            },
+            "room": 100402,
+            "shape": 2,
+            "size": {
+                "x": 4,
+                "y": 4,
+                "z": 8
+            }
+        },
+        {
+            "config_id": 3,
+            "pos": {
+                "x": -12.34,
+                "y": 1.3,
+                "z": 0.4
+            },
+            "room": 100401,
+            "shape": 2,
+            "size": {
+                "x": 4,
+                "y": 4,
+                "z": 25
+            }
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                1,
+                2,
+                3
+            ],
+            "triggers": [
+                "ENTER_REGION_1",
+                "ENTER_REGION_2",
+                "ENTER_REGION_3"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "",
+            "condition": "condition_EVENT_ENTER_REGION_1",
+            "config_id": 1000001,
+            "event": 4,
+            "forbid_guest": false,
+            "name": "ENTER_REGION_1",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "",
+            "condition": "condition_EVENT_ENTER_REGION_2",
+            "config_id": 1000002,
+            "event": 4,
+            "forbid_guest": false,
+            "name": "ENTER_REGION_2",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "",
+            "condition": "condition_EVENT_ENTER_REGION_3",
+            "config_id": 1000003,
+            "event": 4,
+            "forbid_guest": false,
+            "name": "ENTER_REGION_3",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

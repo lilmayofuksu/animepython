@@ -1,0 +1,174 @@
+{
+    "action_EVENT_QUEST_START_49002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_49006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 49001,
+            "gadget_id": 70290248,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 247.489,
+                "y": 144.032,
+                "z": -285.96
+            },
+            "rot": {
+                "x": 0,
+                "y": 341.349,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 200,
+            "config_id": 49007,
+            "gadget_id": 70290235,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 250.506,
+                "y": 143.243,
+                "z": -267.523
+            },
+            "rot": {
+                "x": 359.675,
+                "y": 358.263,
+                "z": 0.009
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "io_type": 1,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suite_disk": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "QUEST_START_49002"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "gameplayState",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 49007,
+                    "state": 201
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [
+                "QUEST_START_49006"
+            ],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "gameplayState",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "gadgets": [
+                {
+                    "config_id": 49001,
+                    "state": 201
+                },
+                {
+                    "config_id": 49007,
+                    "state": 0
+                }
+            ],
+            "monsters": [],
+            "npcs": [],
+            "regions": [],
+            "triggers": [],
+            "variables": [
+                {
+                    "configId": 1,
+                    "name": "gameplayState",
+                    "no_refresh": true,
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_49002"
+            ]
+        },
+        {
+            "gadgets": [
+                49007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_49006"
+            ]
+        },
+        {
+            "gadgets": [
+                49001,
+                49007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_START_49002",
+            "condition": "",
+            "config_id": 1049002,
+            "event": 28,
+            "name": "QUEST_START_49002",
+            "source": "7224411",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_49006",
+            "condition": "",
+            "config_id": 1049006,
+            "event": 28,
+            "name": "QUEST_START_49006",
+            "source": "7224413",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "gameplayState",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

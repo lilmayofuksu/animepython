@@ -1,0 +1,135 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_903002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_903003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_903004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_903005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_903006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_903002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_903003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_903004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_903005": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 3,
+            "config_id": 903001,
+            "gadget_id": 70300079,
+            "level": 10,
+            "pos": {
+                "x": 2019.394,
+                "y": 233.571,
+                "z": -659.545
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 3,
+            "config_id": 903003,
+            "pos": {
+                "x": 2020.147,
+                "y": 233.436,
+                "z": -660.378
+            },
+            "radius": 7,
+            "shape": 1
+        },
+        {
+            "area_id": 3,
+            "config_id": 903004,
+            "pos": {
+                "x": 2020.272,
+                "y": 233.555,
+                "z": -659.608
+            },
+            "radius": 30,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                903001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                903003,
+                903004
+            ],
+            "triggers": [
+                "ANY_GADGET_DIE_903002",
+                "ENTER_REGION_903003",
+                "ENTER_REGION_903004",
+                "GADGET_CREATE_903005",
+                "QUEST_START_903006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_903002",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_903002",
+            "config_id": 1903002,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_903002",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_903003",
+            "condition": "condition_EVENT_ENTER_REGION_903003",
+            "config_id": 1903003,
+            "event": 4,
+            "name": "ENTER_REGION_903003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_903004",
+            "condition": "condition_EVENT_ENTER_REGION_903004",
+            "config_id": 1903004,
+            "event": 4,
+            "name": "ENTER_REGION_903004",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_903005",
+            "condition": "condition_EVENT_GADGET_CREATE_903005",
+            "config_id": 1903005,
+            "event": 6,
+            "name": "GADGET_CREATE_903005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_903006",
+            "condition": "",
+            "config_id": 1903006,
+            "event": 28,
+            "name": "QUEST_START_903006",
+            "source": "2051717",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

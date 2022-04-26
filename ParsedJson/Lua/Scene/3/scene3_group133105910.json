@@ -1,0 +1,259 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_910013": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_910008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_910010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_910013": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_910008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_910010": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 910001,
+            "gadget_id": 70710234,
+            "level": 1,
+            "pos": {
+                "x": 945.093,
+                "y": 364.929,
+                "z": -689.083
+            },
+            "rot": {
+                "x": 0,
+                "y": 175.52,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 910002,
+            "gadget_id": 70710234,
+            "level": 1,
+            "pos": {
+                "x": 946.309,
+                "y": 366.153,
+                "z": -692.764
+            },
+            "rot": {
+                "x": 0,
+                "y": 168.53,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 910003,
+            "gadget_id": 70710234,
+            "level": 1,
+            "pos": {
+                "x": 947.025,
+                "y": 365.047,
+                "z": -697.048
+            },
+            "rot": {
+                "x": 0,
+                "y": 177.9,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 910004,
+            "gadget_id": 70710234,
+            "level": 1,
+            "pos": {
+                "x": 946.907,
+                "y": 365.375,
+                "z": -701.407
+            },
+            "rot": {
+                "x": 0,
+                "y": 184.6,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 910005,
+            "gadget_id": 70710234,
+            "level": 1,
+            "pos": {
+                "x": 945.546,
+                "y": 365.253,
+                "z": -700.841
+            },
+            "rot": {
+                "x": 0,
+                "y": 200.7,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 910006,
+            "gadget_id": 70710234,
+            "level": 1,
+            "pos": {
+                "x": 946.675,
+                "y": 365.148,
+                "z": -699.197
+            },
+            "rot": {
+                "x": 0,
+                "y": 192.6,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 910011,
+            "gadget_id": 70360102,
+            "level": 1,
+            "pos": {
+                "x": 946.359,
+                "y": 365.031,
+                "z": -689.903
+            },
+            "rot": {
+                "x": 0,
+                "y": 100.3,
+                "z": 357.035
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 910012,
+            "gadget_id": 70710236,
+            "level": 1,
+            "pos": {
+                "x": 945.234,
+                "y": 364.925,
+                "z": -690.782
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 10,
+            "config_id": 910008,
+            "pos": {
+                "x": 945.895,
+                "y": 365.139,
+                "z": -703.668
+            },
+            "radius": 5,
+            "shape": 1
+        },
+        {
+            "area_id": 10,
+            "config_id": 910010,
+            "pos": {
+                "x": 943.286,
+                "y": 364.94,
+                "z": -688.594
+            },
+            "radius": 6,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                910001,
+                910002,
+                910003,
+                910004,
+                910005,
+                910006
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                910008,
+                910010
+            ],
+            "triggers": [
+                "ENTER_REGION_910008",
+                "ENTER_REGION_910010"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                910011,
+                910012
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_GADGET_DIE_910013"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_910008",
+            "condition": "condition_EVENT_ENTER_REGION_910008",
+            "config_id": 1910008,
+            "event": 4,
+            "name": "ENTER_REGION_910008",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_910010",
+            "condition": "condition_EVENT_ENTER_REGION_910010",
+            "config_id": 1910010,
+            "event": 4,
+            "name": "ENTER_REGION_910010",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_910013",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_910013",
+            "config_id": 1910013,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_910013",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

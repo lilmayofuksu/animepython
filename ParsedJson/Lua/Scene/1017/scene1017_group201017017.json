@@ -1,0 +1,93 @@
+{
+    "action_EVENT_ENTER_REGION_17002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_17002": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 17001,
+            "drop_tag": "\u6218\u6597\u4e2d\u7ea7\u7483\u6708",
+            "gadget_id": 70211011,
+            "isOneoff": true,
+            "level": 11,
+            "persistent": true,
+            "pos": {
+                "x": -41.94,
+                "y": 60.282,
+                "z": 164.408
+            },
+            "rot": {
+                "x": 0,
+                "y": 190.287,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 17003,
+            "gadget_id": 70690008,
+            "level": 1,
+            "pos": {
+                "x": -51.921,
+                "y": 43.855,
+                "z": 144.707
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 17002,
+            "pos": {
+                "x": -46.512,
+                "y": 60.235,
+                "z": 167.07
+            },
+            "radius": 8,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                17001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                17002
+            ],
+            "triggers": [
+                "ENTER_REGION_17002"
+            ]
+        },
+        {
+            "gadgets": [
+                17003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_17002",
+            "condition": "condition_EVENT_ENTER_REGION_17002",
+            "config_id": 1017002,
+            "event": 4,
+            "name": "ENTER_REGION_17002",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

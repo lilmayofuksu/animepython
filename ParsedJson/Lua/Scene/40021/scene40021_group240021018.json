@@ -1,0 +1,105 @@
+{
+    "action_EVENT_ANY_MONSTER_LIVE_18003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_FAIL_18005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_18004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_LIVE_18003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 18002,
+            "gadget_id": 70900205,
+            "level": 1,
+            "pos": {
+                "x": 0.342,
+                "y": -1.923,
+                "z": -10.629
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "affix": [
+                1007,
+                1008,
+                1006
+            ],
+            "config_id": 18001,
+            "level": 1,
+            "monster_id": 21020501,
+            "pos": {
+                "x": 0.078,
+                "y": 0.003,
+                "z": -7.673
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                18002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                18002
+            ],
+            "monsters": [
+                18001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_LIVE_18003",
+                "CHALLENGE_SUCCESS_18004",
+                "CHALLENGE_FAIL_18005"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_LIVE_18003",
+            "condition": "condition_EVENT_ANY_MONSTER_LIVE_18003",
+            "config_id": 1018003,
+            "event": 11,
+            "name": "ANY_MONSTER_LIVE_18003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_18004",
+            "condition": "",
+            "config_id": 1018004,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_18004",
+            "source": "14"
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_18005",
+            "condition": "",
+            "config_id": 1018005,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_18005",
+            "source": "14"
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,127 @@
+{
+    "action_EVENT_ANY_MONSTER_LIVE_2022": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_FAIL_2024": "WARN: Lua function omitted from the dump",
+    "action_EVENT_CHALLENGE_SUCCESS_2023": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_LIVE_2022": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 2021,
+            "gadget_id": 70900205,
+            "level": 1,
+            "pos": {
+                "x": 5.727,
+                "y": 510.077,
+                "z": 6.49
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 2001,
+            "level": 1,
+            "monster_id": 24010101,
+            "pos": {
+                "x": 0.035,
+                "y": 511.859,
+                "z": -8.703
+            },
+            "pose_id": 100,
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 2002,
+            "level": 1,
+            "monster_id": 24020201,
+            "pos": {
+                "x": 3.903,
+                "y": 511.859,
+                "z": -7.82
+            },
+            "pose_id": 100,
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                2021
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "CHALLENGE_FAIL_2024"
+            ]
+        },
+        {
+            "gadgets": [
+                2021
+            ],
+            "monsters": [
+                2001,
+                2002
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_LIVE_2022",
+                "CHALLENGE_SUCCESS_2023",
+                "CHALLENGE_FAIL_2024"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_LIVE_2022",
+            "condition": "condition_EVENT_ANY_MONSTER_LIVE_2022",
+            "config_id": 1002022,
+            "event": 11,
+            "name": "ANY_MONSTER_LIVE_2022",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_SUCCESS_2023",
+            "condition": "",
+            "config_id": 1002023,
+            "event": 16,
+            "name": "CHALLENGE_SUCCESS_2023",
+            "source": "1"
+        },
+        {
+            "action": "action_EVENT_CHALLENGE_FAIL_2024",
+            "condition": "",
+            "config_id": 1002024,
+            "event": 17,
+            "name": "CHALLENGE_FAIL_2024",
+            "source": "1"
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "monster_wave",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

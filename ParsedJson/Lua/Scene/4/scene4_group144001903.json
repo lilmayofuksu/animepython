@@ -1,0 +1,332 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_903004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_GADGET_DIE_903008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_GADGET_DIE_903012": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_GADGET_DIE_903014": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_903003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_903010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_903011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_903017": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_903013": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_903001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_903002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_903009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_903015": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_903016": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_903018": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_903004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_903012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_903014": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_903003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_903010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_903011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_903001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_903002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_903009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_903015": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_903016": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_VARIABLE_CHANGE_903018": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 100,
+            "config_id": 903005,
+            "gadget_id": 70350266,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": -245.025,
+                "y": 199.878,
+                "z": -590.164
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 100,
+            "config_id": 903006,
+            "gadget_id": 70350266,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": -361.803,
+                "y": 200,
+                "z": -514.12
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 100,
+            "config_id": 903007,
+            "gadget_id": 70350266,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": -233.711,
+                "y": 200,
+                "z": -730.463
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 100,
+            "config_id": 903003,
+            "pos": {
+                "x": -243.282,
+                "y": 200.523,
+                "z": -585.319
+            },
+            "radius": 40,
+            "shape": 1
+        },
+        {
+            "area_id": 100,
+            "config_id": 903010,
+            "pos": {
+                "x": -232.419,
+                "y": 200.523,
+                "z": -729.596
+            },
+            "radius": 40,
+            "shape": 1
+        },
+        {
+            "area_id": 100,
+            "config_id": 903011,
+            "pos": {
+                "x": -364.054,
+                "y": 200.523,
+                "z": -516.711
+            },
+            "radius": 40,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [
+                903005,
+                903006,
+                903007
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_903017"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                903003,
+                903010,
+                903011
+            ],
+            "triggers": [
+                "VARIABLE_CHANGE_903001",
+                "VARIABLE_CHANGE_903002",
+                "ENTER_REGION_903003",
+                "ANY_GADGET_DIE_903004",
+                "ANY_GADGET_DIE_903008",
+                "VARIABLE_CHANGE_903009",
+                "ENTER_REGION_903010",
+                "ENTER_REGION_903011",
+                "ANY_GADGET_DIE_903012",
+                "TIMER_EVENT_903013",
+                "ANY_GADGET_DIE_903014",
+                "VARIABLE_CHANGE_903015",
+                "VARIABLE_CHANGE_903016",
+                "VARIABLE_CHANGE_903018"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_903001",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_903001",
+            "config_id": 1903001,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_903001",
+            "source": "Gear",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_903002",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_903002",
+            "config_id": 1903002,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_903002",
+            "source": "Gear",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_903003",
+            "condition": "condition_EVENT_ENTER_REGION_903003",
+            "config_id": 1903003,
+            "event": 4,
+            "name": "ENTER_REGION_903003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_903004",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_903004",
+            "config_id": 1903004,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_903004",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_903008",
+            "condition": "",
+            "config_id": 1903008,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_903008",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_903009",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_903009",
+            "config_id": 1903009,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_903009",
+            "source": "Gear",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_903010",
+            "condition": "condition_EVENT_ENTER_REGION_903010",
+            "config_id": 1903010,
+            "event": 4,
+            "name": "ENTER_REGION_903010",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_903011",
+            "condition": "condition_EVENT_ENTER_REGION_903011",
+            "config_id": 1903011,
+            "event": 4,
+            "name": "ENTER_REGION_903011",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_903012",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_903012",
+            "config_id": 1903012,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_903012",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_903013",
+            "condition": "",
+            "config_id": 1903013,
+            "event": 15,
+            "name": "TIMER_EVENT_903013",
+            "source": "AddQuestProgress3",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_903014",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_903014",
+            "config_id": 1903014,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_903014",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_903015",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_903015",
+            "config_id": 1903015,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_903015",
+            "source": "Gear1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_903016",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_903016",
+            "config_id": 1903016,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_903016",
+            "source": "Gear2",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_903017",
+            "condition": "",
+            "config_id": 1903017,
+            "event": 28,
+            "name": "QUEST_START_903017",
+            "source": "4001120",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_903018",
+            "condition": "condition_EVENT_VARIABLE_CHANGE_903018",
+            "config_id": 1903018,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_903018",
+            "source": "Gear3",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "Gear",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "FirstReminder",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 3,
+            "name": "Gear1",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 4,
+            "name": "Gear2",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 5,
+            "name": "Gear3",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

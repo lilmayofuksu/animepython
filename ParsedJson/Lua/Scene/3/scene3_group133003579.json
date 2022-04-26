@@ -1,0 +1,251 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_579002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_579012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_579002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_579012": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 1,
+            "config_id": 579005,
+            "gadget_id": 70300086,
+            "level": 5,
+            "pos": {
+                "x": 2415.496,
+                "y": 251.547,
+                "z": -1414.365
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 1,
+            "config_id": 579006,
+            "gadget_id": 70300086,
+            "level": 5,
+            "pos": {
+                "x": 2394.216,
+                "y": 252.815,
+                "z": -1417.609
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 1,
+            "config_id": 579008,
+            "gadget_id": 70300107,
+            "level": 5,
+            "persistent": true,
+            "pos": {
+                "x": 2412.846,
+                "y": 250.314,
+                "z": -1399.895
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 201
+        },
+        {
+            "area_id": 1,
+            "config_id": 579009,
+            "gadget_id": 70300107,
+            "level": 5,
+            "persistent": true,
+            "pos": {
+                "x": 2396.925,
+                "y": 249.687,
+                "z": -1400.842
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 201
+        },
+        {
+            "area_id": 1,
+            "config_id": 579010,
+            "gadget_id": 70300107,
+            "level": 5,
+            "persistent": true,
+            "pos": {
+                "x": 2404.54,
+                "y": 249.26,
+                "z": -1407.282
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 201
+        },
+        {
+            "area_id": 1,
+            "config_id": 579011,
+            "gadget_id": 70220010,
+            "level": 5,
+            "pos": {
+                "x": 2404.916,
+                "y": 249.656,
+                "z": -1397.983
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 1,
+            "config_id": 579001,
+            "drop_id": 1000100,
+            "level": 5,
+            "monster_id": 21010201,
+            "pos": {
+                "x": 2405.238,
+                "y": 249.916,
+                "z": -1404.485
+            },
+            "pose_id": 9012,
+            "rot": {
+                "x": 0,
+                "y": 186.492,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 1,
+            "config_id": 579007,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "level": 5,
+            "monster_id": 21010201,
+            "pos": {
+                "x": 2404.225,
+                "y": 249.672,
+                "z": -1409.923
+            },
+            "pose_id": 9012,
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 1,
+            "config_id": 579019,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "level": 5,
+            "monster_id": 21010201,
+            "pos": {
+                "x": 2402.27,
+                "y": 250.751,
+                "z": -1416.027
+            },
+            "pose_id": 9002,
+            "rot": {
+                "x": 359.348,
+                "y": 275.141,
+                "z": 359.941
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 1,
+            "config_id": 579012,
+            "pos": {
+                "x": 2405.625,
+                "y": 250.414,
+                "z": -1413.212
+            },
+            "radius": 20,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                579005,
+                579006,
+                579008,
+                579009,
+                579010,
+                579011
+            ],
+            "monsters": [
+                579001,
+                579007,
+                579019
+            ],
+            "rand_weight": 100,
+            "regions": [
+                579012
+            ],
+            "triggers": [
+                "ANY_MONSTER_DIE_579002",
+                "ENTER_REGION_579012"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_579002",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_579002",
+            "config_id": 1579002,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_579002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_579012",
+            "condition": "condition_EVENT_ENTER_REGION_579012",
+            "config_id": 1579012,
+            "event": 4,
+            "name": "ENTER_REGION_579012",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "gadgetNum",
+            "no_refresh": false,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "mageNum",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

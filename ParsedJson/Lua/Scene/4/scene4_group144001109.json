@@ -1,0 +1,166 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_109003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_MONSTER_DIE_109011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_109002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_109004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_109012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_109003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_109011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_109002": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 102,
+            "config_id": 109001,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "guest_ban_drop": 1000100,
+            "level": 1,
+            "monster_id": 21030101,
+            "pos": {
+                "x": 745.654,
+                "y": 202.521,
+                "z": 205.737
+            },
+            "pose_id": 9012,
+            "rot": {
+                "x": 0,
+                "y": 341.969,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 102,
+            "config_id": 109009,
+            "drop_id": 1000100,
+            "guest_ban_drop": 1000100,
+            "level": 1,
+            "monster_id": 20011001,
+            "pos": {
+                "x": 746.977,
+                "y": 202.327,
+                "z": 206.855
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 102,
+            "config_id": 109010,
+            "drop_id": 1000100,
+            "guest_ban_drop": 1000100,
+            "level": 1,
+            "monster_id": 20011001,
+            "pos": {
+                "x": 744.483,
+                "y": 202.433,
+                "z": 206.636
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 102,
+            "config_id": 109002,
+            "pos": {
+                "x": 745.324,
+                "y": 203.102,
+                "z": 206.057
+            },
+            "radius": 11,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                109002
+            ],
+            "triggers": [
+                "ENTER_REGION_109002",
+                "ANY_MONSTER_DIE_109003",
+                "QUEST_START_109004",
+                "ANY_MONSTER_DIE_109011",
+                "TIMER_EVENT_109012"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                109001,
+                109009,
+                109010
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_109002",
+            "condition": "condition_EVENT_ENTER_REGION_109002",
+            "config_id": 1109002,
+            "event": 4,
+            "name": "ENTER_REGION_109002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_109003",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_109003",
+            "config_id": 1109003,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_109003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_QUEST_START_109004",
+            "condition": "",
+            "config_id": 1109004,
+            "event": 28,
+            "name": "QUEST_START_109004",
+            "source": "7900204"
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_109011",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_109011",
+            "config_id": 1109011,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_109011",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_109012",
+            "condition": "",
+            "config_id": 1109012,
+            "event": 15,
+            "name": "TIMER_EVENT_109012",
+            "source": "createmonster"
+        }
+    ],
+    "variables": []
+}

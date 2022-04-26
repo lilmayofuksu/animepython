@@ -1,0 +1,154 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_543002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_543005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_LEAVE_REGION_543006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_543002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_543005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_LEAVE_REGION_543006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 1,
+            "boss_chest": {
+                "life_time": 600,
+                "monster_config_id": 543001,
+                "resin": 40,
+                "take_num": 100
+            },
+            "config_id": 543003,
+            "drop_tag": "\u6025\u51bb\u6811",
+            "gadget_id": 70210106,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": 2101.444,
+                "y": 190.592,
+                "z": -1680.776
+            },
+            "rot": {
+                "x": 0,
+                "y": 338.343,
+                "z": 0
+            },
+            "showcutscene": true
+        }
+    ],
+    "garbages": {
+        "gadgets": [
+            {
+                "area_id": 1,
+                "config_id": 543004,
+                "gadget_id": 71000007,
+                "level": 5,
+                "pos": {
+                    "x": 2096.306,
+                    "y": 190.575,
+                    "z": -1675.042
+                },
+                "rot": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 1,
+            "config_id": 543001,
+            "drop_id": 1000100,
+            "level": 36,
+            "monster_id": 26020101,
+            "pos": {
+                "x": 2096.257,
+                "y": 190.575,
+                "z": -1674.469
+            },
+            "pose_id": 1,
+            "rot": {
+                "x": 0,
+                "y": 336.573,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 1,
+            "config_id": 543005,
+            "pos": {
+                "x": 2097.843,
+                "y": 190.589,
+                "z": -1673.171
+            },
+            "radius": 40,
+            "shape": 1
+        },
+        {
+            "area_id": 1,
+            "config_id": 543006,
+            "pos": {
+                "x": 2095.792,
+                "y": 190.593,
+                "z": -1673.261
+            },
+            "radius": 50,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [
+                543001
+            ],
+            "rand_weight": 100,
+            "regions": [
+                543005,
+                543006
+            ],
+            "triggers": [
+                "ANY_MONSTER_DIE_543002",
+                "ENTER_REGION_543005",
+                "LEAVE_REGION_543006"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_543002",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_543002",
+            "config_id": 1543002,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_543002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_543005",
+            "condition": "condition_EVENT_ENTER_REGION_543005",
+            "config_id": 1543005,
+            "event": 4,
+            "forbid_guest": false,
+            "name": "ENTER_REGION_543005",
+            "source": "1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_LEAVE_REGION_543006",
+            "condition": "condition_EVENT_LEAVE_REGION_543006",
+            "config_id": 1543006,
+            "event": 5,
+            "forbid_guest": false,
+            "name": "LEAVE_REGION_543006",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

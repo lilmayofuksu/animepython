@@ -1,0 +1,121 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_4006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GATHER_4002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_4006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "autopick": true,
+            "config_id": 4001,
+            "gadget_id": 70500000,
+            "isOneoff": true,
+            "level": 30,
+            "persistent": true,
+            "point_type": 9126,
+            "pos": {
+                "x": 806.597,
+                "y": 199.5,
+                "z": -1280.823
+            },
+            "rot": {
+                "x": 331.47,
+                "y": 271.811,
+                "z": 347.993
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 4004,
+            "gadget_id": 70800025,
+            "level": 30,
+            "persistent": true,
+            "pos": {
+                "x": 807.139,
+                "y": 200,
+                "z": -1281.779
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 10,
+            "climate_area_id": 1,
+            "config_id": 4005,
+            "drop_tag": "\u4e18\u4e18\u5ca9\u76d4\u738b",
+            "level": 30,
+            "monster_id": 21020401,
+            "pos": {
+                "x": 810.573,
+                "y": 200,
+                "z": -1271.703
+            },
+            "rot": {
+                "x": 0,
+                "y": 335.392,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                4001,
+                4004
+            ],
+            "monsters": [
+                4005
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GATHER_4002",
+                "ANY_MONSTER_DIE_4006"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GATHER_4002",
+            "condition": "",
+            "config_id": 1004002,
+            "event": 20,
+            "name": "GATHER_4002",
+            "source": "4001"
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_4006",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_4006",
+            "config_id": 1004006,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_4006",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

@@ -1,0 +1,314 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_8005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_GADGET_DIE_8006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_GADGET_DIE_8007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ANY_GADGET_DIE_8008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_8009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_8015": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_8017": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_8011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_8012": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_8013": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_8014": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_8005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_8006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_8007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_8008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_8009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_8015": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_8017": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 8001,
+            "gadget_id": 70310013,
+            "level": 1,
+            "pos": {
+                "x": -46.768,
+                "y": 66.533,
+                "z": 124.087
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 8002,
+            "gadget_id": 70310013,
+            "level": 1,
+            "pos": {
+                "x": -42.452,
+                "y": 66.339,
+                "z": 120.631
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 8003,
+            "gadget_id": 70310013,
+            "level": 1,
+            "pos": {
+                "x": -37.99,
+                "y": 66.047,
+                "z": 117.754
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 8004,
+            "gadget_id": 70310013,
+            "level": 1,
+            "pos": {
+                "x": -33.66,
+                "y": 65.766,
+                "z": 115.106
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 8010,
+            "gadget_id": 70900201,
+            "level": 1,
+            "pos": {
+                "x": -97.742,
+                "y": 64.095,
+                "z": 153.214
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 8016,
+            "gadget_id": 70350061,
+            "level": 1,
+            "pos": {
+                "x": -66.06,
+                "y": 64.46,
+                "z": 136.63
+            },
+            "rot": {
+                "x": 291.1,
+                "y": 120.516,
+                "z": 179.704
+            }
+        },
+        {
+            "config_id": 8018,
+            "gadget_id": 70900201,
+            "level": 1,
+            "pos": {
+                "x": -44.688,
+                "y": 60.662,
+                "z": 162.794
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 8009,
+            "pos": {
+                "x": -94.918,
+                "y": 64.586,
+                "z": 151.389
+            },
+            "radius": 10,
+            "shape": 1
+        },
+        {
+            "config_id": 8015,
+            "pos": {
+                "x": -124.696,
+                "y": 63.393,
+                "z": 148.597
+            },
+            "radius": 5,
+            "shape": 1
+        },
+        {
+            "config_id": 8017,
+            "pos": {
+                "x": -81.525,
+                "y": 64.586,
+                "z": 145.965
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                8016
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                8009,
+                8017
+            ],
+            "triggers": [
+                "ENTER_REGION_8009",
+                "ENTER_REGION_8017"
+            ]
+        },
+        {
+            "gadgets": [
+                8001,
+                8002,
+                8003,
+                8004,
+                8010
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                8015
+            ],
+            "triggers": [
+                "ANY_GADGET_DIE_8005",
+                "ANY_GADGET_DIE_8006",
+                "ANY_GADGET_DIE_8007",
+                "ANY_GADGET_DIE_8008",
+                "TIMER_EVENT_8011",
+                "TIMER_EVENT_8012",
+                "TIMER_EVENT_8013",
+                "TIMER_EVENT_8014",
+                "ENTER_REGION_8015"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_8005",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_8005",
+            "config_id": 1008005,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_8005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_8006",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_8006",
+            "config_id": 1008006,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_8006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_8007",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_8007",
+            "config_id": 1008007,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_8007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_8008",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_8008",
+            "config_id": 1008008,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_8008",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_8009",
+            "condition": "condition_EVENT_ENTER_REGION_8009",
+            "config_id": 1008009,
+            "event": 4,
+            "name": "ENTER_REGION_8009",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_8011",
+            "condition": "",
+            "config_id": 1008011,
+            "event": 15,
+            "name": "TIMER_EVENT_8011",
+            "source": "time1",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_8012",
+            "condition": "",
+            "config_id": 1008012,
+            "event": 15,
+            "name": "TIMER_EVENT_8012",
+            "source": "time2",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_8013",
+            "condition": "",
+            "config_id": 1008013,
+            "event": 15,
+            "name": "TIMER_EVENT_8013",
+            "source": "time3",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_TIMER_EVENT_8014",
+            "condition": "",
+            "config_id": 1008014,
+            "event": 15,
+            "name": "TIMER_EVENT_8014",
+            "source": "time4",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_8015",
+            "condition": "condition_EVENT_ENTER_REGION_8015",
+            "config_id": 1008015,
+            "event": 4,
+            "name": "ENTER_REGION_8015",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_8017",
+            "condition": "condition_EVENT_ENTER_REGION_8017",
+            "config_id": 1008017,
+            "event": 4,
+            "name": "ENTER_REGION_8017",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

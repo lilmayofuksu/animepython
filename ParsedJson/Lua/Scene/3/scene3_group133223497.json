@@ -1,0 +1,161 @@
+{
+    "action_EVENT_ENTER_REGION_497006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_FINISH_497004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 18,
+            "config_id": 497001,
+            "gadget_id": 70360001,
+            "level": 33,
+            "pos": {
+                "x": -6222.386,
+                "y": 235.472,
+                "z": -2460.242
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 18,
+            "config_id": 497003,
+            "gadget_id": 70360001,
+            "level": 33,
+            "pos": {
+                "x": -6222.284,
+                "y": 235.541,
+                "z": -2461.478
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "garbages": {
+        "gadgets": [
+            {
+                "area_id": 18,
+                "config_id": 497002,
+                "gadget_id": 70360001,
+                "level": 33,
+                "pos": {
+                    "x": -6222.284,
+                    "y": 235.541,
+                    "z": -2461.478
+                },
+                "rot": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        ],
+        "regions": [
+            {
+                "area_id": 18,
+                "config_id": 497005,
+                "pos": {
+                    "x": -6222.996,
+                    "y": 234.913,
+                    "z": -2458.737
+                },
+                "radius": 810,
+                "shape": 1
+            }
+        ],
+        "triggers": [
+            {
+                "action": "action_EVENT_ENTER_REGION_497005",
+                "condition": "",
+                "config_id": 1497005,
+                "event": 4,
+                "name": "ENTER_REGION_497005",
+                "source": ""
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 18,
+            "config_id": 497006,
+            "pos": {
+                "x": -6222.445,
+                "y": 235.18,
+                "z": -2459.179
+            },
+            "radius": 10,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                497001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_FINISH_497004"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "gadgets": [
+                497003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                497006
+            ],
+            "triggers": [
+                "ENTER_REGION_497006"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_QUEST_FINISH_497004",
+            "condition": "",
+            "config_id": 1497004,
+            "event": 21,
+            "name": "QUEST_FINISH_497004",
+            "source": "7222701",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_497006",
+            "condition": "",
+            "config_id": 1497006,
+            "event": 4,
+            "name": "ENTER_REGION_497006",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

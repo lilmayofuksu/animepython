@@ -1,0 +1,161 @@
+{
+    "action_EVENT_ENTER_REGION_123004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_123006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_123003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_TIMER_EVENT_123002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_123004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GROUP_LOAD_123006": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 103,
+            "config_id": 123001,
+            "gadget_id": 70380277,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": -703.206,
+                "y": 100.893,
+                "z": 424.511
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "route_id": 400100089
+        }
+    ],
+    "garbages": {
+        "gadgets": [
+            {
+                "area_id": 103,
+                "config_id": 123008,
+                "gadget_id": 70380028,
+                "level": 1,
+                "persistent": true,
+                "pos": {
+                    "x": -741.447,
+                    "y": 100.893,
+                    "z": 417.644
+                },
+                "rot": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "route_id": 400100122
+            }
+        ],
+        "triggers": [
+            {
+                "action": "action_EVENT_GROUP_LOAD_123005",
+                "condition": "condition_EVENT_GROUP_LOAD_123005",
+                "config_id": 1123005,
+                "event": 29,
+                "name": "GROUP_LOAD_123005",
+                "source": "",
+                "trigger_count": 0
+            },
+            {
+                "action": "action_EVENT_GROUP_LOAD_123007",
+                "condition": "condition_EVENT_GROUP_LOAD_123007",
+                "config_id": 1123007,
+                "event": 29,
+                "name": "GROUP_LOAD_123007",
+                "source": "",
+                "trigger_count": 0
+            }
+        ]
+    },
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 103,
+            "config_id": 123004,
+            "pos": {
+                "x": -726.195,
+                "y": 122.026,
+                "z": 405.274
+            },
+            "radius": 5,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "QUEST_START_123003"
+            ]
+        },
+        {
+            "gadgets": [
+                123001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "TIMER_EVENT_123002",
+                "QUEST_START_123003",
+                "GROUP_LOAD_123006"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                123004
+            ],
+            "triggers": [
+                "ENTER_REGION_123004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_TIMER_EVENT_123002",
+            "condition": "",
+            "config_id": 1123002,
+            "event": 15,
+            "name": "TIMER_EVENT_123002",
+            "source": "7900602"
+        },
+        {
+            "action": "action_EVENT_QUEST_START_123003",
+            "condition": "",
+            "config_id": 1123003,
+            "event": 28,
+            "name": "QUEST_START_123003",
+            "source": "7900602"
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_123004",
+            "condition": "condition_EVENT_ENTER_REGION_123004",
+            "config_id": 1123004,
+            "event": 4,
+            "name": "ENTER_REGION_123004",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_123006",
+            "condition": "condition_EVENT_GROUP_LOAD_123006",
+            "config_id": 1123006,
+            "event": 29,
+            "name": "GROUP_LOAD_123006",
+            "source": "",
+            "trigger_count": 0
+        }
+    ],
+    "variables": []
+}

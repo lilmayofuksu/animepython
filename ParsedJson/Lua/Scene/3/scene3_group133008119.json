@@ -1,0 +1,107 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_119003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_119003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "config_id": 119004,
+            "drop_tag": "\u96ea\u5c71\u6218\u6597\u4e2d\u7ea7\u8499\u5fb7",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211011,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": 945.637,
+                "y": 365.974,
+                "z": -725.057
+            },
+            "rot": {
+                "x": 2.622,
+                "y": 13.435,
+                "z": 356.666
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 119005,
+            "gadget_id": 70310017,
+            "level": 30,
+            "pos": {
+                "x": 949.207,
+                "y": 366.095,
+                "z": -722.492
+            },
+            "rot": {
+                "x": 0,
+                "y": 297.198,
+                "z": 0
+            },
+            "state": 201
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 10,
+            "climate_area_id": 1,
+            "config_id": 119001,
+            "drop_tag": "\u6df1\u6e0a\u6cd5\u5e08",
+            "level": 30,
+            "monster_id": 22010101,
+            "pos": {
+                "x": 947.41,
+                "y": 366.11,
+                "z": -721.791
+            },
+            "pose_id": 9013,
+            "rot": {
+                "x": 0,
+                "y": 106.502,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                119005
+            ],
+            "monsters": [
+                119001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_119003"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_119003",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_119003",
+            "config_id": 1119003,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_119003",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

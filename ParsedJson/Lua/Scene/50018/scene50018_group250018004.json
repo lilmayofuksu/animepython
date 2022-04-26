@@ -1,0 +1,139 @@
+{
+    "action_EVENT_GADGET_CREATE_4002": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SEAL_BATTLE_END_4007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_4003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_4002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SEAL_BATTLE_END_4007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_4003": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 4001,
+            "gadget_id": 70950008,
+            "level": 1,
+            "pos": {
+                "x": -0.015,
+                "y": 0,
+                "z": -0.016
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 4004,
+            "level": 1,
+            "monster_id": 21011201,
+            "pos": {
+                "x": 3.43,
+                "y": 0.002,
+                "z": -6.178
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 4005,
+            "level": 1,
+            "monster_id": 21011201,
+            "pos": {
+                "x": -4.126,
+                "y": 0.002,
+                "z": -5.725
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "config_id": 4006,
+            "level": 1,
+            "monster_id": 21011201,
+            "pos": {
+                "x": -0.024,
+                "y": 0.002,
+                "z": 6.071
+            },
+            "rot": {
+                "x": 0,
+                "y": 180,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                4001
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_CREATE_4002",
+                "SELECT_OPTION_4003",
+                "SEAL_BATTLE_END_4007"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                4004,
+                4005,
+                4006
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_CREATE_4002",
+            "condition": "condition_EVENT_GADGET_CREATE_4002",
+            "config_id": 1004002,
+            "event": 6,
+            "name": "GADGET_CREATE_4002",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_4003",
+            "condition": "condition_EVENT_SELECT_OPTION_4003",
+            "config_id": 1004003,
+            "event": 9,
+            "name": "SELECT_OPTION_4003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_SEAL_BATTLE_END_4007",
+            "condition": "condition_EVENT_SEAL_BATTLE_END_4007",
+            "config_id": 1004007,
+            "event": 19,
+            "name": "SEAL_BATTLE_END_4007",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "seal_battle_done",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

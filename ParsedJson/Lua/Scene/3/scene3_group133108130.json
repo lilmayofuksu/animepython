@@ -1,0 +1,251 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_130013": "WARN: Lua function omitted from the dump",
+    "action_EVENT_BLOSSOM_CHEST_DIE_130009": "WARN: Lua function omitted from the dump",
+    "action_EVENT_BLOSSOM_PROGRESS_FINISH_130014": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_130007": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_CREATE_130010": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_130005": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GADGET_STATE_CHANGE_130006": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_LOAD_130015": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GROUP_REFRESH_130008": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_130011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SELECT_OPTION_130012": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_BLOSSOM_CHEST_DIE_130009": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_130007": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_CREATE_130010": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_130005": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_GADGET_STATE_CHANGE_130006": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_130011": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SELECT_OPTION_130012": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 7,
+            "config_id": 130002,
+            "gadget_id": 70360056,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": -2.437,
+                "y": 270.804,
+                "z": 101.755
+            },
+            "rot": {
+                "x": 3.249,
+                "y": 359.836,
+                "z": 354.223
+            }
+        },
+        {
+            "area_id": 7,
+            "config_id": 130003,
+            "gadget_id": 70360057,
+            "level": 1,
+            "persistent": true,
+            "pos": {
+                "x": -2.437,
+                "y": 270.804,
+                "z": 101.755
+            },
+            "rot": {
+                "x": 6.264,
+                "y": 85.696,
+                "z": 2.596
+            }
+        },
+        {
+            "area_id": 7,
+            "chest_drop_id": 1000100,
+            "config_id": 130004,
+            "drop_count": 1,
+            "gadget_id": 70210106,
+            "is_blossom_chest": true,
+            "level": 16,
+            "persistent": true,
+            "pos": {
+                "x": -2.732,
+                "y": 270.774,
+                "z": 99.774
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "showcutscene": true
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "affix": [
+                1006
+            ],
+            "area_id": 7,
+            "config_id": 130001,
+            "drop_tag": "\u4e18\u4e18\u5ca9\u76d4\u738b",
+            "isElite": true,
+            "level": 3,
+            "monster_id": 21020501,
+            "pos": {
+                "x": -0.98,
+                "y": 270.876,
+                "z": 109.447
+            },
+            "rot": {
+                "x": 0,
+                "y": 186.267,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_130015"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GADGET_STATE_CHANGE_130005",
+                "GADGET_STATE_CHANGE_130006",
+                "GADGET_CREATE_130007",
+                "GROUP_REFRESH_130008",
+                "BLOSSOM_CHEST_DIE_130009",
+                "GADGET_CREATE_130010",
+                "SELECT_OPTION_130011",
+                "SELECT_OPTION_130012",
+                "ANY_MONSTER_DIE_130013",
+                "BLOSSOM_PROGRESS_FINISH_130014"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                130001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_130005",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_130005",
+            "config_id": 1130005,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_130005",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_STATE_CHANGE_130006",
+            "condition": "condition_EVENT_GADGET_STATE_CHANGE_130006",
+            "config_id": 1130006,
+            "event": 7,
+            "name": "GADGET_STATE_CHANGE_130006",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_130007",
+            "condition": "condition_EVENT_GADGET_CREATE_130007",
+            "config_id": 1130007,
+            "event": 6,
+            "name": "GADGET_CREATE_130007",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GROUP_REFRESH_130008",
+            "condition": "",
+            "config_id": 1130008,
+            "event": 32,
+            "name": "GROUP_REFRESH_130008",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_BLOSSOM_CHEST_DIE_130009",
+            "condition": "condition_EVENT_BLOSSOM_CHEST_DIE_130009",
+            "config_id": 1130009,
+            "event": 40,
+            "name": "BLOSSOM_CHEST_DIE_130009",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_GADGET_CREATE_130010",
+            "condition": "condition_EVENT_GADGET_CREATE_130010",
+            "config_id": 1130010,
+            "event": 6,
+            "name": "GADGET_CREATE_130010",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_130011",
+            "condition": "condition_EVENT_SELECT_OPTION_130011",
+            "config_id": 1130011,
+            "event": 9,
+            "name": "SELECT_OPTION_130011",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SELECT_OPTION_130012",
+            "condition": "condition_EVENT_SELECT_OPTION_130012",
+            "config_id": 1130012,
+            "event": 9,
+            "name": "SELECT_OPTION_130012",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_130013",
+            "condition": "",
+            "config_id": 1130013,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_130013",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_BLOSSOM_PROGRESS_FINISH_130014",
+            "condition": "",
+            "config_id": 1130014,
+            "event": 39,
+            "name": "BLOSSOM_PROGRESS_FINISH_130014",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_GROUP_LOAD_130015",
+            "condition": "",
+            "config_id": 1130015,
+            "event": 29,
+            "name": "GROUP_LOAD_130015",
+            "source": ""
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "GroupCompletion",
+            "no_refresh": false,
+            "value": 0
+        }
+    ]
+}

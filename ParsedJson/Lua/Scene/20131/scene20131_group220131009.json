@@ -1,0 +1,107 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_9003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_9004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_9003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_9004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "config_id": 9002,
+            "gadget_id": 70350004,
+            "level": 1,
+            "pos": {
+                "x": 26.019,
+                "y": -5.757,
+                "z": -20.59
+            },
+            "rot": {
+                "x": 0,
+                "y": 90,
+                "z": 0
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "config_id": 9001,
+            "level": 1,
+            "monster_id": 21020501,
+            "pos": {
+                "x": 46.931,
+                "y": -6.46,
+                "z": -22.594
+            },
+            "pose_id": 401,
+            "rot": {
+                "x": 0,
+                "y": 267.799,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "config_id": 9004,
+            "pos": {
+                "x": 61.465,
+                "y": -2.278,
+                "z": -0.919
+            },
+            "shape": 2,
+            "size": {
+                "x": 5,
+                "y": 15,
+                "z": 20
+            }
+        }
+    ],
+    "suites": [
+        {
+            "gadgets": [
+                9002
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                9004
+            ],
+            "triggers": [
+                "ANY_MONSTER_DIE_9003",
+                "ENTER_REGION_9004"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                9001
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_9003",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_9003",
+            "config_id": 1009003,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_9003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_9004",
+            "condition": "condition_EVENT_ENTER_REGION_9004",
+            "config_id": 1009004,
+            "event": 4,
+            "name": "ENTER_REGION_9004",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

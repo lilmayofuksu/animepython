@@ -1,0 +1,179 @@
+{
+    "action_EVENT_ANY_MONSTER_DIE_35003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_MONSTER_BATTLE_35008": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_MONSTER_DIE_35003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_MONSTER_BATTLE_35008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 8,
+            "config_id": 35002,
+            "drop_tag": "\u6218\u6597\u9ad8\u7ea7\u7483\u6708",
+            "explore": {
+                "exp": 1,
+                "name": "chest"
+            },
+            "gadget_id": 70211022,
+            "isOneoff": true,
+            "level": 26,
+            "persistent": true,
+            "pos": {
+                "x": -842.393,
+                "y": 182.989,
+                "z": 927.441
+            },
+            "rot": {
+                "x": 0,
+                "y": 192.284,
+                "z": 0
+            },
+            "state": 101
+        },
+        {
+            "area_id": 8,
+            "config_id": 35005,
+            "gadget_id": 70310004,
+            "level": 32,
+            "pos": {
+                "x": -838.444,
+                "y": 183.074,
+                "z": 918.187
+            },
+            "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "state": 201
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 8,
+            "config_id": 35001,
+            "disableWander": true,
+            "drop_tag": "\u4e18\u4e18\u66b4\u5f92",
+            "level": 30,
+            "monster_id": 21020101,
+            "pos": {
+                "x": -839.814,
+                "y": 183.074,
+                "z": 916.979
+            },
+            "pose_id": 401,
+            "rot": {
+                "x": 0,
+                "y": 58.891,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 8,
+            "config_id": 35004,
+            "disableWander": true,
+            "drop_tag": "\u4e18\u4e18\u66b4\u5f92",
+            "level": 30,
+            "monster_id": 21020201,
+            "pos": {
+                "x": -838.233,
+                "y": 183.074,
+                "z": 920.694
+            },
+            "pose_id": 401,
+            "rot": {
+                "x": 0,
+                "y": 182.951,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 8,
+            "config_id": 35006,
+            "drop_tag": "\u8fdc\u7a0b\u4e18\u4e18\u4eba",
+            "level": 30,
+            "monster_id": 21010401,
+            "pos": {
+                "x": -837.476,
+                "y": 187.783,
+                "z": 931.211
+            },
+            "pose_id": 402,
+            "rot": {
+                "x": 0,
+                "y": 181.25,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 8,
+            "config_id": 35007,
+            "drop_tag": "\u8fdc\u7a0b\u4e18\u4e18\u4eba",
+            "level": 30,
+            "monster_id": 21011001,
+            "pos": {
+                "x": -841.372,
+                "y": 188.029,
+                "z": 931.476
+            },
+            "pose_id": 32,
+            "rot": {
+                "x": 0,
+                "y": 191.835,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                35002,
+                35005
+            ],
+            "monsters": [
+                35001,
+                35004
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "ANY_MONSTER_DIE_35003",
+                "MONSTER_BATTLE_35008"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [
+                35006,
+                35007
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ANY_MONSTER_DIE_35003",
+            "condition": "condition_EVENT_ANY_MONSTER_DIE_35003",
+            "config_id": 1035003,
+            "event": 1,
+            "name": "ANY_MONSTER_DIE_35003",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_MONSTER_BATTLE_35008",
+            "condition": "condition_EVENT_MONSTER_BATTLE_35008",
+            "config_id": 1035008,
+            "event": 22,
+            "name": "MONSTER_BATTLE_35008",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

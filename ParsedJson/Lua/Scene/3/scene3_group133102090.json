@@ -1,0 +1,96 @@
+{
+    "action_EVENT_ENTER_REGION_90004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_90004": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 5,
+            "config_id": 90001,
+            "drop_id": 1000100,
+            "level": 32,
+            "monster_id": 21010901,
+            "pos": {
+                "x": 1685.598,
+                "y": 213.17,
+                "z": 162.741
+            },
+            "rot": {
+                "x": 0,
+                "y": 11.85,
+                "z": 0
+            }
+        },
+        {
+            "area_id": 5,
+            "config_id": 90002,
+            "drop_id": 1000100,
+            "level": 1,
+            "monster_id": 21010501,
+            "pos": {
+                "x": 1703.418,
+                "y": 212.48,
+                "z": 157.642
+            },
+            "rot": {
+                "x": 0,
+                "y": 279.688,
+                "z": 0
+            }
+        }
+    ],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 5,
+            "config_id": 90004,
+            "pos": {
+                "x": 1691.48,
+                "y": 210.261,
+                "z": 175.122
+            },
+            "radius": 20,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                90004
+            ],
+            "triggers": [
+                "ENTER_REGION_90004"
+            ]
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [
+                90001,
+                90002
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_90004",
+            "condition": "condition_EVENT_ENTER_REGION_90004",
+            "config_id": 1090004,
+            "event": 4,
+            "name": "ENTER_REGION_90004",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

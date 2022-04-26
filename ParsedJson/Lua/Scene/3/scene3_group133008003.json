@@ -1,0 +1,91 @@
+{
+    "action_EVENT_ANY_GADGET_DIE_3004": "WARN: Lua function omitted from the dump",
+    "action_EVENT_GATHER_3002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ANY_GADGET_DIE_3004": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 10,
+            "autopick": true,
+            "config_id": 3001,
+            "gadget_id": 70500000,
+            "isOneoff": true,
+            "level": 30,
+            "persistent": true,
+            "point_type": 9126,
+            "pos": {
+                "x": 1510.248,
+                "y": 266.411,
+                "z": -693.181
+            },
+            "rot": {
+                "x": 30.533,
+                "y": 352.387,
+                "z": 16.114
+            }
+        },
+        {
+            "area_id": 10,
+            "config_id": 3003,
+            "gadget_id": 70220046,
+            "level": 30,
+            "pos": {
+                "x": 1510.657,
+                "y": 267.352,
+                "z": -693.321
+            },
+            "rot": {
+                "x": 3.307,
+                "y": 321.589,
+                "z": 357.381
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                3003
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GATHER_3002",
+                "ANY_GADGET_DIE_3004"
+            ]
+        },
+        {
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GATHER_3002",
+            "condition": "",
+            "config_id": 1003002,
+            "event": 20,
+            "name": "GATHER_3002",
+            "source": "3001"
+        },
+        {
+            "action": "action_EVENT_ANY_GADGET_DIE_3004",
+            "condition": "condition_EVENT_ANY_GADGET_DIE_3004",
+            "config_id": 1003004,
+            "event": 2,
+            "name": "ANY_GADGET_DIE_3004",
+            "source": ""
+        }
+    ],
+    "variables": []
+}

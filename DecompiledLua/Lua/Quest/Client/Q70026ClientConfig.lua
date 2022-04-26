@@ -1,0 +1,30 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
+L0_1 = {}
+L0_1.MainID = 70026
+L0_1.ActorAlias = "70026"
+L1_1 = {}
+L1_1.q7002601 = 7002601
+L1_1.q7002602 = 7002602
+L1_1.q7002603 = 7002603
+L1_1.q7002604 = 7002604
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L3_1.dialogID = 700260190
+L3_1.audioEvtName = ""
+L3_1.duration = 5
+L4_1 = {}
+L4_1.dialogID = 700260191
+L4_1.audioEvtName = ""
+L4_1.duration = 5
+L5_1 = {}
+L5_1.dialogID = 700260192
+L5_1.audioEvtName = ""
+L5_1.duration = 5
+L2_1[1] = L3_1
+L2_1[2] = L4_1
+L2_1[3] = L5_1
+L1_1.NarratorTable = L2_1
+L0_1.Datas = L1_1
+return L0_1

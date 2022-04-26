@@ -1,0 +1,99 @@
+{
+    "action_EVENT_GROUP_LOAD_48001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_QUEST_START_48011": "WARN: Lua function omitted from the dump",
+    "action_EVENT_VARIABLE_CHANGE_48008": "WARN: Lua function omitted from the dump",
+    "gadgets": [
+        {
+            "area_id": 200,
+            "config_id": 48010,
+            "gadget_id": 70360337,
+            "level": 36,
+            "persistent": true,
+            "pos": {
+                "x": 252.005,
+                "y": 143.004,
+                "z": -224.431
+            },
+            "rot": {
+                "x": 4.871,
+                "y": 178.056,
+                "z": 16.081
+            }
+        }
+    ],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "lightinfo": [
+        48001,
+        48002,
+        48003,
+        48004,
+        48005,
+        48006,
+        48007
+    ],
+    "monsters": [],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "gadgets": [
+                48010
+            ],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "GROUP_LOAD_48001",
+                "VARIABLE_CHANGE_48008",
+                "QUEST_START_48011"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_GROUP_LOAD_48001",
+            "condition": "",
+            "config_id": 1048001,
+            "event": 29,
+            "name": "GROUP_LOAD_48001",
+            "source": "",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_VARIABLE_CHANGE_48008",
+            "condition": "",
+            "config_id": 1048008,
+            "event": 3,
+            "name": "VARIABLE_CHANGE_48008",
+            "source": "activeCount",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_QUEST_START_48011",
+            "condition": "",
+            "config_id": 1048011,
+            "event": 28,
+            "name": "QUEST_START_48011",
+            "source": "7224411",
+            "trigger_count": 0
+        }
+    ],
+    "variables": [
+        {
+            "configId": 1,
+            "name": "activeCount",
+            "no_refresh": true,
+            "value": 0
+        },
+        {
+            "configId": 2,
+            "name": "gameplayState",
+            "no_refresh": true,
+            "value": 0
+        }
+    ]
+}

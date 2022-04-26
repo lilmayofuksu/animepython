@@ -1,0 +1,90 @@
+{
+    "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_914001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_914003": "WARN: Lua function omitted from the dump",
+    "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_914004": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_914001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_914003": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_914004": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [
+        {
+            "area_id": 7,
+            "config_id": 914002,
+            "disableWander": true,
+            "drop_id": 1000100,
+            "level": 30,
+            "monster_id": 25010205,
+            "pos": {
+                "x": -771.41,
+                "y": 224.534,
+                "z": 482.096
+            },
+            "rot": {
+                "x": 0,
+                "y": 265.41,
+                "z": 0
+            },
+            "special_name_id": 10023,
+            "title_id": 10007
+        }
+    ],
+    "npcs": [],
+    "regions": [],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [
+                914002
+            ],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": [
+                "SPECIFIC_MONSTER_HP_CHANGE_914001",
+                "SPECIFIC_MONSTER_HP_CHANGE_914003",
+                "SPECIFIC_MONSTER_HP_CHANGE_914004"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_914001",
+            "condition": "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_914001",
+            "config_id": 1914001,
+            "event": 12,
+            "name": "SPECIFIC_MONSTER_HP_CHANGE_914001",
+            "source": "914002",
+            "trigger_count": 0
+        },
+        {
+            "action": "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_914003",
+            "condition": "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_914003",
+            "config_id": 1914003,
+            "event": 12,
+            "name": "SPECIFIC_MONSTER_HP_CHANGE_914003",
+            "source": "914002"
+        },
+        {
+            "action": "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_914004",
+            "condition": "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_914004",
+            "config_id": 1914004,
+            "event": 12,
+            "name": "SPECIFIC_MONSTER_HP_CHANGE_914004",
+            "source": "914002"
+        }
+    ],
+    "variables": []
+}

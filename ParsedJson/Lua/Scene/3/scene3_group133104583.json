@@ -1,0 +1,81 @@
+{
+    "action_EVENT_ENTER_REGION_583001": "WARN: Lua function omitted from the dump",
+    "action_EVENT_ENTER_REGION_583002": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_583001": "WARN: Lua function omitted from the dump",
+    "condition_EVENT_ENTER_REGION_583002": "WARN: Lua function omitted from the dump",
+    "gadgets": [],
+    "init_config": {
+        "end_suite": 0,
+        "rand_suite": false,
+        "suite": 1
+    },
+    "monsters": [],
+    "npcs": [],
+    "regions": [
+        {
+            "area_id": 5,
+            "config_id": 583001,
+            "pos": {
+                "x": 874.011,
+                "y": 215.768,
+                "z": 338.222
+            },
+            "radius": 3.7,
+            "shape": 1
+        },
+        {
+            "area_id": 5,
+            "config_id": 583002,
+            "pos": {
+                "x": 871.64,
+                "y": 216.059,
+                "z": 340.344
+            },
+            "radius": 3.7,
+            "shape": 1
+        }
+    ],
+    "suites": [
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [],
+            "triggers": []
+        },
+        {
+            "ban_refresh": true,
+            "gadgets": [],
+            "monsters": [],
+            "rand_weight": 100,
+            "regions": [
+                583001,
+                583002
+            ],
+            "triggers": [
+                "ENTER_REGION_583001",
+                "ENTER_REGION_583002"
+            ]
+        }
+    ],
+    "triggers": [
+        {
+            "action": "action_EVENT_ENTER_REGION_583001",
+            "condition": "condition_EVENT_ENTER_REGION_583001",
+            "config_id": 1583001,
+            "event": 4,
+            "name": "ENTER_REGION_583001",
+            "source": ""
+        },
+        {
+            "action": "action_EVENT_ENTER_REGION_583002",
+            "condition": "condition_EVENT_ENTER_REGION_583002",
+            "config_id": 1583002,
+            "event": 4,
+            "name": "ENTER_REGION_583002",
+            "source": ""
+        }
+    ],
+    "variables": []
+}
