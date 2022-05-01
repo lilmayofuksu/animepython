@@ -1,0 +1,11 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.NORMAL = 1
+L0_1.TOWER = 2
+L0_1.Other = 3
+ScenePointType = L0_1
+L0_1 = {}
+L0_1.NORMAL = 1
+L0_1.ALL = 2
+L0_1.Other = 3
+SceneAreaType = L0_1

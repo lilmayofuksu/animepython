@@ -1,0 +1,17 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.None = 0
+L0_1.Take = 1
+L0_1.Put = 2
+EquipInSlotType = L0_1
+L0_1 = {}
+L0_1.None = 0
+L0_1.SwordOneHand = 1
+L0_1.CrossBow = 2
+L0_1.SmallShield = 3
+L0_1.Spear = 4
+L0_1.Catalyst = 5
+L0_1.Bow = 6
+L0_1.Claymore = 7
+L0_1.Pole = 8
+EquipEntityType = L0_1

@@ -1,0 +1,20 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.MainID = 1007
+L0_1.ActorAlias = "1007"
+L1_1 = {}
+L1_1.q100701 = 100701
+L1_1.q100702 = 100702
+L1_1.q100703 = 100703
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L1_1.Alias = "Npc2003013"
+L1_1.ID = 2003013
+L1_1.Script = "Actor/Npc/TempNPC"
+L0_1.Guard01Data = L1_1
+L1_1 = {}
+L1_1.Alias = "Npc2003014"
+L1_1.ID = 2003014
+L1_1.Script = "Actor/Npc/TempNPC"
+L0_1.Guard02Data = L1_1
+return L0_1

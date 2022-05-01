@@ -1,0 +1,35 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
+L0_1 = {}
+L0_1.MainID = 71017
+L0_1.ActorAlias = "71017"
+L1_1 = {}
+L1_1.q7101701 = 7101701
+L1_1.q7101702 = 7101702
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.id = 2433
+L2_1.alias = "Npc2433"
+L2_1.script = "Actor/Npc/NpcFSMBehaviour"
+L3_1 = sceneData
+L4_1 = L3_1
+L3_1 = L3_1.GetDummyPoint
+L5_1 = 3
+L6_1 = "QBS_chongzuo"
+L3_1 = L3_1(L4_1, L5_1, L6_1)
+L2_1.point = L3_1
+L1_1.Npc2433Data = L2_1
+L2_1 = {}
+L2_1.id = 2439
+L2_1.alias = "Npc2439"
+L2_1.script = "Actor/Npc/NpcFSMBehaviour"
+L3_1 = sceneData
+L4_1 = L3_1
+L3_1 = L3_1.GetDummyPoint
+L5_1 = 3
+L6_1 = "QBS_yinxing2"
+L3_1 = L3_1(L4_1, L5_1, L6_1)
+L2_1.point = L3_1
+L1_1.Npc2439Data = L2_1
+L0_1.Npcs = L1_1
+return L0_1

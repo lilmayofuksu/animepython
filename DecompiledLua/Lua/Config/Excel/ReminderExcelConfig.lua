@@ -1,0 +1,10 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.NONE = 0
+L0_1.TALK = 1
+L0_1.BUBBLE = 2
+ReminderShowType = L0_1
+L0_1 = {}
+L0_1.Normal = 0
+L0_1.Banner = 1
+ReminderStyleType = L0_1

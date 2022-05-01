@@ -1,0 +1,44 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
+L0_1 = require
+L1_1 = "Actor/ActorCommon"
+L0_1(L1_1)
+L0_1 = {}
+L0_1.MainID = 401
+L0_1.ActorAlias = "401"
+L1_1 = {}
+L1_1.q40101 = 40101
+L1_1.q40102 = 40102
+L1_1.q40103 = 40103
+L1_1.q40104 = 40104
+L1_1.q40105 = 40105
+L1_1.q40106 = 40106
+L0_1.SubIDs = L1_1
+L0_1.TreasureID = 100004
+L1_1 = sceneData
+L2_1 = L1_1
+L1_1 = L1_1.GetDummyPoint
+L3_1 = 3
+L4_1 = "Q401Treasure"
+L1_1 = L1_1(L2_1, L3_1, L4_1)
+L1_1 = L1_1.pos
+L0_1.TreasurePos = L1_1
+L1_1 = {}
+L1_1.Folk1 = "Extras1"
+L1_1.Folk1Script = "Actor/Quest/Q301/WendyAudience"
+L1_1.Folk1ID = 1101
+L0_1.Folk1Data = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = 20103027
+L4_1 = 21010201
+L5_1 = 21010301
+L6_1 = 21010401
+L2_1[1] = L3_1
+L2_1[2] = L4_1
+L2_1[3] = L5_1
+L2_1[4] = L6_1
+L1_1.MonsterIDs = L2_1
+L1_1.BossID = 20011301
+L1_1.BossDropID = 201002
+L0_1.MonsterData = L1_1
+return L0_1

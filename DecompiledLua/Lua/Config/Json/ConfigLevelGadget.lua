@@ -1,0 +1,15 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.None = 0
+L0_1.OnCreate = 1
+L0_1.OnUnlock = 2
+ChestShowMoment = L0_1
+L0_1 = {}
+L0_1.None = 0
+L0_1.Normal = 1
+ChestShowUIRemind = L0_1
+L0_1 = {}
+L0_1.None = 0
+L0_1.CameraLook = 1
+L0_1.Cutscene = 2
+ChestShowCutsceneType = L0_1

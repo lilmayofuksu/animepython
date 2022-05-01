@@ -1,0 +1,30 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
+L0_1 = {}
+L0_1.MainID = 996
+L0_1.ActorAlias = "996"
+L1_1 = {}
+L1_1.q99601 = 99601
+L1_1.q99602 = 99602
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L1_1.Gaia = "Gaia"
+L1_1.GaiaScript = "Actor/Quest/Q301/Gaia301"
+L1_1.GaiaID = 1004
+L2_1 = sceneData
+L3_1 = L2_1
+L2_1 = L2_1.GetDummyPoint
+L4_1 = 1008
+L5_1 = "Q996Kaeya"
+L2_1 = L2_1(L3_1, L4_1, L5_1)
+L2_1 = L2_1.pos
+L1_1.bornPos = L2_1
+L2_1 = sceneData
+L3_1 = L2_1
+L2_1 = L2_1.GetDummyPoint
+L4_1 = 1008
+L5_1 = "Q996Kaeya"
+L2_1 = L2_1(L3_1, L4_1, L5_1)
+L2_1 = L2_1.rot
+L1_1.bornDir = L2_1
+L0_1.GaiaData = L1_1
+return L0_1

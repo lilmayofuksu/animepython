@@ -1,0 +1,17 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.ClearSky = 0
+L0_1.Cloudy = 1
+L0_1.Foggy = 2
+L0_1.Rain = 3
+L0_1.Snow = 4
+L0_1.Storm = 5
+L0_1.Skill = 6
+ConfigWeatherType = L0_1
+L0_1 = {}
+L0_1.None = 0
+L0_1.InRain = 1
+L0_1.AfterRain = 2
+L0_1.InSnow = 3
+L0_1.InStorm = 4
+ElemBallTriggerType = L0_1

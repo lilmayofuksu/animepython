@@ -1,0 +1,7 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.SCENE_NONE = 0
+L0_1.SCENE_WORLD = 1
+L0_1.SCENE_DUNGEON = 2
+L0_1.SCENE_ROOM = 3
+SceneType = L0_1

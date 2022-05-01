@@ -1,0 +1,5 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.INTERACT_ACTION_NONE = 0
+L0_1.INTERACT_ACTION_STATE = 1
+InteractActionType = L0_1

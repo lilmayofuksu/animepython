@@ -1,0 +1,31 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
+L0_1 = {}
+L0_1.MainID = 395
+L0_1.ActorAlias = "395"
+L1_1 = {}
+L1_1.q39501 = 39501
+L1_1.q39502 = 39502
+L1_1.q39503 = 39503
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L1_1.Barbara = "Barbara"
+L1_1.BarbaraScript = "Actor/Quest/Q413/Barbara"
+L1_1.BarbaraID = 1008
+L2_1 = sceneData
+L3_1 = L2_1
+L2_1 = L2_1.GetDummyPoint
+L4_1 = 3
+L5_1 = "Q395BBR"
+L2_1 = L2_1(L3_1, L4_1, L5_1)
+L2_1 = L2_1.pos
+L1_1.bornPos = L2_1
+L2_1 = sceneData
+L3_1 = L2_1
+L2_1 = L2_1.GetDummyPoint
+L4_1 = 3
+L5_1 = "Q395BBR"
+L2_1 = L2_1(L3_1, L4_1, L5_1)
+L2_1 = L2_1.rot
+L1_1.bornDir = L2_1
+L0_1.BarbaraData = L1_1
+return L0_1

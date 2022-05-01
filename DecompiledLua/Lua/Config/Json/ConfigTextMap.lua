@@ -1,0 +1,9 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.DEFAULT = 0
+L0_1.IOS = 1
+L0_1.PC = 2
+L0_1.ANDROID = 3
+L0_1.PS4 = 4
+L0_1.SWITCH = 5
+TextMapPlatformType = L0_1

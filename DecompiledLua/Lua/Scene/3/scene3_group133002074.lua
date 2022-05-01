@@ -1,0 +1,296 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
+L0_1 = {}
+L0_1.group_id = 133002074
+L1_1 = {}
+monsters = L1_1
+L1_1 = {}
+npcs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 1019
+L2_1.gadget_id = 70690001
+L3_1 = {}
+L3_1.x = 1616.647
+L3_1.y = 233.505
+L3_1.z = -500.503
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 90.0
+L3_1.y = 16.707
+L3_1.z = 0.0
+L2_1.rot = L3_1
+L2_1.level = 10
+L2_1.persistent = true
+L2_1.area_id = 3
+L3_1 = {}
+L3_1.config_id = 1021
+L3_1.gadget_id = 70690001
+L4_1 = {}
+L4_1.x = 1616.722
+L4_1.y = 247.694
+L4_1.z = -492.147
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 338.3
+L4_1.y = 16.41
+L4_1.z = 0.0
+L3_1.rot = L4_1
+L3_1.level = 10
+L3_1.persistent = true
+L3_1.area_id = 3
+L4_1 = {}
+L4_1.config_id = 1022
+L4_1.gadget_id = 70690001
+L5_1 = {}
+L5_1.x = 1619.049
+L5_1.y = 251.977
+L5_1.z = -480.852
+L4_1.pos = L5_1
+L5_1 = {}
+L5_1.x = 17.9
+L5_1.y = 196.3
+L5_1.z = 180.0
+L4_1.rot = L5_1
+L4_1.level = 10
+L4_1.persistent = true
+L4_1.area_id = 3
+L5_1 = {}
+L5_1.config_id = 1023
+L5_1.gadget_id = 70690001
+L6_1 = {}
+L6_1.x = 1621.893
+L6_1.y = 256.504
+L6_1.z = -467.018
+L5_1.pos = L6_1
+L6_1 = {}
+L6_1.x = 327.9
+L6_1.y = 6.05
+L6_1.z = 0.0
+L5_1.rot = L6_1
+L5_1.level = 10
+L5_1.persistent = true
+L5_1.area_id = 3
+L6_1 = {}
+L6_1.config_id = 2168
+L6_1.gadget_id = 70690001
+L7_1 = {}
+L7_1.x = 1617.034
+L7_1.y = 240.357
+L7_1.z = -500.985
+L6_1.pos = L7_1
+L7_1 = {}
+L7_1.x = 90.0
+L7_1.y = 16.707
+L7_1.z = 0.0
+L6_1.rot = L7_1
+L6_1.level = 10
+L6_1.persistent = true
+L6_1.area_id = 3
+L7_1 = {}
+L7_1.config_id = 74001
+L7_1.gadget_id = 70900039
+L8_1 = {}
+L8_1.x = 1614.82
+L8_1.y = 229.382
+L8_1.z = -506.982
+L7_1.pos = L8_1
+L8_1 = {}
+L8_1.x = 4.206
+L8_1.y = 27.1
+L8_1.z = 0.0
+L7_1.rot = L8_1
+L7_1.level = 10
+L7_1.persistent = true
+L7_1.area_id = 3
+L8_1 = {}
+L8_1.config_id = 74003
+L8_1.gadget_id = 70500000
+L9_1 = {}
+L9_1.x = 1627.557
+L9_1.y = 266.352
+L9_1.z = -440.195
+L8_1.pos = L9_1
+L9_1 = {}
+L9_1.x = 0.0
+L9_1.y = 123.547
+L9_1.z = 0.0
+L8_1.rot = L9_1
+L8_1.level = 10
+L8_1.point_type = 4001001
+L8_1.isOneoff = true
+L9_1 = {}
+L9_1.name = "gather"
+L9_1.exp = 3
+L8_1.explore = L9_1
+L8_1.area_id = 3
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+L1_1[3] = L4_1
+L1_1[4] = L5_1
+L1_1[5] = L6_1
+L1_1[6] = L7_1
+L1_1[7] = L8_1
+gadgets = L1_1
+L1_1 = {}
+regions = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.config_id = 1074002
+L2_1.name = "GADGET_STATE_CHANGE_74002"
+L3_1 = EventType
+L3_1 = L3_1.EVENT_GADGET_STATE_CHANGE
+L2_1.event = L3_1
+L2_1.source = ""
+L2_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_74002"
+L2_1.action = "action_EVENT_GADGET_STATE_CHANGE_74002"
+L2_1.trigger_count = 0
+L3_1 = {}
+L3_1.config_id = 1074004
+L3_1.name = "GATHER_74004"
+L4_1 = EventType
+L4_1 = L4_1.EVENT_GATHER
+L3_1.event = L4_1
+L3_1.source = ""
+L3_1.condition = "condition_EVENT_GATHER_74004"
+L3_1.action = "action_EVENT_GATHER_74004"
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+triggers = L1_1
+L1_1 = {}
+variables = L1_1
+L1_1 = {}
+L1_1.suite = 1
+L1_1.end_suite = 0
+L1_1.rand_suite = false
+init_config = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L2_1.monsters = L3_1
+L3_1 = {}
+L4_1 = 74001
+L5_1 = 74003
+L3_1[1] = L4_1
+L3_1[2] = L5_1
+L2_1.gadgets = L3_1
+L3_1 = {}
+L2_1.regions = L3_1
+L3_1 = {}
+L4_1 = "GADGET_STATE_CHANGE_74002"
+L5_1 = "GATHER_74004"
+L3_1[1] = L4_1
+L3_1[2] = L5_1
+L2_1.triggers = L3_1
+L2_1.rand_weight = 100
+L3_1 = {}
+L4_1 = {}
+L3_1.monsters = L4_1
+L4_1 = {}
+L5_1 = 1019
+L6_1 = 1021
+L7_1 = 1022
+L8_1 = 1023
+L9_1 = 2168
+L4_1[1] = L5_1
+L4_1[2] = L6_1
+L4_1[3] = L7_1
+L4_1[4] = L8_1
+L4_1[5] = L9_1
+L3_1.gadgets = L4_1
+L4_1 = {}
+L3_1.regions = L4_1
+L4_1 = {}
+L3_1.triggers = L4_1
+L3_1.rand_weight = 100
+L1_1[1] = L2_1
+L1_1[2] = L3_1
+suites = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = A1_2.param2
+  if 74001 == L2_2 then
+    L2_2 = GadgetState
+    L2_2 = L2_2.GearStart
+    L3_2 = A1_2.param1
+    if L2_2 == L3_2 then
+      goto lbl_11
+    end
+  end
+  L2_2 = false
+  do return L2_2 end
+  ::lbl_11::
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_GADGET_STATE_CHANGE_74002 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.AddExtraGroupSuite
+  L3_2 = A0_2
+  L4_2 = 133002074
+  L5_2 = 2
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = {}
+  L2_2.x = 1627
+  L2_2.y = 266
+  L2_2.z = -440
+  L3_2 = {}
+  L3_2.x = 0
+  L3_2.y = 0
+  L3_2.z = 0
+  L4_2 = ScriptLib
+  L4_2 = L4_2.BeginCameraSceneLook
+  L5_2 = A0_2
+  L6_2 = {}
+  L6_2.look_pos = L2_2
+  L6_2.is_allow_input = false
+  L6_2.duration = 4
+  L6_2.is_force = true
+  L6_2.is_broadcast = false
+  L6_2.is_recover_keep_current = true
+  L6_2.delay = 0
+  L6_2.is_set_follow_pos = false
+  L6_2.follow_pos = L3_2
+  L6_2.is_force_walk = false
+  L6_2.is_change_play_mode = false
+  L6_2.is_set_screen_XY = false
+  L6_2.screen_x = 0
+  L6_2.screen_y = 0
+  L4_2 = L4_2(L5_2, L6_2)
+  if 0 ~= L4_2 then
+    L4_2 = ScriptLib
+    L4_2 = L4_2.PrintContextLog
+    L5_2 = A0_2
+    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
+    L4_2(L5_2, L6_2)
+    L4_2 = -1
+    return L4_2
+  end
+  L4_2 = 0
+  return L4_2
+end
+action_EVENT_GADGET_STATE_CHANGE_74002 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2
+  L2_2 = A1_2.param1
+  if 74003 ~= L2_2 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = true
+  return L2_2
+end
+condition_EVENT_GATHER_74004 = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = ScriptLib
+  L2_2 = L2_2.RemoveExtraGroupSuite
+  L3_2 = A0_2
+  L4_2 = 133002074
+  L5_2 = 2
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = 0
+  return L2_2
+end
+action_EVENT_GATHER_74004 = L1_1

@@ -1,0 +1,9 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.BottomCenter = 0
+L0_1.Center = 1
+CenterPosType = L0_1
+L0_1 = {}
+L0_1.Bottom = 0
+L0_1.Center = 1
+HeightPosType = L0_1

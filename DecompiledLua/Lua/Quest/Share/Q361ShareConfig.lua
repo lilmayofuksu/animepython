@@ -1,0 +1,27 @@
+local L0_1, L1_1, L2_1, L3_1
+main_id = 361
+L0_1 = {}
+L1_1 = 36100
+L2_1 = 36101
+L0_1[1] = L1_1
+L0_1[2] = L2_1
+sub_ids = L0_1
+L0_1 = {}
+rewind_data = L0_1
+L0_1 = rewind_data
+L1_1 = {}
+L0_1["36100"] = L1_1
+L0_1 = rewind_data
+L1_1 = {}
+L0_1["36101"] = L1_1
+L0_1 = {}
+quest_data = L0_1
+L0_1 = quest_data
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L3_1.id = 70900002
+L3_1.pos = "Q361DragonTriggerCenter"
+L2_1[1] = L3_1
+L1_1.gadgets = L2_1
+L0_1["36100"] = L1_1

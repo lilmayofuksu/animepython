@@ -1,0 +1,29 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1
+L0_1 = {}
+L0_1.MainID = 72652
+L0_1.ActorAlias = "72652"
+L1_1 = {}
+L1_1.q7265201 = 7265201
+L1_1.q7265202 = 7265202
+L1_1.q7265203 = 7265203
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.alias = "Q72652Trigger"
+L2_1.script = "Actor/Gadget/Q72652Trigger"
+L2_1.id = 70900002
+L3_1 = {}
+L4_1 = {}
+L4_1.x = -2702
+L4_1.y = 208
+L4_1.z = -4133
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 0
+L4_1.y = 0
+L4_1.z = 0
+L3_1.rot = L4_1
+L2_1.point = L3_1
+L1_1.Q72652Trigger_ = L2_1
+L0_1.Datas = L1_1
+return L0_1

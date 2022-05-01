@@ -1,0 +1,22 @@
+local L0_1, L1_1
+L0_1 = {}
+L0_1.MainID = 30007
+L0_1.ActorAlias = "30007"
+L1_1 = {}
+L1_1.q3000701 = 3000701
+L1_1.q3000702 = 3000702
+L1_1.q3000703 = 3000703
+L1_1.q3000704 = 3000704
+L0_1.SubIDs = L1_1
+L0_1.npc_ID = nil
+L0_1.npc_alias = nil
+L0_1.npc_metaPath = nil
+L0_1.npc_pos = nil
+L0_1.monster_ID = nil
+L0_1.monster_num = nil
+L0_1.monster_pos = nil
+L0_1.monster_alias = nil
+L1_1 = {}
+L0_1.shareData = L1_1
+L0_1.BubbleState = nil
+return L0_1
